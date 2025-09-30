@@ -1,0 +1,28 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g transform="translate(95, 95) rotate(-45) translate(-100, -100)">
+
+		<!-- Outer saucer (Dark Grey) - scaled to fill more space -->
+		<ellipse cx="100" cy="85" rx="90" ry="32" fill="#777" />
+
+		<!-- Cabin/Dome (Bright Yellow) - scaled proportionally -->
+		<ellipse cx="100" cy="65" rx="45" ry="22" fill="#FFC700" />
+
+		<!-- Light Beams (Red) - extended and repositioned -->
+
+		<!-- Beam 1: Left -->
+		<rect x="55" y="125" width="8" height="60" fill="#FF0000"
+			transform="rotate(15, 72.5, 127.5)" />
+
+		<!-- Beam 2: Center -->
+		<rect x="96" y="135" width="8" height="60" fill="#FF0000" />
+
+		<!-- Beam 3: Right -->
+		<rect x="137" y="125" width="8" height="60" fill="#FF0000"
+			transform="rotate(-15, 127.5, 127.5)" />
+
+		<!-- Additional detail: Small windows on the dome -->
+		<ellipse cx="85" cy="65" rx="4" ry="3" fill="#FFE55C" opacity="0.8" />
+		<ellipse cx="100" cy="60" rx="4" ry="3" fill="#FFE55C" opacity="0.8" />
+		<ellipse cx="115" cy="65" rx="4" ry="3" fill="#FFE55C" opacity="0.8" />
+	</g>
+</svg>

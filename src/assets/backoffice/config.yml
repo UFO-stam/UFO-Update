@@ -1,0 +1,42 @@
+locale: 'nl'
+
+backend:
+  name: github
+  repo: 
+  branch: trunk
+
+media_folder: "src/assets/uploads"
+public_folder: "/uploads"
+publish_mode: editorial_workflow
+
+# Please run "npx decap-server" for local backend
+local_backend: true
+
+collections:
+  - label: "Posts"
+    name: "posts"
+    folder: "src/pages/posts"
+    create: true
+    editor:
+      preview: true
+    slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Beschrijving", name: "description", widget: "string" }
+      - { label: "Datum", name: "date", widget: "datetime", format: "YYYY-MM-DD", default: "now" }
+      - { label: "Laatst Geüpdate", name: "last_updated", widget: "datetime", format: "YYYY-MM-DD", default: null, required: false }
+      - { label: "Auteurs", name: "authors", widget: "relation", collection: "authors", multiple: true, searchFields: ["name"], valueField: "name", displayFields: ["name", "avatar"] }
+      - { label: "Type", name: "type", widget: "select", options: ["nieuwsbrief", "post"], default: "post" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - label: "Auteurs"
+    name: "authors"
+    folder: "src/data/authors"
+    extension: "json"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Naam", name: "name", widget: "string" }
+      - { label: "Functie", name: "role", widget: "string" }
+      - { label: "Avatar", name: "avatar", widget: "image", required: false}
+      - { label: "Biografie", name: "body", widget: "markdown", required: false}

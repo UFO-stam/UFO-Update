@@ -1,0 +1,473 @@
+
+
+<!-- Game Area -->
+<div class="p-4 space-y-4">
+	<!-- Grid Container -->
+	<div class="flex justify-center">
+		<div id="crossword-grid" class="inline-block bg-gray-800 p-2 rounded-lg"></div>
+	</div>
+
+	<!-- Clues -->
+	<div class="grid md:grid-cols-2 gap-4 text-sm">
+		<div class="bg-gray-50 p-3 rounded-lg border-l-4 border-blue-500">
+			<h3 class="font-semibold text-blue-600 mb-2">→ Across</h3>
+			<div id="across-clues" class="space-y-1"></div>
+		</div>
+		<div class="bg-gray-50 p-3 rounded-lg border-l-4 border-purple-500">
+			<h3 class="font-semibold text-purple-600 mb-2">↓ Down</h3>
+			<div id="down-clues" class="space-y-1"></div>
+		</div>
+	</div>
+
+	<!-- Controls -->
+	<div class="flex flex-wrap justify-center gap-2">
+		<button onclick="checkAnswers()"
+			class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full text-sm font-medium transition-colors">
+			Check Answers
+		</button>
+		<button onclick="clearAll()"
+			class="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-full text-sm font-medium transition-colors">
+			Clear
+		</button>
+		<button onclick="generateNew()"
+			class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full text-sm font-medium transition-colors">
+			New Puzzle
+		</button>
+	</div>
+
+	<!-- Status -->
+	<div id="game-status" class="text-center text-sm font-medium"></div>
+</div>
+
+
+<script>
+	// Crossword data and logic
+	const WORD_LIST = [
+		{ word: "APPLE", clue: "Red fruit that keeps the doctor away" },
+		{ word: "BOOK", clue: "You read this" },
+		{ word: "CAT", clue: "Feline pet" },
+		{ word: "DOG", clue: "Man's best friend" },
+		{ word: "TREE", clue: "Tall plant with branches" },
+		{ word: "WATER", clue: "Clear liquid essential for life" },
+		{ word: "MUSIC", clue: "Art of sound and rhythm" },
+		{ word: "HAPPY", clue: "Feeling of joy" },
+		{ word: "OCEAN", clue: "Large body of salt water" },
+		{ word: "PHONE", clue: "Device for communication" }
+	];
+
+	let currentGrid = [];
+	let currentWords = [];
+	let gridSize = 15;
+	let activeWord = null;
+
+	class CrosswordGenerator {
+		constructor(words, size) {
+			this.words = words.map(w => ({ ...w, word: w.word.toUpperCase() }));
+			this.size = size;
+			this.grid = Array(size).fill(null).map(() => Array(size).fill(null));
+			this.placedWords = [];
+		}
+
+		generate() {
+			this.placedWords = [];
+			this.grid = Array(this.size).fill(null).map(() => Array(this.size).fill(null));
+
+			const sortedWords = [...this.words].sort((a, b) => b.word.length - a.word.length);
+
+			if (sortedWords.length > 0) {
+				const firstWord = sortedWords[0];
+				const startRow = Math.floor(this.size / 2);
+				const startCol = Math.floor((this.size - firstWord.word.length) / 2);
+
+				if (this.placeWord(firstWord, startRow, startCol, 'across')) {
+					this.placedWords.push({
+						...firstWord,
+						row: startRow,
+						col: startCol,
+						direction: 'across',
+						number: 1
+					});
+				}
+			}
+
+			for (let i = 1; i < sortedWords.length && this.placedWords.length < 8; i++) {
+				this.tryPlaceWord(sortedWords[i]);
+			}
+
+			this.numberWords();
+
+			return {
+				grid: this.grid,
+				words: this.placedWords
+			};
+		}
+
+		placeWord(wordObj, row, col, direction) {
+			const word = wordObj.word;
+
+			if (direction === 'across') {
+				if (col + word.length > this.size) return false;
+
+				for (let i = 0; i < word.length; i++) {
+					const cell = this.grid[row][col + i];
+					if (cell !== null && cell !== word[i]) return false;
+				}
+
+				for (let i = 0; i < word.length; i++) {
+					this.grid[row][col + i] = word[i];
+				}
+			} else {
+				if (row + word.length > this.size) return false;
+
+				for (let i = 0; i < word.length; i++) {
+					const cell = this.grid[row + i][col];
+					if (cell !== null && cell !== word[i]) return false;
+				}
+
+				for (let i = 0; i < word.length; i++) {
+					this.grid[row + i][col] = word[i];
+				}
+			}
+
+			return true;
+		}
+
+		tryPlaceWord(wordObj) {
+			const word = wordObj.word;
+
+			for (const placedWord of this.placedWords) {
+				for (let i = 0; i < word.length; i++) {
+					for (let j = 0; j < placedWord.word.length; j++) {
+						if (word[i] === placedWord.word[j]) {
+							const newDirection = placedWord.direction === 'across' ? 'down' : 'across';
+							let newRow, newCol;
+
+							if (placedWord.direction === 'across') {
+								newRow = placedWord.row - i;
+								newCol = placedWord.col + j;
+							} else {
+								newRow = placedWord.row + j;
+								newCol = placedWord.col - i;
+							}
+
+							if (newRow >= 0 && newCol >= 0 &&
+								newRow < this.size && newCol < this.size) {
+
+								if (this.canPlaceWord(wordObj, newRow, newCol, newDirection)) {
+									this.placeWord(wordObj, newRow, newCol, newDirection);
+									this.placedWords.push({
+										...wordObj,
+										row: newRow,
+										col: newCol,
+										direction: newDirection,
+										number: this.placedWords.length + 1
+									});
+									return true;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			return false;
+		}
+
+		canPlaceWord(wordObj, row, col, direction) {
+			const word = wordObj.word;
+
+			if (direction === 'across') {
+				if (col + word.length > this.size) return false;
+
+				if (col > 0 && this.grid[row][col - 1] !== null) return false;
+				if (col + word.length < this.size && this.grid[row][col + word.length] !== null) return false;
+
+				for (let i = 0; i < word.length; i++) {
+					const cell = this.grid[row][col + i];
+					if (cell !== null && cell !== word[i]) return false;
+
+					if (row > 0 && this.grid[row - 1][col + i] !== null && cell === null) return false;
+					if (row < this.size - 1 && this.grid[row + 1][col + i] !== null && cell === null) return false;
+				}
+			} else {
+				if (row + word.length > this.size) return false;
+
+				if (row > 0 && this.grid[row - 1][col] !== null) return false;
+				if (row + word.length < this.size && this.grid[row + word.length][col] !== null) return false;
+
+				for (let i = 0; i < word.length; i++) {
+					const cell = this.grid[row + i][col];
+					if (cell !== null && cell !== word[i]) return false;
+
+					if (col > 0 && this.grid[row + i][col - 1] !== null && cell === null) return false;
+					if (col < this.size - 1 && this.grid[row + i][col + 1] !== null && cell === null) return false;
+				}
+			}
+
+			return true;
+		}
+
+		numberWords() {
+			const starts = [];
+
+			for (const word of this.placedWords) {
+				starts.push({ row: word.row, col: word.col, directions: [word.direction] });
+			}
+
+			const merged = [];
+			for (const start of starts) {
+				const existing = merged.find(m => m.row === start.row && m.col === start.col);
+				if (existing) {
+					existing.directions.push(...start.directions);
+				} else {
+					merged.push(start);
+				}
+			}
+
+			merged.sort((a, b) => a.row - b.row || a.col - b.col);
+
+			for (let i = 0; i < merged.length; i++) {
+				const start = merged[i];
+				const number = i + 1;
+
+				for (const word of this.placedWords) {
+					if (word.row === start.row && word.col === start.col) {
+						word.number = number;
+					}
+				}
+			}
+		}
+	}
+
+	function generateCrossword() {
+		const generator = new CrosswordGenerator(WORD_LIST, gridSize);
+		const result = generator.generate();
+
+		currentGrid = result.grid;
+		currentWords = result.words;
+
+		renderGrid();
+		renderClues();
+	}
+
+	function renderGrid() {
+		const gridEl = document.getElementById('crossword-grid');
+		gridEl.innerHTML = '';
+
+		let minRow = gridSize, maxRow = -1, minCol = gridSize, maxCol = -1;
+
+		for (let r = 0; r < gridSize; r++) {
+			for (let c = 0; c < gridSize; c++) {
+				if (currentGrid[r][c] !== null) {
+					minRow = Math.min(minRow, r);
+					maxRow = Math.max(maxRow, r);
+					minCol = Math.min(minCol, c);
+					maxCol = Math.max(maxCol, c);
+				}
+			}
+		}
+
+		const rows = maxRow - minRow + 1;
+		const cols = maxCol - minCol + 1;
+
+		gridEl.style.display = 'grid';
+		gridEl.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+		gridEl.style.gap = '1px';
+
+		for (let r = minRow; r <= maxRow; r++) {
+			for (let c = minCol; c <= maxCol; c++) {
+				const cell = document.createElement('div');
+				cell.className = 'w-7 h-7 relative flex items-center justify-center text-xs font-bold border border-gray-300';
+				cell.dataset.row = r;
+				cell.dataset.col = c;
+
+				if (currentGrid[r][c] !== null) {
+					cell.className += ' bg-white cursor-pointer transition-colors hover:bg-blue-50';
+
+					const input = document.createElement('input');
+					input.type = 'text';
+					input.maxLength = 1;
+					input.className = 'w-full h-full text-center text-xs font-bold uppercase bg-transparent outline-none border-none';
+					input.addEventListener('input', handleInput);
+					input.addEventListener('keydown', handleKeydown);
+					cell.appendChild(input);
+
+					const wordStart = currentWords.find(w => w.row === r && w.col === c);
+					if (wordStart) {
+						const number = document.createElement('span');
+						number.className = 'absolute top-0 left-0 text-[8px] text-gray-600 leading-none p-0.5';
+						number.textContent = wordStart.number;
+						cell.appendChild(number);
+					}
+				} else {
+					cell.className += ' bg-gray-800';
+				}
+
+				gridEl.appendChild(cell);
+			}
+		}
+	}
+
+	function renderClues() {
+		const acrossEl = document.getElementById('across-clues');
+		const downEl = document.getElementById('down-clues');
+
+		acrossEl.innerHTML = '';
+		downEl.innerHTML = '';
+
+		const acrossWords = currentWords.filter(w => w.direction === 'across');
+		const downWords = currentWords.filter(w => w.direction === 'down');
+
+		acrossWords.forEach(word => {
+			const clue = document.createElement('div');
+			clue.className = 'p-1 rounded cursor-pointer hover:bg-blue-100 transition-colors';
+			clue.textContent = `${word.number}. ${word.clue}`;
+			clue.addEventListener('click', () => highlightWord(word));
+			acrossEl.appendChild(clue);
+		});
+
+		downWords.forEach(word => {
+			const clue = document.createElement('div');
+			clue.className = 'p-1 rounded cursor-pointer hover:bg-purple-100 transition-colors';
+			clue.textContent = `${word.number}. ${word.clue}`;
+			clue.addEventListener('click', () => highlightWord(word));
+			downEl.appendChild(clue);
+		});
+	}
+
+	function highlightWord(word) {
+		document.querySelectorAll('#crossword-grid > div').forEach(cell => {
+			cell.classList.remove('bg-blue-200', 'bg-purple-200');
+		});
+
+		document.querySelectorAll('#across-clues > div, #down-clues > div').forEach(clue => {
+			clue.classList.remove('bg-blue-500', 'bg-purple-500', 'text-white');
+		});
+
+		activeWord = word;
+
+		const highlightClass = word.direction === 'across' ? 'bg-blue-200' : 'bg-purple-200';
+
+		for (let i = 0; i < word.word.length; i++) {
+			const row = word.direction === 'across' ? word.row : word.row + i;
+			const col = word.direction === 'across' ? word.col + i : word.col;
+
+			const cell = document.querySelector(`[data-row="${row}"][data-col="${col}"]`);
+			if (cell) {
+				cell.classList.add(highlightClass);
+			}
+		}
+
+		const clueText = `${word.number}. ${word.clue}`;
+		const clueEl = Array.from(document.querySelectorAll('#across-clues > div, #down-clues > div')).find(el => el.textContent === clueText);
+		if (clueEl) {
+			clueEl.classList.add(word.direction === 'across' ? 'bg-blue-500' : 'bg-purple-500', 'text-white');
+		}
+	}
+
+	function handleInput(e) {
+		const input = e.target;
+		const value = input.value.toUpperCase();
+		input.value = value;
+
+		if (value && activeWord) {
+			const currentRow = parseInt(input.parentElement.dataset.row);
+			const currentCol = parseInt(input.parentElement.dataset.col);
+
+			let nextRow = currentRow;
+			let nextCol = currentCol;
+
+			if (activeWord.direction === 'across') {
+				nextCol++;
+			} else {
+				nextRow++;
+			}
+
+			const nextCell = document.querySelector(`[data-row="${nextRow}"][data-col="${nextCol}"]`);
+			if (nextCell && nextCell.querySelector('input')) {
+				nextCell.querySelector('input').focus();
+			}
+		}
+	}
+
+	function handleKeydown(e) {
+		if (e.key === 'Backspace' && !e.target.value && activeWord) {
+			const currentRow = parseInt(e.target.parentElement.dataset.row);
+			const currentCol = parseInt(e.target.parentElement.dataset.col);
+
+			let prevRow = currentRow;
+			let prevCol = currentCol;
+
+			if (activeWord.direction === 'across') {
+				prevCol--;
+			} else {
+				prevRow--;
+			}
+
+			const prevCell = document.querySelector(`[data-row="${prevRow}"][data-col="${prevCol}"]`);
+			if (prevCell && prevCell.querySelector('input')) {
+				prevCell.querySelector('input').focus();
+			}
+		}
+	}
+
+	function checkAnswers() {
+		let correct = 0;
+		let total = 0;
+
+		currentWords.forEach(word => {
+			let wordCorrect = true;
+
+			for (let i = 0; i < word.word.length; i++) {
+				const row = word.direction === 'across' ? word.row : word.row + i;
+				const col = word.direction === 'across' ? word.col + i : word.col;
+
+				const cell = document.querySelector(`[data-row="${row}"][data-col="${col}"]`);
+				const input = cell.querySelector('input');
+
+				if (input.value.toUpperCase() === word.word[i]) {
+					cell.classList.add('bg-green-200');
+					cell.classList.remove('bg-red-200');
+				} else {
+					cell.classList.remove('bg-green-200');
+					cell.classList.add('bg-red-200');
+					wordCorrect = false;
+				}
+			}
+
+			if (wordCorrect) correct++;
+			total++;
+		});
+
+		const status = document.getElementById('game-status');
+		if (correct === total) {
+			status.className = 'text-center text-sm font-medium text-green-600 bg-green-100 rounded-lg p-2';
+			status.textContent = '🎉 Puzzle solved! Great job!';
+		} else {
+			status.className = 'text-center text-sm font-medium text-blue-600';
+			status.textContent = `${correct}/${total} words correct. Keep going!`;
+		}
+	}
+
+	function clearAll() {
+		document.querySelectorAll('input').forEach(input => {
+			input.value = '';
+		});
+
+		document.querySelectorAll('#crossword-grid > div').forEach(cell => {
+			cell.classList.remove('bg-green-200', 'bg-red-200', 'bg-blue-200', 'bg-purple-200');
+		});
+
+		document.getElementById('game-status').textContent = '';
+		activeWord = null;
+	}
+
+	function generateNew() {
+		clearAll();
+		generateCrossword();
+		document.getElementById('game-status').textContent = '';
+	}
+
+	// Initialize
+	generateCrossword();
+</script>

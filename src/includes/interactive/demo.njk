@@ -1,0 +1,24 @@
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<div class="flex justify-center items-center py-8">
+	<button id="confettiBtn"
+		class="relative bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-bold py-4 px-10 rounded-full shadow-xl transform transition-all duration-200 hover:scale-110 hover:shadow-2xl active:scale-95 text-lg">
+		Druk op mij!
+	</button>
+</div>
+
+<script>
+	window.addEventListener('load', function () {
+		document.getElementById('confettiBtn').addEventListener('click', function (e) {
+			const rect = this.getBoundingClientRect();
+			const x = (rect.left + rect.width / 2) / window.innerWidth;
+			const y = (rect.top + rect.height / 2) / window.innerHeight;
+
+			confetti({
+				particleCount: 100,
+				spread: 70,
+				origin: { x: x, y: y },
+				colors: ['#a855f7', '#ec4899', '#ef4444', '#f59e0b', '#3b82f6']
+			});
+		});
+	});
+</script>

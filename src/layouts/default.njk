@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	{% include "head.njk" %}
+</head>
+
+<body class="bg-base-100">
+	{% include "navbar.njk" %}
+
+	    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-burgundy to-burgundy-dark text-white">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="relative max-w-6xl mx-auto px-4 py-24">
+            <div class="text-center">
+                <div class="inline-block bg-blue-100 text-burgundy-dark bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium mb-6 floating-element">
+                    Blog Post
+                </div>
+                <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    6 oktober de eerste release van de U.F.O. Update!
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+                    We gaan er een spetterende nieuwe editie van maken vol met interessante artikelen, interviews en nog veel meer!
+                </p>
+                <div class="flex items-center justify-center space-x-6 text-sm">
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/>
+                        </svg>
+                        12 min leestijd
+                    </span>
+                    <span class="flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 7h12v9a1 1 0 01-1 1H5a1 1 0 01-1-1V7z"/>
+                        </svg>
+                        23 September, 2025
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-cream to-transparent"></div>
+    </section>
+
+    <!-- Article Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16">
+        {{ content | safe }}
+    </main>
+
+	{% include "footer.njk" %}
+
+</body>
+</html>

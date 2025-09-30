@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	{% include "head.njk" %}
+</head>
+
+<body class="bg-base-100">
+	{% include "navbar.njk" %}
+
+	{% include "hero.njk" %}
+
+    <main class="max-w-4xl mx-auto px-4 py-16 prose prose-lg prose-burgundy">
+        {{ content | safe }}
+    </main>
+
+	
+
+</body>
+</html>

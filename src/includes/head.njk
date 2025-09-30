@@ -1,0 +1,52 @@
+<!-- Recommended -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Title -->
+<title>{{ title }}</title>
+
+<!-- Styles -->
+<link rel="stylesheet" href="{{ '/style.css' | url }}" />
+<link rel="preconnect" href="https://rsms.me" />
+<link rel="preload" href="https://rsms.me/inter/inter.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</noscript>
+
+<!-- Meta -->
+<meta name="description" content="{{ description if description else site.description }}" />
+<meta name="generator" content="{{ eleventy.generator }}" />
+
+<!-- Icons -->
+<link rel="icon" type="image/png" href="{{ '/favicon-96x96.png' | url }}" sizes="96x96" />
+<link rel="shortcut icon" href="{{ '/favicon.ico' | url }}" />
+<link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | url }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}" />
+<meta name="apple-mobile-web-app-title" content="U.F.O. Update" />
+<link rel="manifest" href="{{ '/site.webmanifest' | url }}" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:description" content="{{ description if description else site.description }}" />
+<meta property="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2Fupdate.ufostam.nl{{ page.url | urlencode }}/opengraph/" />
+<meta property="og:url" content="{{ site.url + page.url }}" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Tracking -->
+
+
+<!-- Posts -->
+{% if type %}
+<script>
+    {% include "images.js" %}
+</script>
+{% endif %}
+
+{% if leaflet %}
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+ <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+{% endif %}

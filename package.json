@@ -1,0 +1,32 @@
+{
+	"name": "u.f.o.update",
+	"version": "0.0.420",
+	"description": "Site van de RedacCie",
+	"main": "eleventy.config.js",
+	"scripts": {
+		"start": "run-p start:*",
+		"start:eleventy": "eleventy --serve",
+		"start:postcss": "postcss src/styles/*.css --dir public --watch",
+		"build": "rimraf public && cross-env ELEVENTY_PRODUCTION=true eleventy && cross-env NODE_ENV=production postcss src/styles/*.css --dir public"
+	},
+	"keywords": [
+		"Nieuwsbrief",
+		"UFOSTAM"
+	],
+	"author": "RedacCie",
+	"license": "Apache-2.0",
+	"type": "module",
+	"dependencies": {
+		"@11ty/eleventy": "^3.1.2",
+		"@tailwindcss/postcss": "^4.1.13",
+		"@tailwindcss/typography": "^0.5.18",
+		"cross-env": "^10.0.0",
+		"cssnano": "^7.1.1",
+		"daisyui": "^5.1.14",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.5.6",
+		"postcss-cli": "^11.0.1",
+		"rimraf": "^6.0.1",
+		"tailwindcss": "^4.1.13"
+	}
+}

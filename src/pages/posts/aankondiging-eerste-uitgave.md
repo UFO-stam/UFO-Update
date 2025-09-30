@@ -41,13 +41,13 @@ We zorgen voor een **intern archief**, maken de **nieuwsbrief**, en helpen met *
 
 ## Komkommer bij
 
-We zoeken nog helpende handjes
+We zoeken nog helpende handjes.
 Bij onze commissie kan je bezig zijn, groeien en leren. Je krijgt veel persoonlijke kennis over de vereniging. Elke maand verdiepen we ons in het persoonlijke leven van het bestuur en de leden. 
 
 Je komt meer te weten over activiteiten **tijdens** én **buiten** de opkomsten. Bij ons kan je dus niet alleen creatief, maar ook professioneel groeien.
 
 ## Blijf op de hoogte
 
-Is maar eens in de maand te weinig voor jou? Gelukkig hebben we ook een Instagram pagina voor intern gebruik. [Volg ons](https://www.instagram.com/redaccie_ufostam/)
+Is maar eens in de maand te weinig voor jou? Gelukkig hebben we ook een Instagram-pagina voor intern gebruik. [Volg ons](https://www.instagram.com/redaccie_ufostam/)
 
 Jullie horen weer van ons op 6 oktober!

@@ -25,9 +25,10 @@ export default function (eleventyConfig) {
 			year: "numeric",
 		});
 	});
-	
+
 
 	return {
+		markdownTemplateEngine: "njk",
 		dir: {
 			input: "src/pages",
 			output: "public",

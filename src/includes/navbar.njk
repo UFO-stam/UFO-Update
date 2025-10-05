@@ -1,13 +1,30 @@
 <div class="reading-progress" id="reading-progress"></div>
+<script>
+	// Reading progress bar
+	window.addEventListener('scroll', () => {
+		const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+		document.getElementById('reading-progress').style.width = scrolled + '%';
+	});
+
+	// Smooth scrolling for internal links
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
+</script>
 <!-- Header -->
-<header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4">
-        <div class="flex items-center justify-between">
-            <div class="font-display text-2xl font-bold text-burgundy">U.F.O. Update</div>
-            <nav class="hidden md:flex space-x-8">
-                <a href="/" class="text-gray-700 hover:text-burgundy transition-colors">Home</a>
-                <a href="/contact" class="text-gray-700 hover:text-burgundy transition-colors">Contact</a>
-            </nav>
-        </div>
-    </div>
+<header class="bg-base-100 shadow-sm sticky top-0 z-50 dark:border-b border-gray-200">
+	<div class="max-w-7xl mx-auto px-4 py-4">
+		<div class="flex items-center justify-between">
+			<div class="font-display text-2xl font-bold text-primary dark:text-primary-content">U.F.O. Update</div>
+			<nav class="hidden md:flex space-x-8">
+				<a href="/" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+				<a href="/contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+			</nav>
+		</div>
+	</div>
 </header>

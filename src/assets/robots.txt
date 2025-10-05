@@ -99,3 +99,14 @@ User-agent: YouBot
 Disallow: /posts/
 Disallow: /uploads/
 Disallow: /contact/
+
+# Allow OpenGraph/link preview bots
+User-agent: facebookexternalhit
+User-agent: Facebot
+User-agent: Twitterbot
+User-agent: LinkedInBot
+User-agent: Slackbot
+User-agent: Discordbot
+User-agent: TelegramBot
+User-agent: WhatsApp
+Allow: /posts/

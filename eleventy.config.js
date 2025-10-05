@@ -6,11 +6,11 @@ export default function (eleventyConfig) {
 	// Filters
 	eleventyConfig.addFilter("timeToRead", (content) => {
 		const getPlainText = (html) => {
-        html = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
-        html = html.replace(/<!--[\s\S]*?-->/g, "");
-        html = html.replace(/<\/?[a-z0-9]+\b[^>]*>/gi, "");
-        return html;
-    };
+			html = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
+			html = html.replace(/<!--[\s\S]*?-->/g, "");
+			html = html.replace(/<\/?[a-z0-9]+\b[^>]*>/gi, "");
+			return html;
+		};
 
 		const rawText = getPlainText(content);
 		const wpm = 240;

@@ -269,7 +269,7 @@
 					const input = document.createElement('input');
 					input.type = 'text';
 					input.maxLength = 1;
-					input.className = 'w-full h-full text-center text-base sm:text-lg md:text-2xl font-bold uppercase bg-transparent outline-none border-none';
+					input.className = 'w-full h-full text-center text-base sm:text-lg md:text-2xl font-bold uppercase bg-transparent outline-none border-none text-black';
 					input.addEventListener('input', handleInput);
 					input.addEventListener('keydown', handleKeydown);
 					cell.appendChild(input);
@@ -282,7 +282,7 @@
 						cell.appendChild(number);
 					}
 				} else {
-					cell.className += ' bg-gray-800';
+					cell.className += ' bg-gray-900';
 				}
 
 				gridEl.appendChild(cell);

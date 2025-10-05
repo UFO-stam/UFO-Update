@@ -1,59 +1,41 @@
 
 
 <!-- Game Area -->
-<div class="p-4 space-y-4">
+<div class="space-y-4">
 	<!-- Grid Container -->
 	<div class="flex justify-center">
 		<div id="crossword-grid" class="inline-block bg-gray-800 p-2 rounded-lg"></div>
 	</div>
 
 	<!-- Clues -->
-	<div class="grid md:grid-cols-2 gap-4 text-sm">
-		<div class="bg-gray-50 p-3 rounded-lg border-l-4 border-blue-500">
-			<h3 class="font-semibold text-blue-600 mb-2">→ Across</h3>
-			<div id="across-clues" class="space-y-1"></div>
+
+	<div class="grid md:grid-cols-2 gap-4 sm:gap-6 text-sm sm:text-base">
+		<div class="bg-base-200 p-3 sm:p-4 lg:p-5 rounded-lg border-l-4 border-blue-500">
+			<h3 class="font-semibold text-blue-600 mb-2 sm:mb-3 text-base sm:text-lg">→ Horizontaal</h3>
+			<div id="across-clues" class="space-y-1 sm:space-y-2"></div>
 		</div>
-		<div class="bg-gray-50 p-3 rounded-lg border-l-4 border-purple-500">
-			<h3 class="font-semibold text-purple-600 mb-2">↓ Down</h3>
-			<div id="down-clues" class="space-y-1"></div>
+		<div class="bg-base-200 p-3 sm:p-4 lg:p-5 rounded-lg border-l-4 border-purple-500">
+			<h3 class="font-semibold text-purple-600 mb-2 sm:mb-3 text-base sm:text-lg">↓ Naar beneden</h3>
+			<div id="down-clues" class="space-y-1 sm:space-y-2"></div>
 		</div>
 	</div>
 
 	<!-- Controls -->
 	<div class="flex flex-wrap justify-center gap-2">
 		<button onclick="checkAnswers()"
-			class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full text-sm font-medium transition-colors">
-			Check Answers
-		</button>
-		<button onclick="clearAll()"
-			class="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-full text-sm font-medium transition-colors">
-			Clear
-		</button>
-		<button onclick="generateNew()"
-			class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full text-sm font-medium transition-colors">
-			New Puzzle
+			class="px-4 sm:px-6 py-2 sm:py-2.5 bg-green-500 hover:bg-green-600 text-white rounded-full text-sm sm:text-base font-medium transition-all hover:shadow-lg">
+			Check Antwoorden
 		</button>
 	</div>
 
 	<!-- Status -->
-	<div id="game-status" class="text-center text-sm font-medium"></div>
+	<div id="game-status" class="text-center text-sm sm:text-base font-medium"></div>
 </div>
 
 
 <script>
 	// Crossword data and logic
-	const WORD_LIST = [
-		{ word: "APPLE", clue: "Red fruit that keeps the doctor away" },
-		{ word: "BOOK", clue: "You read this" },
-		{ word: "CAT", clue: "Feline pet" },
-		{ word: "DOG", clue: "Man's best friend" },
-		{ word: "TREE", clue: "Tall plant with branches" },
-		{ word: "WATER", clue: "Clear liquid essential for life" },
-		{ word: "MUSIC", clue: "Art of sound and rhythm" },
-		{ word: "HAPPY", clue: "Feeling of joy" },
-		{ word: "OCEAN", clue: "Large body of salt water" },
-		{ word: "PHONE", clue: "Device for communication" }
-	];
+	const WORD_LIST = {{ WORD_LIST | dump | safe }};
 
 	let currentGrid = [];
 	let currentWords = [];
@@ -277,7 +259,7 @@
 		for (let r = minRow; r <= maxRow; r++) {
 			for (let c = minCol; c <= maxCol; c++) {
 				const cell = document.createElement('div');
-				cell.className = 'w-7 h-7 relative flex items-center justify-center text-xs font-bold border border-gray-300';
+				cell.className = 'w-7 h-7 xs:w-8 xs:h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 relative flex items-center justify-center text-sm sm:text-base md:text-lg font-bold border border-gray-300';
 				cell.dataset.row = r;
 				cell.dataset.col = c;
 
@@ -287,7 +269,7 @@
 					const input = document.createElement('input');
 					input.type = 'text';
 					input.maxLength = 1;
-					input.className = 'w-full h-full text-center text-xs font-bold uppercase bg-transparent outline-none border-none';
+					input.className = 'w-full h-full text-center text-base sm:text-lg md:text-2xl font-bold uppercase bg-transparent outline-none border-none';
 					input.addEventListener('input', handleInput);
 					input.addEventListener('keydown', handleKeydown);
 					cell.appendChild(input);
@@ -295,7 +277,7 @@
 					const wordStart = currentWords.find(w => w.row === r && w.col === c);
 					if (wordStart) {
 						const number = document.createElement('span');
-						number.className = 'absolute top-0 left-0 text-[8px] text-gray-600 leading-none p-0.5';
+						number.className = 'absolute top-0 left-0 text-[9px] sm:text-[10px] md:text-xs text-gray-600 leading-none p-0.5 sm:p-1';
 						number.textContent = wordStart.number;
 						cell.appendChild(number);
 					}
@@ -442,32 +424,12 @@
 		const status = document.getElementById('game-status');
 		if (correct === total) {
 			status.className = 'text-center text-sm font-medium text-green-600 bg-green-100 rounded-lg p-2';
-			status.textContent = '🎉 Puzzle solved! Great job!';
+			status.textContent = '🎉 Puzzel Opgelost! Goed gedaan piloot!';
 		} else {
 			status.className = 'text-center text-sm font-medium text-blue-600';
-			status.textContent = `${correct}/${total} words correct. Keep going!`;
+			status.textContent = `${correct}/${total} Woorden correct. Blijf doorgaan!`;
 		}
 	}
-
-	function clearAll() {
-		document.querySelectorAll('input').forEach(input => {
-			input.value = '';
-		});
-
-		document.querySelectorAll('#crossword-grid > div').forEach(cell => {
-			cell.classList.remove('bg-green-200', 'bg-red-200', 'bg-blue-200', 'bg-purple-200');
-		});
-
-		document.getElementById('game-status').textContent = '';
-		activeWord = null;
-	}
-
-	function generateNew() {
-		clearAll();
-		generateCrossword();
-		document.getElementById('game-status').textContent = '';
-	}
-
 	// Initialize
 	generateCrossword();
 </script>

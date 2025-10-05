@@ -2,7 +2,7 @@
 title: Aankondiging voor de eerste uitgave van de U.F.O. Update!
 description: We gaan er een spetterende nieuwe editie van maken vol met
   interessante artikelen, interviews en nog veel meer!
-date: 2025-09-29
+date: 2025-09-23
 last_updated: ""
 authors:
   - redaccie

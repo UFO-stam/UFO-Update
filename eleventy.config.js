@@ -25,6 +25,14 @@ export default function (eleventyConfig) {
 			year: "numeric",
 		});
 	});
+	// Filter to get initials from a name
+	eleventyConfig.addFilter("getInitials", function (name) {
+		return name
+			.split(' ')
+			.map(word => word.charAt(0).toUpperCase())
+			.join('')
+			.slice(0, 2); // Limit to 2 initials
+	});
 
 
 	return {

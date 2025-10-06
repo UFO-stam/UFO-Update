@@ -1,3 +1,19 @@
+# Default: allow everything
+User-agent: *
+Allow: /
+
+# Allow OpenGraph/link preview bots
+User-agent: facebookexternalhit
+User-agent: Facebot
+User-agent: Twitterbot
+User-agent: LinkedInBot
+User-agent: Slackbot
+User-agent: Discordbot
+User-agent: TelegramBot
+User-agent: WhatsApp
+Allow: /posts/
+Disallow: /contact/
+
 User-agent: AddSearchBot
 User-agent: AI2Bot
 User-agent: Ai2Bot-Dolma
@@ -32,7 +48,6 @@ User-agent: DuckAssistBot
 User-agent: Echobot Bot
 User-agent: EchoboxBot
 User-agent: FacebookBot
-User-agent: facebookexternalhit
 User-agent: Factset_spyderbot
 User-agent: FirecrawlAgent
 User-agent: FriendlyCrawler
@@ -99,14 +114,3 @@ User-agent: YouBot
 Disallow: /posts/
 Disallow: /uploads/
 Disallow: /contact/
-
-# Allow OpenGraph/link preview bots
-User-agent: facebookexternalhit
-User-agent: Facebot
-User-agent: Twitterbot
-User-agent: LinkedInBot
-User-agent: Slackbot
-User-agent: Discordbot
-User-agent: TelegramBot
-User-agent: WhatsApp
-Allow: /posts/

@@ -9,7 +9,6 @@ authors:
   - Maarten
 type: nieuwsbrief
 ---
-
 ## Inleiding
 
 Door Rosanne Wormgoor
@@ -21,6 +20,8 @@ Afgelopen maand stond bij de U.F.O.-Stam in het teken van de open opkomsten, waa
 Tijdens de derde opkomst speelden we Levend Cluedo: Wendy was vermoord en het was aan de UFO's om uit te zoeken wie de dader was. Door verdachten te ondervragen en aanwijzingen te verzamelen, werd de moordenaar uiteindelijk ontmaskerd. De vierde en laatste opkomst van september stond in het teken van de Planborrel. We begonnen met een potje flessenvoetbal om de teams te bepalen waarin we vervolgens gingen brainstormen voor opkomstideeën. Uiteindelijk plakte iedereen zijn post-its op het raam en kon iedereen kijken welke opkomst die graag wilde organiseren. Ook werden alle commissies kort voorgesteld en was er gelegenheid om vragen te stellen of je interesse kenbaar te maken. Kortom: een maand vol afwisseling, enthousiasme en nieuwe plannen.
 
 Veel plezier met het lezen van deze nieuwsbrief en tot volgende maand!
+
+![Cartoon van een nieuwslezer achter een bureau met een papiertje in haar handen. Op de achtergrond is een scherm te zien met drie vrolijke mensen in rode trainingspakken waarop “UFO” staat, met de Domtoren van Utrecht erachter. De tekstballon boven de nieuwslezer zegt: “Er zijn UFO’s gespot in hartje Utrecht.”](/uploads/whatsapp-image-2025-09-30-at-14.15.01.jpeg "Nieuwslezer meldt dat er UFO’s zijn gezien in het centrum van Utrecht.")
 
 ## Aan het roer editie 1 - Het begin
 
@@ -37,6 +38,8 @@ Dit was 'm weer voor deze eerste column. Wij staan te popelen om van dit jaar ee
 ## "Het is ook een stap, en die stap moet je maken"
 
 Interview met Thym Kruijt door Kayleigh Hogerheijde
+
+![Thym met kussens aan zijn lichaam getaped. Rechtopstaand naast een fiets op het domplein](/uploads/img_3075.jpg "Thym met kussens aan zijn lichaam getaped.")
 
 Onze eigen Thym studeert dit schooljaar niet meer in Utrecht. Hij heeft zijn tas gepakt en is naar Breda verhuisd, voor zijn nieuwe studie Creative Media and Game Technologies. Maar hoe is het nou eigenlijk om aan een nieuwe studie te beginnen, in een hele nieuwe stad?
 
@@ -82,62 +85,62 @@ Door Kayleigh Hogerheijde
 
 ### **Ram** | 21 maart - 19 april
 
-**Liefdesdingen:** Je krijgt binnenkort weer vlinders! Je huidige partner of iemand nieuw wakkert binnenkort de vlam weer goed aan.  
+**Liefdesdingen:** Je krijgt binnenkort weer vlinders! Je huidige partner of iemand nieuw wakkert binnenkort de vlam weer goed aan.\
 **De businesssectie:** Je hebt wat pech op werk, maar niet getreurd, er komen binnenkort nieuwe opties op je pad!
 
 ### **Stier** | 20 april - 20 mei
 
-**Liefdesdingen:** Het is tijd om even naar jezelf te kijken. Zit jij wel goed in je vel, en hoe gedraag je je naar je partner?  
+**Liefdesdingen:** Het is tijd om even naar jezelf te kijken. Zit jij wel goed in je vel, en hoe gedraag je je naar je partner?\
 **De businesssectie:** Je gaat volop in de 'work-mode'. Je maakt je doelen duidelijk en gaat ervoor. Lekker bezig carrièretijger!
 
 ### **Tweelingen** | 21 mei - 20 juni
 
-**Liefdesdingen:** Je komt binnenkort iemand tegen die precies is wat je zoekt. Wat je er verder mee doet, kun je helemaal zelf bepalen.  
+**Liefdesdingen:** Je komt binnenkort iemand tegen die precies is wat je zoekt. Wat je er verder mee doet, kun je helemaal zelf bepalen.\
 **De businesssectie:** Je weet wat je wilt op werk, nu moet je ervoor gaan. Vraag om wat je wilt en creëer de zelfverzekerdheid om het waar te maken.
 
 ### **Kreeft** | 21 juni - 22 juli
 
-**Liefdesdingen:** Je voelt je goed over jezelf en dat is deze maand even genoeg. Wees lief voor jezelf en wordt weer even verliefd op jezelf.  
+**Liefdesdingen:** Je voelt je goed over jezelf en dat is deze maand even genoeg. Wees lief voor jezelf en wordt weer even verliefd op jezelf.\
 **De businesssectie:** Je voelt je niet helemaal thuis op werk, maar dat is oké. Bedenk wat je wilt, maar weet dat je de goede keuze voor jezelf maakt.
 
 ### **Leeuw** | 23 juli - 22 augustus
 
-**Liefdesdingen:** Je partner en jij groeien deze maand meer naar elkaar toe, ontdek samen nieuwe hobby's en elkaar.  
+**Liefdesdingen:** Je partner en jij groeien deze maand meer naar elkaar toe, ontdek samen nieuwe hobby's en elkaar.\
 **De businesssectie:** Je zit lekker in je vel, maar je werk is niet meer precies wat je zoekt. Probeer nieuwe dingen uit en ontdek waar je blij van wordt.
 
 ### **Maagd** | 23 augustus - 22 september
 
-**Liefdesdingen:** Je bent weer single en ready to mingle. Geniet van nieuwe mensen ontmoeten!  
+**Liefdesdingen:** Je bent weer single en ready to mingle. Geniet van nieuwe mensen ontmoeten!\
 **De businesssectie:** Je bent van alles aan het doen op werk en raakt langzaam het overzicht kwijt. Zet een stapje terug en kijk hoe het anders kan.
 
 ### **Weegschaal** | 23 september - 22 oktober
 
-**Liefdesdingen:** Je vindt je innerlijke avonturier terug! Je gaat nieuwe dingen ontdekken en komt misschien wel iets tegen wat je eerder niet had willen proberen.  
+**Liefdesdingen:** Je vindt je innerlijke avonturier terug! Je gaat nieuwe dingen ontdekken en komt misschien wel iets tegen wat je eerder niet had willen proberen.\
 **De businesssectie:** Je ligt heel goed met je collega's en ze maken je dag compleet, maar vergeet niet dat je baas ook meekijkt als je weer staat te praten naast het koffiezetapparaat.
 
 ### **Schorpioen** | 23 oktober - 21 november
 
-**Liefdesdingen:** Je wordt weer blij van iemand! Kijk waar het naartoe gaat en geniet van deze tijd.  
+**Liefdesdingen:** Je wordt weer blij van iemand! Kijk waar het naartoe gaat en geniet van deze tijd.\
 **De businesssectie:** Je werk brengt je het hele land door, maar je raakt dit een beetje beu. Kijk naar nieuwe mogelijkheden die aansluiten bij je wensen!
 
 ### **Boogschutter** | 22 november - 21 december
 
-**Liefdesdingen:** Je gaat deze maand eindelijk over de boeg. Ananas in hand, probeer je het gewoon. Wie weet is het leuker dan verwacht.  
+**Liefdesdingen:** Je gaat deze maand eindelijk over de boeg. Ananas in hand, probeer je het gewoon. Wie weet is het leuker dan verwacht.\
 **De businesssectie:** Geld verdienen lukt jou zo, en nu kan dit eindelijk op de manier waarop je dat het liefst doet, lekker bezig!
 
 ### **Steenbok** | 22 december - 19 januari
 
-**Liefdesdingen:** Je weet niet meer wat je wilt. Maak snel een keuze, want niemand wacht voor altijd!  
+**Liefdesdingen:** Je weet niet meer wat je wilt. Maak snel een keuze, want niemand wacht voor altijd!\
 **De businesssectie:** Werk is chaos. Alles gebeurt tegelijkertijd en je verliest het overzicht. Probeer de focus terug te krijgen, door stap voor stap je focus te herpakken.
 
 ### **Waterman** | 20 januari - 18 februari
 
-**Liefdesdingen:** Je bent net gekwetst of hebt een moeilijke tijd gehad, maar wees niet getreurd, alles slaat weer om.  
+**Liefdesdingen:** Je bent net gekwetst of hebt een moeilijke tijd gehad, maar wees niet getreurd, alles slaat weer om.\
 **De businesssectie:** Je wilt dit, dat en ook nog zo. Doe rustig aan, je hebt nog genoeg tijd om alles te doen wat je wilt. Niet alles hoeft nu.
 
 ### **Vissen** | 19 februari - 20 maart
 
-**Liefdesdingen:** Je hebt een aanbidder! Geniet van de aandacht, maar wees eerlijk over je gevoelens.  
+**Liefdesdingen:** Je hebt een aanbidder! Geniet van de aandacht, maar wees eerlijk over je gevoelens.\
 **De businesssectie:** Het geld stroomt binnen en je baas is helemaal blij met jou. Houd dit ritme vast!
 
 ## 🧩 Puzzel
@@ -150,17 +153,17 @@ Vandaag maken we een woordzoeker!
 
 Van 7 oktober tot en met 4 november
 
-| Datum | Welke stam | Wat gaan we doen? |
-| :---- | :---- | :---- |
-| 7 okt | Student/Alumni | Borrel |
-| 9 okt | Alumni | Open opkomst |
-| 14 okt  | Student | Paralympische spelen |
-| 21 okt  | Student/Alumni | Installatie Borrel |
-| 23 okt | Alumni | Bootcamp |
-| 24 okt - 26 okt | Alle Stammen | SS2 Weekendkamp |
-| 28 okt  | Student | Opkomst |
-| 31 okt - 2 nov | Student | Herfstkamp |
-| 4 nov | Student/Alumni | Just Dance Borrel |
+| Datum           | Welke stam     | Wat gaan we doen?    |
+| --------------- | -------------- | -------------------- |
+| 7 okt           | Student/Alumni | Borrel               |
+| 9 okt           | Alumni         | Open opkomst         |
+| 14 okt          | Student        | Paralympische spelen |
+| 21 okt          | Student/Alumni | Installatie Borrel   |
+| 23 okt          | Alumni         | Bootcamp             |
+| 24 okt - 26 okt | Alle Stammen   | SS2 Weekendkamp      |
+| 28 okt          | Student        | Opkomst              |
+| 31 okt - 2 nov  | Student        | Herfstkamp           |
+| 4 nov           | Student/Alumni | Just Dance Borrel    |
 
 ## Afsluiting
 

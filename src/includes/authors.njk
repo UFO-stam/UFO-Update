@@ -8,21 +8,25 @@
 		{% for authorSlug in authors %}
 		{% set author = authorprofiles[authorSlug | lower] %}
 		{% if author %}
-		<div class="author-card rounded-2xl p-6 hover-lift">
-			<div class="flex items-start space-x-4">
+		<div
+			class="bg-base-200 rounded-xl p-6 hover-lift border border-base-300 hover:border-primary transition-colors">
+			<div class="flex gap-5">
 				{% if author.avatar %}
 				<img src="{{ author.avatar }}" alt="{{ author.name }}"
-					class="w-20 h-20 rounded-full object-cover flex-shrink-0" />
+					class="w-20 h-20 rounded-xl object-cover flex-shrink-0 ring-2 ring-primary" />
 				{% else %}
-				<div
-					class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white font-display text-2xl font-bold flex-shrink-0">
-					{{ author.name | getInitials }}
-				</div>
-				{% endif %}
 				<div>
-					<h4 class="font-semibold text-lg mb-2">{{ author.name }}</h4>
-					<p class="text-gray-600 text-sm mb-3">{{ author.role }}</p>
-					<p class="text-sm text-gray-700 leading-relaxed">
+					<div
+					class="w-20 h-20 bg-primary rounded-xl flex items-center justify-center text-white font-display text-2xl font-bold flex-shrink-0 ring-2 ring-primary">
+					{{ author.name | getInitials }}
+					</div>
+				</div>
+				
+				{% endif %}
+				<div class="flex-1 min-w-0">
+					<h4 class="font-bold text-xl mb-1 text-base-content">{{ author.name }}</h4>
+					<p class="text-primary text-sm font-medium mb-3">{{ author.role }}</p>
+					<p class="text-sm text-base-content leading-relaxed">
 						{{ author.body }}
 					</p>
 				</div>

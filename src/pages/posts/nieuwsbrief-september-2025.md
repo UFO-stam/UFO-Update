@@ -7,6 +7,7 @@ authors:
   - Rosanne
   - Robbe
   - Maarten
+  - Indy
 type: nieuwsbrief
 ---
 ## Inleiding
@@ -15,6 +16,8 @@ Door Rosanne Wormgoor
 
 Het is zover: de RedacCie lanceert haar allereerste nieuwsbrief als kersverse commissie. Daarmee blazen we de nieuwsbrief nieuw leven in. Vanaf nu kun je elke maand een nieuwe editie verwachten, met vaste rubrieken zoals een column van de hoofdredacteur, een artikel over een actueel thema, een bestuursupdate, een horoscoop, een puzzel, een spotprent en een terugblik op de opkomsten van de afgelopen maand. In deze editie spreken we met een UFO-lid dat net aan een nieuwe studie is begonnen. Ook kun je aan de slag met een leuke woordzoeker.
 
+![Avondfoto van het sportveld waar de ufo's staan. Enkele mensen staan en bewegen op het kunstgras, anderen kijken toe langs de zijlijn. Op de voorgrond staan fietsen geparkeerd, en op de achtergrond zijn hoge flatgebouwen te zien met verlichte ramen.](/uploads/pxl_20250923_182259704.night-2-.jpg "Ufo's op een verlicht sportveld naast flats.")
+
 Afgelopen maand stond bij de U.F.O.-Stam in het teken van de open opkomsten, waarbij de eerste drie activiteiten toegankelijk waren voor geïnteresseerde kijkers, ook wel 'druppels' genoemd. We trapten af met Expeditie Robinson, waarbij deelnemers in teams verschillende uitdagende opdrachten uitvoerden, zoals een pubquiz, een waterestafette, een Italiaans spel met een stok en een touw, en een speurtocht met letters. De sfeer zat er goed in: iedereen had zijn gezicht geschminkt in de kleuren van zijn team, wat zorgde voor extra teamspirit. De tweede opkomst vond plaats in het centrum van Utrecht, waar een Vossenjacht voor ons was georganiseerd. Op verschillende locaties in de stad zaten 'vossen' verstopt en bij elke vos moest een opdracht worden uitgevoerd of een vraag worden beantwoord. Wie dat goed deed, kreeg letters waarmee uiteindelijk het woord 'scouting' gevormd moest worden. Na afloop was er nog tijd om gezellig te borrelen in de stad.
 
 Tijdens de derde opkomst speelden we Levend Cluedo: Wendy was vermoord en het was aan de UFO's om uit te zoeken wie de dader was. Door verdachten te ondervragen en aanwijzingen te verzamelen, werd de moordenaar uiteindelijk ontmaskerd. De vierde en laatste opkomst van september stond in het teken van de Planborrel. We begonnen met een potje flessenvoetbal om de teams te bepalen waarin we vervolgens gingen brainstormen voor opkomstideeën. Uiteindelijk plakte iedereen zijn post-its op het raam en kon iedereen kijken welke opkomst die graag wilde organiseren. Ook werden alle commissies kort voorgesteld en was er gelegenheid om vragen te stellen of je interesse kenbaar te maken. Kortom: een maand vol afwisseling, enthousiasme en nieuwe plannen.
@@ -22,6 +25,8 @@ Tijdens de derde opkomst speelden we Levend Cluedo: Wendy was vermoord en het wa
 Veel plezier met het lezen van deze nieuwsbrief en tot volgende maand!
 
 ![Cartoon van een nieuwslezer achter een bureau met een papiertje in haar handen. Op de achtergrond is een scherm te zien met drie vrolijke mensen in rode trainingspakken waarop “UFO” staat, met de Domtoren van Utrecht erachter. De tekstballon boven de nieuwslezer zegt: “Er zijn UFO’s gespot in hartje Utrecht.”](/uploads/whatsapp-image-2025-09-30-at-14.15.01.jpeg "Nieuwslezer meldt dat er UFO’s zijn gezien in het centrum van Utrecht.")
+
+\-- <cite>Indy</cite>
 
 ## Aan het roer editie 1 - Het begin
 

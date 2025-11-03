@@ -195,7 +195,7 @@ Door Maarten
 
 Komende maand zijn er weer een aantal mensen jarig. Vergeet ze niet te feliciteren!\
 🎉 **Robin Kauffman** wordt op **3 november** een heeele grote jongen van 22 jaar oud! Wauw!\
-🎉 **Tom Kockelkoren** blaast op **5 november** maar liefst 26 kaarsjes uit!
+🎉 **Tom Kockelkoren** blaast op **5 november** maar liefst 26 kaarsjes uit!\
 🎉 **Rimon Jongejan** is op **8 november** alweer 25 jaar jong.\
 🎉 **Sophie Haan** is op **26 november** jarig. Wat een feestje! Taart! Ballonnen! Slingers!
 

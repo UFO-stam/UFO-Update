@@ -2,7 +2,7 @@ locale: 'nl'
 
 backend:
   name: github
-  repo: 
+  repo: UFO-stam/UFO-Update
   branch: trunk
 
 media_folder: "src/assets/uploads"

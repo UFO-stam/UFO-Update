@@ -103,7 +103,7 @@ Hiermee heb ik je hopelijk een inkijk kunnen geven in een deel van ons drukke be
 
 ## Horoscoop
 
-Door Kayleigh Hogerheijde en Chat Gepetee
+Door Kayleigh Hogerheijde met behulp van ChatGPT
 
 ![Foto van Ivar die uit een horoscoop van een magazine leest, om hem heen zit een aantal andere leden mee te lezen.](/uploads/img_4074.jpg "Iedereen zit rond het magazine waar een horoscoop wordt voorgelezen door Ivar")
 
@@ -169,7 +169,7 @@ Door Kayleigh Hogerheijde en Chat Gepetee
 
 ## 🧩 Puzzel
 
-Een uitdagende wordle. Raad het woord in 5 pogingen!
+Een uitdagende wordle in het Nederlands. Raad het woord in 5 pogingen!
 
 {% include "interactive/puzzles/puzzel2.njk" %}
 

@@ -1,0 +1,282 @@
+<!-- Game Area -->
+<div class="space-y-4 max-w-lg mx-auto">
+
+	<!-- Game Grid -->
+	<div class="flex justify-center">
+		<div id="wordle-grid" class="inline-block space-y-2"></div>
+	</div>
+
+	<!-- Keyboard -->
+	<div id="keyboard" class="space-y-2"></div>
+
+	<!-- Controls -->
+	<div class="flex flex-wrap justify-center gap-2">
+		<button onclick="resetGame()"
+			class="px-4 sm:px-6 py-2 sm:py-2.5 bg-blue-500 hover:bg-blue-600 text-white rounded-full text-sm sm:text-base font-medium transition-all hover:shadow-lg">
+			Nieuw Spel
+		</button>
+	</div>
+
+	<!-- Status -->
+	<div id="game-status" class="text-center text-sm sm:text-base font-medium"></div>
+</div>
+
+<script>
+	// Wordle data and logic
+	const WORD_LIST = {{ WORD_LIST | dump | safe }};
+
+	let targetWord = '';
+	let currentRow = 0;
+	let currentCol = 0;
+	let gameOver = false;
+	const MAX_GUESSES = 5;
+	const WORD_LENGTH = 5;
+
+	const keyboard = [
+		['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
+		['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'],
+		['⌫', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'ENTER']
+	];
+
+	function initGame() {
+		// Select random word from list
+		if (WORD_LIST && WORD_LIST.length > 0) {
+			const randomIndex = Math.floor(Math.random() * WORD_LIST.length);
+			targetWord = WORD_LIST[randomIndex].word.toUpperCase().substring(0, WORD_LENGTH);
+		} else {
+			// Fallback words if no list provided
+			const defaultWords = ['SPEEL', 'VOGEL', 'LICHT', 'DROOM', 'WATER'];
+			targetWord = defaultWords[Math.floor(Math.random() * defaultWords.length)];
+		}
+
+		currentRow = 0;
+		currentCol = 0;
+		gameOver = false;
+
+		renderGrid();
+		renderKeyboard();
+		updateStatus('');
+	}
+
+	function renderGrid() {
+		const gridEl = document.getElementById('wordle-grid');
+		gridEl.innerHTML = '';
+
+		for (let row = 0; row < MAX_GUESSES; row++) {
+			const rowDiv = document.createElement('div');
+			rowDiv.className = 'flex gap-1 sm:gap-2 justify-center';
+			rowDiv.dataset.row = row;
+
+			for (let col = 0; col < WORD_LENGTH; col++) {
+				const cell = document.createElement('div');
+				cell.className = 'w-12 h-12 sm:w-14 sm:h-14 border-2 border-gray-300 flex items-center justify-center text-2xl sm:text-3xl font-bold text-gray-900 transition-all duration-300 bg-gray-200';
+				cell.dataset.row = row;
+				cell.dataset.col = col;
+				rowDiv.appendChild(cell);
+			}
+
+			gridEl.appendChild(rowDiv);
+		}
+	}
+
+	function renderKeyboard() {
+		const keyboardEl = document.getElementById('keyboard');
+		keyboardEl.innerHTML = '';
+
+		keyboard.forEach(row => {
+			const rowDiv = document.createElement('div');
+			rowDiv.className = 'flex gap-1 justify-center';
+
+			row.forEach(key => {
+				const button = document.createElement('button');
+				button.textContent = key;
+				button.dataset.key = key;
+
+				if (key === 'ENTER' || key === '⌫') {
+					button.className = 'px-3 sm:px-4 py-3 sm:py-4 bg-gray-400 hover:bg-gray-500 text-white rounded text-xs sm:text-sm font-bold transition-colors';
+				} else {
+					button.className = 'w-8 h-10 sm:w-10 sm:h-12 bg-gray-400 hover:bg-gray-500 text-white rounded text-sm sm:text-base font-bold transition-colors';
+				}
+
+				button.addEventListener('click', () => handleKeyPress(key));
+				rowDiv.appendChild(button);
+			});
+
+			keyboardEl.appendChild(rowDiv);
+		});
+	}
+
+	function handleKeyPress(key) {
+		if (gameOver) return;
+
+		if (key === 'ENTER') {
+			submitGuess();
+		} else if (key === '⌫') {
+			deleteLetter();
+		} else {
+			addLetter(key);
+		}
+	}
+
+	function addLetter(letter) {
+		if (currentCol < WORD_LENGTH) {
+			const cell = document.querySelector(`[data-row="${currentRow}"][data-col="${currentCol}"]`);
+			cell.textContent = letter;
+			cell.classList.add('border-gray-400', 'scale-110');
+			setTimeout(() => cell.classList.remove('scale-110'), 100);
+			currentCol++;
+		}
+	}
+
+	function deleteLetter() {
+		if (currentCol > 0) {
+			currentCol--;
+			const cell = document.querySelector(`[data-row="${currentRow}"][data-col="${currentCol}"]`);
+			cell.textContent = '';
+			cell.classList.remove('border-gray-400');
+		}
+	}
+
+	function submitGuess() {
+		if (currentCol !== WORD_LENGTH) {
+			updateStatus('Niet genoeg letters!', 'warning');
+			return;
+		}
+
+		let guess = '';
+		for (let i = 0; i < WORD_LENGTH; i++) {
+			const cell = document.querySelector(`[data-row="${currentRow}"][data-col="${i}"]`);
+			guess += cell.textContent;
+		}
+
+		// Allow any word to be entered
+		evaluateGuess(guess);
+
+		if (guess === targetWord) {
+			gameOver = true;
+			updateStatus('🎉 Gefeliciteerd! Je hebt het woord geraden!', 'success');
+			umami.track('Oktober 2025 Wordle Gewonnen');
+		} else if (currentRow >= MAX_GUESSES - 1) {
+			gameOver = true;
+			updateStatus(`Helaas! Het woord was: ${targetWord}`, 'error');
+		}
+
+		currentRow++;
+		currentCol = 0;
+	}
+
+	function evaluateGuess(guess) {
+		const row = currentRow; // snapshot current row
+		const targetLetters = targetWord.split('');
+		const guessLetters = guess.split('');
+		const result = Array(WORD_LENGTH).fill('absent');
+
+		for (let i = 0; i < WORD_LENGTH; i++) {
+			if (guessLetters[i] === targetLetters[i]) {
+				result[i] = 'correct';
+				targetLetters[i] = null;
+			}
+		}
+
+		for (let i = 0; i < WORD_LENGTH; i++) {
+			if (result[i] === 'correct') continue;
+			const index = targetLetters.indexOf(guessLetters[i]);
+			if (index !== -1) {
+				result[i] = 'present';
+				targetLetters[index] = null;
+			}
+		}
+
+		for (let i = 0; i < WORD_LENGTH; i++) {
+			setTimeout(() => {
+				const cell = document.querySelector(`[data-row="${row}"][data-col="${i}"]`);
+				cell.classList.add('flip');
+				setTimeout(() => {
+					if (result[i] === 'correct') {
+						cell.classList.add('bg-green-600', 'border-green-600');
+					} else if (result[i] === 'present') {
+						cell.classList.add('bg-yellow-500', 'border-yellow-500');
+					} else {
+						cell.classList.add('bg-gray-500', 'border-gray-500');
+					}
+					updateKeyboard(guessLetters[i], result[i]);
+				}, 250);
+			}, i * 150);
+		}
+	}
+
+	function updateKeyboard(letter, status) {
+		const key = document.querySelector(`[data-key="${letter}"]`);
+		if (!key) return;
+
+		const currentStatus = key.dataset.status;
+
+		// Don't downgrade from correct to present/absent
+		if (currentStatus === 'correct') return;
+		if (currentStatus === 'present' && status === 'absent') return;
+
+		key.dataset.status = status;
+		key.classList.remove('bg-gray-600', 'bg-green-600', 'bg-yellow-500', 'bg-gray-700');
+
+		if (status === 'correct') {
+			key.classList.add('bg-green-600');
+		} else if (status === 'present') {
+			key.classList.add('bg-yellow-500');
+		} else {
+			key.classList.add('bg-gray-700');
+		}
+	}
+
+	function updateStatus(message, type = '') {
+		const status = document.getElementById('game-status');
+		status.textContent = message;
+
+		status.className = 'text-center text-sm sm:text-base font-medium transition-all';
+
+		if (type === 'success') {
+			status.classList.add('text-green-200', 'bg-green-900', 'rounded-lg', 'p-3');
+		} else if (type === 'error') {
+			status.classList.add('text-red-200', 'bg-red-900', 'rounded-lg', 'p-3');
+		} else if (type === 'warning') {
+			status.classList.add('text-yellow-400');
+		} else {
+			status.classList.add('text-gray-400');
+		}
+	}
+
+	function resetGame() {
+		initGame();
+	}
+
+	// Keyboard input handling
+	document.addEventListener('keydown', (e) => {
+		if (gameOver) return;
+
+		const key = e.key.toUpperCase();
+
+		if (key === 'ENTER') {
+			handleKeyPress('ENTER');
+		} else if (key === 'BACKSPACE') {
+			handleKeyPress('⌫');
+		} else if (/^[A-Z]$/.test(key)) {
+			handleKeyPress(key);
+		}
+	});
+
+	// Add flip animation
+	const style = document.createElement('style');
+	style.textContent = `
+		.flip {
+			animation: flip 0.5s ease;
+		}
+		@keyframes flip {
+			0% { transform: rotateX(0); }
+			50% { transform: rotateX(90deg); }
+			100% { transform: rotateX(0); }
+		}
+	`;
+	document.head.appendChild(style);
+
+	// Initialize game on load
+	initGame();
+</script>

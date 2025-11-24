@@ -229,6 +229,10 @@ body {
 	gap: 2rem;
 }
 
+.prose h2 {
+	scroll-margin-top: 100px;
+}
+
 .prose img {
 	@apply w-full h-96 object-cover rounded-2xl;
 	filter: contrast(1.1) saturate(1.1);

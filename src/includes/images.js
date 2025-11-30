@@ -199,3 +199,243 @@ class FullscreenImageViewer {
 document.addEventListener('DOMContentLoaded', () => {
 	new FullscreenImageViewer('.prose');
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+	class ImageExpander {
+		constructor() {
+			this.desktopBreakpoint = 768;
+			this.images = [];
+			this.currentlyExpanded = null;
+			this.prevDesktopState = this.isDesktop();
+
+			this.navbarHeight = 80; // adjust as needed
+
+			this.scrollTimer = null;  
+			this.scrollPauseDuration = 200; 
+
+			this.cooldown = false;
+			this.cooldownDuration = 300;
+
+			this.init();
+			this.attachScrollHandler();
+			this.attachResizeHandler();
+		}
+
+		isDesktop() {
+			return window.innerWidth > this.desktopBreakpoint;
+		}
+
+		init() {
+			if (!this.isDesktop()) return;
+
+			this.images = Array.from(document.querySelectorAll(".prose img"));
+			this.initializeAllImages();
+		}
+
+		/* ------------------------------
+		     IMAGE INITIALIZATION
+		------------------------------*/
+		initializeImage(img, attempt = 0) {
+			if (!img.naturalWidth || !img.naturalHeight) return false;
+
+			const maxAttempts = 6;
+
+			const width = img.offsetWidth || img.clientWidth;
+			if (width === 0 && attempt < maxAttempts) {
+				requestAnimationFrame(() => this.initializeImage(img, attempt + 1));
+				return false;
+			}
+
+			const ratio = img.naturalHeight / img.naturalWidth;
+			const displayHeight = width * ratio;
+			const compressedHeight = displayHeight * 0.4 + 100;
+
+			img.dataset.displayHeight = displayHeight;
+			img.dataset.compressedHeight = compressedHeight;
+
+			img.style.height = `${compressedHeight}px`;
+			img.style.width = "100%";
+			img.style.objectFit = "cover";
+			img.style.transition = "height 0.5s ease";
+
+			return true;
+		}
+
+		initializeAllImages() {
+			for (const img of this.images) {
+				if (img.complete && img.naturalHeight) {
+					this.initializeImage(img);
+				} else {
+					img.addEventListener("load", () => this.initializeImage(img));
+				}
+			}
+		}
+
+		/* ------------------------------
+		       SCROLL HANDLER
+		------------------------------*/
+		attachScrollHandler() {
+			document.addEventListener("scroll", () => {
+				clearTimeout(this.scrollTimer);
+
+				this.scrollTimer = setTimeout(() => {
+					this.evaluate();
+				}, this.scrollPauseDuration);
+
+				this.collapseIfPastNavbar();
+			}, { passive: true });
+		}
+
+		/* ------------------------------
+		      NAVBAR COLLAPSE LOGIC
+		------------------------------*/
+		collapseIfPastNavbar() {
+			if (!this.currentlyExpanded) return;
+
+			const rect = this.currentlyExpanded.getBoundingClientRect();
+			if (rect.bottom < this.navbarHeight) {
+				this.compressImage(this.currentlyExpanded);
+				this.currentlyExpanded = null;
+			}
+		}
+
+		/* ------------------------------
+		        EXPANSION ENGINE
+		------------------------------*/
+		evaluate() {
+			if (this.cooldown || !this.isDesktop()) return;
+
+			const viewportHeight = window.innerHeight;
+			const focusMin = viewportHeight * 0.3;
+			const focusMax = viewportHeight * 0.7;
+
+			let best = null;
+			let bestScore = 0;
+
+			for (const img of this.images) {
+				const rect = img.getBoundingClientRect();
+				if (rect.bottom < 0 || rect.top > viewportHeight) continue;
+
+				const center = rect.top + rect.height / 2;
+
+				// Must be inside focus band
+				if (center < focusMin || center > focusMax) continue;
+
+				// Score = visible area
+				const visibleArea =
+					Math.min(rect.bottom, viewportHeight) -
+					Math.max(rect.top, 0);
+
+				if (visibleArea > bestScore) {
+					bestScore = visibleArea;
+					best = img;
+				}
+			}
+
+			if (!best) {
+				this.compressCurrent();
+				this.currentlyExpanded = null;
+				return;
+			}
+
+			if (best !== this.currentlyExpanded) {
+				this.compressCurrent();
+				this.expandImage(best);
+				this.currentlyExpanded = best;
+				this.applyCooldown();
+			}
+		}
+
+		applyCooldown() {
+			this.cooldown = true;
+			setTimeout(() => { this.cooldown = false; }, this.cooldownDuration);
+		}
+
+		/* ------------------------------
+		         EXPAND / COMPRESS
+		------------------------------*/
+		expandImage(img) {
+			const maxHeight = window.innerHeight * 0.8;
+			const displayHeight = Math.min(parseFloat(img.dataset.displayHeight), maxHeight);
+			img.style.height = `${displayHeight}px`;
+		}
+
+		compressImage(img) {
+			const h = parseFloat(img.dataset.compressedHeight);
+			img.style.height = `${h}px`;
+		}
+
+		compressCurrent() {
+			if (this.currentlyExpanded) {
+				this.compressImage(this.currentlyExpanded);
+			}
+		}
+
+		/* ------------------------------
+		        RESPONSIVE LOGIC
+		------------------------------*/
+		resetImages() {
+			for (const img of this.images) {
+				img.style.height = "";
+				img.style.transition = "";
+				img.style.width = "";
+			}
+		}
+
+		reactivate() {
+			this.resetImages();
+			this.currentlyExpanded = null;
+			this.init();
+		}
+
+		attachResizeHandler() {
+			let resizeTimer;
+
+			window.addEventListener("resize", () => {
+				clearTimeout(resizeTimer);
+				resizeTimer = setTimeout(() => {
+
+					const nowDesktop = this.isDesktop();
+
+					if (nowDesktop !== this.prevDesktopState) {
+						this.prevDesktopState = nowDesktop;
+
+						if (nowDesktop) {
+							this.reactivate();
+						} else {
+							this.resetImages();
+						}
+						return;
+					}
+
+					// Recompute heights smoothly
+					if (nowDesktop) {
+						for (const img of this.images) {
+							const width = img.offsetWidth || img.clientWidth;
+							if (!width) continue;
+
+							const ratio = img.naturalHeight / img.naturalWidth;
+							const displayHeight = width * ratio;
+							const compressedHeight = displayHeight * 0.4 + 100;
+
+							img.dataset.displayHeight = displayHeight;
+							img.dataset.compressedHeight = compressedHeight;
+
+							if (img === this.currentlyExpanded) {
+								img.style.height = `${displayHeight}px`;
+							} else {
+								img.style.height = `${compressedHeight}px`;
+							}
+						}
+					}
+
+				}, 200);
+			});
+		}
+	}
+
+	new ImageExpander();
+
+});

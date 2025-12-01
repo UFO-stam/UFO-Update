@@ -96,6 +96,7 @@
 
 		if (board.every(cell => cell !== null)) {
 			endGame('Gelijkspel!', false);
+			umami.track('November 2025 tictactoe Gelijkspel');
 			return;
 		}
 

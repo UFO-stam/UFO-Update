@@ -12,7 +12,7 @@ type: nieuwsbrief
 
 Door Rosanne Wormgoor
 
-De tweede editie van de nieuwsbrief zit er alweer op en het is tijd voor de derde. De derde nieuwsbrief staat in het thema van Sinterklaas. Dat is een feestdag die voor ons Nederlanders heel belangrijk is. Misschien nu we ouder zijn wat minder, maar het blijft nog steeds heel leuk. Naast de vaste rubrieken: een column van de hoofdredacteur, een bestuursupdate, een horoscoop, een puzzel, een spotprent en een terugblik op de opkomsten van de afgelopen maand, krijg je tips voor last-minute Sinterklaascadeautjes en deze inspiratie kun je gelijk alvast gebruiken voor kerst, want deze feestdag komt sneller om de hoek kijken dan je denkt.
+De tweede editie van de nieuwsbrief zit er alweer op en het is tijd voor de derde. De derde nieuwsbrief staat in het thema van Sinterklaas. Dat is een feestdag die voor ons Nederlanders heel belangrijk is. Misschien nu we ouder zijn wat minder, maar het blijft nog steeds heel leuk. Naast de vaste rubrieken: een column van de hoofdredacteur, ~~een bestuursupdate, een horoscoop~~, een puzzel, ~~een spotprent~~ en een terugblik op de opkomsten van de afgelopen maand, krijg je tips voor last-minute Sinterklaascadeautjes en deze inspiratie kun je gelijk alvast gebruiken voor kerst, want deze feestdag komt sneller om de hoek kijken dan je denkt.
 
 Maar eerst een terugblik op de opkomsten van de afgelopen maand. De laatste opkomst van oktober hadden we de welbekende PowerPoint-opkomst. Van tevoren mocht je PowerPoints insturen en deze werden vervolgens tijdens de opkomst gepresenteerd door iemand anders. Dit was echt hilarisch. Ik heb in ieder geval heel hard gelachen. De opkomst daarna mocht iedereen een Halloweenoutfit aantrekken en gingen we lekker met zijn allen Just Dance doen op een groot scherm en daarna was er nog even tijd om karaoke te zingen. 
 
@@ -22,7 +22,7 @@ Op 11 november stond Crazy 88 met een twist op de planning. We kennen allemaal C
 
 ![Beveiliging bij de constitutie borrel die probeert spullen veilig te stellen tegen een groep mensen die graag iets willen meenemen](/uploads/image-1-.jpg "Cobo beveiliging")
 
-Het bestuur heeft ook nog een leuke avond gehad tijdens hun constitutie-borrel. Met een beetje hulp kwamen alle bestuursleden ook nog eens veilig thuis! Gelukkig hadden ze een beetje hulp van de leden met het bewaken van de kostbare spullen in het gebouw.
+Het bestuur heeft ook nog een leuke avond gehad tijdens hun constitutie-borrel. Met een beetje hulp kwamen alle bestuursleden ook nog eens veilig thuis! Gelukkig hadden ze ook steun van de leden met het bewaken van de kostbare spullen in het gebouw.
 De alumni-leden hebben deze maand een gala gehad waar een mysterieus koppel ging trouwen, daarnaast hebben ze ook een installatie gehad die vanwege de zogeheten ‘Non-Disclosure Agreement’ (NDA) hier niet verder besproken kan worden.
 
 ## De december-trein komt eraan

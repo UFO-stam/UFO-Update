@@ -230,7 +230,19 @@ body {
 }
 
 .prose h2 {
-	scroll-margin-top: 100px;
+  @apply mt-10 mb-6 pb-2 relative font-semibold text-2xl md:text-3xl leading-snug text-primary dark:text-primary-content;
+  scroll-margin-top: 100px;
+}
+
+.prose h2::after {
+  content: "";
+  @apply absolute left-0 bottom-0 h-[2px] w-full;
+  background: linear-gradient(
+    to right,
+    theme('colors.red.600') 0%,
+    theme('colors.red.600') 40%,
+    transparent 100%
+  );
 }
 
 .prose img {

@@ -142,61 +142,100 @@
 	}
 
 	function findBestMove() {
-		// Perfect forced-draw AI (impossible to beat)
-		// Priority:
-		// 1. Win if possible           (already done in aiMove)
-		// 2. Block if needed           (already done in aiMove)
-		// 3. Create a fork
-		// 4. Block opponent fork
-		// 5. Take center
-		// 6. Take opposite corner
-		// 7. Take any corner
-		// 8. Take any side
+		const AI = 'O';
+		const HUMAN = 'X';
 
-		const empty = board.map((v, i) => v === null ? i : null).filter(v => v !== null);
-
-		// FROZEN EVALUATOR
-		function countWinningLines(player, tempBoard) {
-			return winPatterns.filter(pattern =>
-				pattern.filter(idx => tempBoard[idx] === player).length === 2 &&
-				pattern.filter(idx => tempBoard[idx] === null).length === 1
-			).length;
+		// Terminal helpers
+		function checkWinner(b) {
+			for (let p of winPatterns) {
+				if (p.every(i => b[i] === 'O')) return 'O';
+				if (p.every(i => b[i] === 'X')) return 'X';
+			}
+			if (b.every(v => v !== null)) return 'draw';
+			return null;
 		}
 
-		// 3. Create a fork
-		for (let i of empty) {
-			let temp = [...board];
-			temp[i] = 'O';
-			if (countWinningLines('O', temp) >= 2) return i;
+		function score(winner) {
+			if (winner === AI) return 1;
+			if (winner === HUMAN) return -1;
+			return 0; // draw
 		}
 
-		// 4. Block opponent fork
-		for (let i of empty) {
-			let temp = [...board];
-			temp[i] = 'X';
-			if (countWinningLines('X', temp) >= 2) return i;
+		// Move ordering preference (tie-breaker)
+		const preferredOrder = [4, 0, 2, 6, 8, 1, 3, 5, 7];
+
+		// Minimax with alpha-beta
+		function minimax(b, player, alpha, beta) {
+			const winner = checkWinner(b);
+			if (winner !== null) {
+				return score(winner);
+			}
+
+			const empties = [];
+			for (let i = 0; i < 9; i++) if (b[i] === null) empties.push(i);
+
+			if (player === AI) {
+				let maxEval = -Infinity;
+				// order moves using preference to speed tie resolution
+				empties.sort((a, c) => preferredOrder.indexOf(a) - preferredOrder.indexOf(c));
+				for (let i of empties) {
+					b[i] = AI;
+					let eval = minimax(b, HUMAN, alpha, beta);
+					b[i] = null;
+					if (eval > maxEval) maxEval = eval;
+					alpha = Math.max(alpha, eval);
+					if (beta <= alpha) break;
+				}
+				return maxEval;
+			} else {
+				let minEval = Infinity;
+				empties.sort((a, c) => preferredOrder.indexOf(a) - preferredOrder.indexOf(c));
+				for (let i of empties) {
+					b[i] = HUMAN;
+					let eval = minimax(b, AI, alpha, beta);
+					b[i] = null;
+					if (eval < minEval) minEval = eval;
+					beta = Math.min(beta, eval);
+					if (beta <= alpha) break;
+				}
+				return minEval;
+			}
 		}
 
-		// 5. Take center
-		if (board[4] === null) return 4;
-
-		// 6. Opposite corner
-		const opposites = [[0, 8], [2, 6], [8, 0], [6, 2]];
-		for (let [c, o] of opposites) {
-			if (board[c] === 'X' && board[o] === null) return o;
+		// Choose best move
+		const empties = board.map((v, i) => v === null ? i : null).filter(v => v !== null);
+		// If immediate win or block is available, keep that short-circuit (fast)
+		for (let i of empties) {
+			// win
+			let t = [...board]; t[i] = AI;
+			if (checkWinner(t) === AI) return i;
+		}
+		for (let i of empties) {
+			// block
+			let t = [...board]; t[i] = HUMAN;
+			if (checkWinner(t) === HUMAN) return i;
 		}
 
-		// 7. Any corner
-		for (let i of [0, 2, 6, 8]) {
-			if (board[i] === null) return i;
+		// Otherwise use minimax to choose the move
+		let bestScore = -Infinity;
+		let bestMove = null;
+
+		// iterate empties in preferred order for deterministic results
+		const ordered = empties.slice().sort((a, b) => preferredOrder.indexOf(a) - preferredOrder.indexOf(b));
+		for (let i of ordered) {
+			board[i] = AI;
+			let moveScore = minimax(board, HUMAN, -Infinity, Infinity);
+			board[i] = null;
+			if (moveScore > bestScore) {
+				bestScore = moveScore;
+				bestMove = i;
+				// perfect win early exit
+				if (bestScore === 1) break;
+			}
 		}
 
-		// 8. Any side
-		for (let i of [1, 3, 5, 7]) {
-			if (board[i] === null) return i;
-		}
-
-		return empty[0];
+		// fallback
+		return bestMove !== null ? bestMove : empties[0];
 	}
 
 	function checkWin(player) {

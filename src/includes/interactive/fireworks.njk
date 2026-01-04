@@ -1,0 +1,71 @@
+<style>
+	.firework {
+		position: fixed;
+		pointer-events: none;
+		z-index: 9999;
+	}
+
+	.particle {
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		animation: explode 1.5s ease-out forwards;
+	}
+
+	@keyframes explode {
+		0% {
+			transform:
+				translate(0, 0);
+			opacity: 1;
+		}
+
+		100% {
+			transform: translate(var(--tx), var(--ty));
+			opacity: 0;
+		}
+	}
+</style>
+<script>
+	function launchFirework(x, y) {
+		const fw = document.createElement('div');
+		fw.className = 'firework';
+		fw.style.left = x + 'px';
+		fw.style.top = y + 'px';
+		document.body.appendChild(fw);
+
+		const colors = ['#ff0844',
+			'#ffb700',
+			'#00ff88',
+			'#00b8ff',
+			'#bc00ff'];
+		const color = colors[Math.floor(Math.random() * colors.length)];
+
+		for (let i = 0; i < 40; i++) {
+			const p = document.createElement('div');
+			p.className = 'particle';
+			p.style.background = color;
+
+			const angle = (Math.PI * 2 * i) / 40;
+			const velocity = 100 + Math.random() * 100;
+			p.style.setProperty('--tx', Math.cos(angle) * velocity + 'px');
+			p.style.setProperty('--ty', Math.sin(angle) * velocity + 'px');
+
+			fw.appendChild(p);
+		}
+
+		setTimeout(() => fw.remove(), 1500);
+	}
+
+	window.addEventListener('load', () => {
+		const positions = [[window.innerWidth * 0.3, window.innerHeight * 0.3],
+		[window.innerWidth * 0.7, window.innerHeight * 0.25],
+		[window.innerWidth * 0.5, window.innerHeight * 0.4],
+		[window.innerWidth * 0.2, window.innerHeight * 0.6],
+		[window.innerWidth * 0.8, window.innerHeight * 0.55]];
+
+		positions.forEach((pos, i) => {
+			setTimeout(() => launchFirework(pos[0], pos[1]), i * 400);
+		});
+	});
+</script>

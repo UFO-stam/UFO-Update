@@ -12,7 +12,7 @@
 		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	--card-fs: var(--text-base);
 	--cardtitle-fs: var(--text-2xl);
-	
+
 	--color-burgundy: #800020;
 	--color-burgundy-light: #a6002a;
 	--color-burgundy-dark: #4d0013;
@@ -230,19 +230,17 @@ body {
 }
 
 .prose h2 {
-  @apply mt-10 mb-6 pb-2 relative font-semibold text-2xl md:text-3xl leading-snug text-primary dark:text-primary-content;
-  scroll-margin-top: 100px;
+	@apply mt-10 mb-6 pb-2 relative font-semibold text-2xl md:text-3xl leading-snug text-primary dark:text-primary-content;
+	scroll-margin-top: 100px;
 }
 
 .prose h2::after {
-  content: "";
-  @apply absolute left-0 bottom-0 h-[2px] w-full;
-  background: linear-gradient(
-    to right,
-    theme('colors.red.600') 0%,
-    theme('colors.red.600') 40%,
-    transparent 100%
-  );
+	content: "";
+	@apply absolute left-0 bottom-0 h-[2px] w-full;
+	background: linear-gradient(to right,
+			theme('colors.red.600') 0%,
+			theme('colors.red.600') 40%,
+			transparent 100%);
 }
 
 .prose img {
@@ -257,6 +255,19 @@ body {
 	cursor: pointer;
 }
 
+.prose .cite {
+	@apply mt-[-0.75rem] mb-4 flex justify-end items-center gap-3 text-sm tracking-wide text-neutral-500 dark:text-neutral-400;
+}
+
+.prose .cite::before {
+	content: "";
+	@apply block h-px w-10;
+	background: linear-gradient(
+		to left,
+		theme('colors.red.600'),
+		transparent
+	);
+}
 blockquote {
 	@apply text-primary;
 	@apply dark:text-primary-content;

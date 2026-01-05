@@ -11,7 +11,7 @@ type: nieuwsbrief
 
 ## Inleiding
 
-Door Rosanne Wormgoor
+<p class="cite">Door Rosanne Wormgoor</p>
 
 Ik wil beginnen met jullie allemaal een gelukkig nieuwjaar wensen. Hopelijk hebben jullie een fijne jaarwisseling gehad en leuke dingen gedaan. Hetzelfde geldt voor kerst. Deze nieuwsbrief staat dan ook deels in het teken van kerst en oud en nieuw. Daarnaast kun je in deze editie een interview met Indy lezen over haar afstudeerproject. Daar hebben jullie ongetwijfeld al het een en ander van voorbij zien komen. Daarnaast hebben we de column van de hoofdredacteur, een terugblik op de opkomsten van de afgelopen maand en in het bijzonder een stukje over het kerstdiner, tips om je New Year's resolutions te overleven, een puzzel, de verjaardagen, de agenda en een afsluiting.
 
@@ -27,7 +27,7 @@ Op 23 en 30 december was er ook nog opkomst, maar deze opkomsten waren erg rusti
 
 ## Column: Nooit meer hoofdpijn of slaaptekort…
 
-Door Kayleigh Hogerheijde
+<p class="cite">Door Kayleigh Hogerheijde</p>
 
 Ik denk dat we allemaal wel eens verkeerd wakker zijn geworden. In het verkeerde bed, met de verkeerde fles naast je of met de verkeerde geur die je nog niet helemaal herkent totdat je pas echt wakker bent. Borrelen, wat is het toch grandioos, vinden jullie niet? Desondanks het grote succes van dronkenschap is dry january nu steeds populairder en hoor ik sommige vrienden zelfs al praten over het ‘feest’ verlengen.
 
@@ -39,7 +39,7 @@ Ik denk niet dat ik dit jaar mee doe aan dry january, en heel eerlijk, ik zou he
 
 ## ‘Het moet makkelijker worden om zulke gesprekken te voeren’
 
-Door Rosanne Wormgoor
+<p class="cite">Door Rosanne Wormgoor</p>
 
 ![Foto van Indy met text er boven dat luid: 'Afstudeerproject Illustratie 2026'](/uploads/whatsapp-image-2026-01-02-at-20.05.12-1-.jpeg "Afstudeerproject Illustratie 2026 door Indy")
 
@@ -73,7 +73,7 @@ Uiteindelijk hoopt Indy met haar project een meer open omgeving te creëren, waa
 
 ## Terugblik koken kerstdiner
 
-Door Kayleigh Hogerheijde
+<p class="cite">Door Kayleigh Hogerheijde</p>
 
 Dit jaar heeft ons bestuur een prachtig kerstdiner voor ons bedacht en dit hebben ze niet zomaar gedaan. Vooral Yara en Luuk hebben de mouwen opgestroopt, de auto (of taxi) volgeladen met boodschappen en zijn ‘s ochtends vroeg al aan de slag gegaan. Toen ik om 13 uur aankwam op het moederschip had Luuk zijn schort al om en was Yara de laatste boodschappen nog aan het vervoeren. Niet alleen zij, maar ook de voorzitter en penningmeester stonden al vroeg groenten en vlees te snijden. Wat je wel niet over hebt voor je vereniging.
 
@@ -90,7 +90,7 @@ Het eten van het diner kunnen de meeste van jullie je vast nog wel herinneren. H
 
 ## New year, new me? How to survive your new years resolution
 
-Door Kayleigh Hogerheijde
+<p class="cite">Door Kayleigh Hogerheijde</p>
 
 *Tien tips om je New Year's resolutions dit jaar beter te overleven*
 
@@ -146,7 +146,7 @@ Van 6 januari tot en met 3 februari ✨🎉
 
 ## Verjaardagen
 
-Door Maarten
+<p class="cite">Door Maarten</p>
 
 Deze maand is lekker rustig qua feestjes want we hebben er maar twee die jarig zijn.
 
@@ -157,7 +157,7 @@ Heb jij al je verjaardag doorgegeven? Dit kan je [HIER](https://docs.google.com/
 
 ## Afsluiting
 
-Door Maarten
+<p class="cite">Door Maarten</p>
 
 Dat was lekker feestachtig voor deze editie. In dit nieuwe jaar gaan we er weer met z'n allen wat van maken. Heb jij al goede voornemens bedacht voor de U.F.O.’s? Als je er geen hebt heb ik wel een suggestie voor je: stuur iets in voor de komende editie\!
 

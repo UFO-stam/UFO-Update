@@ -1,0 +1,7 @@
+[[edge_functions]]
+function = "block-ai"
+path = "/posts/*"
+
+[[edge_functions]]
+function = "block-ai"
+path = "/contact/"

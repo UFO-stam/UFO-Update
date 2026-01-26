@@ -1,5 +1,5 @@
 <div class="flex flex-col p-6">
-	<button id="install-button" class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">
+	<button id="install-button" class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors" style="display: none;">
 		Installeer onze app
 	</button>
 	<p id="install-status" class="mt-2 text-sm text-center text-gray-600 dark:text-gray-400"></p>
@@ -30,7 +30,7 @@
 	window.addEventListener('beforeinstallprompt', (e) => {
 		e.preventDefault();
 		deferredPrompt = e;
-		
+
 		updateUI("De app is klaar voor installatie!", true);
 		
 		installBtn.addEventListener('click', async () => {
@@ -44,12 +44,15 @@
 		});
 	});
 
-	// 3. Handle iOS/Safari Fallback
+	// 3. Handle iOS/Safari/Firefox Fallback
 	const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 	const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+	const isFirefox = navigator.userAgent.toLowerCase().includes('firefox');
 
 	if (isIOS && !isStandalone) {
 		updateUI("Op iOS? Tik op 'Deel' en dan 'Zet op beginscherm' om te installeren.");
+	} else if (isFirefox && !isStandalone) {
+		updateUI("Gebruik je Firefox op mobiel? Tik op het menu (⋮) en selecteer 'add to Home screen' om de app toe te voegen.");
 	} else if (isStandalone) {
 		updateUI("De app is al geïnstalleerd.");
 	}

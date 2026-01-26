@@ -8,7 +8,7 @@ authors:
 type: post
 ---
 
-We hebben nu al vier nieuwsbrieven achter de rugben volgende week komt alweer de vijfde van onze commissie. Geweldig moment voor een halfjaarlijkse update. We vertellen je graag meer over de huidige staat en de toekomst van de commissie. Onder andere de digitale nieuwsbrieven, de terugkoppeling van de enquête, de status van het archief en grote aanpassingen.
+We hebben nu al vier nieuwsbrieven achter de rug en volgende week komt alweer de vijfde van onze commissie. Geweldig moment voor een halfjaarlijkse update. We vertellen je graag meer over de huidige staat en de toekomst van de commissie. Onder andere de digitale nieuwsbrieven, de terugkoppeling van de enquête, de status van het archief en grote aanpassingen.
 
 ## Enquête terugkoppeling: wat waren de resultaten?
 
@@ -38,7 +38,7 @@ We werken ook actief aan de laadtijd van de plaatjes en bescherming tegen kwaada
 
 ### Digitaal Archief
 
-Een van de laatste takjes waar onze commissie zich mee bezighoudt, is het archief. We zijn stapsgewijs bezig met honderden gigabytes aan opgebouwde data te verwerken. Helaas hebben we geconstateerd dat we al heel wat belangrijke informatie over onze geschiedenis niet terug kunnen vinden, vooral informatie over de opstart van de stam. Maar sommige informatie is ook verloren gegaan door de inrichting van de huidige digitale omgeving, we proberen dit samen met het bestuur in de toekomst te voorkomen.
+Een van de laatste taakjes waar onze commissie zich mee bezighoudt, is het archief. We zijn stapsgewijs bezig met honderden gigabytes aan opgebouwde data te verwerken. Helaas hebben we geconstateerd dat we al heel wat belangrijke informatie over onze geschiedenis niet terug kunnen vinden, vooral informatie over de opstart van de stam. Maar sommige informatie is ook verloren gegaan door de inrichting van de huidige digitale omgeving, we proberen dit samen met het bestuur in de toekomst te voorkomen.
 
 Stukjes voor in de nieuwsbrief die we uit het archief halen, zijn momenteel vrij tekstloos, naast de Instagram hebben we geen verdere informatie over wat de gebeurtenissen waren. Kan jij ons hierbij helpen? Dan ontvangen wij die hulp graag. 🙂
 

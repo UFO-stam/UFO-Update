@@ -15,19 +15,55 @@
 			});
 		});
 	});
+
+	// Close sidebar when clicking a link (optional, for better UX)
+	document.querySelectorAll('.sidebar a').forEach(link => {
+		link.addEventListener('click', () => {
+			document.getElementById('sidebar-toggle').checked = false;
+		});
+	});
 </script>
+
+<input type="checkbox" id="sidebar-toggle" class="hidden" aria-hidden="true" />
+
+<div class="sidebar-overlay" onclick="document.getElementById('sidebar-toggle').checked = false;"></div>
+
+<nav class="glass3d sidebar rounded-r-2xl" aria-label="Mobile navigation">
+	<div class="px-6 pb-6 h-full overflow-y-auto">
+		<div class="space-y-2">
+			<a href="/posts/"
+				class="block px-4 py-3 rounded-lg  hover:text-blue-600 transition-colors">Publicaties</a>
+			<a href="/contact/"
+				class="block px-4 py-3 rounded-lg  hover:text-blue-600 transition-colors">Contact</a>
+		</div>
+	</div>
+</nav>
+
 <!-- Header -->
-<header class="bg-base-100 shadow-sm sticky top-0 z-50 dark:border-b border-gray-200">
-	<div class="max-w-7xl mx-auto px-4 py-4">
+<header class="bg-base-200 shadow-sm sticky top-0 z-50 dark:border-b border-gray-200">
+	<div class="max-w-7xl mx-auto px-4 py-2">
 		<div class="flex items-center justify-between">
 			<div class="flex items-center space-x-3">
-				<img src="/favicon.svg" alt="U.F.O. Update logo" class="h-8 w-8" width="100%" height="100%">
+				<a href="/">
+					<img src="/favicon.svg" alt="U.F.O. Update logo" class="h-8 w-8" width="100%" height="100%">
+				</a>
 				<div class="font-display text-2xl font-bold text-primary dark:text-primary-content">U.F.O. Update</div>
 			</div>
-			<nav class="hidden md:flex space-x-8">
-				<a href="/" class="text-gray-700 hover:text-primary transition-colors">Home</a>
-				<a href="/contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
-			</nav>
+			<div class="flex items-center justify-between">
+				<div class="hidden md:flex items-center space-x-8 mr-4">
+					<a href="/contact" class="text-base-content hover:text-primary transition-colors">Contact</a>
+				</div>
+				<label for="sidebar-toggle" class="sidebar-toggle-label" aria-label="Open of sluit menu">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+						class="w-7 h-7 open">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+						class="w-7 h-7 close">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+				</label>
+			</div>
 		</div>
 	</div>
 </header>

@@ -22,8 +22,11 @@ layout: page.njk
 					De officiële nieuwsbrief van de U.F.O.-Stam. Elke maand vol met verhalen, interviews, columns en
 					activiteiten van onze vereniging.
 				</p>
+
+				{%- set latestNewsletter = collections.posts | reverse | selectattr("data.type", "equalto", "nieuwsbrief") | first -%}
+				{% set newsletterUrl = latestNewsletter.url if latestNewsletter else "/posts/" %}
 				<div class="flex flex-col sm:flex-row gap-4 hero-buttons">
-					<a href="/posts/nieuwsbrief-november-2025"
+					<a href="{{ newsletterUrl | url }}"
 						class="bg-gradient-to-r from-red-700 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all transform hover:scale-105 btn-primary">
 						Laatste Editie Lezen
 					</a>

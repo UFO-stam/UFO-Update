@@ -32,7 +32,6 @@
 		deferredPrompt = e;
 
 		updateUI("De app is klaar voor installatie!", true);
-		
 		installBtn.addEventListener('click', async () => {
 			if (!deferredPrompt) return;
 			deferredPrompt.prompt();
@@ -41,7 +40,9 @@
 				updateUI("Bedankt voor het installeren!");
 			}
 			deferredPrompt = null;
+			umami.track('App install button clicked');
 		});
+		umami.track('App is installable');
 	});
 
 	// 3. Handle iOS/Safari/Firefox Fallback
@@ -60,5 +61,7 @@
 	window.addEventListener('appinstalled', () => {
 		updateUI("App succesvol geïnstalleerd!");
 		deferredPrompt = null;
+
+		umami.track('App Installed');
 	});
 </script>

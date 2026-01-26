@@ -1,0 +1,87 @@
+<section class="bg-base-200/50 py-20 border-t border-base-300">
+	<div class="max-w-7xl mx-auto px-4">
+		<header class="flex items-end justify-between mb-12">
+			<div>
+				<h3 class="font-display text-4xl font-black tracking-tight text-base-content">
+					Verder lezen<span class="text-primary">.</span>
+				</h3>
+				<p class="text-base-content/60 mt-2">Misschien vind je deze eerdere uitgaven ook interessant.</p>
+			</div>
+			<a href="/posts/"
+				class="hidden md:flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-primary hover:gap-4 transition-all">
+				Bekijk alles <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+					stroke="currentColor" class="w-4 h-4">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+				</svg>
+			</a>
+		</header>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			{% set count = 0 %}
+			{% for post in collections.posts | reverse %}
+			{% if post.data.type == "nieuwsbrief" and post.url != page.url and count < 3 %} {% set count=count + 1 %} {#
+				Logic to get the first author's name from your authorprofiles #} {% set postAuthors=post.data.authors %}
+				{% set firstAuthorName="" %} {% if postAuthors and postAuthors.length> 0 %}
+				{% set firstAuthor = authorprofiles[postAuthors[0] | lower] %}
+				{% set firstAuthorName = firstAuthor.name if firstAuthor else "" %}
+				{% endif %}
+
+				<article
+					class="relative group bg-base-100 rounded-3xl overflow-hidden border border-base-200 hover:border-primary/30 transition-all duration-500 shadow-sm hover:shadow-xl flex flex-col">
+
+					{% if post.data.image %}
+					<div class="relative overflow-hidden h-48">
+						<img src="{{ post.data.image }}" alt="{{ post.data.imageAlt or post.data.title }}"
+							class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+					</div>
+					{% endif %}
+
+					<div class="p-8 flex flex-col flex-grow">
+						<div class="flex items-center gap-3 mb-4">
+							<span class="w-8 h-[2px] bg-primary"></span>
+							<time class="text-[10px] font-bold uppercase tracking-tighter opacity-50">{{ post.date |
+								postDate }}</time>
+						</div>
+
+						<h4
+							class="font-display text-xl font-bold mb-3 group-hover:text-primary transition-colors text-base-content">
+							<a href="{{ post.url }}" class="after:absolute after:inset-0 after:z-10">
+								{{ post.data.title }}
+							</a>
+						</h4>
+
+						<p class="text-base-content/70 text-sm line-clamp-2 mb-6">
+							{{ post.data.description or post.templateContent | striptags | truncate(80) }}
+						</p>
+
+						<div class="mt-auto flex flex-col gap-4 pt-6 border-t border-base-200">
+							<div class="flex items-center justify-between">
+								<span class="text-[10px] font-bold opacity-50 uppercase tracking-widest">
+									{% if post.data.authors %}
+									{% set authorNames = [] %}
+									{% for authorSlug in post.data.authors %}
+									{% set author = authorprofiles[authorSlug | lower] %}
+									{% if author %}
+									{% set authorNames = (authorNames.push(author.name), authorNames) %}
+									{% endif %}
+									{% endfor %}
+									
+									{{ authorNames.join(", ") if authorNames.length > 0 else "RedacCie" }}
+									{% else %}
+									RedacCie
+									{% endif %}
+								</span>
+
+								{% if post.data.readTime %}
+								<span class="text-[10px] font-bold opacity-50 uppercase font-mono">{{ post.data.readTime
+									}} min</span>
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				</article>
+				{% endif %}
+				{% endfor %}
+		</div>
+	</div>
+</section>

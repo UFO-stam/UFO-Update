@@ -1,0 +1,79 @@
+---
+permalink: /sw.js
+layout: null
+---
+
+const CACHE_NAME = 'ufo-cache-v{{ dates.ISO.now() }}';
+const IMAGE_CACHE_NAME = 'ufo-image-cache';
+const MAX_IMAGES = 50;
+const ASSETS_TO_CACHE = [
+	'/',
+	'/style.css',
+	'/favicon.svg',
+	'/favicon.ico',
+	'/site.webmanifest'
+];
+
+async function trimCache(cacheName, maxItems) {
+	const cache = await caches.open(cacheName);
+	const keys = await cache.keys();
+	if (keys.length > maxItems) {
+		await cache.delete(keys[0]);
+		await trimCache(cacheName, maxItems);
+	}
+}
+
+self.addEventListener('install', (event) => {
+	self.skipWaiting();
+	event.waitUntil(
+		caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS_TO_CACHE))
+	);
+});
+
+// CLEAN UP OLD CACHES
+self.addEventListener('activate', (event) => {
+	event.waitUntil(
+		caches.keys().then((cacheNames) => {
+			return Promise.all(
+				cacheNames.map((cacheName) => {
+					// Delete old versions of the main cache
+					if (cacheName.startsWith('ufo-cache-') && cacheName !== CACHE_NAME) {
+						return caches.delete(cacheName);
+					}
+				})
+			);
+		})
+	);
+});
+
+self.addEventListener('fetch', (event) => {
+	const url = new URL(event.request.url);
+
+	if (url.protocol === 'chrome-extension:' || url.hostname.includes('umami.is')) {
+		return;
+	}
+
+	event.respondWith(
+		caches.match(event.request).then((cachedResponse) => {
+			const fetchPromise = fetch(event.request).then((networkResponse) => {
+				if (networkResponse && networkResponse.status === 200) {
+					const cacheCopy = networkResponse.clone();
+					const targetCache = url.pathname.includes('/uploads/') ? IMAGE_CACHE_NAME : CACHE_NAME;
+
+					caches.open(targetCache).then((cache) => {
+						cache.put(event.request, cacheCopy);
+						if (targetCache === IMAGE_CACHE_NAME) {
+							trimCache(IMAGE_CACHE_NAME, MAX_IMAGES);
+						}
+					});
+				}
+				return networkResponse;
+			}).catch(() => {
+				// Return cached response if network fails
+				return cachedResponse;
+			});
+
+			return cachedResponse || fetchPromise;
+		})
+	);
+});

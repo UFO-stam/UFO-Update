@@ -1,18 +1,36 @@
 {
   "name": "U.F.O. Update",
   "short_name": "U.F.O. Update",
+  "description": "Laatste nieuws en updates over UFO's en aanverwante verschijnselen.",
+  "start_url": "/posts/",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     },
     {
       "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "U.F.O. Update Mobile View"
+    },
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "U.F.O. Update Desktop View"
     }
   ],
   "theme_color": "#ffffff",

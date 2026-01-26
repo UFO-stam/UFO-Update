@@ -1,0 +1,61 @@
+<div class="flex flex-col p-6">
+	<button id="install-button" class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">
+		Installeer onze app
+	</button>
+	<p id="install-status" class="mt-2 text-sm text-center text-gray-600 dark:text-gray-400"></p>
+</div>
+
+
+<script>
+	const installBtn = document.getElementById('install-button');
+	const statusMsg = document.getElementById('install-status');
+	let deferredPrompt;
+
+	// Helper to update the UI message
+	const updateUI = (message, showButton = false) => {
+		if (statusMsg) statusMsg.textContent = message;
+		if (installBtn) installBtn.style.display = showButton ? 'inline-block' : 'none';
+	};
+
+	// 1. Register the Service Worker
+	if ('serviceWorker' in navigator) {
+		window.addEventListener('load', () => {
+			navigator.serviceWorker.register('/sw.js')
+				.then(reg => console.log('SW registered!', reg))
+				.catch(err => console.log('SW registration failed:', err));
+		});
+	}
+
+	// 2. Handle the PWA Install Logic
+	window.addEventListener('beforeinstallprompt', (e) => {
+		e.preventDefault();
+		deferredPrompt = e;
+		
+		updateUI("De app is klaar voor installatie!", true);
+		
+		installBtn.addEventListener('click', async () => {
+			if (!deferredPrompt) return;
+			deferredPrompt.prompt();
+			const { outcome } = await deferredPrompt.userChoice;
+			if (outcome === 'accepted') {
+				updateUI("Bedankt voor het installeren!");
+			}
+			deferredPrompt = null;
+		});
+	});
+
+	// 3. Handle iOS/Safari Fallback
+	const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+	const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+
+	if (isIOS && !isStandalone) {
+		updateUI("Op iOS? Tik op 'Deel' en dan 'Zet op beginscherm' om te installeren.");
+	} else if (isStandalone) {
+		updateUI("De app is al geïnstalleerd.");
+	}
+
+	window.addEventListener('appinstalled', () => {
+		updateUI("App succesvol geïnstalleerd!");
+		deferredPrompt = null;
+	});
+</script>

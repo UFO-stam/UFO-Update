@@ -12,6 +12,8 @@ publish_mode: editorial_workflow
 # Please run "npx decap-server" for local backend
 local_backend: true
 
+logo_url: /favicon.svg
+
 collections:
   - label: "Posts"
     name: "posts"

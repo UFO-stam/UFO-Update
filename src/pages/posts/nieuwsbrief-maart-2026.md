@@ -1,7 +1,7 @@
 ---
 title: Nieuwsbrief, Maart 2026
 description: Wellicht de beste nieuwsbrief ooit, nu met fotomontage van de open opkomsten.
-date: 2026-03-01
+date: 2026-03-02
 authors:
   - Kayleigh
   - Rosanne

@@ -1,3 +1,5 @@
+import embedEverything from "eleventy-plugin-embed-everything";
+
 export default function (eleventyConfig) {
 
 	// Passthrough
@@ -33,6 +35,15 @@ export default function (eleventyConfig) {
 			.map(word => word.charAt(0).toUpperCase())
 			.join('')
 			.slice(0, 2); // Limit to 2 initials
+	});
+
+	// Plugins
+	eleventyConfig.addPlugin(embedEverything, {
+		youtube: {
+			options: {
+				embedClass: 'aspect-square',
+			},
+		},
 	});
 
 

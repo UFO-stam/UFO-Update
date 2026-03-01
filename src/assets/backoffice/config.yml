@@ -4,6 +4,15 @@ backend:
   name: github
   repo: UFO-stam/UFO-Update
   branch: trunk
+  squash_merges: true
+  commit_messages:
+    # Use [skip ci] to prevent builds on drafts and media
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "Upload “{{path}}” [skip ci]"
+    deleteMedia: "Delete “{{path}}” [skip ci]"
+    openAuthoring: '{{message}}'
 
 media_folder: "src/assets/uploads"
 public_folder: "/uploads"
@@ -12,7 +21,9 @@ publish_mode: editorial_workflow
 # Please run "npx decap-server" for local backend
 local_backend: true
 
-logo_url: /favicon.svg
+logo:
+  src: /favicon.svg
+  show_in_header: true
 
 collections:
   - label: "Posts"
@@ -21,7 +32,7 @@ collections:
     create: true
     editor:
       preview: true
-    slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Beschrijving", name: "description", widget: "string" }

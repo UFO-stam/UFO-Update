@@ -14,9 +14,40 @@
 		var PostPreview = createClass({
 			render: function () {
 				var entry = this.props.entry;
-				return h('div', { "className": "prose px-4 bg-white" },
-					h('h1', {}, entry.getIn(['data', 'title'])),
-					h('div', {}, this.props.widgetFor('body'))
+				var date = entry.getIn(['data', 'date']);
+				var title = entry.getIn(['data', 'title']);
+				var description = entry.getIn(['data', 'description']);
+				var formattedDate = date ? new Date(date).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' }) : '6 september 2025';
+
+				return h('div', { className: "bg-base-100 min-h-screen" },
+					// Hero Section
+					h('section', { className: "relative overflow-hidden bg-gradient-to-br from-red-900 to-black text-white py-24 px-4" },
+						// Background Overlay
+						h('div', { className: "absolute inset-0 bg-black opacity-20" }),
+
+						// Content Container
+						h('div', { className: "relative max-w-6xl mx-auto text-center" },
+							h('h1', { className: "text-5xl md:text-7xl font-bold mb-6 leading-tight" }, title),
+
+							description && h('p', { className: "text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90" }, description),
+
+							h('div', { className: "flex items-center justify-center space-x-6 text-sm" },
+								h('span', { className: "flex items-center" }, "⏱️ 69 min leestijd"),
+								h('span', { className: "flex items-center" }, "📅 " + formattedDate)
+							)
+						),
+
+						// Fade
+						h('div', {
+							className: "absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent",
+							style: { backgroundColor: 'transparent' }
+						})
+					),
+
+					// Main Content
+					h('main', { className: "max-w-4xl mx-auto px-4 py-16 prose prose-lg" },
+						this.props.widgetFor('body')
+					)
 				);
 			}
 		});

@@ -1,0 +1,674 @@
+<!-- Game Area -->
+<div class="space-y-4 max-w-lg mx-auto">
+
+	<!-- Stats Bar -->
+	<div class="flex justify-between items-center bg-base-200 px-4 py-2 rounded-lg text-sm sm:text-base">
+		<span class="font-medium text-gray-400">⏱ <span id="timer">0</span>s</span>
+		<span class="font-semibold text-center" id="level-label">Niveau 1</span>
+		<span class="font-medium text-gray-400">🚶 <span id="move-count">0</span></span>
+	</div>
+
+	<!-- Maze Canvas -->
+	<div class="flex justify-center">
+		<canvas id="maze-canvas"
+			class="rounded-lg border-2 border-gray-600 touch-none"
+			style="max-width: 100%; image-rendering: pixelated;">
+		</canvas>
+	</div>
+
+	<!-- Mobile D-Pad -->
+	<div id="dpad" class="grid grid-cols-3 gap-2 w-40 sm:w-48 mx-auto">
+		<div></div>
+		<button id="btn-up"
+			class="h-12 sm:h-14 bg-gray-700 hover:bg-gray-600 active:bg-blue-600 text-white rounded-lg text-xl font-bold transition-colors select-none"
+			aria-label="Omhoog">▲</button>
+		<div></div>
+		<button id="btn-left"
+			class="h-12 sm:h-14 bg-gray-700 hover:bg-gray-600 active:bg-blue-600 text-white rounded-lg text-xl font-bold transition-colors select-none"
+			aria-label="Links">◀</button>
+		<div class="h-12 sm:h-14 bg-gray-800 rounded-lg flex items-center justify-center text-gray-500 text-lg"></div>
+		<button id="btn-right"
+			class="h-12 sm:h-14 bg-gray-700 hover:bg-gray-600 active:bg-blue-600 text-white rounded-lg text-xl font-bold transition-colors select-none"
+			aria-label="Rechts">▶</button>
+		<div></div>
+		<button id="btn-down"
+			class="h-12 sm:h-14 bg-gray-700 hover:bg-gray-600 active:bg-blue-600 text-white rounded-lg text-xl font-bold transition-colors select-none"
+			aria-label="Omlaag">▼</button>
+		<div></div>
+	</div>
+
+	<!-- Controls -->
+	<div class="flex flex-wrap justify-center gap-2">
+		<button onclick="resetLevel()"
+			class="px-4 sm:px-6 py-2 sm:py-2.5 bg-gray-500 hover:bg-gray-600 text-white rounded-full text-sm sm:text-base font-medium transition-all hover:shadow-lg">
+			Opnieuw
+		</button>
+		<button onclick="nextLevel()"
+			class="px-4 sm:px-6 py-2 sm:py-2.5 bg-blue-500 hover:bg-blue-600 text-white rounded-full text-sm sm:text-base font-medium transition-all hover:shadow-lg">
+			Moeilijkheid aanpassen
+		</button>
+	</div>
+
+	<!-- Status -->
+	<div id="game-status" class="text-center text-sm sm:text-base font-medium"></div>
+
+</div>
+
+<script>
+	// ─── Config ───────────────────────────────────────────────────────────────
+	const LEVELS = [
+		{ cols: 7,  rows: 7,  label: 'Niveau 1 – Makkelijk' },
+		{ cols: 11, rows: 11, label: 'Niveau 2 – Normaal'   },
+		{ cols: 15, rows: 15, label: 'Niveau 3 – Moeilijk'  },
+		{ cols: 19, rows: 19, label: 'Niveau 4 – Expert'    },
+	];
+
+	const CELL        = 36;   // px per cell on a 1× canvas
+	const WALL_W      = 4;    // wall stroke width
+	const PLAYER_R    = 0.40; // player radius as fraction of cell
+	const TRAIL_ALPHA = 0.18;
+
+	// Colors (work on dark background)
+	const C = {
+		bg:      '#1f2937',  // gray-800
+		wall:    '#9ca3af',  // gray-400
+		floor:   '#374151',  // gray-700
+		start:   '#3b82f6',  // blue-500
+		exit:    '#22c55e',  // green-500
+		player:  '#fbbf24',  // amber-400
+		trail:   '#fbbf24',
+		solved:  '#22c55e',
+	};
+
+	// ─── State ────────────────────────────────────────────────────────────────
+	let levelIndex   = 0;
+	let maze         = null;
+	let cols, rows;
+	let playerPos    = { x: 0, y: 0 };
+	let moves        = 0;
+	let seconds      = 0;
+	let timerID      = null;
+	let timerStarted = false;
+	let solved       = false;
+	let trail        = [];
+
+	// Key collectible – must grab before exit opens
+	let keyPos       = null;
+	let keyCollected = false;
+
+	// Character direction & idle bob
+	let facingDx = 1, facingDy = 0;
+	let bobFrame = 0;
+	let bobRAF   = null;
+
+	// ─── Maze generation (recursive back-tracker) ─────────────────────────────
+	function generateMaze(c, r) {
+		// Each cell: { top, right, bottom, left } – true = wall present
+		const grid = Array.from({ length: r }, () =>
+			Array.from({ length: c }, () => ({ top: true, right: true, bottom: true, left: true, visited: false }))
+		);
+
+		const dirs = [
+			{ dx: 0, dy: -1, wall: 'top',    opp: 'bottom' },
+			{ dx: 1, dy:  0, wall: 'right',  opp: 'left'   },
+			{ dx: 0, dy:  1, wall: 'bottom', opp: 'top'    },
+			{ dx:-1, dy:  0, wall: 'left',   opp: 'right'  },
+		];
+
+		function shuffle(arr) {
+			for (let i = arr.length - 1; i > 0; i--) {
+				const j = Math.floor(Math.random() * (i + 1));
+				[arr[i], arr[j]] = [arr[j], arr[i]];
+			}
+			return arr;
+		}
+
+		// Iterative DFS to avoid stack overflow on large mazes
+		const stack = [{ cx: 0, cy: 0 }];
+		grid[0][0].visited = true;
+		let visitedCount = 1;
+		const total = c * r;
+
+		while (visitedCount < total) {
+			if (stack.length === 0) break;
+			const { cx, cy } = stack[stack.length - 1];
+
+			const neighbors = shuffle([...dirs])
+				.map(d => ({ nx: cx + d.dx, ny: cy + d.dy, d }))
+				.filter(({ nx, ny }) => nx >= 0 && ny >= 0 && nx < c && ny < r && !grid[ny][nx].visited);
+
+			if (neighbors.length === 0) {
+				stack.pop();
+			} else {
+				const { nx, ny, d } = neighbors[0];
+				grid[cy][cx][d.wall]    = false;
+				grid[ny][nx][d.opp]     = false;
+				grid[ny][nx].visited    = true;
+				visitedCount++;
+				stack.push({ cx: nx, cy: ny });
+			}
+		}
+
+		return grid;
+	}
+
+	// ─── Canvas setup ─────────────────────────────────────────────────────────
+	function setupCanvas() {
+		const canvas = document.getElementById('maze-canvas');
+		const dpr    = window.devicePixelRatio || 1;
+
+		// Fit to viewport width (with small padding)
+		const maxW  = Math.min(window.innerWidth - 32, 480);
+		const scale = Math.min(1, maxW / (cols * CELL));
+		const cw    = Math.round(cols * CELL * scale);
+		const ch    = Math.round(rows * CELL * scale);
+
+		canvas.width  = cw * dpr;
+		canvas.height = ch * dpr;
+		canvas.style.width  = cw + 'px';
+		canvas.style.height = ch + 'px';
+
+		const ctx = canvas.getContext('2d');
+		ctx.scale(dpr * scale, dpr * scale);
+		return ctx;
+	}
+
+	// ─── Drawing ──────────────────────────────────────────────────────────────
+	let ctx = null;
+
+	function draw() {
+		if (!ctx) return;
+		const W = cols * CELL;
+		const H = rows * CELL;
+
+		// Background
+		ctx.fillStyle = C.bg;
+		ctx.fillRect(0, 0, W, H);
+
+		// Floors
+		for (let y = 0; y < rows; y++) {
+			for (let x = 0; x < cols; x++) {
+				ctx.fillStyle = C.floor;
+				ctx.fillRect(x * CELL + 1, y * CELL + 1, CELL - 2, CELL - 2);
+			}
+		}
+
+		// Start highlight
+		ctx.fillStyle = C.start + '44';
+		ctx.fillRect(1, 1, CELL - 2, CELL - 2);
+
+		// Exit highlight – locked (red-ish) or open (green)
+		const exitColor = keyCollected ? C.exit : '#ef4444';
+		ctx.fillStyle = exitColor + '44';
+		ctx.fillRect((cols - 1) * CELL + 1, (rows - 1) * CELL + 1, CELL - 2, CELL - 2);
+
+		// Trail
+		ctx.fillStyle = C.trail;
+		ctx.globalAlpha = TRAIL_ALPHA;
+		for (const t of trail) {
+			const tcx = t.x * CELL + CELL / 2;
+			const tcy = t.y * CELL + CELL / 2;
+			ctx.beginPath();
+			ctx.arc(tcx, tcy, CELL * 0.15, 0, Math.PI * 2);
+			ctx.fill();
+		}
+		ctx.globalAlpha = 1;
+
+		// Walls
+		ctx.strokeStyle = C.wall;
+		ctx.lineWidth   = WALL_W;
+		ctx.lineCap     = 'square';
+
+		for (let y = 0; y < rows; y++) {
+			for (let x = 0; x < cols; x++) {
+				const cell = maze[y][x];
+				const px   = x * CELL;
+				const py   = y * CELL;
+
+				ctx.beginPath();
+				if (cell.top)    { ctx.moveTo(px, py);            ctx.lineTo(px + CELL, py); }
+				if (cell.right)  { ctx.moveTo(px + CELL, py);     ctx.lineTo(px + CELL, py + CELL); }
+				if (cell.bottom) { ctx.moveTo(px, py + CELL);     ctx.lineTo(px + CELL, py + CELL); }
+				if (cell.left)   { ctx.moveTo(px, py);            ctx.lineTo(px, py + CELL); }
+				ctx.stroke();
+			}
+		}
+
+		// ── Key collectible ──
+		if (keyPos && !keyCollected) {
+			drawKey(keyPos.x, keyPos.y);
+		}
+
+		// ── Exit door ──
+		drawExit(cols - 1, rows - 1);
+
+		// ── Player character ──
+		if (!solved) {
+			drawPlayer(playerPos.x, playerPos.y);
+		}
+	}
+
+	// Draw a glowing key 🗝️ using canvas shapes
+	function drawKey(gx, gy) {
+		const cx = gx * CELL + CELL / 2;
+		const cy = gy * CELL + CELL / 2;
+		const bob = Math.sin(bobFrame * 0.08) * 1.5;
+
+		ctx.save();
+		ctx.translate(cx, cy + bob);
+
+		// Glow
+		ctx.shadowColor   = '#fbbf24';
+		ctx.shadowBlur    = 8;
+
+		// Key ring
+		ctx.strokeStyle = '#fbbf24';
+		ctx.lineWidth   = CELL * 0.07;
+		ctx.beginPath();
+		ctx.arc(0, -CELL * 0.10, CELL * 0.13, 0, Math.PI * 2);
+		ctx.stroke();
+
+		// Key shaft
+		ctx.beginPath();
+		ctx.moveTo(0, -CELL * 0.00);
+		ctx.lineTo(0,  CELL * 0.20);
+		ctx.stroke();
+
+		// Key teeth
+		ctx.beginPath();
+		ctx.moveTo(0,        CELL * 0.12);
+		ctx.lineTo(CELL * 0.07, CELL * 0.12);
+		ctx.moveTo(0,        CELL * 0.18);
+		ctx.lineTo(CELL * 0.07, CELL * 0.18);
+		ctx.stroke();
+
+		ctx.shadowBlur = 0;
+		ctx.restore();
+	}
+
+	// Draw exit door – locked padlock or open flag
+	function drawExit(gx, gy) {
+		const cx = gx * CELL + CELL / 2;
+		const cy = gy * CELL + CELL / 2;
+
+		ctx.save();
+		ctx.translate(cx, cy);
+		ctx.font         = `${CELL * 0.52}px serif`;
+		ctx.textAlign    = 'center';
+		ctx.textBaseline = 'middle';
+
+		if (keyCollected) {
+			ctx.fillText('🏁', 0, 0);
+		} else {
+			// Draw a small padlock shape
+			ctx.strokeStyle = '#ef4444';
+			ctx.lineWidth   = CELL * 0.06;
+			ctx.fillStyle   = '#1f2937';
+
+			// Shackle arc
+			ctx.beginPath();
+			ctx.arc(0, -CELL * 0.10, CELL * 0.13, Math.PI, 0);
+			ctx.stroke();
+
+			// Body
+			const bw = CELL * 0.28, bh = CELL * 0.22;
+			ctx.fillStyle = '#ef4444';
+			ctx.strokeStyle = '#ef4444';
+			ctx.beginPath();
+			ctx.roundRect(-bw/2, -CELL * 0.04, bw, bh, CELL * 0.04);
+			ctx.fill();
+
+			// Keyhole circle
+			ctx.fillStyle = '#1f2937';
+			ctx.beginPath();
+			ctx.arc(0, CELL * 0.06, CELL * 0.05, 0, Math.PI * 2);
+			ctx.fill();
+		}
+
+		ctx.restore();
+	}
+
+	// Draw the player as a little astronaut / explorer
+	function drawPlayer(gx, gy) {
+		const cx  = gx * CELL + CELL / 2;
+		const cy  = gy * CELL + CELL / 2;
+		const bob = Math.sin(bobFrame * 0.12) * 1.2;
+		const r   = CELL * 0.28;
+
+		ctx.save();
+		ctx.translate(cx, cy + bob);
+
+		// Shadow
+		ctx.fillStyle   = 'rgba(0,0,0,0.35)';
+		ctx.beginPath();
+		ctx.ellipse(0, r * 1.05, r * 0.75, r * 0.28, 0, 0, Math.PI * 2);
+		ctx.fill();
+
+		// ── Suit body (torso) ──
+		ctx.fillStyle = '#60a5fa'; // blue-400
+		ctx.beginPath();
+		ctx.roundRect(-r * 0.55, -r * 0.05, r * 1.1, r * 0.95, r * 0.2);
+		ctx.fill();
+
+		// Suit stripe
+		ctx.fillStyle = '#93c5fd';
+		ctx.fillRect(-r * 0.12, -r * 0.04, r * 0.24, r * 0.9);
+
+		// ── Helmet ──
+		// Outer shell
+		ctx.fillStyle = '#e2e8f0'; // slate-200
+		ctx.beginPath();
+		ctx.arc(0, -r * 0.28, r * 0.44, 0, Math.PI * 2);
+		ctx.fill();
+
+		// Visor (reflective)
+		const vGrad = ctx.createRadialGradient(-r * 0.10, -r * 0.38, r * 0.02, 0, -r * 0.28, r * 0.30);
+		vGrad.addColorStop(0, '#bfdbfe');
+		vGrad.addColorStop(1, '#1e40af');
+		ctx.fillStyle = vGrad;
+		ctx.beginPath();
+		ctx.ellipse(0, -r * 0.28, r * 0.28, r * 0.22, 0, 0, Math.PI * 2);
+		ctx.fill();
+
+		// Visor shine
+		ctx.fillStyle = 'rgba(255,255,255,0.45)';
+		ctx.beginPath();
+		ctx.ellipse(-r * 0.08, -r * 0.38, r * 0.10, r * 0.06, -0.4, 0, Math.PI * 2);
+		ctx.fill();
+
+		// ── Arms ──
+		ctx.fillStyle = '#60a5fa';
+		// Left arm
+		ctx.beginPath();
+		ctx.roundRect(-r * 0.80, -r * 0.05, r * 0.26, r * 0.55, r * 0.12);
+		ctx.fill();
+		// Right arm
+		ctx.beginPath();
+		ctx.roundRect( r * 0.54, -r * 0.05, r * 0.26, r * 0.55, r * 0.12);
+		ctx.fill();
+
+		// ── Legs ──
+		ctx.fillStyle = '#3b82f6';
+		// Left leg
+		ctx.beginPath();
+		ctx.roundRect(-r * 0.44, r * 0.82, r * 0.30, r * 0.36, r * 0.10);
+		ctx.fill();
+		// Right leg
+		ctx.beginPath();
+		ctx.roundRect( r * 0.14, r * 0.82, r * 0.30, r * 0.36, r * 0.10);
+		ctx.fill();
+
+		// ── Backpack ──
+		ctx.fillStyle = '#2563eb';
+		ctx.beginPath();
+		ctx.roundRect(-r * 0.18, r * 0.08, r * 0.36, r * 0.52, r * 0.08);
+		ctx.fill();
+
+		ctx.restore();
+	}
+
+	// ─── Player movement ──────────────────────────────────────────────────────
+	function move(dx, dy) {
+		if (solved) return;
+
+		const { x, y } = playerPos;
+		const cell = maze[y][x];
+
+		// Check wall in movement direction
+		if (dx ===  1 && cell.right)  return;
+		if (dx === -1 && cell.left)   return;
+		if (dy ===  1 && cell.bottom) return;
+		if (dy === -1 && cell.top)    return;
+
+		// Start timer on first actual move
+		if (!timerStarted) {
+			timerStarted = true;
+			startTimer();
+		}
+
+		// Update facing for character
+		if (dx !== 0 || dy !== 0) { facingDx = dx; facingDy = dy; }
+
+		trail.push({ x, y });
+		playerPos = { x: x + dx, y: y + dy };
+		moves++;
+		document.getElementById('move-count').textContent = moves;
+
+		// Collect key
+		if (keyPos && !keyCollected && playerPos.x === keyPos.x && playerPos.y === keyPos.y) {
+			keyCollected = true;
+			updateStatus('🗝️ Sleutel gevonden! Bereik de uitgang!', 'info');
+			const canvas = document.getElementById('maze-canvas');
+			canvas.classList.add('maze-key-flash');
+			setTimeout(() => canvas.classList.remove('maze-key-flash'), 500);
+		}
+
+		// Check win – only if key is collected
+		if (playerPos.x === cols - 1 && playerPos.y === rows - 1) {
+			if (!keyCollected) {
+				updateStatus('🔒 De uitgang is vergrendeld! Vind eerst de sleutel 🗝️', 'warning');
+			} else {
+				solved = true;
+				stopTimer();
+				showWin();
+			}
+		}
+
+		draw();
+	}
+
+	// ─── Win ──────────────────────────────────────────────────────────────────
+	function showWin() {
+		stopBobLoop();
+		const lvl = LEVELS[levelIndex];
+		updateStatus(`🎉 Gelukt! ${lvl.label} opgelost in ${moves} stappen en ${seconds}s!`, 'success');
+
+		if (typeof umami !== 'undefined') {
+			umami.track('Maze Opgelost', { niveau: levelIndex + 1, stappen: moves, tijd: seconds });
+		}
+
+		const canvas = document.getElementById('maze-canvas');
+		canvas.classList.add('maze-flash');
+		setTimeout(() => canvas.classList.remove('maze-flash'), 600);
+		draw();
+	}
+
+	// ─── Status helper ────────────────────────────────────────────────────────
+	function updateStatus(message, type = '') {
+		const el = document.getElementById('game-status');
+		el.textContent = message;
+		el.className   = 'text-center text-sm sm:text-base font-medium transition-all';
+
+		if (type === 'success') {
+			el.classList.add('text-green-200', 'bg-green-900', 'rounded-lg', 'p-3');
+		} else if (type === 'error') {
+			el.classList.add('text-red-200', 'bg-red-900', 'rounded-lg', 'p-3');
+		} else if (type === 'warning') {
+			el.classList.add('text-yellow-300', 'bg-yellow-900', 'rounded-lg', 'p-2');
+		} else if (type === 'info') {
+			el.classList.add('text-blue-200', 'bg-blue-900', 'rounded-lg', 'p-2');
+		} else {
+			el.classList.add('text-gray-400');
+		}
+	}
+	function startTimer() {
+		stopTimer();
+		timerID = setInterval(() => {
+			seconds++;
+			document.getElementById('timer').textContent = seconds;
+		}, 1000);
+	}
+
+	function stopTimer() {
+		clearInterval(timerID);
+		timerID = null;
+	}
+
+	// ─── Place key at a random cell not near start/exit ──────────────────────
+	function placeKey() {
+		const margin = Math.max(2, Math.floor(Math.min(cols, rows) * 0.3));
+		let candidates = [];
+		for (let y = 0; y < rows; y++) {
+			for (let x = 0; x < cols; x++) {
+				// Not at start, not at exit, not too close to either
+				const distStart = Math.abs(x) + Math.abs(y);
+				const distExit  = Math.abs(x - (cols - 1)) + Math.abs(y - (rows - 1));
+				if (distStart >= margin && distExit >= margin) {
+					candidates.push({ x, y });
+				}
+			}
+		}
+		if (candidates.length === 0) candidates = [{ x: Math.floor(cols / 2), y: Math.floor(rows / 2) }];
+		return candidates[Math.floor(Math.random() * candidates.length)];
+	}
+
+	// ─── Idle bob animation loop ───────────────────────────────────────────────
+	function startBobLoop() {
+		cancelAnimationFrame(bobRAF);
+		function loop() {
+			bobFrame++;
+			draw();
+			bobRAF = requestAnimationFrame(loop);
+		}
+		bobRAF = requestAnimationFrame(loop);
+	}
+
+	function stopBobLoop() {
+		cancelAnimationFrame(bobRAF);
+		bobRAF = null;
+	}
+
+	// ─── Level management ─────────────────────────────────────────────────────
+	function startLevel(index) {
+		levelIndex = Math.min(index, LEVELS.length - 1);
+		const lvl  = LEVELS[levelIndex];
+		cols       = lvl.cols;
+		rows       = lvl.rows;
+
+		document.getElementById('level-label').textContent = lvl.label;
+		updateStatus('🗝️ Vind de sleutel voordat je de uitgang bereikt!');
+
+		maze         = generateMaze(cols, rows);
+		playerPos    = { x: 0, y: 0 };
+		moves        = 0;
+		seconds      = 0;
+		timerStarted = false;
+		solved       = false;
+		trail        = [];
+		keyCollected = false;
+		keyPos       = placeKey();
+		facingDx     = 1;
+		facingDy     = 0;
+		bobFrame     = 0;
+
+		document.getElementById('move-count').textContent = 0;
+		document.getElementById('timer').textContent = 0;
+
+		stopTimer();
+		ctx = setupCanvas();
+		startBobLoop();
+	}
+
+	function resetLevel() {
+		stopBobLoop();
+		startLevel(levelIndex);
+	}
+
+	function nextLevel() {
+		stopBobLoop();
+		const next = (levelIndex + 1) % LEVELS.length;
+		startLevel(next);
+	}
+
+	// ─── Keyboard input ──────────────────────────────────────────────────────
+	document.addEventListener('keydown', e => {
+		switch (e.key) {
+			case 'ArrowUp':    e.preventDefault(); move( 0, -1); break;
+			case 'ArrowDown':  e.preventDefault(); move( 0,  1); break;
+			case 'ArrowLeft':  e.preventDefault(); move(-1,  0); break;
+			case 'ArrowRight': e.preventDefault(); move( 1,  0); break;
+			case 'w': case 'W': move( 0, -1); break;
+			case 's': case 'S': move( 0,  1); break;
+			case 'a': case 'A': move(-1,  0); break;
+			case 'd': case 'D': move( 1,  0); break;
+		}
+	});
+
+	// ─── D-Pad buttons ────────────────────────────────────────────────────────
+	function bindDpad(id, dx, dy) {
+		const btn = document.getElementById(id);
+
+		// Touch – fire on touchstart for snappy feel, prevent ghost click
+		btn.addEventListener('touchstart', e => {
+			e.preventDefault();
+			move(dx, dy);
+		}, { passive: false });
+
+		// Mouse fallback
+		btn.addEventListener('mousedown', e => {
+			e.preventDefault();
+			move(dx, dy);
+		});
+	}
+
+	bindDpad('btn-up',    0, -1);
+	bindDpad('btn-down',  0,  1);
+	bindDpad('btn-left', -1,  0);
+	bindDpad('btn-right', 1,  0);
+
+	// ─── Swipe / touch on canvas ──────────────────────────────────────────────
+	let touchStart = null;
+
+	document.getElementById('maze-canvas').addEventListener('touchstart', e => {
+		e.preventDefault();
+		const t = e.touches[0];
+		touchStart = { x: t.clientX, y: t.clientY };
+	}, { passive: false });
+
+	document.getElementById('maze-canvas').addEventListener('touchend', e => {
+		if (!touchStart) return;
+		e.preventDefault();
+		const t    = e.changedTouches[0];
+		const dx   = t.clientX - touchStart.x;
+		const dy   = t.clientY - touchStart.y;
+		const abs  = Math.max(Math.abs(dx), Math.abs(dy));
+		if (abs < 10) return;
+
+		if (Math.abs(dx) > Math.abs(dy)) {
+			move(dx > 0 ? 1 : -1, 0);
+		} else {
+			move(0, dy > 0 ? 1 : -1);
+		}
+		touchStart = null;
+	}, { passive: false });
+
+	// ─── Resize ───────────────────────────────────────────────────────────────
+	let resizeTimer;
+	window.addEventListener('resize', () => {
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(() => {
+			ctx = setupCanvas();
+			draw();
+		}, 150);
+	});
+
+	// ─── Animations ───────────────────────────────────────────────────────────
+	const style = document.createElement('style');
+	style.textContent = `
+		@keyframes mazeFlash {
+			0%, 100% { border-color: #4b5563; }
+			50%       { border-color: #22c55e; box-shadow: 0 0 16px #22c55e; }
+		}
+		.maze-flash { animation: mazeFlash 0.6s ease; }
+
+		@keyframes mazeKeyFlash {
+			0%, 100% { border-color: #4b5563; }
+			50%       { border-color: #fbbf24; box-shadow: 0 0 16px #fbbf24; }
+		}
+		.maze-key-flash { animation: mazeKeyFlash 0.5s ease; }
+	`;
+	document.head.appendChild(style);
+
+	// ─── Boot ─────────────────────────────────────────────────────────────────
+	startLevel(0);
+</script>

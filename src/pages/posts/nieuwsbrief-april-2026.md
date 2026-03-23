@@ -21,16 +21,16 @@ Deze maand weer een leuke uitdaging, ben jij een beetje goed in doolhoven?
 
 Van 7 april tot en met 5 mei
 
-| Datum    | Welke stam     | Wat gaan we doen?                   |
-| -------- | -------------- | ----------------------------------- |
-| 7 apr    | Student        | Record dag Opkomst                  |
-| 9 apr    | Iedereen       | LinkedIn Foto's maken               |
-| 10 april | Alumni         | Alumni weekendje                    |
-| 14 apr   | Student/Alumni | Paint and Sip Borrel                |
-| 21 apr   | Student/Alumni | Verkiezings AV                      |
-| 23 april | Iedereen       | Wie is de mol murder mystery cantus |
-| 28 apr   | Student/Alumni | HideoutBorrel                       |
-| 5 mei    | Student        | Opkomst                             |
+| Datum    | Welke stam         | Wat gaan we doen?                   |
+| -------- | ------------------ | ----------------------------------- |
+| 7 apr    | Student            | Record dag Opkomst                  |
+| 9 apr    | Iedereen           | LinkedIn Foto's maken               |
+| 10 april | Alumni             | Alumni weekendje                    |
+| 14 apr   | Student/Alumni     | Paint and Sip Borrel                |
+| 21 apr   | Student/Alumni     | Verkiezings AV                      |
+| 23 april | Iedereen           | Wie is de mol murder mystery cantus |
+| 28 apr   | ~~Student/Alumni~~ | ~~HideoutBorrel~~                   |
+| 5 mei    | Student            | Opkomst                             |
 
 ## Verjaardag
 

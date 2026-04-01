@@ -12,7 +12,14 @@ type: nieuwsbrief
 ---
 ## Inleiding
 
+
+<p class="cite">Door Rosanne</p>
+
+
+
 vandaag ewas en leuker dangh.
+
+
 
 ## Aan het roer editie 3
 
@@ -36,7 +43,7 @@ Voorzitter bestuur 8
 
 ![Groepje mensen aan een tafel die een spelletje spelen](/uploads/img_20260331_220520741.jpg "Gezelligheid bij de U.F.O's")
 
-## Column april: Paniek in mijn behuizing
+## Column: Paniek in mijn behuizing
 
 <p class="cite">Door Kayleigh</p>
 
@@ -66,7 +73,7 @@ Paniek, paniek, paniek. Ik heb zelfs paniek als ik dit schrijf. Hoe ga ik dit te
 
 <p class="cite">Door Stijn</p>
 
-https://www.youtube.com/shorts/iGZpfbe9zew
+https://www.youtube.com/watch/iGZpfbe9zew
 
 ![De kruiken](/uploads/whatsapp-image-2026-03-19-at-22.51.51.jpeg "De kruiken in Utrecht")
 
@@ -124,7 +131,7 @@ Kusjes, Kirsten
 
 ![Mensen in een trap auto](/uploads/whatsapp-image-2026-03-31-at-21.51.26.jpeg "VakampCie op Commissie uitje")
 
-## Stel je kandidaat als bestuur.
+## Stel je kandidaat als bestuur
 
 <p class="cite">Door Maarten</p>
 
@@ -170,7 +177,22 @@ Deze maand weer een leuke uitdaging, ben jij een beetje goed in doolhoven?
 
 {% include "interactive/puzzles/maze.njk" %}
 
+## Voorjaarskamp
 
+
+![Promo flyer Voorjaarskamp](/uploads/schermafbeelding-2026-04-01-124752.png "VakampCie promo")
+
+Heb jij niks te doen tussen 15 en 17 mei? Dat dacht ik al!😇
+
+Schrijf je dan nu in voor ons avontuurlijke en gezellige scouting voorjaarskamp!🏕️
+
+[Link om je op te geven](<>)
+
+Kan je nog geen vuur maken, knopen leggen of pionieren? Hier kan je het leren!🪢
+
+Hopelijk zien we je snel een drankje meedoen bij het kampvuur!
+
+Liefs, de VakampCie
 
 ## UFO-Agenda
 
@@ -187,22 +209,6 @@ Van 7 april tot en met 5 mei
 | 28 apr   | ~~Student/Alumni~~ | ~~HideoutBorrel~~                   |
 | 5 mei    | Student            | Opkomst                             |
 
-## Voorjaarskamp
-
-![VakampCie promo](/uploads/schermafbeelding-2026-04-01-124752.png "Promotie flyer ")
-
-Heb jij niks te doen tussen 15 en 17 mei? Dat dacht ik al!😇
-
-Schrijf je dan nu in voor ons avontuurlijke en gezellige scouting voorjaarskamp!🏕️
-
-[Link om je op te geven](https://docs.google.com/forms/d/e/1FAIpQLSdTX_mFVqsMZeZxGh-pAwlb_BX39rSpxbqWsR4QJPDkCJiZEg/viewform?usp=publish-editor)
-
-Kan je nog geen vuur maken, knopen leggen of pionieren? Hier kan je het leren!🪢
-
-Hopelijk zien we je snel een drankje meedoen bij het kampvuur!
-
-Liefs, de VakampCie
-
 
 
 ## Verjaardag
@@ -214,6 +220,8 @@ We hebben het ook deze maand rustig met de jarigen. Het is er weer maar eentje. 
 ## Horoscoop
 
 <p class="cite">Door Kayleigh met opmaak hulp van ChatGPT</p>
+
+
 
 ### ♑ Steenbok (22 dec – 19 jan)
 
@@ -287,11 +295,13 @@ We hebben het ook deze maand rustig met de jarigen. Het is er weer maar eentje. 
 
 **💰 Leven:** Je komt weer in contact met oude bekenden. Blijf even met ze zitten, en vraag naar het leven. Jullie groeien maar één keer samen op.
 
-![Mensen in een kring om de U.F.O-boom heen](/uploads/whatsapp-image-2026-03-31-at-21.51.27-1-.jpeg "Bezoekje aan de U.F.O-boom")
+![Mensen in een kring om de U.F.O-boom hee](/uploads/whatsapp-image-2026-03-31-at-21.51.27-1-.jpeg "Bezoekje aan de U.F.O-boom")
 
 ## Afsluiting
 
 <p class="cite">Door Maarten</p>
+
+
 Wat leuk dat je deze maand weer de tijd hebt genomen om deze nieuwsbrief te lezen. We waarderen je betrokkenheid bij de vereniging en de moeite die wij stoppen om je up-to-date te houden, ongeacht je daadwerkelijke inzet. Of je nou elke opkomst bij bent of als donatielid ingeschreven staat, hopelijk helpen deze nieuwsbrieven je 🙂
 
 Volgende maand hebben we ook wat leuks bedacht. We zaten er namelijk aan te denken om over een maandje de nieuwsbrief van Mei uit te brengen! Wat vind jij van dit idee? Laat het ons weten!

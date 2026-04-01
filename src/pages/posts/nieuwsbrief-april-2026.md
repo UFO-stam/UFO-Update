@@ -64,7 +64,7 @@ Paniek, paniek, paniek. Ik heb zelfs paniek als ik dit schrijf. Hoe ga ik dit te
 
 <p class="cite">Door Stijn</p>
 
-https://www.youtube.com/watch/iGZpfbe9zew
+https://youtu.be/iGZpfbe9zew
 
 ![De kruiken](/uploads/whatsapp-image-2026-03-19-at-22.51.51.jpeg "De kruiken in Utrecht")
 
@@ -213,13 +213,11 @@ We hebben het ook deze maand rustig met de jarigen. Het is er weer maar eentje. 
 
 **Liefde:** Je gaat deze maand een nieuwe liefde ontdekken, of het nou een persoon, een nieuwe hobby of een andere roeping is. Wees niet bang voor dit nieuwe avontuur.
 
-
 **Leven:** Deze week staan de sterren op de juiste plek. Je zal een doorbraak maken in iets wat je al een tijdje dwars zit, en je gehoord maken.
 
 ### **Waterman** | 20 januari - 18 februari
 
 **Liefde:** Je liefde zit je op de nek. Je wilt meer vrijheid, meer eigen ontwikkeling. Maak dit aantoonbaar voor een partner of jezelf en wordt een nieuwe versie van jezelf.
-
 
 **Leven:** Je weet wat je wilt, maar nog niet hoe je dit moet verwezenlijken. Plan, overweeg en zoek goed uit wat je moet doen om je doelen te realiseren.
 
@@ -241,14 +239,11 @@ We hebben het ook deze maand rustig met de jarigen. Het is er weer maar eentje. 
 
 **Leven:** Het leven zit je niet altijd mee. Je hebt een paar tegenslagen gehad, maar niet getreurd. Achter elke donderwolk schuilt een regenboog. Jouw zon komt eraan.
 
-
-
 ### **Tweelingen** | 21 mei - 20 juni
 
 **Liefde:** Liefde bloeit, en dat is okay. Maak je geen zorgen om de mening van anderen. Soms gaat niet alles volgens de regels, en vertrouw je op het resultaat.
 
 **Leven:** Statistisch gezien wordt dit jouw maand. Van het hele jaar komt alles neer op dit moment. Hier gaat het gebeuren. 
-
 
 ### **Kreeft** | 21 juni - 22 juli
 
@@ -256,23 +251,17 @@ We hebben het ook deze maand rustig met de jarigen. Het is er weer maar eentje. 
 
 **Leven:** Dit wordt een kleurrijke maand. Je maakt kennis met nieuwe mensen, culturen en interpretaties. Wordt nieuwsgierig naar deze nieuwe dingen, en verrijk jezelf.
 
-
-
 ### **Leeuw** | 23 juli - 22 augustus
 
 **Liefde:** Onbeantwoorde liefde is niet het makkelijkste, maar ook jij kan dit overwinnen. Eet die laatste drie scheppen ijs onderaan de pot. Je  hebt dit verdient.
 
 **Leven:** Trek een ander jasje aan deze maand. Leer lopen in de schoenen van een vreemdeling, of zelfs je beste vriend(in). Het is tijd voor een ander perspectief.
 
-
-
 ### **Maagd** | 23 augustus - 22 september
 
 **Liefde:** Kleed je uit. Het is klaar met het thuis zitten en afwachten. Vanaf vandaag ben jij de degene ‘in charge’. Laat het ze merken.
 
 **Leven:** Laat los. Je hebt veel aan de riemen getrokken, maar het is nu tijd om te relaxen. Pak dat glas wijn, en ga buiten zitten. Geniet van de zon. 
-
-
 
 ### **Weegschaal** | 23 september - 22 oktober
 
@@ -281,24 +270,17 @@ We hebben het ook deze maand rustig met de jarigen. Het is er weer maar eentje. 
 **Leven:** 
 Je hebt een financiële tegenslag, maar dat is okay. Je omgeving zal je ondersteunen en je omhoog houden. Je overleeft dit. 
 
-
-
 ### **Schorpioen** | 23 oktober - 21 november
 
 **Liefde:** Je plaagt en speelt, maar pas op. Niet alles komt over op dezelfde manier als jij het bedoelt, en je wilt je geliefde zeker tevreden houden.
 
 **Leven:** Je leeft je goede leven net iets te veel. Denk aan de portemonnee en je verantwoordelijkheden. Alle leuke dingen die het waard zijn blijven toch wel plakken. 
 
-
-
 ### **Boogschutter** | 22 november - 21 december
 
 **Liefde:** Je geniet van jezelf. Je leert jezelf kennen op een manier die hiervoor niet mogelijk leek. Wees niet bang, en neem je tijd. Je hoeft niet alles gelijk te kunnen.
 
-
 **Leven:** Je komt weer in contact met oude bekenden. Blijf even met ze zitten, en vraag naar het leven. Jullie groeien maar één keer samen op. 
-
-
 
 ![Mensen in een kring om de U.F.O-boom hee](/uploads/whatsapp-image-2026-03-31-at-21.51.27-1-.jpeg "Bezoekje aan de U.F.O-boom")
 

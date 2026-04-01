@@ -12,14 +12,9 @@ type: nieuwsbrief
 ---
 ## Inleiding
 
-
 <p class="cite">Door Rosanne</p>
 
-
-
 vandaag ewas en leuker dangh.
-
-
 
 ## Aan het roer editie 3
 
@@ -57,8 +52,6 @@ Paniek vreet en eet en eet en eet, maar waarom doen we het dan? Wat maakt ons me
 
 Paniek, paniek, paniek. Ik heb zelfs paniek als ik dit schrijf. Hoe ga ik dit te lijf? Niet met rijmen, maar bijvoorbeeld wel met schrijven. Leer jezelf kennen, en maak een lijstje; wat werkt voor mij? Paniek is niet fijn, gezellig of leuk, maar we zullen er waarschijnlijk toch mee moeten leven. Helemaal als Gen Z. We kunnen dit, en zo niet? Knijp in de hand van een vriend, en tel tot tien. De paniek overwint dit niet. 
 
-
-
 ## Voor de omgang met de dagelijkse ‘asshole’ 
 
 <p class="cite">Door Kayleigh</p>
@@ -67,9 +60,7 @@ Paniek, paniek, paniek. Ik heb zelfs paniek als ik dit schrijf. Hoe ga ik dit te
 2. Je bent niet alleen. De meeste ‘assholes’ behandelen meerdere mensen slecht. Zoek de anderen, en vorm een groep. Groei in aantallen en in haat. 
 3. Je bent sterker dan je denkt. Je kan alles en iedereen aan. Zo niet, denk aan het motto van de Amerikaanse dienst ICE; “Zij die niet zwakker zijn, schieten we in hun rug neer”. 
 
-
-
-## (op)bezoek met de kruiken
+## (Op)Bezoek met de Kruiken
 
 <p class="cite">Door Stijn</p>
 
@@ -77,7 +68,7 @@ https://www.youtube.com/watch/iGZpfbe9zew
 
 ![De kruiken](/uploads/whatsapp-image-2026-03-19-at-22.51.51.jpeg "De kruiken in Utrecht")
 
-## Wat doet een commissie?
+## Wat doet een Commissie?
 
 <p class="cite">Door Kirsten</p>
 
@@ -179,7 +170,6 @@ Deze maand weer een leuke uitdaging, ben jij een beetje goed in doolhoven?
 
 ## Voorjaarskamp
 
-
 ![Promo flyer Voorjaarskamp](/uploads/schermafbeelding-2026-04-01-124752.png "VakampCie promo")
 
 Heb jij niks te doen tussen 15 en 17 mei? Dat dacht ik al!😇
@@ -209,8 +199,6 @@ Van 7 april tot en met 5 mei
 | 28 apr   | ~~Student/Alumni~~ | ~~HideoutBorrel~~                   |
 | 5 mei    | Student            | Opkomst                             |
 
-
-
 ## Verjaardag
 
 <p class="cite">Door Maarten</p>
@@ -219,88 +207,104 @@ We hebben het ook deze maand rustig met de jarigen. Het is er weer maar eentje. 
 
 ## Horoscoop
 
-<p class="cite">Door Kayleigh met opmaak hulp van ChatGPT</p>
+<p class="cite">Door Kayleigh </p>
+
+### **Steenbok** | 22 december - 19 januari
+
+**Liefde:** Je gaat deze maand een nieuwe liefde ontdekken, of het nou een persoon, een nieuwe hobby of een andere roeping is. Wees niet bang voor dit nieuwe avontuur.
+
+
+**Leven:** Deze week staan de sterren op de juiste plek. Je zal een doorbraak maken in iets wat je al een tijdje dwars zit, en je gehoord maken.
+
+### **Waterman** | 20 januari - 18 februari
+
+**Liefde:** Je liefde zit je op de nek. Je wilt meer vrijheid, meer eigen ontwikkeling. Maak dit aantoonbaar voor een partner of jezelf en wordt een nieuwe versie van jezelf.
+
+
+**Leven:** Je weet wat je wilt, maar nog niet hoe je dit moet verwezenlijken. Plan, overweeg en zoek goed uit wat je moet doen om je doelen te realiseren.
+
+### **Vissen** | 19 februari - 20 maart
+
+**Liefde:** Je bent ijzersterk, maar laat ook je zachte kant zien. Je bent niet alleen, en er zijn mensen om je heen om dit te bewijzen. Houd lief, en wordt geliefd.
+
+**Leven:** Iets wat je niet zag aankomen zal deze maand gebeuren. Hoe je hierop reageert, bepaalt wat er gaat gebeuren. Denk eerst na, en handel later.
+
+### **Ram** | 21 maart - 19 april
+
+**Liefde:** Je voelt je los, geliefd en geil. Je kan alles maken, en mensen hebben dit door. Maak je geen zorgen over schuine blikken, als je jezelf vermaakt, is er geen kwaad in het spel.
+
+**Leven:** Je moet de touwen wat sterker vastgrijpen. Je dreigt controle te verliezen over dingen waar je de automatische piloot op hebt gezet. Wees niet alleen maar efficiënt bezig, maar leef ook in het moment.
+
+### **Stier** | 20 april - 20 mei
+
+**Liefde:** Je zit minder in je vel. Je kijkt naar een persoon die je anders zou willen zien. Neem de rust, aandacht en liefde die je verdient. Je houd altijd eerst van jezelf.
+
+**Leven:** Het leven zit je niet altijd mee. Je hebt een paar tegenslagen gehad, maar niet getreurd. Achter elke donderwolk schuilt een regenboog. Jouw zon komt eraan.
 
 
 
-### ♑ Steenbok (22 dec – 19 jan)
+### **Tweelingen** | 21 mei - 20 juni
 
-**💘 Liefde:** Je gaat deze maand een nieuwe liefde ontdekken, of het nou een persoon, een nieuwe hobby of een andere roeping is. Wees niet bang voor dit nieuwe avontuur.
+**Liefde:** Liefde bloeit, en dat is okay. Maak je geen zorgen om de mening van anderen. Soms gaat niet alles volgens de regels, en vertrouw je op het resultaat.
 
-**💰 Leven:** Deze week staan de sterren op de juiste plek. Je zal een doorbraak maken in iets wat je al een tijdje dwars zit, en je gehoord maken.
+**Leven:** Statistisch gezien wordt dit jouw maand. Van het hele jaar komt alles neer op dit moment. Hier gaat het gebeuren. 
 
-### ♒ Waterman (20 jan – 18 feb)
 
-**💘 Liefde:** Je liefde zit je op de nek. Je wilt meer vrijheid, meer eigen ontwikkeling. Maak dit aantoonbaar voor een partner of jezelf en wordt een nieuwe versie van jezelf.
+### **Kreeft** | 21 juni - 22 juli
 
-**💰 Leven:** Je weet wat je wilt, maar nog niet hoe je dit moet verwezenlijken. Plan, overweeg en zoek goed uit wat je moet doen om je doelen te realiseren.
+**Liefde:** Je zwemt door een zee van adoratie. Je weet niet wat of wie je kiezen moet. Onthoud, kiezen voor jezelf is soms het gezondste om te doen.
 
-### ♓ Vissen (19 feb – 20 mrt)
+**Leven:** Dit wordt een kleurrijke maand. Je maakt kennis met nieuwe mensen, culturen en interpretaties. Wordt nieuwsgierig naar deze nieuwe dingen, en verrijk jezelf.
 
-**💘 Liefde:** Je bent ijzersterk, maar laat ook je zachte kant zien. Je bent niet alleen, en er zijn mensen om je heen om dit te bewijzen. Houd lief, en wordt geliefd.
 
-**💰 Leven:** Iets wat je niet zag aankomen zal deze maand gebeuren. Hoe je hierop reageert, bepaalt wat er gaat gebeuren. Denk eerst na, en handel later.
 
-### ♈ Ram (21 mrt – 19 apr)
+### **Leeuw** | 23 juli - 22 augustus
 
-**💘 Liefde:** Je voelt je los, geliefd en geil. Je kan alles maken, en mensen hebben dit door. Maak je geen zorgen over schuine blikken, als je jezelf vermaakt, is er geen kwaad in het spel.
+**Liefde:** Onbeantwoorde liefde is niet het makkelijkste, maar ook jij kan dit overwinnen. Eet die laatste drie scheppen ijs onderaan de pot. Je  hebt dit verdient.
 
-**💰 Leven:** Je moet de touwen wat sterker vastgrijpen. Je dreigt controle te verliezen over dingen waar je de automatische piloot op hebt gezet. Wees niet alleen maar efficiënt bezig, maar leef ook in het moment.
+**Leven:** Trek een ander jasje aan deze maand. Leer lopen in de schoenen van een vreemdeling, of zelfs je beste vriend(in). Het is tijd voor een ander perspectief.
 
-### ♉ Stier (20 apr – 20 mei)
 
-**💘 Liefde:** Je zit minder in je vel. Je kijkt naar een persoon die je anders zou willen zien. Neem de rust, aandacht en liefde die je verdient. Je houd altijd eerst van jezelf.
 
-**💰 Leven:** Het leven zit je niet altijd mee. Je hebt een paar tegenslagen gehad, maar niet getreurd. Achter elke donderwolk schuilt een regenboog. Jouw zon komt eraan.
+### **Maagd** | 23 augustus - 22 september
 
-### ♊ Tweelingen (21 mei – 20 jun)
+**Liefde:** Kleed je uit. Het is klaar met het thuis zitten en afwachten. Vanaf vandaag ben jij de degene ‘in charge’. Laat het ze merken.
 
-**💘 Liefde:** Liefde bloeit, en dat is okay. Maak je geen zorgen om de mening van anderen. Soms gaat niet alles volgens de regels, en vertrouw je op het resultaat.
+**Leven:** Laat los. Je hebt veel aan de riemen getrokken, maar het is nu tijd om te relaxen. Pak dat glas wijn, en ga buiten zitten. Geniet van de zon. 
 
-**💰 Leven:** Statistisch gezien wordt dit jouw maand. Van het hele jaar komt alles neer op dit moment. Hier gaat het gebeuren.
 
-### ♋ Kreeft (21 jun – 22 jul)
 
-**💘 Liefde:** Je zwemt door een zee van adoratie. Je weet niet wat of wie je kiezen moet. Onthoud, kiezen voor jezelf is soms het gezondste om te doen.
+### **Weegschaal** | 23 september - 22 oktober
 
-**💰 Leven:** Dit wordt een kleurrijke maand. Je maakt kennis met nieuwe mensen, culturen en interpretaties. Wordt nieuwsgierig naar deze nieuwe dingen, en verrijk jezelf.
+**Liefde:** Je straalt. Deze maand zit vol verrassingen en nieuwe ontwikkelingen. Ik hoop dat je budget ready bent, want dit hadden je huisgenoten nooit zien aankomen.
 
-### ♌ Leeuw (23 jul – 22 aug)
+**Leven:** 
+Je hebt een financiële tegenslag, maar dat is okay. Je omgeving zal je ondersteunen en je omhoog houden. Je overleeft dit. 
 
-**💘 Liefde:** Onbeantwoorde liefde is niet het makkelijkste, maar ook jij kan dit overwinnen. Eet die laatste drie scheppen ijs onderaan de pot. Je hebt dit verdient.
 
-**💰 Leven:** Trek een ander jasje aan deze maand. Leer lopen in de schoenen van een vreemdeling, of zelfs je beste vriend(in). Het is tijd voor een ander perspectief.
 
-### ♍ Maagd (23 aug – 22 sep)
+### **Schorpioen** | 23 oktober - 21 november
 
-**💘 Liefde:** Kleed je uit. Het is klaar met het thuis zitten en afwachten. Vanaf vandaag ben jij de degene ‘in charge’. Laat het ze merken.
+**Liefde:** Je plaagt en speelt, maar pas op. Niet alles komt over op dezelfde manier als jij het bedoelt, en je wilt je geliefde zeker tevreden houden.
 
-**💰 Leven:** Laat los. Je hebt veel aan de riemen getrokken, maar het is nu tijd om te relaxen. Pak dat glas wijn, en ga buiten zitten. Geniet van de zon.
+**Leven:** Je leeft je goede leven net iets te veel. Denk aan de portemonnee en je verantwoordelijkheden. Alle leuke dingen die het waard zijn blijven toch wel plakken. 
 
-### ♎ Weegschaal (23 sep – 22 okt)
 
-**💘 Liefde:** Je straalt. Deze maand zit vol verrassingen en nieuwe ontwikkelingen. Ik hoop dat je budget ready bent, want dit hadden je huisgenoten nooit zien aankomen.
 
-**💰 Leven:** Je hebt een financiële tegenslag, maar dat is okay. Je omgeving zal je ondersteunen en je omhoog houden. Je overleeft dit.
+### **Boogschutter** | 22 november - 21 december
 
-### ♏ Schorpioen (23 okt – 21 nov)
+**Liefde:** Je geniet van jezelf. Je leert jezelf kennen op een manier die hiervoor niet mogelijk leek. Wees niet bang, en neem je tijd. Je hoeft niet alles gelijk te kunnen.
 
-**💘 Liefde:** Je plaagt en speelt, maar pas op. Niet alles komt over op dezelfde manier als jij het bedoelt, en je wilt je geliefde zeker tevreden houden.
 
-**💰 Leven:** Je leeft je goede leven net iets te veel. Denk aan de portemonnee en je verantwoordelijkheden. Alle leuke dingen die het waard zijn blijven toch wel plakken.
+**Leven:** Je komt weer in contact met oude bekenden. Blijf even met ze zitten, en vraag naar het leven. Jullie groeien maar één keer samen op. 
 
-### ♐ Boogschutter (22 nov – 21 dec)
 
-**💘 Liefde:** Je geniet van jezelf. Je leert jezelf kennen op een manier die hiervoor niet mogelijk leek. Wees niet bang, en neem je tijd. Je hoeft niet alles gelijk te kunnen.
-
-**💰 Leven:** Je komt weer in contact met oude bekenden. Blijf even met ze zitten, en vraag naar het leven. Jullie groeien maar één keer samen op.
 
 ![Mensen in een kring om de U.F.O-boom hee](/uploads/whatsapp-image-2026-03-31-at-21.51.27-1-.jpeg "Bezoekje aan de U.F.O-boom")
 
 ## Afsluiting
 
 <p class="cite">Door Maarten</p>
-
 
 Wat leuk dat je deze maand weer de tijd hebt genomen om deze nieuwsbrief te lezen. We waarderen je betrokkenheid bij de vereniging en de moeite die wij stoppen om je up-to-date te houden, ongeacht je daadwerkelijke inzet. Of je nou elke opkomst bij bent of als donatielid ingeschreven staat, hopelijk helpen deze nieuwsbrieven je 🙂
 

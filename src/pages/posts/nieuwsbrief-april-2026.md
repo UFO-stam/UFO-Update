@@ -16,6 +16,39 @@ type: nieuwsbrief
 
 vandaag ewas en leuker dangh.
 
+
+
+## Column: Paniek in mijn behuizing
+
+<p class="cite">Door Kayleigh</p>
+
+Ik denk dat we allemaal wel een beetje paniek voelen. Voor sommige van ons komt dat eruit met tranen, hartkloppingen en vooral veel snot. Voor anderen een personality-change, die sommige misschien mijlen ver zagen aankomen, maar de desbetreffende persoon zeker niet. We hebben er allemaal wel last van, maar hoe gaan we ermee om?
+
+Paniek vreet. Het kent geen genade en eet en eet en eet. Het is als leven een parasiet en het zien vreten aan je lijf. Maar het is niet overheersend. Er zijn verschillende manieren om de paniek tegen te gaan. Je kan je gronden. Blote voeten op de grond en voel je tenen. Voel je hielen in de grond duwen. Het langs je kuiten en scheenbenen omhoog kruipen. Je bovenbeen ervan strak staan. Je maag ervan draaien, en zelfs je vingers ervan tintelen. Tegen de tijd dat het tegen je sleutelbeen botst remt het af en zakt het precies weer richting de grond. 
+
+Een andere manier is afleiding. Paniek over de staat van de wereld? Kijk een boterbloem. Paniek over je toekomst? Plan dat uitje in. Paniek over de staat van je emotionele behuizing en een sluipende angst dat alles alleen maar erger zal worden? Bel je psycholoog.  Nee, maar echt. Afleiding is een fijne manier om rustig te worden. Een geliefde of een vreemde kan het comfort geven wat je jezelf niet kan geven op dat moment; een andere blik op de situatie. 
+
+Paniek vreet en eet en eet en eet, maar waarom doen we het dan? Wat maakt ons menselijk lichaam er zo lekker voor. Hoe groeit dat? Ten eerste, is paniek helaas niet altijd een slecht iets. Het begin van paniek kan alertheid zijn. Je bent je juist bewust van je omgeving, en dit geeft een onprettig gevoel. Ook kan het een teken zijn van overbelasting, en is het precies het signaal wat je nodig had voor een reset. 
+
+Paniek, paniek, paniek. Ik heb zelfs paniek als ik dit schrijf. Hoe ga ik dit te lijf? Niet met rijmen, maar bijvoorbeeld wel met schrijven. Leer jezelf kennen, en maak een lijstje; wat werkt voor mij? Paniek is niet fijn, gezellig of leuk, maar we zullen er waarschijnlijk toch mee moeten leven. Helemaal als Gen Z. We kunnen dit, en zo niet? Knijp in de hand van een vriend, en tel tot tien. De paniek overwint dit niet. 
+
+
+
+
+## (Op)Bezoek met de Kruiken
+
+<p class="cite">Door Stijn</p>
+
+https://youtu.be/iGZpfbe9zew
+
+
+
+
+![De kruiken](/uploads/whatsapp-image-2026-03-19-at-22.51.51.jpeg "De kruiken in Utrecht")
+
+
+
+
 ## Aan het roer editie 3
 
 <p class="cite">Door Robbe</p>
@@ -38,19 +71,7 @@ Voorzitter bestuur 8
 
 ![Groepje mensen aan een tafel die een spelletje spelen](/uploads/img_20260331_220520741.jpg "Gezelligheid bij de U.F.O's")
 
-## Column: Paniek in mijn behuizing
 
-<p class="cite">Door Kayleigh</p>
-
-Ik denk dat we allemaal wel een beetje paniek voelen. Voor sommige van ons komt dat eruit met tranen, hartkloppingen en vooral veel snot. Voor anderen een personality-change, die sommige misschien mijlen ver zagen aankomen, maar de desbetreffende persoon zeker niet. We hebben er allemaal wel last van, maar hoe gaan we ermee om?
-
-Paniek vreet. Het kent geen genade en eet en eet en eet. Het is als leven een parasiet en het zien vreten aan je lijf. Maar het is niet overheersend. Er zijn verschillende manieren om de paniek tegen te gaan. Je kan je gronden. Blote voeten op de grond en voel je tenen. Voel je hielen in de grond duwen. Het langs je kuiten en scheenbenen omhoog kruipen. Je bovenbeen ervan strak staan. Je maag ervan draaien, en zelfs je vingers ervan tintelen. Tegen de tijd dat het tegen je sleutelbeen botst remt het af en zakt het precies weer richting de grond. 
-
-Een andere manier is afleiding. Paniek over de staat van de wereld? Kijk een boterbloem. Paniek over je toekomst? Plan dat uitje in. Paniek over de staat van je emotionele behuizing en een sluipende angst dat alles alleen maar erger zal worden? Bel je psycholoog.  Nee, maar echt. Afleiding is een fijne manier om rustig te worden. Een geliefde of een vreemde kan het comfort geven wat je jezelf niet kan geven op dat moment; een andere blik op de situatie. 
-
-Paniek vreet en eet en eet en eet, maar waarom doen we het dan? Wat maakt ons menselijk lichaam er zo lekker voor. Hoe groeit dat? Ten eerste, is paniek helaas niet altijd een slecht iets. Het begin van paniek kan alertheid zijn. Je bent je juist bewust van je omgeving, en dit geeft een onprettig gevoel. Ook kan het een teken zijn van overbelasting, en is het precies het signaal wat je nodig had voor een reset. 
-
-Paniek, paniek, paniek. Ik heb zelfs paniek als ik dit schrijf. Hoe ga ik dit te lijf? Niet met rijmen, maar bijvoorbeeld wel met schrijven. Leer jezelf kennen, en maak een lijstje; wat werkt voor mij? Paniek is niet fijn, gezellig of leuk, maar we zullen er waarschijnlijk toch mee moeten leven. Helemaal als Gen Z. We kunnen dit, en zo niet? Knijp in de hand van een vriend, en tel tot tien. De paniek overwint dit niet. 
 
 ## Voor de omgang met de dagelijkse ‘asshole’ 
 
@@ -60,13 +81,9 @@ Paniek, paniek, paniek. Ik heb zelfs paniek als ik dit schrijf. Hoe ga ik dit te
 2. Je bent niet alleen. De meeste ‘assholes’ behandelen meerdere mensen slecht. Zoek de anderen, en vorm een groep. Groei in aantallen en in haat. 
 3. Je bent sterker dan je denkt. Je kan alles en iedereen aan. Zo niet, denk aan het motto van de Amerikaanse dienst ICE; “Zij die niet zwakker zijn, schieten we in hun rug neer”. 
 
-## (Op)Bezoek met de Kruiken
 
-<p class="cite">Door Stijn</p>
 
-https://youtu.be/iGZpfbe9zew
 
-![De kruiken](/uploads/whatsapp-image-2026-03-19-at-22.51.51.jpeg "De kruiken in Utrecht")
 
 ## Wat doet een Commissie?
 

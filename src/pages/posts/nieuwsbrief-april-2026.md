@@ -1,7 +1,7 @@
 ---
 title: Nieuwsbrief, April 2026
-description: je moeder
-date: 2026-03-15
+description: Dit maakt Rosanne
+date: 2026-04-06
 authors:
   - Maarten
   - Stijn
@@ -34,6 +34,8 @@ Robbe
 
 Voorzitter bestuur 8
 
+![Groepje mensen aan een tafel die een spelletje spelen](/uploads/img_20260331_220520741.jpg "Gezelligheid bij de U.F.O's")
+
 ## Column april: Paniek in mijn behuizing
 
 <p class="cite">Door Kayleigh</p>
@@ -48,6 +50,8 @@ Paniek vreet en eet en eet en eet, maar waarom doen we het dan? Wat maakt ons me
 
 Paniek, paniek, paniek. Ik heb zelfs paniek als ik dit schrijf. Hoe ga ik dit te lijf? Niet met rijmen, maar bijvoorbeeld wel met schrijven. Leer jezelf kennen, en maak een lijstje; wat werkt voor mij? Paniek is niet fijn, gezellig of leuk, maar we zullen er waarschijnlijk toch mee moeten leven. Helemaal als Gen Z. We kunnen dit, en zo niet? Knijp in de hand van een vriend, en tel tot tien. De paniek overwint dit niet. 
 
+
+
 ## Voor de omgang met de dagelijkse ‘asshole’ 
 
 <p class="cite">Door Kayleigh</p>
@@ -60,28 +64,23 @@ Paniek, paniek, paniek. Ik heb zelfs paniek als ik dit schrijf. Hoe ga ik dit te
 
 ## (op)bezoek met de kruiken
 
-
 <p class="cite">Door Stijn</p>
 
 https://www.youtube.com/shorts/iGZpfbe9zew
 
-
+![De kruiken](/uploads/whatsapp-image-2026-03-19-at-22.51.51.jpeg "De kruiken in Utrecht")
 
 ## Wat doet een commissie?
 
-
-
-
 <p class="cite">Door Kirsten</p>
 
+![Commissie op de foto](/uploads/whatsapp-image-2026-03-31-at-21.51.27.jpeg "Een Commissie foto")
 
 Bij de U.F.O.-Stam kan je naast elke dinsdagavond een drankje doen, jezelf ook bij verschillende commissies aanmelden!
 
 Vergaderen, samen koken, roddelen en natuurlijk je taken uitvoeren. 
 
 Maar is dat het enige wat je kan doen met je commissie? Natuurlijk niet!
-
-
 
 Mijn naam is Kirsten en ik zit binnen de U.F.O.-Stam bij 3 verschillende commissies en ik ga jou laten zien wat je allemaal binnen je commissie kan doen!
 
@@ -123,7 +122,7 @@ Schrijf je dan nu in voor een commissie, gezelschap of blijf lekker gezellig op 
 
 Kusjes, Kirsten
 
-
+![Mensen in een trap auto](/uploads/whatsapp-image-2026-03-31-at-21.51.26.jpeg "VakampCie op Commissie uitje")
 
 ## Stel je kandidaat als bestuur.
 
@@ -163,7 +162,7 @@ Pak de hamer als lichtgewicht.
 
 Wees voor eeuwig aan de club toegewijd.
 
-
+![Mensen aan het bier in de club](/uploads/whatsapp-image-2026-03-19-at-22.51.58.jpeg "U.F.O's aan het genieten in de Chupitos")
 
 ## 🧩 Puzzel
 
@@ -190,7 +189,7 @@ Van 7 april tot en met 5 mei
 
 ## Voorjaarskamp
 
-
+![VakampCie promo](/uploads/schermafbeelding-2026-04-01-124752.png "Promotie flyer ")
 
 Heb jij niks te doen tussen 15 en 17 mei? Dat dacht ik al!😇
 
@@ -212,7 +211,7 @@ Liefs, de VakampCie
 
 We hebben het ook deze maand rustig met de jarigen. Het is er weer maar eentje. Femke Hoekema moet ons op 9 april compenseren voor alle rust de afgelopen tijd wanneer we haar 23e verjaardag vieren. 
 
-Horoscoop
+## Horoscoop
 
 <p class="cite">Door Kayleigh met opmaak hulp van ChatGPT</p>
 
@@ -288,7 +287,7 @@ Horoscoop
 
 **💰 Leven:** Je komt weer in contact met oude bekenden. Blijf even met ze zitten, en vraag naar het leven. Jullie groeien maar één keer samen op.
 
-
+![Mensen in een kring om de U.F.O-boom heen](/uploads/whatsapp-image-2026-03-31-at-21.51.27-1-.jpeg "Bezoekje aan de U.F.O-boom")
 
 ## Afsluiting
 

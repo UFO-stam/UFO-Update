@@ -114,36 +114,24 @@ Kusjes, Kirsten
 
 *Gebiedend Wijsje* 
 
-Stel je kandidaat.
-
-Stort je in ’t pak.
-
-Haal je lef uit de automaat.
-
+Stel je kandidaat.\
+Stort je in ’t pak.\
+Haal je lef uit de automaat.\
 Trek een bak.
 
-Slijm bij de kiescommissie.
-
-Schrap het getal vijf.
-
-Vraag om permissie.
-
+Slijm bij de kiescommissie.\
+Schrap het getal vijf.\
+Vraag om permissie.\
 Ga met zes in bedrijf.
 
-Vorm je visie op papier.
-
-Schud de juiste mensen de hand.
-
-Prikkel de leden met plezier.
-
+Vorm je visie op papier.\
+Schud de juiste mensen de hand.\
+Prikkel de leden met plezier.\
 Reis door het hele studentenland.
 
-Houd je blik op de toekomst gericht.
-
-Drink op de goede afloop van de strijd.
-
-Pak de hamer als lichtgewicht.
-
+Houd je blik op de toekomst gericht.\
+Drink op de goede afloop van de strijd.\
+Pak de hamer als lichtgewicht.\
 Wees voor eeuwig aan de club toegewijd.
 
 ![Mensen aan het bier in de club](/uploads/whatsapp-image-2026-03-19-at-22.51.58.jpeg "U.F.O's aan het genieten in de Chupitos")
@@ -158,14 +146,11 @@ Deze maand weer een leuke uitdaging, ben jij een beetje goed in doolhoven?
 
 ![Promo flyer Voorjaarskamp](/uploads/schermafbeelding-2026-04-01-124752.png "VakampCie promo")
 
-Heb jij niks te doen tussen 15 en 17 mei? Dat dacht ik al!😇
-
-Schrijf je dan nu in voor ons avontuurlijke en gezellige scouting voorjaarskamp!🏕️
-
+Heb jij niks te doen tussen 15 en 17 mei? Dat dacht ik al!😇\
+Schrijf je dan nu in voor ons avontuurlijke en gezellige scouting voorjaarskamp!🏕️\
 [Link om je op te geven](<>)
 
-Kan je nog geen vuur maken, knopen leggen of pionieren? Hier kan je het leren!🪢
-
+Kan je nog geen vuur maken, knopen leggen of pionieren? Hier kan je het leren!🪢\
 Hopelijk zien we je snel een drankje doen bij het kampvuur!
 
 Liefs, de VakampCie

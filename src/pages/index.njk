@@ -3,389 +3,429 @@ title: "U.F.O. Update"
 description: "De gloednieuwe online nieuwsbrief van Studentenscouting U.F.O.-Stam"
 layout: page.njk
 ---
+<div class="bg-base-100 font-sans relative overflow-x-hidden">
 
-<!-- Hero Section -->
-<section class="pt-32 pb-20 px-4 relative overflow-hidden bg-gradient-to-br from-slate-50 to-blue-50">
-	<div id="particles-container" class="absolute inset-0 pointer-events-none"></div>
-	<div class="max-w-7xl mx-auto">
-		<div class="grid lg:grid-cols-2 gap-12 items-center">
-			<div class="flex flex-col justify-center space-y-6 hero-content">
-				<div
-					class="inline-block bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium mb-6 badge-animate">
-					🚀 Maandelijkse Nieuwsbrief
-				</div>
-				<h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight hero-title">
-					Blijf op de hoogte met
-					<span class="text-primary">U.F.O. Update</span>
-				</h1>
-				<p class="text-xl text-gray-600 mb-8 leading-relaxed hero-description">
-					De officiële nieuwsbrief van de U.F.O.-Stam. Elke maand vol met verhalen, interviews, columns en
-					activiteiten van onze vereniging.
-				</p>
+	<div id="ufo-overlay" class="absolute top-[-4rem] left-0 w-full z-[100] pointer-events-none">
+		<div id="ufo-ship" class="absolute top-0 left-0 w-[200px] md:w-[300px] origin-top opacity-0">
+			<svg viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+				<defs>
+					<linearGradient id="beam-grad" x1="0" y1="0" x2="0" y2="1">
+						<stop offset="0%" stop-color="#FF7777" stop-opacity="0.8" />
+						<stop offset="80%" stop-color="#FF7777" stop-opacity="0.1" />
+						<stop offset="100%" stop-color="#FF7777" stop-opacity="0" />
+					</linearGradient>
+				</defs>
 
-				{%- set latestNewsletter = null -%}
+				<polygon id="ufo-beam" points="150,110 30,380 270,380" fill="url(#beam-grad)" opacity="0" />
 
-				{% for post in collections.posts | reverse %}
-				{% if not latestNewsletter and post.data.type == "nieuwsbrief" %}
-				{% set latestNewsletter = post %}
-				{% endif %}
-				{% endfor %}
+				<g id="ufo-body" transform="translate(150, 100)">
+					<ellipse cx="0" cy="0" rx="90" ry="32" fill="#777" />
+					<ellipse cx="0" cy="-5" rx="80" ry="25" fill="#888" />
+					<ellipse cx="0" cy="-20" rx="45" ry="22" fill="#FFC700" />
+					<ellipse cx="-15" cy="-22" rx="5" ry="4" fill="#FFE55C" opacity="0.9" />
+					<ellipse cx="0" cy="-26" rx="5" ry="4" fill="#FFE55C" opacity="0.9" />
+					<ellipse cx="15" cy="-22" rx="5" ry="4" fill="#FFE55C" opacity="0.9" />
+				</g>
+			</svg>
+		</div>
+	</div>
 
-				{% set newsletterUrl = latestNewsletter.url if latestNewsletter else "/posts/" %}
-				<div class="flex flex-col sm:flex-row gap-4 hero-buttons">
-					<a href="{{ newsletterUrl | url }}"
-						class="bg-gradient-to-r from-red-700 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transition-all transform hover:scale-105 btn-primary">
-						Laatste Editie Lezen
-					</a>
-					<a href="/contact"
-						class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full font-semibold hover:border-red-800 hover:text-red-800 transition-all btn-secondary">
-						contact
-					</a>
-				</div>
+	<section
+		class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-16 items-center min-h-[calc(100vh-64px)] overflow-hidden">
+		<div class="flex flex-col relative z-10">
+			<h1 id="hero-title"
+				class="text-5xl md:text-6xl font-black font-display leading-[0.95] tracking-tight text-base-content mb-6 opacity-0">
+				Blijf op de<br>hoogte met<br>
+				<em class="not-italic text-primary dark:text-accent font-light">U.F.O. Update</em>
+			</h1>
+
+			<p id="hero-desc" class="text-base text-base-content/60 leading-relaxed max-w-sm mb-8 opacity-0">
+				De officiële nieuwsbrief van de U.F.O.-Stam. Elke maand vol met verhalen, interviews, columns en
+				activiteiten van onze vereniging.
+			</p>
+
+			{%- set latestNewsletter = null -%}
+			{% for post in collections.posts | reverse %}
+			{% if not latestNewsletter and post.data.type == "nieuwsbrief" %}
+			{% set latestNewsletter = post %}
+			{% endif %}
+			{% endfor %}
+			{% set newsletterUrl = latestNewsletter.url if latestNewsletter else "/posts/" %}
+
+			<div id="hero-actions" class="flex flex-wrap gap-3 opacity-0">
+				<a href="{{ newsletterUrl | url }}" class="btn btn-primary rounded-full px-7 gap-2 font-medium">
+					Laatste Editie
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+						stroke="currentColor" class="w-4 h-4">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+					</svg>
+				</a>
+				<a href="/contact" class="btn rounded-full px-7 border border-base-300 font-medium">Contact</a>
 			</div>
+		</div>
 
-			<div class="relative newsletter-preview">
-				<div
-					class="bg-white rounded-2xl shadow-2xl overflow-hidden newsletter-card transform rotate-3 hover:rotate-0 transition-transform duration-500">
-					<div class="bg-gradient-to-r from-red-700 to-purple-600 p-6 text-white">
-						<div class="text-sm opacity-80 mb-2">Splinter nieuw!</div>
-						<h3 class="text-2xl font-bold">De Nieuwsbrief</h3>
-					</div>
-					<div class="p-6">
-						<div class="space-y-4">
-							<div class="flex items-start space-x-3">
-								<div
-									class="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
-									<span class="text-indigo-600 font-bold">1</span>
-								</div>
-								<div>
-									<h4 class="font-semibold text-gray-900">Artikelen</h4>
-									<p class="text-sm text-gray-600">Elke maand weer onderwerpen die iets losmaken</p>
-								</div>
-							</div>
-							<div class="flex items-start space-x-3">
-								<div
-									class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-									<span class="text-purple-600 font-bold">2</span>
-								</div>
-								<div>
-									<h4 class="font-semibold text-gray-900">Puzzels</h4>
-									<p class="text-sm text-gray-600">Compleet interactieve items</p>
-								</div>
-							</div>
-							<div class="flex items-start space-x-3">
-								<div
-									class="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
-									<span class="text-pink-600 font-bold">3</span>
-								</div>
-								<div>
-									<h4 class="font-semibold text-gray-900">Agenda</h4>
-									<p class="text-sm text-gray-600">Elke maand weer een strakke planning van de komende
-										activiteiten</p>
-								</div>
-							</div>
+		<div class="relative flex items-center justify-center">
+			<div
+				class="absolute top-6 left-6 right-[-1rem] bottom-[-0.5rem] bg-base-200 rounded-2xl border border-base-300 rotate-2 opacity-60">
+			</div>
+			<div id="card-main"
+				class="card bg-base-100 border border-base-200 shadow-sm w-full max-w-sm relative opacity-0">
+				<div class="bg-neutral text-neutral-content rounded-t-2xl px-7 py-6">
+					<p class="text-base uppercase tracking-[0.15em] opacity-40 mb-1">Splinter nieuw</p>
+					<h3 class="text-3xl font-black font-display tracking-tight">De Nieuwsbrief</h3>
+					<p class="text-base opacity-50 mt-1">Recente Editie</p>
+				</div>
+				<div class="px-7 py-5 flex flex-col gap-5">
+					<div id="ci1" class="flex items-start gap-4 opacity-0">
+						<div
+							class="w-8 h-8 rounded-lg bg-violet-100 flex items-center justify-center text-violet-700 text-xs font-bold flex-shrink-0 mt-0.5">
+							01</div>
+						<div>
+							<p class="font-semibold text-sm text-base-content">Artikelen</p>
+							<p class="text-xs text-base-content/50 leading-relaxed mt-0.5">Elke maand onderwerpen die
+								iets losmaken</p>
 						</div>
-						<a href="/posts/nieuwsbrief-november-2025"
-							class="mt-6 inline-block text-primary font-semibold hover:underline">
-							Lees Meer →
-						</a>
+					</div>
+					<div id="ci2" class="flex items-start gap-4 opacity-0">
+						<div
+							class="w-8 h-8 rounded-lg bg-pink-100 flex items-center justify-center text-pink-700 text-xs font-bold flex-shrink-0 mt-0.5">
+							02</div>
+						<div>
+							<p class="font-semibold text-sm text-base-content">Puzzels</p>
+							<p class="text-xs text-base-content/50 leading-relaxed mt-0.5">Compleet interactieve items
+							</p>
+						</div>
+					</div>
+					<div id="ci3" class="flex items-start gap-4 opacity-0">
+						<div
+							class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center text-emerald-700 text-xs font-bold flex-shrink-0 mt-0.5">
+							03</div>
+						<div>
+							<p class="font-semibold text-sm text-base-content">Agenda</p>
+							<p class="text-xs text-base-content/50 leading-relaxed mt-0.5">Strakke planning van komende
+								activiteiten</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<!-- Features Section -->
-<section id="features" class="py-20 px-4 bg-white">
-	<div class="max-w-7xl mx-auto">
-		<div class="text-center mb-16 features-header">
-			<h2 class="text-4xl font-bold text-gray-900 mb-4">Wat maakt ons bijzonder?</h2>
-			<p class="text-xl text-gray-600">Professionele journalistiek door leden, voor leden.</p>
+	<section class="max-w-7xl mx-auto px-6 py-20">
+		<header class="mb-14 relative" id="feat-header">
+			<div class="absolute -left-4 top-0 w-1 h-full bg-primary rounded-full hidden md:block"></div>
+			<h2 class="text-5xl font-black font-display tracking-tight text-base-content opacity-0" id="feat-title">
+				Wat maakt ons bijzonder<span class="text-primary">.</span>
+			</h2>
+			<p class="text-lg text-base-content/50 mt-3 max-w-lg opacity-0" id="feat-desc">
+				Professionele journalistiek door leden, voor leden.
+			</p>
+		</header>
+
+		<div class="grid md:grid-cols-3 gap-6">
+			<article id="fc1"
+				class="group card bg-base-100 border border-base-200 rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-lg opacity-0">
+				<div class="p-8">
+					<div class="w-10 h-10 rounded-xl bg-violet-100 flex items-center justify-center text-lg mb-6">✍️
+					</div>
+					<h3 class="text-2xl font-bold font-display text-base-content mb-3">Authentieke Verhalen</h3>
+					<p class="text-base text-base-content leading-relaxed">Interviews, columns en reportages geschreven
+						door onze gepassioneerde redacteuren over het leven binnen de vereniging.</p>
+				</div>
+			</article>
+
+			<article id="fc2"
+				class="group card bg-base-100 border border-base-200 rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-lg opacity-0">
+				<div class="p-8">
+					<div class="w-10 h-10 rounded-xl bg-pink-100 flex items-center justify-center text-lg mb-6">🎨</div>
+					<h3 class="text-2xl font-bold font-display text-base-content mb-3">Creatieve Content</h3>
+					<p class="text-base text-base-content leading-relaxed">Van puzzels en horoscopen tot spotprenten en
+						illustraties. elke editie zit vol verrassende content.</p>
+				</div>
+			</article>
+
+			<article id="fc3"
+				class="group card bg-base-100 border border-base-200 rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-lg opacity-0">
+				<div class="p-8">
+					<div class="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-lg mb-6">📅
+					</div>
+					<h3 class="text-2xl font-bold font-display text-base-content mb-3">Maandelijks & Actueel</h3>
+					<p class="text-base text-base-content leading-relaxed">Elke maand een nieuwe editie met actuele
+						updates, bestuursberichten en een agenda vol activiteiten.</p>
+				</div>
+			</article>
 		</div>
+	</section>
 
-		<div class="grid md:grid-cols-3 gap-8 feature-cards">
-			<div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 card-hover feature-card">
-				<div
-					class="w-16 h-16 bg-indigo-600 rounded-xl flex items-center justify-center text-white text-2xl mb-6">
-					✍️
-				</div>
-				<h3 class="text-2xl font-bold text-gray-900 mb-4">Authentieke Verhalen</h3>
-				<p class="text-gray-600">Interviews, columns en reportages geschreven door onze gepassioneerde
-					redacteuren over het leven binnen de vereniging.</p>
-			</div>
+	<section class="bg-base-content text-base-100 py-24 px-6">
+		<div class="max-w-2xl mx-auto text-center" id="cta-inner">
+			<p class="text-[10px] uppercase tracking-[0.18em] mb-5">Altijd up to date</p>
+			<h2 class="text-4xl md:text-5xl font-black font-display tracking-tight leading-tight mb-4">
+				Mis nooit meer<br> een <em class="not-italic font-light text-accent dark:text-primary">editie</em>
+			</h2>
+			<p class="text-base leading-relaxed mb-4 max-w-sm mx-auto">Met onze app ben je altijd op de hoogte van de
+				laatste nieuwsbrief en activiteiten.</p>
 
-			<div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 card-hover feature-card">
-				<div
-					class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center text-white text-2xl mb-6">
-					🎨
-				</div>
-				<h3 class="text-2xl font-bold text-gray-900 mb-4">Creatieve Content</h3>
-				<p class="text-gray-600">Van puzzels en horoscopen tot spotprenten en illustraties - elke editie zit vol
-					verrassende content.</p>
-			</div>
-
-			<div class="bg-gradient-to-br from-pink-50 to-orange-50 rounded-2xl p-8 card-hover feature-card">
-				<div class="w-16 h-16 bg-pink-600 rounded-xl flex items-center justify-center text-white text-2xl mb-6">
-					📅
-				</div>
-				<h3 class="text-2xl font-bold text-gray-900 mb-4">Maandelijks & Actueel</h3>
-				<p class="text-gray-600">Elke maand een nieuwe editie met actuele updates, bestuursberichten en een
-					agenda vol activiteiten.</p>
+			<div class="flex justify-center">
+				{% include "interactive/appinstall.njk" %}
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<!-- CTA Section -->
-<section class="py-20 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
-	<div class="max-w-4xl mx-auto text-center">
-		<h2 class="text-4xl font-bold text-gray-900 mb-6">Mis nooit meer een editie</h2>
-		<p class="text-xl text-gray-600 mb-8">Met onze app ben je altijd up to date.</p>
-		{% include "interactive/appinstall.njk" %}
-	</div>
-</section>
+	<section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-6">
+		<header class="mb-14 md:mb-0 relative md:col-span-1 self-start" id="ig-header">
+			<div>
+				<div class="absolute -left-4 top-0 w-1 h-full bg-primary rounded-full hidden md:block"></div>
+				<h2 class="text-5xl font-black font-display tracking-tight text-base-content">
+					Impact op de samenleving<span class="text-primary">.</span>
+				</h2>
+				<p class="text-lg text-base-content/50 mt-3 max-w-lg">
+					Onze leden maken het verschil, zowel binnen als buiten de vereniging.
+				</p>
+			</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+		</header>
+
+		<div class="md:col-span-2 flex justify-center md:justify-start" id="ig-embed-section">
+			<div id="ig-embed-wrapper"
+				style="margin: 0 auto; text-align: center; font-family: sans-serif; width: 100%; max-width: 500px;">
+				<button id="load-ig-btn"
+					style="background: #f4f4f4; border: 1px solid #ddd; border-radius: 8px; padding: 40px 20px; width: 100%; cursor: pointer; color: #333; transition: background 0.2s;">
+					<svg style="width: 40px; height: 40px; margin-bottom: 10px; display: inline-block;"
+						viewBox="0 0 24 24" fill="currentColor">
+						<path
+							d="M12 2h5q5 0 5 5v10q0 5-5 5H7q-5 0-5-5V7q0-5 5-5zm0-2H7Q1 1 0 7v10q1 7 7 7h10q7 0 7-7V7q0-6-7-7zm0 6a6 6 0 1 0 0 12 6 6 0 0 0 0-12m0 10a4 4 0 1 1 0-8 4 4 0 0 1 0 8m6-12a1 1 0 1 0 0 3 1 1 0 0 0 0-3" />
+					</svg><br>
+					<strong>Laad Instagram Post</strong><br>
+					<small style="color: #666; margin-top: 8px; display: block;">Wanneer u hierop klikt, wordt er inhoud
+						van Instagram geladen, gaat u akkoord met hun voorwaarden en kunnen er cookies van derden worden
+						opgeslagen.</small>
+				</button>
+				<div id="ig-content-target"></div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		document.getElementById('load-ig-btn').addEventListener('click', function () {
+			// Hide the placeholder button
+			this.style.display = 'none';
+
+			// The raw Instagram blockquote code
+			const igCode = `<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/C5Gt18qoo13/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/C5Gt18qoo13/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Dit bericht op Instagram bekijken</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/C5Gt18qoo13/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Een bericht gedeeld door Studentenscouting U.F.O.-Stam (@studentenscouting_ufostam)</a></p></div></blockquote>`;
+
+			// Inject the HTML
+			document.getElementById('ig-content-target').innerHTML = igCode;
+
+			// Load the Instagram script dynamically so it processes the newly injected blockquote
+			if (!window.instgrm) {
+				const script = document.createElement('script');
+				script.async = true;
+				script.src = "//www.instagram.com/embed.js";
+				document.body.appendChild(script);
+			} else {
+				// If the script is already loaded on the page elsewhere, just tell it to re-scan the DOM
+				window.instgrm.Embeds.process();
+			}
+		});
+	</script>
+
+	{% include "relatedposts.njk" %}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
 <script>
-	// Initialize Anime.js animations when DOM is loaded
-	document.addEventListener('DOMContentLoaded', function () {
+	document.addEventListener('DOMContentLoaded', () => {
 
-		// Hero title animation with letter reveal
-		anime({
-			targets: '.hero-title',
-			opacity: [0, 1],
-			translateY: [50, 0],
-			duration: 1000,
-			delay: 800,
-			easing: 'easeOutExpo'
-		});
+		// Define Anime v4 instance
+		const A = anime;
 
-		// Gradient text shimmer effect
-		anime({
-			targets: '.hero-gradient',
-			scale: [0.95, 1.05, 1],
-			duration: 2000,
-			delay: 1200,
-			easing: 'easeInOutQuad',
-			loop: true,
-			direction: 'alternate'
-		});
+		// 1. Get the exact positions of the targets
+		const textTarget = document.getElementById('hero-title');
+		const cardTarget = document.getElementById('card-main');
+		const ufoElement = document.getElementById('ufo-ship');
 
-		// Description fade in
-		anime({
-			targets: '.hero-description',
-			opacity: [0, 1],
-			translateY: [30, 0],
-			duration: 800,
-			delay: 1000,
-			easing: 'easeOutQuad'
-		});
+		// Wait a tiny bit to ensure CSS layout is fully rendered before calculating positions
+		setTimeout(() => {
+			const tRect = textTarget.getBoundingClientRect();
+			const cRect = cardTarget.getBoundingClientRect();
+			const ufoWidth = ufoElement.offsetWidth;
+			const isMobile = window.innerWidth < 768; // Detect mobile screens
 
-		// Buttons pop in
-		anime({
-			targets: '.hero-buttons button',
-			scale: [0, 1],
-			opacity: [0, 1],
-			duration: 600,
-			delay: anime.stagger(100, { start: 1200 }),
-			easing: 'easeOutBack'
-		});
+			// SCROLL FIX: Get current scroll position to ensure coordinates are document-relative.
+			// This attaches the UFO to the page content so it scrolls away naturally.
+			const scrollX = window.scrollX || 0;
+			const scrollY = window.scrollY || 0;
 
-		// Newsletter card animation
-		anime({
-			targets: '.newsletter-card',
-			rotateY: [90, 0],
-			opacity: [0, 1],
-			duration: 1200,
-			delay: 1000,
-			easing: 'easeOutExpo'
-		});
+			// Calculate UFO hover positions
+			const offsetCenter = ufoWidth / 2;
+			const hoverHeight = isMobile ? 80 : 150;
 
-		// Newsletter card floating effect
-		anime({
-			targets: '.newsletter-preview',
-			translateY: [-10, 10],
-			duration: 3000,
-			loop: true,
-			direction: 'alternate',
-			easing: 'easeInOutSine'
-		});
+			// Target 1: Above Text (Accounting for scroll)
+			const tX = tRect.left + scrollX + (tRect.width / 2) - offsetCenter;
+			const tY = Math.max(scrollY + 10, tRect.top + scrollY - hoverHeight);
 
-		// Feature cards scroll animation
-		const observerOptions = {
-			threshold: 0.2,
-			rootMargin: '0px 0px -100px 0px'
-		};
+			// Target 2: Above Card (Accounting for scroll)
+			const cX = cRect.left + scrollX + (cRect.width / 2) - offsetCenter;
+			const cY = cRect.top + scrollY - hoverHeight;
 
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach(entry => {
-				if (entry.isIntersecting) {
-					anime({
-						targets: '.feature-card',
-						translateY: [50, 0],
-						opacity: [0, 1],
-						scale: [0.9, 1],
+			// MOBILE REVEAL LOGIC: Determine what gets beamed in during Phase 1
+			const phase1Targets = ['#hero-title', '#hero-desc', '#hero-actions'];
+			if (isMobile) {
+				// Bundle the card elements into the first beam if on mobile
+				phase1Targets.push('#card-main', '#ci1', '#ci2', '#ci3');
+			}
+
+			// 2. Setup initial state (deep in the background, tilted back)
+			A.set('#ufo-ship', {
+				translateX: scrollX - window.innerWidth / 2, // Start further off-screen
+				translateY: scrollY - 300,
+				scale: 0.1, // Start tiny to give depth
+				rotateX: '60deg', // Tilted upwards in 3D space
+				rotateZ: '45deg',
+				opacity: 1
+			});
+
+			// 3. Initialize Anime v4 Timeline
+			const tl = A.createTimeline({
+				defaults: { easing: 'easeOutExpo' }
+			});
+
+			// ==========================================
+			// Phase 1: Swoop to Left Content (Text & Mobile Card)
+			// ==========================================
+			tl.add('#ufo-ship', {
+				translateX: tX,
+				translateY: tY,
+				scale: [0.1, 1.2, 1], // Comical pop-in (overshoot size)
+				rotateX: ['60deg', '-20deg', '0deg'], // Level out like a real ship
+				rotateZ: ['45deg', '-15deg', '0deg'], // Bank into the stop
+				duration: 1200,
+				easing: 'spring(1, 80, 10, 0)' // Spring easing for a bouncy, comical stop
+			})
+				// Turn beam ON (with a slight hover wobble)
+				.add('#ufo-ship', {
+					translateY: tY - 10, // Float up slightly while beaming
+					duration: 800,
+					direction: 'alternate',
+					easing: 'easeInOutSine'
+				}, '-=400')
+				.add('#ufo-beam', {
+					opacity: [0, 1],
+					scaleY: [0.5, 1], // Stretch the beam down
+					duration: 300,
+					easing: 'easeOutBack'
+				}, '-=800')
+				// Beam in Targets (Includes Card if on mobile)
+				.add(phase1Targets, {
+					opacity: [0, 1],
+					translateY: [40, 0],
+					scale: [0.9, 1],
+					duration: 600,
+					delay: A.stagger(150, { easing: 'easeOutQuad' })
+				}, '-=500')
+				// Turn beam OFF
+				.add('#ufo-beam', {
+					opacity: 0,
+					scaleY: [1, 0.5],
+					duration: 200,
+					easing: 'easeInQuad'
+				}, '+=100');
+
+			// ==========================================
+			// Phase 2: Zip to the Card (SKIPPED ON MOBILE)
+			// ==========================================
+			if (!isMobile) {
+				// Anticipation: Squash ship slightly before zipping
+				tl.add('#ufo-ship', {
+					scaleX: 1.2,
+					scaleY: 0.8,
+					translateY: tY + 15,
+					duration: 250,
+					easing: 'easeInSine'
+				}, '+=100')
+					// Zip to Card
+					.add('#ufo-ship', {
+						translateX: cX,
+						translateY: cY,
+						scaleX: 1,
+						scaleY: 1,
+						rotateY: ['0deg', '45deg', '0deg'], // 3D barrel roll effect
+						rotateZ: ['0deg', '25deg', '-10deg', '0deg'], // Bank heavily
 						duration: 800,
-						delay: anime.stagger(150),
-						easing: 'easeOutElastic(1, .6)'
-					});
-					observer.unobserve(entry.target);
-				}
-			});
-		}, observerOptions);
+						easing: 'spring(1, 80, 12, 0)' // Wobble to a stop
+					})
+					// Turn beam ON
+					.add('#ufo-beam', {
+						opacity: 1,
+						scaleY: [0.5, 1],
+						duration: 250,
+						easing: 'easeOutQuad'
+					}, '-=100')
+					// Beam in Right Content (Card + Items)
+					.add(['#card-main', '#ci1', '#ci2', '#ci3'], {
+						opacity: [0, 1],
+						translateY: [40, 0],
+						scale: [0.8, 1],
+						duration: 500,
+						delay: A.stagger(100, { start: 100 })
+					}, '-=200')
+					// Turn beam OFF
+					.add('#ufo-beam', {
+						opacity: 0,
+						scaleY: [1, 0.5],
+						duration: 150,
+						easing: 'easeInQuad'
+					}, '+=150');
+			}
 
-		const featuresSection = document.querySelector('#features');
-		if (featuresSection) observer.observe(featuresSection);
+			// ==========================================
+			// Phase 3: Blast Off!
+			// ==========================================
+			// Anticipation: Dip down before shooting up
+			const currentY = isMobile ? tY : cY;
 
-		// Create floating particles
-		const particlesContainer = document.getElementById('particles-container');
-		const particleCount = 30;
-
-		for (let i = 0; i < particleCount; i++) {
-			const particle = document.createElement('div');
-			particle.className = 'particle';
-
-			const size = Math.random() * 8 + 4;
-			const colors = ['#667eea', '#764ba2', '#f093fb', '#4facfe'];
-			const color = colors[Math.floor(Math.random() * colors.length)];
-
-			particle.style.width = size + 'px';
-			particle.style.height = size + 'px';
-			particle.style.backgroundColor = color;
-			particle.style.opacity = '0';
-			particle.style.left = Math.random() * 100 + '%';
-			particle.style.top = Math.random() * 100 + '%';
-
-			particlesContainer.appendChild(particle);
-
-			anime({
-				targets: particle,
-				translateY: [
-					{ value: Math.random() * 100 - 50, duration: Math.random() * 3000 + 2000 },
-					{ value: Math.random() * 100 - 50, duration: Math.random() * 3000 + 2000 }
-				],
-				translateX: [
-					{ value: Math.random() * 100 - 50, duration: Math.random() * 3000 + 2000 },
-					{ value: Math.random() * 100 - 50, duration: Math.random() * 3000 + 2000 }
-				],
-				opacity: [
-					{ value: 0.6, duration: 1000 },
-					{ value: 0, duration: 1000 }
-				],
-				scale: [
-					{ value: 1.5, duration: Math.random() * 2000 + 1000 },
-					{ value: 0.5, duration: Math.random() * 2000 + 1000 }
-				],
-				duration: 4000,
-				delay: Math.random() * 2000,
-				loop: true,
-				easing: 'easeInOutSine'
-			});
-		}
-
-		// Button hover animations
-		document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
-			btn.addEventListener('mouseenter', () => {
-				anime({
-					targets: btn,
-					scale: 1.05,
-					duration: 300,
-					easing: 'easeOutQuad'
+			tl.add('#ufo-ship', {
+				translateY: currentY + 30,
+				scaleY: 0.7, // Extreme squash
+				scaleX: 1.3,
+				duration: 350,
+				easing: 'easeOutQuad'
+			}, '+=200')
+				// Shoot off into the distance (Accounting for scroll)
+				.add('#ufo-ship', {
+					translateX: scrollX + window.innerWidth + 300,
+					translateY: scrollY - 500,
+					scaleY: 1.5, // Stretch during flight
+					scaleX: 0.5,
+					scale: 0.05, // Disappear into the background (Z-depth)
+					rotateZ: '1360deg',
+					rotateX: '50deg', // Tilt aggressively into the screen
+					duration: 1900,
+					easing: 'easeInExpo' // Slow start, extremely fast exit
 				});
-			});
 
-			btn.addEventListener('mouseleave', () => {
-				anime({
-					targets: btn,
-					scale: 1,
-					duration: 300,
-					easing: 'easeOutQuad'
-				});
+		}, 150);
+
+		// Scroll Animations (Features & CTA)
+		const obs = new IntersectionObserver((entries) => {
+			entries.forEach(e => {
+				if (!e.isIntersecting) return;
+				const id = e.target.id;
+				if (id === 'feat-title') A.animate('#feat-title', { opacity: [0, 1], translateY: [15, 0], duration: 700, easing: 'easeOutExpo' });
+				if (id === 'feat-desc') A.animate('#feat-desc', { opacity: [0, 1], translateY: [10, 0], duration: 700, easing: 'easeOutExpo', delay: 100 });
+				if (id === 'fc1') A.animate('#fc1', { opacity: [0, 1], translateY: [20, 0], duration: 700, easing: 'easeOutExpo' });
+				if (id === 'fc2') A.animate('#fc2', { opacity: [0, 1], translateY: [20, 0], duration: 700, easing: 'easeOutExpo', delay: 120 });
+				if (id === 'fc3') A.animate('#fc3', { opacity: [0, 1], translateY: [20, 0], duration: 700, easing: 'easeOutExpo', delay: 240 });
+				if (id === 'cta-inner') A.animate('#cta-inner', { opacity: [0, 1], translateY: [20, 0], duration: 700, easing: 'easeOutExpo' });
+				if (id === 'ig-header') A.animate('#ig-header', { opacity: [0, 1], translateY: [15, 0], duration: 700, easing: 'easeOutExpo' });
+				if (id === 'ig-embed-section') A.animate('#ig-embed-section', { opacity: [0, 1], translateY: [20, 0], duration: 700, easing: 'easeOutExpo', delay: 150 });
+				obs.unobserve(e.target);
 			});
+		}, { threshold: 0.15 });
+
+		['feat-title', 'feat-desc', 'fc1', 'fc2', 'fc3', 'cta-inner', 'ig-header', 'ig-embed-section'].forEach(id => {
+			const el = document.getElementById(id); if (el) obs.observe(el);
 		});
-
-		// Card hover effects
-		document.querySelectorAll('.feature-card').forEach(card => {
-			card.addEventListener('mouseenter', () => {
-				anime({
-					targets: card,
-					translateY: -10,
-					scale: 1.02,
-					duration: 300,
-					easing: 'easeOutQuad'
-				});
-			});
-
-			card.addEventListener('mouseleave', () => {
-				anime({
-					targets: card,
-					translateY: 0,
-					scale: 1,
-					duration: 300,
-					easing: 'easeOutQuad'
-				});
-			});
-		});
-
 	});
 </script>
-<style>
-	body {
-		font-family: 'Inter', sans-serif;
-	}
-
-	.particle {
-		position: absolute;
-		border-radius: 50%;
-		pointer-events: none;
-	}
-
-	@keyframes float {
-
-		0%,
-		100% {
-			transform: translateY(0px);
-		}
-
-		50% {
-			transform: translateY(-20px);
-		}
-	}
-
-	.float-animation {
-		animation: float 6s ease-in-out infinite;
-	}
-
-	@keyframes fadeInUp {
-		from {
-			opacity: 0;
-			transform: translateY(30px);
-		}
-
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
-	}
-
-	.fade-in-up {
-		animation: fadeInUp 0.8s ease-out forwards;
-	}
-
-	.gradient-text {
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-	}
-
-	.card-hover {
-		transition: all 0.3s ease;
-	}
-
-	.card-hover:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-	}
-</style>

@@ -51,5 +51,6 @@ collections:
     fields:
       - { label: "Naam", name: "name", widget: "string" }
       - { label: "Functie", name: "role", widget: "string" }
+      - { label: "Email", name: "email", widget: "string", required: false }
       - { label: "Avatar", name: "avatar", widget: "image", required: false}
       - { label: "Biografie", name: "body", widget: "markdown", required: false}

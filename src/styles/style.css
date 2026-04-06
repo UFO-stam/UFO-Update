@@ -152,20 +152,6 @@ body {
 	background-size: cover;
 }
 
-.decorative-line {
-	position: relative;
-}
-
-.decorative-line::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: -4px;
-	width: 60px;
-	height: 3px;
-	background: linear-gradient(90deg, var(--color-burgundy), transparent);
-}
-
 .reading-progress {
 	position: fixed;
 	top: 0;

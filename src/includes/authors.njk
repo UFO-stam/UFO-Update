@@ -1,7 +1,7 @@
 <!-- Author Bio Section -->
 {% if authors and authors.length > 0 %}
 <section class="mt-16 pt-12 border-t border-primary border-opacity-20">
-	<h3 class="font-display text-2xl font-bold mb-8 text-primary decorative-line">
+	<h3 class="font-display text-3xl font-bold mb-8 text-primary dark:text-primary-content">
 		Over de auteur{% if authors.length > 1 %}s{% endif %}
 	</h3>
 	<div class="grid md:grid-cols-2 gap-8">
@@ -11,21 +11,37 @@
 		<div
 			class="bg-base-200 rounded-xl p-6 hover-lift border border-base-300 hover:border-primary transition-colors">
 			<div class="flex gap-5">
+				{# Avatar Section #}
 				{% if author.avatar %}
 				<img src="{{ author.avatar }}" alt="{{ author.name }}"
 					class="w-20 h-20 rounded-xl object-cover flex-shrink-0 ring-2 ring-primary" />
 				{% else %}
-				<div>
-					<div
+				<div
 					class="w-20 h-20 bg-primary rounded-xl flex items-center justify-center text-white font-display text-2xl font-bold flex-shrink-0 ring-2 ring-primary">
 					{{ author.name | getInitials }}
-					</div>
 				</div>
-				
 				{% endif %}
+
+				{# Content Section #}
 				<div class="flex-1 min-w-0">
-					<h4 class="font-bold text-xl mb-1 text-base-content">{{ author.name }}</h4>
-					<p class="text-primary text-sm font-medium mb-3">{{ author.role }}</p>
+					<h4 class="font-bold text-xl mb-0.5 text-base-content">{{ author.name }}</h4>
+					<p class="text-primary dark:text-secondary text-sm font-medium mb-2">{{ author.role }}</p>
+
+					{# Email Addition #}
+					{% if author.email %}
+					<a href="mailto:{{ author.email }}"
+						class="flex items-center gap-2 text-sm text-base-content/70 hover:text-primary transition-colors mb-4 group">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+							stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="m3 8 8 5h2l8-5M5 19h14l2-2V7l-2-2H5L3 7v10z" />
+						</svg>
+						<span class="truncate border-b border-transparent group-hover:border-primary">
+							{{ author.email }}
+						</span>
+					</a>
+					{% endif %}
+
 					<p class="text-sm text-base-content leading-relaxed">
 						{{ author.body }}
 					</p>

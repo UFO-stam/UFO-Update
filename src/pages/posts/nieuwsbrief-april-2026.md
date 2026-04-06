@@ -10,6 +10,7 @@ authors:
   - Kayleigh
   - Robbe
   - Rosanne
+  - Kirsten
 type: nieuwsbrief
 ---
 ## Inleiding

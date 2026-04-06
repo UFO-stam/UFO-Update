@@ -4,6 +4,7 @@ description: "De lente is in volle gang en dat betekent: tijd voor de
   nieuwsbrief van april. In deze editie vind je alles van bestuursnieuws tot
   boeiende artikelen die je zeker niet wilt missen. Veel leesplezier!"
 date: 2026-04-06
+last_updated: 2026-04-06
 authors:
   - Maarten
   - Stijn
@@ -17,7 +18,6 @@ type: nieuwsbrief
 
 <p class="cite">Door Rosanne Wormgoor</p>
 
-
 Ik weet dat jullie hier allemaal op hebben gewacht: de nieuwsbrief van april. In deze editie is de bestuurscolumn terug van weggeweest. Daarnaast vind je natuurlijk de column van de hoofdredacteur, een terugblik op de opkomsten van de afgelopen maand, een ingezonden stuk, een gedicht van Maarten, de puzzel, de verjaardagen, de agenda en een afsluiting.
 
 We trapten op 24 februari af met een zelfverdedigingsopkomst, gegeven door een Tom-duo: Tom V en Tom O. Tijdens deze avond leerden we met z’n allen hoe we ons in verschillende situaties kunnen verdedigen, bijvoorbeeld wanneer iemand je trapt of probeert te wurgen. In tweetallen oefenden we telkens nieuwe situaties. Dat was niet alleen leerzaam, maar ook erg leuk.
@@ -29,11 +29,6 @@ Op 10 maart organiseerde ik samen met Ivan de opkomst, die in het teken stond va
 Tijdens de opkomst van 17 maart kwamen de Kruiken naar ons toe. Zoals gebruikelijk begonnen we met een gezamenlijke maaltijd op ’t Moederschip, waarna we de stad in gingen. Daar verdeelden we ons in groepjes voor een soort Levend Monopoly/Crazy 88. Het idee was simpel: ga naar een straat, vraag een opdracht aan en voer die uit. Geen zin in de opdracht? Dan kon je ook een ‘bak trekken’, wat eveneens telde om de straat te veroveren. Het team met de meeste straten won. Na afloop hebben we nog gezellig nageborreld en is een groepje de stad in gegaan.
 
 De week daarna stond in het teken van De Slimste Mens. Kijkers van het programma herkenden vast verschillende rondes, zoals 3-6-9 met korte kennisvragen. Uiteindelijk namen de twee teams met de meeste punten het tegen elkaar op in de finale. De winst ging naar team Slettenjagers.
-
-
-
-
-
 
 ## Column: Paniek in mijn behuizing
 
@@ -149,7 +144,7 @@ Deze maand weer een leuke uitdaging, ben jij een beetje goed in doolhoven?
 
 Heb jij niks te doen tussen 15 en 17 mei? Dat dacht ik al!😇\
 Schrijf je dan nu in voor ons avontuurlijke en gezellige scouting voorjaarskamp!🏕️\
-[Link om je op te geven](<>)
+[Link om je op te geven](https://docs.google.com/forms/d/e/1FAIpQLSdTX_mFVqsMZeZxGh-pAwlb_BX39rSpxbqWsR4QJPDkCJiZEg/viewform)
 
 Kan je nog geen vuur maken, knopen leggen of pionieren? Hier kan je het leren!🪢\
 Hopelijk zien we je snel een drankje doen bij het kampvuur!

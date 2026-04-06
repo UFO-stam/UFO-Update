@@ -4,6 +4,7 @@ description: "De lente is in volle gang en dat betekent: tijd voor de
   nieuwsbrief van april. In deze editie vind je alles van bestuursnieuws tot
   boeiende artikelen die je zeker niet wilt missen. Veel leesplezier!"
 date: 2026-04-06
+last_updated: 2026-04-06
 authors:
   - Maarten
   - Stijn

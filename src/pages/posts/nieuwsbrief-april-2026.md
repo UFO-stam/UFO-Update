@@ -74,13 +74,7 @@ Voorzitter bestuur 8
 
 ![Groepje mensen aan een tafel die een spelletje spelen](/uploads/img_20260331_220520741.jpg "Gezelligheid bij de U.F.O's")
 
-## Voor de omgang met de dagelijkse ‘asshole’ 
 
-<p class="cite">Door Kayleigh Hogerheijde </p>
-
-1. Vergeet niet, de dagelijkse ‘asshole’ is een mens. Ze hebben ook knieschijven en een familie. Ze zijn niet onaantastbaar. 
-2. Je bent niet alleen. De meeste ‘assholes’ behandelen meerdere mensen slecht. Zoek de anderen, en vorm een groep. Groei in aantallen en in haat. 
-3. Je bent sterker dan je denkt. Je kan alles en iedereen aan. Zo niet, denk aan het motto van de Amerikaanse dienst ICE; 'Zij die niet zwakker zijn, schieten we in hun rug'. 
 
 ## Wat doet een Commissie?
 

@@ -1,0 +1,496 @@
+<!-- Game Area -->
+<div class="space-y-4 max-w-lg mx-auto">
+
+	<div class="flex justify-between items-center bg-base-200 px-4 py-2 rounded-lg text-sm sm:text-base">
+		<span class="font-semibold text-center text-green-400" id="pairs-label">0 / 0 paren</span>
+		<span class="font-medium text-gray-400">⏱ <span id="timer">0</span>s</span>
+	</div>
+
+	<div class="flex justify-center">
+		<canvas id="game-canvas"
+			class="rounded-xl border-2 border-indigo-800 touch-none block"
+			style="max-width: 100%; cursor: crosshair;">
+		</canvas>
+	</div>
+
+	<div class="flex flex-wrap justify-center gap-2">
+		<button onclick="initGame()"
+			class="px-4 sm:px-6 py-2 sm:py-2.5 bg-gray-600 hover:bg-gray-500 text-white rounded-full text-sm sm:text-base font-medium transition-all hover:shadow-lg">
+			Opnieuw
+		</button>
+	</div>
+
+	<div class="text-center text-xs sm:text-sm text-gray-500 px-2">
+		Verbind elk paar. lijnen mogen <strong class="text-gray-400">niet</strong> overlappen!
+	</div>
+
+	<div id="game-status" class="text-center text-sm sm:text-base font-medium"></div>
+
+</div>
+
+<script>
+const SINGLE_LEVEL = {
+	cols: 10, rows: 10,
+	pairs: [
+		[{c:0, r:0}, {c:9, r:0}],
+		[{c:0, r:9}, {c:9, r:9}],
+		[{c:1, r:7}, {c:3, r:1}],
+		[{c:1, r:0}, {c:2, r:7}], 
+		[{c:5, r:9}, {c:5, r:6}],
+		[{c:4, r:4}, {c:6, r:1}],
+		[{c:8, r:0}, {c:8, r:7}]  
+	]
+};
+
+// ─── Colour palette ───────────────────────────────────────────────────────
+const PAIR_COLORS = [
+	{ stroke: '#34d399', label: '👾' },
+	{ stroke: '#a78bfa', label: '🛸' },
+	{ stroke: '#fb923c', label: '☄️' },
+	{ stroke: '#facc15', label: '🌙' },
+	{ stroke: '#f472b6', label: '👽' },
+	{ stroke: '#22d3ee', label: '🌀' },
+	{ stroke: '#f87171', label: '💥' },
+];
+
+// ─── State ────────────────────────────────────────────────────────────────
+let level = null;
+let CELL = 60;
+let canvas, ctx;
+
+let nodes = [];                // {c, r, pairIdx}
+let paths = [];                // {pairIdx, cells:[{c,r},...]}
+let drawing = false;
+
+let activePairIdx = -1;
+let activeCells = [];          // [{c,r}] being drawn, tracked in grid coords
+let occupiedByOthers = new Set(); // "c,r" keys
+
+let solved = false;
+let seconds = 0;
+let timerID = null;
+let timerStarted = false;
+
+let stars = [];
+
+// ─── Game init ────────────────────────────────────────────────────────────
+function initGame() {
+	level = SINGLE_LEVEL;
+
+	nodes = [];
+	paths = [];
+	drawing = false;
+	activePairIdx = -1;
+	activeCells = [];
+	occupiedByOthers = new Set();
+
+	solved = false;
+
+	level.pairs.forEach((pair, pIdx) => {
+		nodes.push({ c: pair[0].c, r: pair[0].r, pairIdx: pIdx });
+		nodes.push({ c: pair[1].c, r: pair[1].r, pairIdx: pIdx });
+	});
+
+	updatePairsLabel();
+	updateStatus('');
+	stopTimer();
+	seconds = 0;
+	timerStarted = false;
+	document.getElementById('timer').textContent = '0';
+
+	setupCanvas();
+	generateStars();
+	render();
+}
+
+function setupCanvas() {
+	const maxW = Math.min(window.innerWidth - 48, 440);
+	CELL = Math.floor(maxW / level.cols);
+	const W = CELL * level.cols;
+	const H = CELL * level.rows;
+	const dpr = window.devicePixelRatio || 1;
+
+	canvas.width  = W * dpr;
+	canvas.height = H * dpr;
+	canvas.style.width  = W + 'px';
+	canvas.style.height = H + 'px';
+
+	ctx = canvas.getContext('2d');
+	ctx.scale(dpr, dpr);
+}
+
+function generateStars() {
+	const W = CELL * level.cols;
+	const H = CELL * level.rows;
+	stars = [];
+	const n = Math.floor(W * H / 900);
+	for (let i = 0; i < n; i++) {
+		stars.push({
+			x: Math.random() * W,
+			y: Math.random() * H,
+			r: Math.random() * 1.2 + 0.3,
+			a: Math.random() * 0.5 + 0.2,
+		});
+	}
+}
+
+// ─── Helpers ──────────────────────────────────────────────────────────────
+function cellCenter(c, r) {
+	return { x: c * CELL + CELL / 2, y: r * CELL + CELL / 2 };
+}
+
+function pixelToCell(px, py) {
+	return {
+		c: Math.max(0, Math.min(Math.floor(px / CELL), level.cols - 1)),
+		r: Math.max(0, Math.min(Math.floor(py / CELL), level.rows - 1)),
+	};
+}
+
+function cellKey(c, r) { 
+	return c + ',' + r;
+}
+
+function nodeAt(c, r) {
+	return nodes.find(n => n.c === c && n.r === r) || null;
+}
+
+// Scale raw event coords to logical canvas pixels
+function getEventXY(e) {
+	const rect = canvas.getBoundingClientRect();
+	const src = e.touches ? e.touches[0] : (e.changedTouches ? e.changedTouches[0] : e);
+	const scaleX = (CELL * level.cols) / rect.width;
+	const scaleY = (CELL * level.rows) / rect.height;
+	return {
+		x: (src.clientX - rect.left) * scaleX,
+		y: (src.clientY - rect.top) * scaleY,
+	};
+}
+
+// Rebuild the set of cells occupied by completed paths (excluding active pair)
+function rebuildOccupied() {
+	occupiedByOthers = new Set();
+	for (const path of paths) {
+		if (path.pairIdx === activePairIdx) continue;
+		for (const cell of path.cells) occupiedByOthers.add(cellKey(cell.c, cell.r));
+	}
+	// Endpoints of other pairs are also impassable
+	for (const node of nodes) {
+		if (node.pairIdx === activePairIdx) continue;
+		occupiedByOthers.add(cellKey(node.c, node.r));
+	}
+}
+
+// ─── Draw interaction ─────────────────────────────────────────────────────
+function startDraw(c, r) {
+	if (solved) return;
+	const node = nodeAt(c, r);
+	if (!node) return;
+	if (!timerStarted) { timerStarted = true; startTimer(); }
+
+	activePairIdx = node.pairIdx;
+	// Clear any existing completed path for this pair so the user can redraw it
+	paths = paths.filter(p => p.pairIdx !== activePairIdx);
+	rebuildOccupied();
+
+	activeCells = [{ c, r }];
+	drawing = true;
+	render();
+}
+
+function stepOnce(tc, tr) {
+	// Attempt to advance the active path by exactly one cell toward (tc, tr).
+	// Returns true if anything changed.
+	const last = activeCells[activeCells.length - 1];
+	if (last.c === tc && last.r === tr) return false;
+	
+	// Backtrack: target is the previous cell in the path
+	if (activeCells.length >= 2) {
+		const prev = activeCells[activeCells.length - 2];
+		if (prev.c === tc && prev.r === tr) {
+			activeCells.pop();
+			return true;
+		}
+	}
+
+	// Determine one orthogonal step toward (tc, tr)
+	let sc = last.c, sr = last.r;
+	const dC = tc - last.c;
+	const dR = tr - last.r;
+	
+	// Prefer the axis with larger delta so diagonal motion feels natural
+	if (Math.abs(dC) >= Math.abs(dR) && dC !== 0) {
+		sc += Math.sign(dC);
+	} else if (dR !== 0) {
+		sr += Math.sign(dR);
+	} else {
+		return false;
+	}
+
+	// Bounds
+	if (sc < 0 || sr < 0 || sc >= level.cols || sr >= level.rows) return false;
+	// Blocked by another path/node
+	if (occupiedByOthers.has(cellKey(sc, sr))) return false;
+
+	// Can't revisit own path
+	if (activeCells.some(p => p.c === sc && p.r === sr)) return false;
+	
+	activeCells.push({ c: sc, r: sr });
+	return true;
+}
+
+function continueDraw(c, r) {
+	if (!drawing) return;
+	// Walk step-by-step to handle fast pointer movement skipping cells.
+	// Cap iterations to avoid runaway loops.
+	let changed = false;
+	for (let i = 0; i < 8; i++) {
+		const last = activeCells[activeCells.length - 1];
+		if (last.c === c && last.r === r) break;
+		if (!stepOnce(c, r)) break;
+		changed = true;
+		
+		// Auto-finish if we just landed on the partner endpoint
+		const newLast = activeCells[activeCells.length - 1];
+		const partnerNode = nodes.find(n =>
+			n.pairIdx === activePairIdx &&
+			!(n.c === activeCells[0].c && n.r === activeCells[0].r)
+		);
+		if (partnerNode && newLast.c === partnerNode.c && newLast.r === partnerNode.r) {
+			commitPath();
+			return;
+		}
+	}
+
+	if (changed) render();
+}
+
+function commitPath() {
+	drawing = false;
+	const last = activeCells[activeCells.length - 1];
+	const partnerNode = nodes.find(n =>
+		n.pairIdx === activePairIdx &&
+		!(n.c === activeCells[0].c && n.r === activeCells[0].r)
+	);
+	
+	if (partnerNode && last.c === partnerNode.c && last.r === partnerNode.r && activeCells.length >= 2) {
+		paths.push({ pairIdx: activePairIdx, cells: [...activeCells] });
+		updatePairsLabel();
+		checkWin();
+	}
+	activeCells = [];
+	activePairIdx = -1;
+	render();
+}
+
+function cancelDraw() {
+	if (!drawing) return;
+	drawing = false;
+	activeCells = [];
+	activePairIdx = -1;
+	render();
+}
+
+// ─── Win ──────────────────────────────────────────────────────────────────
+function checkWin() {
+	if (paths.length === level.pairs.length) {
+		solved = true;
+		stopTimer();
+		updateStatus(`🛸 Missie voltooid! Alle paren verbonden in ${seconds}s!`, 'success');
+		if (typeof umami !== 'undefined') {
+			umami.track('Galactische lijntjes Opgelost', { tijd: seconds });
+		}
+	}
+}
+
+function updatePairsLabel() {
+	document.getElementById('pairs-label').textContent =
+		`${paths.length} / ${level.pairs.length} paren`;
+}
+
+// ─── Render ───────────────────────────────────────────────────────────────
+function render() {
+	const W = CELL * level.cols;
+	const H = CELL * level.rows;
+
+	ctx.fillStyle = '#0a0a1a';
+	ctx.fillRect(0, 0, W, H);
+	
+	// Stars
+	for (const s of stars) {
+		ctx.globalAlpha = s.a;
+		ctx.fillStyle = '#fff';
+		ctx.beginPath();
+		ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+		ctx.fill();
+	}
+	ctx.globalAlpha = 1;
+
+	// Grid dots
+	for (let r = 0; r < level.rows; r++) {
+		for (let c = 0; c < level.cols; c++) {
+			const { x, y } = cellCenter(c, r);
+			ctx.fillStyle = 'rgba(99,102,241,0.25)';
+			ctx.beginPath();
+			ctx.arc(x, y, 2.5, 0, Math.PI * 2);
+			ctx.fill();
+		}
+	}
+
+	// Completed paths
+	for (const path of paths) {
+		drawCellPath(path.cells, PAIR_COLORS[path.pairIdx % PAIR_COLORS.length].stroke, 0.85);
+	}
+
+	// Active in-progress path
+	if (drawing && activeCells.length >= 2) {
+		drawCellPath(activeCells, PAIR_COLORS[activePairIdx % PAIR_COLORS.length].stroke, 0.55);
+	}
+
+	// Nodes drawn on top of everything
+	for (const n of nodes) drawNode(n);
+}
+
+function drawCellPath(cells, color, alpha) {
+	if (cells.length < 2) return;
+	ctx.save();
+	ctx.globalAlpha = alpha;
+	ctx.strokeStyle = color;
+	ctx.lineWidth = Math.max(8, CELL * 0.35);
+	ctx.lineCap = 'round';
+	ctx.lineJoin = 'round';
+	ctx.shadowColor = color;
+	ctx.shadowBlur = 10;
+	ctx.beginPath();
+	
+	const first = cellCenter(cells[0].c, cells[0].r);
+	ctx.moveTo(first.x, first.y);
+	for (let i = 1; i < cells.length; i++) {
+		const { x, y } = cellCenter(cells[i].c, cells[i].r);
+		ctx.lineTo(x, y);
+	}
+	ctx.stroke();
+	ctx.restore();
+}
+
+function drawNode(n) {
+	const { x, y } = cellCenter(n.c, n.r);
+	const col = PAIR_COLORS[n.pairIdx % PAIR_COLORS.length];
+	const R = Math.max(14, CELL * 0.30);
+
+	// Glow ring
+	ctx.save();
+	ctx.shadowColor = col.stroke;
+	ctx.shadowBlur = 16;
+	ctx.strokeStyle = col.stroke;
+	ctx.lineWidth = 3;
+	ctx.beginPath();
+	ctx.arc(x, y, R, 0, Math.PI * 2);
+	ctx.stroke();
+	ctx.restore();
+
+	// Dark fill + colour tint
+	ctx.save();
+	ctx.fillStyle = '#0a0a1a';
+	ctx.beginPath();
+	ctx.arc(x, y, R, 0, Math.PI * 2);
+	ctx.fill();
+	
+	const grad = ctx.createRadialGradient(x, y, 0, x, y, R);
+	grad.addColorStop(0, col.stroke + '88');
+	grad.addColorStop(1, col.stroke + '11');
+	ctx.fillStyle = grad;
+	ctx.beginPath();
+	ctx.arc(x, y, R, 0, Math.PI * 2);
+	ctx.fill();
+	ctx.restore();
+
+	// Emoji
+	const fs = Math.max(12, Math.floor(R * 0.95));
+	ctx.font = `${fs}px serif`;
+	ctx.textAlign = 'center';
+	ctx.textBaseline = 'middle';
+	ctx.fillText(col.label, x, y);
+}
+
+// ─── Timer ────────────────────────────────────────────────────────────────
+function startTimer() {
+	stopTimer();
+	timerID = setInterval(() => {
+		seconds++;
+		document.getElementById('timer').textContent = seconds;
+	}, 1000);
+}
+function stopTimer() { 
+	clearInterval(timerID); 
+	timerID = null;
+}
+
+// ─── Controls ─────────────────────────────────────────────────────────────
+function updateStatus(message, type = '') {
+	const el = document.getElementById('game-status');
+	el.textContent = message;
+	el.className = 'text-center text-sm sm:text-base font-medium transition-all';
+	
+	if (type === 'success') el.classList.add('text-green-200', 'bg-green-900', 'rounded-lg', 'p-3');
+	else if (type === 'error')   el.classList.add('text-red-200', 'bg-red-900', 'rounded-lg', 'p-3');
+	else if (type === 'warning') el.classList.add('text-yellow-300', 'bg-yellow-900', 'rounded-lg', 'p-2');
+	else el.classList.add('text-gray-400');
+}
+
+// ─── Events ───────────────────────────────────────────────────────────────
+canvas = document.getElementById('game-canvas');
+
+canvas.addEventListener('mousedown', e => {
+	const { x, y } = getEventXY(e);
+	const { c, r } = pixelToCell(x, y);
+	startDraw(c, r);
+});
+
+canvas.addEventListener('mousemove', e => {
+	if (!drawing) return;
+	const { x, y } = getEventXY(e);
+	const { c, r } = pixelToCell(x, y);
+	continueDraw(c, r);
+});
+
+canvas.addEventListener('mouseup', e => {
+	if (!drawing) return;
+	const { x, y } = getEventXY(e);
+	const { c, r } = pixelToCell(x, y);
+	continueDraw(c, r);
+	commitPath();
+});
+
+canvas.addEventListener('mouseleave', () => cancelDraw());
+
+canvas.addEventListener('touchstart', e => {
+	e.preventDefault();
+	const { x, y } = getEventXY(e);
+	const { c, r } = pixelToCell(x, y);
+	startDraw(c, r);
+}, { passive: false });
+
+canvas.addEventListener('touchmove', e => {
+	e.preventDefault();
+	const { x, y } = getEventXY(e);
+	const { c, r } = pixelToCell(x, y);
+	continueDraw(c, r);
+}, { passive: false });
+
+canvas.addEventListener('touchend', e => {
+	e.preventDefault();
+	const { x, y } = getEventXY(e);
+	const { c, r } = pixelToCell(x, y);
+	continueDraw(c, r);
+	commitPath();
+}, { passive: false });
+
+let resizeTimer;
+window.addEventListener('resize', () => {
+	clearTimeout(resizeTimer);
+	resizeTimer = setTimeout(() => { setupCanvas(); generateStars(); render(); }, 150);
+});
+
+// ─── Boot ─────────────────────────────────────────────────────────────────
+initGame();
+</script>

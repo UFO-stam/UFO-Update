@@ -15,15 +15,15 @@ type: nieuwsbrief
 
 Terugblik fotos
 
-![](/uploads/_mg_0812.jpg)
+![](/uploads/_mg_0812.jpg "Tent opruimen")
 
 en
 
-![](/uploads/_mg_0843.jpg)
+![](/uploads/_mg_0843.jpg "Groepsfoto op SSW")
 
 En ook:
 
-![](/uploads/img_20260519_205252035.jpg)
+![](/uploads/img_20260519_205252035.jpg "Zeil opkomst")
 
 ## Hoe overleef je kamp zonder scouting achtergrond?
 

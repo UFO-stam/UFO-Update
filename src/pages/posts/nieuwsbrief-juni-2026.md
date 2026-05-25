@@ -8,6 +8,7 @@ authors:
   - Rosanne
   - Robbe
   - Stijn
+  - Floris
 type: nieuwsbrief
 ---
 Hoe overleef je kamp zonder scouting achtergrond?
@@ -50,17 +51,21 @@ Als iedereen met 1 tas loopt en jij met drie, doe je het niet fout, je bent nog 
 
 Probeer te leren van de rest op kamp. De eerste keer heb je misschien moeite met je tent opzetten, maar als je luistert naar anderen en het een paar keer probeert krijg je het zo onder de knie.
 
-## VIDEO: Voorjaarskamp en de Installatie van de nieuwe druppels
+## Voorjaarskamp en de Installatie van de nieuwe druppels
 
-<p class="cite">Door Stijn de Wit </p>
+<p class="cite">Video door Stijn de Wit </p>
 
 https://www.youtube.com/watch?v=fY0J4e33F2s   
 
 https://www.youtube.com/watch?v=2nuMlRvodqM
 
-FOTO VOORJAARSKAMP HIER?
+![Groepsfoto van alle leden die aanwezig waren op het voorjaarskamp](/uploads/whatsapp-image-2026-05-25-at-16.28.45.jpeg "Voorjaarskamp groepsfoto")
 
 ## 🧩 Puzzel
+
+Dit weer een interactieve game! Er was geen budget meer voor geluidseffecten dus die mag je er bij bedenken.
+
+{% include "interactive/shootemup.njk" %}
 
 ## UFO-Agenda
 
@@ -81,6 +86,8 @@ Van 2 juni tot en met 7 juli
 ## Verjaardag
 
 <p class="cite">Door Maarten</p>
+
+![Luuk zit uitgezakt op een kampeerstoeltje en doet een peace sign, Kirsten zit tegen over hem en doet dezelfde groet. Luuk heeft een coole zonnebril op.](/uploads/_mg_0505.jpg "(jarige) Luuk en Kirsten op SSW")
 
 Vanuit een verre cockpit in de kosmos gezien is juni een zacht tikkende klok vol vreemde, menselijke warmte.
 

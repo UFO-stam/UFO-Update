@@ -50,21 +50,15 @@ Als iedereen met 1 tas loopt en jij met drie, doe je het niet fout, je bent nog 
 
 Probeer te leren van de rest op kamp. De eerste keer heb je misschien moeite met je tent opzetten, maar als je luistert naar anderen en het een paar keer probeert krijg je het zo onder de knie.
 
-
-
 ## VIDEO: Voorjaarskamp en de Installatie van de nieuwe druppels
 
 <p class="cite">Door Stijn de Wit </p>
 
-https://youtu.be/iGZpfbe9zew
-
 https://www.youtube.com/watch?v=fY0J4e33F2s
 
-https://www.youtube.com/2nuMlRvodqM
+https://www.youtube.com/watch?v=2nuMlRvodqM
 
-
-
-
+FOTO VOORJAARSKAMP HIER?
 
 ## 🧩 Puzzel
 

@@ -1,0 +1,464 @@
+<div class="space-y-4 max-w-lg mx-auto bg-base-200 p-6 sm:p-8 rounded-2xl border border-gray-700 shadow-xl relative overflow-hidden">
+	
+	<div class="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
+		<svg width="120" height="120" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g transform="translate(150, 100)">
+				<ellipse cx="0" cy="0" rx="90" ry="32" fill="#fff" />
+				<ellipse cx="0" cy="-20" rx="45" ry="22" fill="#fff" />
+			</g>
+		</svg>
+	</div>
+
+	<div class="text-center relative z-10">
+		<h3 class="font-display text-2xl font-bold mb-2 text-primary dark:text-accent">Invasie 🛸</h3>
+		<p class="text-sm text-gray-500 dark:text-gray-400 mb-6">
+			Verdedig de nieuwsbrief! De aliens hebben zich verstopt in de nieuwsbrief. Neem de controle over je U.F.O., vlieg naar boven en versla het kwaadaardige moederschip.
+		</p>
+		
+		<div class="flex justify-center gap-4 mb-6 text-xs sm:text-sm font-medium">
+			<span class="bg-base-100 border border-base-300 px-3 py-1.5 rounded-lg shadow-sm">
+				💻 Pijltjes L/R
+			</span>
+			<span class="bg-base-100 border border-base-300 px-3 py-1.5 rounded-lg shadow-sm">
+				📱 Knoppen
+			</span>
+		</div>
+
+		<button onclick="startShooterGame()" class="px-8 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-bold shadow-lg transition-transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2 mx-auto">
+			<span>🚀 Start Missie</span>
+		</button>
+	</div>
+</div>
+
+<canvas id="shooter-canvas" class="fixed inset-0 w-full h-full pointer-events-none z-[9998] hidden"></canvas>
+
+<div id="shooter-ui" class="fixed inset-0 pointer-events-none z-[9999] hidden flex-col justify-between p-4 sm:p-6">
+	<div class="flex justify-between items-start w-full max-w-6xl mx-auto">
+		<div class="bg-gray-900/80 backdrop-blur border border-gray-700 px-4 py-2 rounded-xl">
+			<div class="text-xl sm:text-2xl font-black text-white">Score: <span id="shooter-score" class="text-blue-400">0</span></div>
+		</div>
+		<button onclick="closeShooterGame()" class="pointer-events-auto bg-red-600/90 hover:bg-red-500 backdrop-blur text-white px-5 py-2.5 rounded-xl font-bold shadow-lg transition-colors">
+			Afbreken
+		</button>
+	</div>
+
+	<div class="pointer-events-auto flex justify-between mt-auto mb-4 sm:hidden px-2">
+		<button id="btn-shoot-left" class="w-20 h-20 bg-gray-900/60 backdrop-blur-md rounded-full text-white text-3xl flex items-center justify-center active:bg-blue-500/50 border border-white/20 select-none shadow-xl">
+			◀
+		</button>
+		<button id="btn-shoot-right" class="w-20 h-20 bg-gray-900/60 backdrop-blur-md rounded-full text-white text-3xl flex items-center justify-center active:bg-blue-500/50 border border-white/20 select-none shadow-xl">
+			▶
+		</button>
+	</div>
+</div>
+
+<div id="shooter-victory" class="fixed inset-0 z-[10000] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+	<div id="victory-modal" class="bg-base-200 border border-gray-700 p-8 rounded-3xl text-center max-w-sm w-full shadow-2xl transform scale-95 opacity-0 transition-all duration-500">
+		<div class="text-6xl mb-4">🏆</div>
+		<h2 class="text-3xl font-black text-white mb-2">Missie Voltooid!</h2>
+		<p class="text-gray-400 mb-6">Het vijandige moederschip is vernietigd. De nieuwsbrief is weer veilig.</p>
+		<div class="text-2xl font-bold mb-8">Score: <span id="victory-score" class="text-blue-400">0</span></div>
+		<button onclick="closeShooterGame()" class="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold shadow-lg transition-transform hover:scale-105 active:scale-95">
+			Terug naar Nieuwsbrief
+		</button>
+	</div>
+</div>
+
+<script>
+// ___ SVG Assets ___________________________________________________________
+const ufoSvgStr = `<svg viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g id="ufo-body" transform="translate(150, 100)">
+		<rect x="-6" y="-60" width="12" height="40" fill="#555" rx="3" />
+		<circle cx="0" cy="-60" r="6" fill="#ef4444" />
+		<ellipse cx="0" cy="0" rx="90" ry="32" fill="#777" />
+		<ellipse cx="0" cy="-5" rx="80" ry="25" fill="#888" />
+		<ellipse cx="0" cy="-20" rx="45" ry="22" fill="#FFC700" />
+		<ellipse cx="-15" cy="-22" rx="5" ry="4" fill="#FFE55C" opacity="0.9" />
+		<ellipse cx="0" cy="-26" rx="5" ry="4" fill="#FFE55C" opacity="0.9" />
+		<ellipse cx="15" cy="-22" rx="5" ry="4" fill="#FFE55C" opacity="0.9" />
+	</g>
+</svg>`;
+
+const evilBossSvgStr = `<svg viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g id="boss-body" transform="translate(150, 100)">
+		<rect x="-40" y="0" width="16" height="50" fill="#111" rx="4" />
+		<rect x="24" y="0" width="16" height="50" fill="#111" rx="4" />
+		<ellipse cx="0" cy="0" rx="130" ry="45" fill="#222" />
+		<ellipse cx="0" cy="-10" rx="110" ry="35" fill="#333" />
+		<ellipse cx="0" cy="-30" rx="70" ry="35" fill="#991b1b" />
+		<ellipse cx="-35" cy="-30" rx="12" ry="6" fill="#fca5a5" opacity="0.9" />
+		<ellipse cx="0" cy="-38" rx="12" ry="6" fill="#fca5a5" opacity="0.9" />
+		<ellipse cx="35" cy="-30" rx="12" ry="6" fill="#fca5a5" opacity="0.9" />
+	</g>
+</svg>`;
+
+const ufoImg = new Image();
+ufoImg.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(ufoSvgStr);
+
+const bossImg = new Image();
+bossImg.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(evilBossSvgStr);
+
+// ___ Game State ___________________________________________________________
+let sCanvas, sCtx;
+let shootGameActive = false;
+let sScore = 0;
+let lastShootTime = 0;
+const SCROLL_SPEED = 2.5;
+
+let sPlayer = { x: 0, y: 0, w: 90, h: 120 }; 
+let keys = { left: false, right: false };
+let sBullets = [];
+let sAliens = [];
+let sParticles = [];
+let sBoss = null;
+let sModifiedDOM = new Set(); 
+
+// ___ Engine _______________________________________________________________
+function startShooterGame() {
+	if (shootGameActive) return;
+	
+	// Verberg TOC
+	const navToggle = document.getElementById('h2-nav-toggle');
+	if (navToggle) navToggle.style.display = 'none';
+	
+	sCanvas = document.getElementById('shooter-canvas');
+	sCtx = sCanvas.getContext('2d');
+	
+	resizeShooterCanvas();
+	window.addEventListener('resize', resizeShooterCanvas);
+	
+	shootGameActive = true;
+	sScore = 0;
+	sBullets = [];
+	sAliens = [];
+	sParticles = [];
+	sBoss = null;
+	keys = { left: false, right: false };
+	updateShooterScore();
+
+	const domElements = document.querySelectorAll('.prose h2, .prose h3, .prose p');
+	let lastSpawnY = -9999;
+
+	domElements.forEach(el => {
+		const rect = el.getBoundingClientRect();
+		const absoluteY = rect.top + window.scrollY;
+		
+		if (absoluteY - lastSpawnY > 120 && Math.random() > 0.1) {
+			const baseXPos = rect.left + (Math.random() * rect.width);
+			
+			for(let i = 0; i < 3; i++) {
+				let randomX = baseXPos + ((i - 1) * 60);
+				randomX = Math.max(50, Math.min(window.innerWidth - 50, randomX));
+				
+				sAliens.push({
+					baseX: randomX,
+					pageY: absoluteY - 30 - (i * 90),
+					seed: Math.random() * Math.PI * 2,
+					active: true,
+					type: '👾'
+				});
+			}
+			lastSpawnY = absoluteY;
+		}
+	});
+
+	document.body.style.overflow = 'hidden';
+	document.getElementById('shooter-ui').classList.remove('hidden');
+	document.getElementById('shooter-ui').classList.add('flex');
+	sCanvas.classList.remove('hidden');
+
+	sPlayer.x = window.innerWidth / 2;
+
+	if (typeof umami !== 'undefined') umami.track('Shooter Started');
+
+	requestAnimationFrame(shooterLoop);
+}
+
+function stopShooterGame(won = false) {
+	shootGameActive = false;
+	
+	if(won) {
+		const victoryScreen = document.getElementById('shooter-victory');
+		const victoryModal = document.getElementById('victory-modal');
+		document.getElementById('victory-score').textContent = sScore;
+		
+		victoryScreen.classList.remove('hidden');
+		victoryScreen.classList.add('flex');
+		// Trigger animatie
+		setTimeout(() => {
+			victoryModal.classList.remove('scale-95', 'opacity-0');
+			victoryModal.classList.add('scale-100', 'opacity-100');
+		}, 50);
+		
+		if (typeof umami !== 'undefined') umami.track('Shooter Won', { score: sScore });
+	} else {
+		closeShooterGame();
+	}
+}
+
+function closeShooterGame() {
+	shootGameActive = false;
+	
+	// Reset UI & Scroll
+	document.body.style.overflow = '';
+	document.getElementById('shooter-ui').classList.add('hidden');
+	document.getElementById('shooter-ui').classList.remove('flex');
+	sCanvas.classList.add('hidden');
+	
+	const victoryScreen = document.getElementById('shooter-victory');
+	victoryScreen.classList.add('hidden');
+	victoryScreen.classList.remove('flex');
+	
+	window.removeEventListener('resize', resizeShooterCanvas);
+	
+	const navToggle = document.getElementById('h2-nav-toggle');
+	if (navToggle) navToggle.style.display = '';
+
+	sModifiedDOM.forEach(el => {
+		el.style.transform = '';
+		el.style.color = '';
+		el.style.textShadow = '';
+	});
+	sModifiedDOM.clear();
+}
+
+function resizeShooterCanvas() {
+	if (!sCanvas) return;
+	const dpr = window.devicePixelRatio || 1;
+	sCanvas.width = window.innerWidth * dpr;
+	sCanvas.height = window.innerHeight * dpr;
+	sCtx.scale(dpr, dpr);
+}
+
+function updateShooterScore() {
+	document.getElementById('shooter-score').textContent = sScore;
+}
+
+// ___ Loop & Logic _________________________________________________________
+function shooterLoop() {
+	if (!shootGameActive) return;
+
+	if (window.scrollY <= 0 && !sBoss) {
+		sBoss = { 
+			x: window.innerWidth / 2, 
+			y: 160, 
+			w: 160,
+			h: 210,
+			hp: 60, 
+			maxHp: 60, 
+			active: true, 
+			spawnTime: Date.now() 
+		};
+	}
+
+	if (!sBoss) {
+		window.scrollBy(0, -SCROLL_SPEED);
+	}
+
+	updateShooter();
+	drawShooter();
+	
+	requestAnimationFrame(shooterLoop);
+}
+
+function updateShooter() {
+	// Speler
+	const speed = 7;
+	if (keys.left) sPlayer.x -= speed;
+	if (keys.right) sPlayer.x += speed;
+	
+	sPlayer.x = Math.max(sPlayer.w / 2, Math.min(window.innerWidth - sPlayer.w / 2, sPlayer.x));
+	sPlayer.y = window.innerHeight - 180;
+
+	// Auto-Shoot
+	if (Date.now() - lastShootTime > 180) {
+		sBullets.push({ x: sPlayer.x, y: sPlayer.y - 40, active: true });
+		lastShootTime = Date.now();
+	}
+
+	if (sBoss && sBoss.active) {
+		const t = (Date.now() - sBoss.spawnTime) / 1000;
+		// Vloeiende Figure-8 beweging
+		sBoss.x = (window.innerWidth / 2) + Math.sin(t * 1.5) * (window.innerWidth * 0.35);
+		sBoss.y = 160 + Math.sin(t * 3.0) * 40; 
+	}
+
+	// Kogels
+	sBullets.forEach(b => {
+		b.y -= 12;
+
+		// Tekst Interactie
+		if (b.active && b.y > 0 && b.y < window.innerHeight) {
+			const el = document.elementFromPoint(b.x, b.y);
+			if (el && ['P', 'H1', 'H2', 'H3', 'LI', 'A', 'SPAN'].includes(el.tagName)) {
+				el.style.transition = 'transform 0.05s, color 0.1s';
+				el.style.transform = `translate(${(Math.random()-0.5)*6}px, ${(Math.random()-0.5)*6}px)`;
+				el.style.color = '#ef4444';
+				el.style.textShadow = '0 0 8px rgba(239, 68, 68, 0.6)';
+				sModifiedDOM.add(el);
+				
+				if(Math.random() > 0.7) {
+					sParticles.push({
+						x: b.x, y: b.y,
+						vx: (Math.random() - 0.5) * 5, vy: Math.random() * 5,
+						life: 0.6, color: '#ef4444'
+					});
+				}
+
+				setTimeout(() => {
+					if (el && shootGameActive) el.style.transform = 'translate(0,0)';
+				}, 100);
+			}
+		}
+
+		// Boss Hit
+		if (b.active && sBoss && sBoss.active) {
+			const dx = b.x - sBoss.x;
+			const dy = b.y - sBoss.y;
+			if (Math.sqrt(dx * dx + dy * dy) < 80) {
+				b.active = false;
+				sBoss.hp -= 1;
+				sScore += 5;
+				updateShooterScore();
+				spawnExplosion(b.x, b.y, 3);
+				
+				if (sBoss.hp <= 0) {
+					sBoss.active = false;
+					sScore += 500;
+					updateShooterScore();
+					spawnExplosion(sBoss.x, sBoss.y, 40); 
+					setTimeout(() => stopShooterGame(true), 1200);
+				}
+			}
+		}
+	});
+
+	sBullets = sBullets.filter(b => b.active && b.y > -50);
+
+	// Aliens
+	sAliens.forEach(a => {
+		if (!a.active) return;
+		
+		a.screenY = a.pageY - window.scrollY;
+		a.screenX = a.baseX + Math.sin((Date.now() / 400) + a.seed) * 30;
+
+		sBullets.forEach(b => {
+			if (b.active && a.active) {
+				const dx = b.x - a.screenX;
+				const dy = b.y - a.screenY;
+				if (Math.sqrt(dx * dx + dy * dy) < 35) {
+					a.active = false;
+					b.active = false;
+					sScore += 25;
+					updateShooterScore();
+					spawnExplosion(a.screenX, a.screenY, 8);
+				}
+			}
+		});
+	});
+	
+	sAliens = sAliens.filter(a => a.active && a.screenY < window.innerHeight + 100);
+
+	// Particles
+	sParticles.forEach(p => {
+		p.x += p.vx;
+		p.y += p.vy;
+		p.life -= 0.05;
+	});
+	sParticles = sParticles.filter(p => p.life > 0);
+}
+
+function spawnExplosion(x, y, count = 8) {
+	for (let i = 0; i < count; i++) {
+		sParticles.push({
+			x: x, y: y,
+			vx: (Math.random() - 0.5) * 8,
+			vy: (Math.random() - 0.5) * 8,
+			life: 1,
+			color: ['#ef4444', '#f59e0b', '#fbbf24'][Math.floor(Math.random() * 3)]
+		});
+	}
+}
+
+function drawShooter() {
+	sCtx.clearRect(0, 0, sCanvas.width, sCanvas.height);
+
+	// Player
+	if (ufoImg.complete) {
+		sCtx.drawImage(ufoImg, sPlayer.x - sPlayer.w / 2, sPlayer.y - sPlayer.h / 2, sPlayer.w, sPlayer.h);
+	}
+
+	// Bullets
+	sCtx.fillStyle = '#ef4444';
+	sCtx.shadowColor = '#ef4444';
+	sCtx.shadowBlur = 10;
+	sBullets.forEach(b => sCtx.fillRect(b.x - 3, b.y - 15, 6, 25));
+	sCtx.shadowBlur = 0;
+
+	// Aliens
+	sCtx.font = '36px Arial';
+	sCtx.textAlign = 'center';
+	sCtx.textBaseline = 'middle';
+	sAliens.forEach(a => {
+		if (a.screenY > -100 && a.screenY < window.innerHeight + 50) {
+			sCtx.fillText(a.type, a.screenX, a.screenY);
+		}
+	});
+
+	// Boss
+	if (sBoss && sBoss.active) {
+		if (bossImg.complete) {
+			sCtx.drawImage(bossImg, sBoss.x - sBoss.w / 2, sBoss.y - sBoss.h / 2, sBoss.w, sBoss.h);
+		}
+		
+		const barWidth = 160;
+		sCtx.fillStyle = '#4b5563';
+		sCtx.fillRect(sBoss.x - barWidth/2, sBoss.y - 110, barWidth, 12);
+		sCtx.fillStyle = '#ef4444';
+		sCtx.fillRect(sBoss.x - barWidth/2, sBoss.y - 110, (sBoss.hp / sBoss.maxHp) * barWidth, 12);
+	}
+
+	// Particles
+	sParticles.forEach(p => {
+		sCtx.globalAlpha = p.life;
+		sCtx.fillStyle = p.color;
+		sCtx.beginPath();
+		sCtx.arc(p.x, p.y, Math.max(0.1, p.life * 5), 0, Math.PI * 2);
+		sCtx.fill();
+	});
+	sCtx.globalAlpha = 1;
+}
+
+// ___ Controls _____________________________________________________________
+document.addEventListener('keydown', e => {
+	if (e.key === 'ArrowLeft') keys.left = true;
+	if (e.key === 'ArrowRight') keys.right = true;
+});
+
+document.addEventListener('keyup', e => {
+	if (e.key === 'ArrowLeft') keys.left = false;
+	if (e.key === 'ArrowRight') keys.right = false;
+});
+
+function bindShooterBtn(id, dir) {
+	const btn = document.getElementById(id);
+	if(!btn) return;
+	
+	btn.addEventListener('touchstart', e => {
+		e.preventDefault();
+		keys[dir] = true;
+	}, { passive: false });
+	
+	btn.addEventListener('touchend', e => {
+		e.preventDefault();
+		keys[dir] = false;
+	}, { passive: false });
+	
+	btn.addEventListener('mousedown', () => keys[dir] = true);
+	btn.addEventListener('mouseup', () => keys[dir] = false);
+	btn.addEventListener('mouseleave', () => keys[dir] = false);
+}
+
+bindShooterBtn('btn-shoot-left', 'left');
+bindShooterBtn('btn-shoot-right', 'right');
+</script>

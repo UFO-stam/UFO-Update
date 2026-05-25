@@ -123,12 +123,12 @@ let sDomTargets = [];
 // ___ Engine _______________________________________________________________
 function cacheDomTargets() {
 	sDomTargets = [];
-	// Only query relevant interactable text elements to save memory
+
 	const elements = document.querySelectorAll('p, h1, h2, h3, li, span, a');
 	
 	elements.forEach(el => {
 		const rect = el.getBoundingClientRect();
-		// Ignore invisible elements
+
 		if (rect.width > 0 && rect.height > 0) {
 			sDomTargets.push({
 				el: el,
@@ -149,7 +149,7 @@ function startShooterGame() {
 	if (navToggle) navToggle.style.display = 'none';
 	
 	sCanvas = document.getElementById('shooter-canvas');
-	sCtx = sCanvas.getContext('2d');
+	sCtx = sCanvas.getContext('2d', { alpha: true, desynchronized: true });
 	
 	resizeShooterCanvas();
 	window.addEventListener('resize', resizeShooterCanvas);
@@ -245,7 +245,6 @@ function closeShooterGame() {
 	sModifiedDOM.forEach(el => {
 		el.style.transform = '';
 		el.style.color = '';
-		el.style.textShadow = '';
 		el.style.transition = '';
 	});
 	sModifiedDOM.clear();
@@ -254,7 +253,10 @@ function closeShooterGame() {
 
 function resizeShooterCanvas() {
 	if (!sCanvas) return;
-	const dpr = window.devicePixelRatio || 1;
+
+	const maxDPR = 1.5; 
+	const dpr = Math.min(window.devicePixelRatio || 1, maxDPR);
+	
 	sCanvas.width = window.innerWidth * dpr;
 	sCanvas.height = window.innerHeight * dpr;
 	sCtx.scale(dpr, dpr);
@@ -273,7 +275,7 @@ function shooterLoop(timestamp) {
 	let dt = (timestamp - lastTime) / 1000;
 	lastTime = timestamp;
 
-	if (dt > 0.1) dt = 0.1; // Cap delta time to prevent clipping during lag/tab switch
+	if (dt > 0.1) dt = 0.1;
 
 	if (window.scrollY <= 0 && !sBoss) {
 		sBoss = { 
@@ -299,14 +301,12 @@ function shooterLoop(timestamp) {
 }
 
 function updateShooter(dt) {
-	// Player
 	if (keys.left) sPlayer.x -= PLAYER_SPEED * dt;
 	if (keys.right) sPlayer.x += PLAYER_SPEED * dt;
 	
 	sPlayer.x = Math.max(sPlayer.w / 2, Math.min(window.innerWidth - sPlayer.w / 2, sPlayer.x));
 	sPlayer.y = window.innerHeight - 180;
 
-	// Auto-Shoot
 	if (Date.now() - lastShootTime > 180) {
 		sBullets.push({ x: sPlayer.x, y: sPlayer.y - 40, active: true });
 		lastShootTime = Date.now();
@@ -320,25 +320,22 @@ function updateShooter(dt) {
 
 	const currentScrollY = window.scrollY;
 
-	// Bullets
 	sBullets.forEach(b => {
 		b.y -= BULLET_SPEED * dt;
 
-		// Optimized Text Interaction
 		if (b.active && b.y > 0 && b.y < window.innerHeight) {
 			const bulletAbsY = b.y + currentScrollY;
 			
 			for (let i = 0; i < sDomTargets.length; i++) {
 				const t = sDomTargets[i];
 				
-				// Fast AABB Collision check
 				if (b.x > t.left && b.x < t.right && bulletAbsY > t.top && bulletAbsY < t.bottom) {
 					if (!t.isShaking) {
 						t.isShaking = true;
+						
 						t.el.style.transition = 'transform 0.05s, color 0.1s';
-						t.el.style.transform = `translate(${(Math.random()-0.5)*6}px, ${(Math.random()-0.5)*6}px)`;
+						t.el.style.transform = `translate3d(${(Math.random()-0.5)*6}px, ${(Math.random()-0.5)*6}px, 0)`;
 						t.el.style.color = '#ef4444';
-						t.el.style.textShadow = '0 0 8px rgba(239, 68, 68, 0.6)';
 						sModifiedDOM.add(t.el);
 						
 						if(Math.random() > 0.7) {
@@ -351,7 +348,7 @@ function updateShooter(dt) {
 						}
 
 						setTimeout(() => {
-							if (t.el && shootGameActive) t.el.style.transform = 'translate(0,0)';
+							if (t.el && shootGameActive) t.el.style.transform = 'translate3d(0,0,0)';
 							t.isShaking = false;
 						}, 100);
 					}
@@ -360,11 +357,9 @@ function updateShooter(dt) {
 			}
 		}
 
-		// Boss Hit
 		if (b.active && sBoss && sBoss.active) {
 			const dx = b.x - sBoss.x;
 			const dy = b.y - sBoss.y;
-			// 80 * 80 = 6400
 			if ((dx * dx + dy * dy) < 6400) {
 				b.active = false;
 				sBoss.hp -= 1;
@@ -385,7 +380,6 @@ function updateShooter(dt) {
 
 	sBullets = sBullets.filter(b => b.active && b.y > -50);
 
-	// Aliens
 	sAliens.forEach(a => {
 		if (!a.active) return;
 		
@@ -396,7 +390,6 @@ function updateShooter(dt) {
 			if (b.active && a.active) {
 				const dx = b.x - a.screenX;
 				const dy = b.y - a.screenY;
-				// 35 * 35 = 1225
 				if ((dx * dx + dy * dy) < 1225) {
 					a.active = false;
 					b.active = false;
@@ -410,7 +403,6 @@ function updateShooter(dt) {
 	
 	sAliens = sAliens.filter(a => a.active && a.screenY < window.innerHeight + 100);
 
-	// Particles
 	sParticles.forEach(p => {
 		p.x += p.vx * dt;
 		p.y += p.vy * dt;
@@ -434,47 +426,39 @@ function spawnExplosion(x, y, count = 8) {
 function drawShooter() {
 	sCtx.clearRect(0, 0, sCanvas.width, sCanvas.height);
 
-	// Player
 	if (ufoImg.complete) {
-		sCtx.drawImage(ufoImg, sPlayer.x - sPlayer.w / 2, sPlayer.y - sPlayer.h / 2, sPlayer.w, sPlayer.h);
+		sCtx.drawImage(ufoImg, Math.floor(sPlayer.x - sPlayer.w / 2), Math.floor(sPlayer.y - sPlayer.h / 2), sPlayer.w, sPlayer.h);
 	}
 
-	// Bullets
 	sCtx.fillStyle = '#ef4444';
-	sCtx.shadowColor = '#ef4444';
-	sCtx.shadowBlur = 10;
-	sBullets.forEach(b => sCtx.fillRect(b.x - 3, b.y - 15, 6, 25));
-	sCtx.shadowBlur = 0;
+	sBullets.forEach(b => sCtx.fillRect(Math.floor(b.x - 3), Math.floor(b.y - 15), 6, 25));
 
-	// Aliens
 	sCtx.font = '36px Arial';
 	sCtx.textAlign = 'center';
 	sCtx.textBaseline = 'middle';
 	sAliens.forEach(a => {
 		if (a.screenY > -100 && a.screenY < window.innerHeight + 50) {
-			sCtx.fillText(a.type, a.screenX, a.screenY);
+			sCtx.fillText(a.type, Math.floor(a.screenX), Math.floor(a.screenY));
 		}
 	});
 
-	// Boss
 	if (sBoss && sBoss.active) {
 		if (bossImg.complete) {
-			sCtx.drawImage(bossImg, sBoss.x - sBoss.w / 2, sBoss.y - sBoss.h / 2, sBoss.w, sBoss.h);
+			sCtx.drawImage(bossImg, Math.floor(sBoss.x - sBoss.w / 2), Math.floor(sBoss.y - sBoss.h / 2), sBoss.w, sBoss.h);
 		}
 		
 		const barWidth = 160;
 		sCtx.fillStyle = '#4b5563';
-		sCtx.fillRect(sBoss.x - barWidth/2, sBoss.y - 110, barWidth, 12);
+		sCtx.fillRect(Math.floor(sBoss.x - barWidth/2), Math.floor(sBoss.y - 110), barWidth, 12);
 		sCtx.fillStyle = '#ef4444';
-		sCtx.fillRect(sBoss.x - barWidth/2, sBoss.y - 110, (sBoss.hp / sBoss.maxHp) * barWidth, 12);
+		sCtx.fillRect(Math.floor(sBoss.x - barWidth/2), Math.floor(sBoss.y - 110), Math.floor((sBoss.hp / sBoss.maxHp) * barWidth), 12);
 	}
 
-	// Particles
 	sParticles.forEach(p => {
-		sCtx.globalAlpha = p.life;
+		sCtx.globalAlpha = Math.max(0, p.life);
 		sCtx.fillStyle = p.color;
 		sCtx.beginPath();
-		sCtx.arc(p.x, p.y, Math.max(0.1, p.life * 5), 0, Math.PI * 2);
+		sCtx.arc(Math.floor(p.x), Math.floor(p.y), Math.max(0.1, p.life * 5), 0, Math.PI * 2);
 		sCtx.fill();
 	});
 	sCtx.globalAlpha = 1;

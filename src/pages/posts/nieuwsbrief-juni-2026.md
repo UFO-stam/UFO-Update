@@ -1,6 +1,6 @@
 ---
 title: Nieuwsbrief, Juni 2026
-description: Deze editie is een mix van "Ik weet het niet Rosanne help me"
+description: In deze editie schieten we met onze ufo de hele nieuwsbrief aan gort
 date: 2026-06-01
 authors:
   - Kayleigh

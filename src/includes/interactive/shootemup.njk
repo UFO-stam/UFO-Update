@@ -104,6 +104,11 @@ let sScore = 0;
 let lastShootTime = 0;
 let lastTime = 0;
 
+// NEW SCROLL FIX VARIABLES
+let sScrollAccumulator = 0; 
+let sOriginalScrollBehavior = '';
+let sLastWindowWidth = 0;
+
 // Normalized speeds (pixels per second)
 const SCROLL_SPEED = 210; 
 const PLAYER_SPEED = 1000;
@@ -142,6 +147,10 @@ function cacheDomTargets() {
 	});
 }
 
+function preventManualScroll(e) {
+	if (shootGameActive) e.preventDefault();
+}
+
 function startShooterGame() {
 	if (shootGameActive) return;
 	
@@ -151,8 +160,17 @@ function startShooterGame() {
 	sCanvas = document.getElementById('shooter-canvas');
 	sCtx = sCanvas.getContext('2d', { alpha: true, desynchronized: true });
 	
+	// Disable native CSS smooth scroll to prevent loop backlog
+	sOriginalScrollBehavior = document.documentElement.style.scrollBehavior;
+	document.documentElement.style.scrollBehavior = 'auto';
+	
+	sLastWindowWidth = 0;
 	resizeShooterCanvas();
 	window.addEventListener('resize', resizeShooterCanvas);
+	
+	// Block manual scrolling via events to bypass iOS lock
+	window.addEventListener('touchmove', preventManualScroll, { passive: false });
+	window.addEventListener('wheel', preventManualScroll, { passive: false });
 	
 	shootGameActive = true;
 	sScore = 0;
@@ -160,6 +178,7 @@ function startShooterGame() {
 	sAliens = [];
 	sParticles = [];
 	sBoss = null;
+	sScrollAccumulator = 0;
 	lastTime = 0;
 	keys = { left: false, right: false };
 	updateShooterScore();
@@ -191,7 +210,6 @@ function startShooterGame() {
 		}
 	});
 
-	document.body.style.overflow = 'hidden';
 	document.getElementById('shooter-ui').classList.remove('hidden');
 	document.getElementById('shooter-ui').classList.add('flex');
 	sCanvas.classList.remove('hidden');
@@ -228,7 +246,11 @@ function stopShooterGame(won = false) {
 function closeShooterGame() {
 	shootGameActive = false;
 	
-	document.body.style.overflow = '';
+	// Restore browser scroll state
+	document.documentElement.style.scrollBehavior = sOriginalScrollBehavior;
+	window.removeEventListener('touchmove', preventManualScroll);
+	window.removeEventListener('wheel', preventManualScroll);
+	
 	document.getElementById('shooter-ui').classList.add('hidden');
 	document.getElementById('shooter-ui').classList.remove('flex');
 	sCanvas.classList.add('hidden');
@@ -253,6 +275,9 @@ function closeShooterGame() {
 
 function resizeShooterCanvas() {
 	if (!sCanvas) return;
+	
+	if (window.innerWidth === sLastWindowWidth) return;
+	sLastWindowWidth = window.innerWidth;
 
 	const maxDPR = 1.5; 
 	const dpr = Math.min(window.devicePixelRatio || 1, maxDPR);
@@ -275,7 +300,7 @@ function shooterLoop(timestamp) {
 	let dt = (timestamp - lastTime) / 1000;
 	lastTime = timestamp;
 
-	if (dt > 0.1) dt = 0.1;
+	if (dt > 0.05) dt = 0.05;
 
 	if (window.scrollY <= 0 && !sBoss) {
 		sBoss = { 
@@ -291,7 +316,12 @@ function shooterLoop(timestamp) {
 	}
 
 	if (!sBoss) {
-		window.scrollBy(0, -(SCROLL_SPEED * dt));
+		sScrollAccumulator += SCROLL_SPEED * dt;
+		if (sScrollAccumulator >= 1) {
+			const scrollPixels = Math.floor(sScrollAccumulator);
+			window.scrollBy(0, -scrollPixels);
+			sScrollAccumulator -= scrollPixels;
+		}
 	}
 
 	updateShooter(dt);

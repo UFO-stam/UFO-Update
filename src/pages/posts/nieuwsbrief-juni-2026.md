@@ -11,7 +11,21 @@ authors:
   - Floris
 type: nieuwsbrief
 ---
-Hoe overleef je kamp zonder scouting achtergrond?
+## Inleiding
+
+Terugblik fotos
+
+![](/uploads/_mg_0812.jpg)
+
+en
+
+![](/uploads/_mg_0843.jpg)
+
+En ook:
+
+![](/uploads/img_20260519_205252035.jpg)
+
+## Hoe overleef je kamp zonder scouting achtergrond?
 
 De studenten scouting is een super leuke manier om kennis te maken met scouting op een latere leeftijd. Je zit met leeftijdsgenoten, hebt sneller gedeelde interesses en kan stapsgewijs meemaken hoe de scouting ervaring in elkaar zit. Een goed voorbeeld hiervan; de kampen. 
 

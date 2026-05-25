@@ -54,7 +54,7 @@ Probeer te leren van de rest op kamp. De eerste keer heb je misschien moeite met
 
 <p class="cite">Door Stijn de Wit </p>
 
-https://www.youtube.com/watch?v=fY0J4e33F2s
+https://www.youtube.com/watch?v=fY0J4e33F2s   
 
 https://www.youtube.com/watch?v=2nuMlRvodqM
 

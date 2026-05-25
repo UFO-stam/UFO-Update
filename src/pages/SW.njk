@@ -30,7 +30,6 @@ self.addEventListener('install', (event) => {
 	);
 });
 
-// CLEAN UP OLD CACHES
 self.addEventListener('activate', (event) => {
 	event.waitUntil(
 		caches.keys().then((cacheNames) => {
@@ -42,7 +41,7 @@ self.addEventListener('activate', (event) => {
 					}
 				})
 			);
-		})
+		}).then(() => self.clients.claim()) // Takes immediate control of uncontrolled clients
 	);
 });
 
@@ -50,6 +49,27 @@ self.addEventListener('fetch', (event) => {
 	const url = new URL(event.request.url);
 
 	if (url.protocol === 'chrome-extension:' || url.hostname.includes('umami.is')) {
+		return;
+	}
+
+	if (url.pathname.startsWith('/backoffice')) {
+		return; 
+	}
+
+	if (event.request.mode === 'navigate') {
+		event.respondWith(
+			fetch(event.request)
+				.then((networkResponse) => {
+					const cacheCopy = networkResponse.clone();
+					caches.open(CACHE_NAME).then((cache) => {
+						cache.put(event.request, cacheCopy);
+					});
+					return networkResponse;
+				})
+				.catch(() => {
+					return caches.match(event.request);
+				})
+		);
 		return;
 	}
 
@@ -69,7 +89,6 @@ self.addEventListener('fetch', (event) => {
 				}
 				return networkResponse;
 			}).catch(() => {
-				// Return cached response if network fails
 				return cachedResponse;
 			});
 

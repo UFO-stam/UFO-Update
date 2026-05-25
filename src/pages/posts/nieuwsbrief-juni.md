@@ -1,9 +1,13 @@
 ---
-title: Nieuwsbrief Juni 2026
+title: Nieuwsbrief, Juni 2026
 description: Deze editie is een mix van "Ik weet het niet Rosanne help me"
-date: now
+date: 2026-06-01
 authors:
-  - RedacCie
+  - Kayleigh
+  - Maarten
+  - Rosanne
+  - Robbe
+  - Stijn
 type: nieuwsbrief
 ---
 Hoe overleef je kamp zonder scouting achtergrond?
@@ -55,3 +59,40 @@ Ga er niet vanuit dat je alles al in huis hebt. Verzamel je spullen op tijd zoda
 Als iedereen met 1 tas loopt en jij met drie, doe je het niet fout, je bent nog aan het wennen aan alles inpakken, en je hebt niet de kleinste, meest efficiënte spullen bij de Bever gekocht. Zolang je lekker kan slapen, en je goed voelt met je spullen gaat alles goed. 
 
 Probeer te leren van de rest op kamp. De eerste keer heb je misschien moeite met je tent opzetten, maar als je luistert naar anderen en het een paar keer probeert krijg je het zo onder de knie.
+
+
+## 🧩 Puzzel
+
+## UFO-Agenda
+
+Van 2 juni tot en met 7 juli
+
+| Datum | Welke stam | Wat gaan we doen? |
+| :---- | :---- | :---- |
+| 2 jun | Student | Opkomst |
+| 4 jun | Alumni | Buitenspelen |
+| 9 jun | Student/Alumni | VerkiezingsAV Pt 2 |
+| 16 jun | Student | Opkomst |
+| 18 jun | Alumni | Midsommar feest in Baarn |
+| 23 jun  | Student/Alumni | EindejaarsAV |
+| 30 jun | Student/Alumni | EindBBQ |
+| 2 jul | Alumni | onbekend |
+| 7 jul  | Student/Alumni | Borrel |
+
+## Verjaardag
+
+<p class="cite">Door Maarten</p>
+
+Vanuit een verre cockpit in de kosmos gezien is juni een zacht tikkende klok vol vreemde, menselijke warmte.
+
+Op de negende flitst **Marijn Stienstra** op het buitenaardse scherm: 29 rondjes om de zon, peinzend bij het kaarsvet.
+
+Twee dagen later, een dubbele trilling op de radar. **Minke** en de enige echte **Luuk van Grootel** lichten synchroon op, allebei exact 24\. Twee sterren die dezelfde galactische frequentie delen.
+
+Dan, na een korte kosmische adempauze, licht de zeventiende op. **Anne Floor** treedt haar 28e jaar binnen.
+
+Een dag later, op de achttiende, geeft **Kirsten** een felle ontlading. Pas 22, een baken van onversneden energie in het donker.
+
+Op de negentiende eindigd **Thym** de scan. Ook hij tikt de 24 aan. Geen uitschieter, maar een kalm, standvastig ritme.
+
+Ze begrijpen er daarboven niks van, dat vieren van de vergankelijkheid. Maar ze kijken gefascineerd toe. Gefeliciteerd, stipjes op de radar.

@@ -13,15 +13,26 @@ type: nieuwsbrief
 ---
 ## Inleiding
 
-Terugblik fotos
+Hebben jullie ook zo genoten van het lekkere weer van de afgelopen week? Ik in ieder geval wel. Al was dat tijdens de opkomsten in deze terugblik nog niet echt het geval. Naast mijn terugblik op de opkomsten van afgelopen maand lees je een artikel over ‘Hoe overleef je kamp zonder scoutingachtergrond?’, een artikel over SSW, bekijk je video’s over de installatie en het voorjaarskamp en vind je natuurlijk ook een puzzel, de agenda, de verjaardagen en een afsluiting.
 
-![](/uploads/_mg_0812.jpg "Tent opruimen")
+In mijn vorige terugblik ben ik de installatie-opkomst vergeten. Sorry jongens, bij deze alsnog. Op 21 april was het tijd voor de installatie. De druppels moesten eerst een hike lopen, waarbij ze verschillende posten moesten doorstaan. De eindpost bevond zich op het gebouw. Hier moesten ze strijden tegen een aantal U.F.O.’s om door te mogen naar het echte ritueel. De druppels moesten vragen goed beantwoorden, waarna ze tegen een lid van de stam een parcour aflegden en een beker water achterover tikten. In totaal moesten ze tien punten verdienen. Binnen was het vervolgens tijd voor de belofte, de wet, de uitwisseling van het UFO-snoepje en de onthulling van de kleur van diens onderbroek. Welkom: Amber, Joost, Sanne, Boyd en Rens.
 
-en
 
-![](/uploads/_mg_0843.jpg "Groepsfoto op SSW")
 
-En ook:
+
+![](/uploads/46197685-9f95-43db-a988-b1e1cf2a8ae0.jpeg "De geïnstalleerden")
+
+
+
+Die week erop hadden we de verkiezings-AV. Helaas is er tijdens deze vergadering geen nieuw bestuur gekozen vanwege een meerderheid aan tegenstemmen. Dit betekent dat het proces opnieuw is begonnen. De week daarna was het 5 mei. Er was geen normale opkomst, maar een zomeropkomst. Tijdens zomeropkomsten kan het initiatief genomen worden om iets leuks te doen. Deze keer gingen we met een groepje naar het Bevrijdingsfestival in Utrecht. Ik, Floris, Kayleigh, Lotte en Marijn begonnen al vroeg op de dag, waarna steeds meer mensen aansloten. Hoewel er niet altijd evenveel muziek werd gedraaid die ik kende, was het weer enorm gezellig.
+
+
+
+![](/uploads/img_20260512_212918253.jpg "Commissiemarkt")
+
+
+
+Op 12 mei was er opnieuw een AV, omdat het proces voor het kiezen van een bestuur opnieuw was begonnen. Tijdens deze vergadering is een nieuwe KiesCo gekozen. Na de vergadering kregen alle commissies de ruimte om nieuwe leden te werven. Op 19 mei organiseerden Robin en Jelte een zeilopkomst. Dit betekende dat de opkomst niet plaatsvond op ’t Moederschip, maar op ons oude gebouw, namelijk bij Baracuda Zeeverkenners. De weersvoorspelling beloofde helaas niet veel goeds en dat bleek ook te kloppen. Tijdens het zeilen regende het bijna constant; het varieerde van zachte motregen tot flinke buien. Toch werd er veel gelachen en het nodige potje tikkertje gespeeld met de stootwillen.
 
 ![](/uploads/img_20260519_205252035.jpg "Zeil opkomst")
 

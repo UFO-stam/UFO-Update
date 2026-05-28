@@ -133,3 +133,11 @@ Een dag later, op de achttiende, geeft **Kirsten** een felle ontlading. Pas 22, 
 Op de negentiende eindigt **Thym** de scan. Ook hij tikt de 24 aan. Geen uitschieter, maar een kalm, standvastig ritme.
 
 Ze begrijpen er daarboven niks van, dat vieren van de vergankelijkheid. Maar ze kijken gefascineerd toe. Gefeliciteerd, stipjes op de radar.
+
+## Afsluiting
+
+<p class="cite">Door Rosanne Wormgoor </p>
+
+Lieve U.F.O.'s,
+
+Jullie zijn alweer aan het einde van deze leuke nieuwsbrief gekomen, zorg vooral dat je naast het lezen van alle artikelen, de tijd hebt genomen om de video's van Stijn te bekijken. Vooral die van voorjaarskamp vind ik zelf fantastisch. Lees ook zeker onze volgende nieuwsbrief, want voor je het weet is de zomerstop alweer aangebroken en als je de nieuwsbrief nog langer wil maken, weet je wat je moet doen:

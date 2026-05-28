@@ -124,7 +124,7 @@ Vanuit een verre cockpit in de kosmos gezien is juni een zacht tikkende klok vol
 
 Op de negende flitst **Marijn Stienstra** op het buitenaardse scherm: 29 rondjes om de zon, peinzend bij het kaarsvet.
 
-Twee dagen later, een dubbele trilling op de radar. **Minke** en de enige echte **Luuk van Grootel** lichten synchroon op, allebei exact 24. Twee sterren die dezelfde galactische frequentie delen.
+Twee dagen later: een dubbele trilling op de radar. **Minke** en de enige echte **Luuk van Grootel** lichten synchroon op, allebei exact 24. Twee sterren die dezelfde galactische frequentie delen.
 
 Dan, na een korte kosmische adempauze, licht de zeventiende op. **Anne Floor** treedt haar 28e jaar binnen.
 

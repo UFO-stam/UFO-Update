@@ -33,36 +33,36 @@ Op 12 mei was er opnieuw een AV, omdat het proces voor het kiezen van een bestuu
 
 <p class="cite">Door Kayleigh Hogerheijde </p>
 
-De studenten scouting is een super leuke manier om kennis te maken met scouting op een latere leeftijd. Je zit met leeftijdsgenoten, hebt sneller gedeelde interesses en kan stapsgewijs meemaken hoe de scouting ervaring in elkaar zit. Een goed voorbeeld hiervan; de kampen. 
+De studentenscouting is een superleuke manier om kennis te maken met scouting op latere leeftijd. Je zit met leeftijdsgenoten, hebt sneller gedeelde interesses en kan stapsgewijs meemaken hoe de scoutingervaring in elkaar zit. Een goed voorbeeld hiervan: de kampen. 
 
-Voor mensen die al langer op scouting zitten is op kamp gaan met je vrienden niets nieuws. Sommige van hen kochten de decathlon al leeg voordat jij überhaupt van scouting had gehoord. Kamp is de plek waar je met je vrienden kan opgroeien in die gestolen weekenden van huis. Als nieuw scouting lid liep ik tijdens mijn eerste kamp vooral tegen 1 probleem aan: Wat neem je in hemelsnaam mee naar kamp? Sure, de paklijst zegt een matje, slaapzak, bergschoenen, tent, Lupa, en zo voort. Ik had voor mijn eerste kamp nog nooit van het woord ‘lupa’ gehoord. 
+Voor mensen die al langer op scouting zitten, is op kamp gaan met je vrienden niets nieuws. Sommige van hen kochten de Decathlon al leeg voordat jij überhaupt van scouting had gehoord. Kamp is de plek waar je met je vrienden kan opgroeien in die gestolen weekenden van huis. Als nieuw scoutinglid liep ik tijdens mijn eerste kamp vooral tegen één probleem aan: wat neem je in hemelsnaam mee naar kamp? Sure, de paklijst zegt een matje, slaapzak, bergschoenen, tent, lupa, en zo voort. Ik had voor mijn eerste kamp nog nooit van het woord ‘lupa’ gehoord. 
 
-Inmiddels een paar kampen verder vind ik mezelf het aangewezen persoon om de kamp paklijst te maken voor mensen die nieuw zijn bij scouting. Niet omdat het nodig is, maar fijn is om de ervaring te overleven. 
+Inmiddels een paar kampen verder vind ik mezelf de aangewezen persoon om de kamppaklijst te maken voor mensen die nieuw zijn bij scouting. Niet omdat het nodig is, maar fijn is om de ervaring te overleven. 
 
 **Kleding**\
-Neem maar twee truien mee. Alles meer ga je niet dragen, en helaas wordt alles toch wel vies
+Neem maar twee truien mee. Alles meer ga je niet dragen en helaas wordt alles toch wel vies
 
-Denk alleen in essentials. Je hebt een broek nodig om in aan te komen, 1 om eventueel in te slapen, en een laatste als back-up. Outfits maken zit er naar mijn ervaring niet echt in. (Los van de thema-avonden)
+Denk alleen in essentials. Je hebt een broek nodig om in aan te komen, één om eventueel in te slapen en een als back-up. Outfits maken zit er naar mijn ervaring niet echt in (los van de thema-avonden).
 
-Neem niet te veel ondergoed mee. Op vakantie naar Spanje nam ik makkelijk 16 paar mee, met het excuus dat ik wel iets moest kunnen dragen of matchen. Als je naar een scouting terrein gaat moet je meestal je spullen zelf dragen, omdat je auto niet overal makkelijk kan komen. Houd er rekening mee dat je je rug niet wilt breken (including die van je partner, mocht die je helpen)
+Neem niet te veel ondergoed mee. Op vakantie naar Spanje nam ik makkelijk zestien paar mee, met het excuus dat ik wel iets moest kunnen dragen of matchen. Als je naar een scoutingterrein gaat, moet je meestal je spullen zelf dragen, omdat je met de auto niet overal makkelijk kan komen. Houd er rekening mee dat je je rug niet wilt breken (including die van je partner, mocht die je helpen).
 
-Sportkleding werkt prima. De outdoor-kleding die sommige mensen dragen verzamelen ze al jaren. Het is logisch niet alles te hebben. Sport kleding is meestal net zo elastisch, en kan meestal ook goed vies worden. Een goed alternatief dus!
+Sportkleding werkt prima. De outdoor-kleding die sommige mensen dragen, verzamelen ze al jaren. Het is logisch niet alles te hebben. Sportkleding is meestal net zo elastisch en kan meestal ook goed vies worden. Een goed alternatief dus!
 
 **Kampspullen**\
-Heb je geen eigen tent? Geen probleem. Bijna altijd is er wel iemand die plek over heeft, of kun je in een groepstent slapen. Dat is soms zelfs leuker. Een tent is een grote uitgave, en dat hoeft niet gelijk.
+Heb je geen eigen tent? Geen probleem. Bijna altijd is er wel iemand die plek over heeft, of kun je in een groepstent slapen. Dat is soms zelfs leuker. Een tent is een grote uitgave en dat hoeft niet gelijk.
 
-Een matje en slaapzak waren voor mij erg belangrijk. Ik sliep op mijn eerst kamp namelijk vrij slecht door deze dingen. Wat mij hielp is om me heen vragen of mensen materialen over hadden, of advies konden geven waar ik zelf redelijk geprijsde spullen kon halen. Voor mij werd het een tripje decathlon, maar het zal je verbazen wat sommige mensen in de schuur hebben liggen wat je ook kan lenen als je het lief vraagt. En mochten de spullen die je leent niet helemaal voor jou werken, maak je geen zorgen, je bent niet moeilijk iedereen heeft z’n eigen ritme. P.S. Ik weet niet wie ooit heeft bedacht dat opblaasbedden niet scouting fit zijn, maar ze werken heerlijk. 
+Een matje en slaapzak waren voor mij erg belangrijk. Ik sliep op mijn eerst kamp namelijk vrij slecht door deze dingen. Wat mij hielp, was om me heen vragen of mensen materialen over hadden, of advies konden geven waar ik zelf redelijk geprijsde spullen kon halen. Voor mij werd het een tripje Decathlon, maar het zal je verbazen wat sommige mensen in de schuur hebben liggen wat je ook kan lenen als je het lief vraagt. En mochten de spullen die je leent niet helemaal voor jou werken, maak je geen zorgen, je bent niet moeilijk iedereen heeft z’n eigen ritme. P.S.: ik weet niet wie ooit heeft bedacht dat opblaasbedden niet scoutingfit zijn, maar ze werken heerlijk. 
 
-Mok, bestek, bord, lunchtrommel. Voor iemand die makkelijker een broodje bij de AH to go haalt dan het thuis smeert was dit ook een hele openbaring. Je kan eigenlijk alles meenemen voor deze dingen maar ik zou persoonlijk beginnen met plastic zakjes voor de lupa’s en goedkoop kinderbestek/bord/beker voor de rest. Het snelst en makkelijkst om te regelen
+Mok, bestek, bord, lunchtrommel. Voor iemand die makkelijker een broodje bij de AH to go haalt dan het thuis smeert, was dit ook een hele openbaring. Je kan eigenlijk alles meenemen voor deze dingen, maar ik zou persoonlijk beginnen met plastic zakjes voor de lupa’s en goedkoop kinderbestek/bord/beker voor de rest. Dat is het snelst en makkelijkst om te regelen
 
-Outdoor tools. Ik zag mensen met een kompas, multitool en alle soorten messen rondlopen op mijn eerste kamp. Ik had nooit een ander kompas gezien dan die op mijn mobiel. Deze spullen niet hebben is niet erg. Je kan de meeste van mensen lenen (al is het in het moment) of je gebruikt ze samen. Neem jij maar de muziekbox mee, dat waarderen ze ook
+Outdoortools, ik zag mensen met een kompas, multitool en alle soorten messen rondlopen op mijn eerste kamp. Ik had nooit een ander kompas gezien dan die op mijn mobiel. Deze spullen niet hebben, is niet erg. Je kan de meeste van mensen lenen (al is het in het moment) of je gebruikt ze samen. Neem jij maar de muziekbox mee, dat waarderen ze ook
 
 **Extra tips**\
-Ga er niet vanuit dat je alles al in huis hebt. Verzamel je spullen op tijd zodat als je iets mist je dit nog kan halen of lenen. Mensen zijn meestal wel redelijk, mits ze de tijd krijgen van je. 
+Ga er niet vanuit dat je alles al in huis hebt. Verzamel je spullen op tijd, zodat als je iets mist je dit nog kan halen of lenen. Mensen zijn meestal wel redelijk, mits ze de tijd krijgen van je. 
 
-Als iedereen met 1 tas loopt en jij met drie, doe je het niet fout, je bent nog aan het wennen aan alles inpakken, en je hebt niet de kleinste, meest efficiënte spullen bij de Bever gekocht. Zolang je lekker kan slapen, en je goed voelt met je spullen gaat alles goed. 
+Als iedereen met één tas loopt en jij met drie, doe je het niet fout, je bent nog aan het wennen aan alles inpakken, en je hebt niet de kleinste, meest efficiënte spullen bij de Bever gekocht. Zolang je lekker kan slapen en je goed voelt met je spullen, gaat alles goed. 
 
-Probeer te leren van de rest op kamp. De eerste keer heb je misschien moeite met je tent opzetten, maar als je luistert naar anderen en het een paar keer probeert krijg je het zo onder de knie.
+Probeer te leren van de rest op kamp. De eerste keer heb je misschien moeite met je tent opzetten, maar als je luistert naar anderen en het een paar keer probeert, krijg je het zo onder de knie.
 
 ## SSW
 
@@ -81,7 +81,6 @@ Op zaterdagochtend was er na het ontbijt een soort postenspel geregeld. Ik kan h
 Voor het avondeten op zaterdag was er iets heel lekkers geregeld, namelijk een frietkraam. Je kon lekker een frietje en een snack halen en zelfs appelmoes erbij nemen. Na het eten was het tijd voor een pubquiz. De vragen varieerden van algemene kennis tot een ronde waarin je moest raden wie welke leugen gedurende het weekend had verspreid. In de avond was het uiteraard weer tijd voor een feestje. Voor ons vond dat feestje plaats in de WC, waar onze eigen Floris draaide. Het was alleen wel erg warm, dus op een gegeven moment werd het een complete blote-basten-escalatie. Nadat de WC-rave was afgelopen, trok een groepje U.F.O.’s er nog op uit richting een meertje om te gaan zwemmen. Alleen bleek er blauwalg te zijn, dus dat plan ging uiteindelijk niet door. Toch had niet iedereen dat bord gezien, waardoor er alsnog een paar mensen het water in waren gegaan.
 
 Toen was het alweer zondag, de laatste dag van de SSW. In de ochtend kon je na het ontbijt kiezen tussen bieryoga of een soort insigneworkshop met cocktails. Allebei erg aantrekkelijke opties natuurlijk. Verder stond de zondag vooral in het teken van opruimen en de uitreiking van de bestuursfoto-awards. Hoewel wij niet de hoofdprijs wonnen, kregen we wel de prijs voor het meest studentikoze bestuur. De echte prijs ging naar de Kruiken, maar de vraag is of je die prijs wel wilt winnen, want dan staat er een bierdouche op je te wachten. Met die bierdouche en de sluiting kwam dit geslaagde weekend uiteindelijk ten einde.
-
 
 ## Voorjaarskamp en de Installatie van de nieuwe druppels
 

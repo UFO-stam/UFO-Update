@@ -94,7 +94,7 @@ https://www.youtube.com/watch?v=2nuMlRvodqM
 
 ## 🧩 Puzzel
 
-Dit weer een interactieve game! Er was geen budget meer voor geluidseffecten dus die mag je er bij bedenken.
+Dit weer een interactieve game! Er was geen budget meer voor geluidseffecten, dus die mag je er bij bedenken.
 
 {% include "interactive/shootemup.njk" %}
 
@@ -106,7 +106,7 @@ Van 2 juni tot en met 7 juli
 | ------ | -------------- | ------------------------ |
 | 2 jun  | Student        | Opkomst                  |
 | 4 jun  | Alumni         | Buitenspelen             |
-| 9 jun  | Student/Alumni | VerkiezingsAV Pt 2       |
+| 9 jun  | Student/Alumni | Borrel                   |
 | 16 jun | Student        | Opkomst                  |
 | 18 jun | Alumni         | Midsommar feest in Baarn |
 | 23 jun | Student/Alumni | EindejaarsAV             |
@@ -130,6 +130,6 @@ Dan, na een korte kosmische adempauze, licht de zeventiende op. **Anne Floor** t
 
 Een dag later, op de achttiende, geeft **Kirsten** een felle ontlading. Pas 22, een baken van onversneden energie in het donker.
 
-Op de negentiende eindigd **Thym** de scan. Ook hij tikt de 24 aan. Geen uitschieter, maar een kalm, standvastig ritme.
+Op de negentiende eindigt **Thym** de scan. Ook hij tikt de 24 aan. Geen uitschieter, maar een kalm, standvastig ritme.
 
 Ze begrijpen er daarboven niks van, dat vieren van de vergankelijkheid. Maar ze kijken gefascineerd toe. Gefeliciteerd, stipjes op de radar.

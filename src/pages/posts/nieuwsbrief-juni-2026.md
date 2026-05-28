@@ -140,4 +140,4 @@ Ze begrijpen er daarboven niks van, dat vieren van de vergankelijkheid. Maar ze 
 
 Lieve U.F.O.'s,
 
-Jullie zijn alweer aan het einde van deze leuke nieuwsbrief gekomen, zorg vooral dat je naast het lezen van alle artikelen, de tijd hebt genomen om de video's van Stijn te bekijken. Vooral die van voorjaarskamp vind ik zelf fantastisch. Lees ook zeker onze volgende nieuwsbrief, want voor je het weet is de zomerstop alweer aangebroken en als je de nieuwsbrief nog langer wil maken, weet je wat je moet doen:
+Jullie zijn alweer aan het einde van deze leuke nieuwsbrief gekomen, zorg vooral dat je naast het lezen van alle artikelen, de tijd hebt genomen om de video's van Stijn te bekijken. Vooral die van voorjaarskamp vind ik zelf fantastisch. Lees ook zeker onze volgende nieuwsbrief, want voor je het weet is de zomerstop alweer aangebroken en als je de nieuwsbrief nog langer wil maken, weet je wat je moet doen: stuur een mail naar redactie@ufostam.nl en wie weet staat jouw ingezonden stuk er dan de volgende keer tussen. Tot volgende maand!

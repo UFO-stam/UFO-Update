@@ -124,46 +124,6 @@ Wees voor eeuwig aan de club toegewijd.
 
 ![Mensen aan het bier in de club](/uploads/whatsapp-image-2026-03-19-at-22.51.58.jpeg "U.F.O's aan het genieten in de Chupitos")
 
-## 🧩 Puzzel
-
-Deze maand weer een leuke uitdaging, ben jij een beetje goed in doolhoven?
-
-{% include "interactive/puzzles/maze.njk" %}
-
-## Voorjaarskamp
-
-![Promo flyer Voorjaarskamp](/uploads/schermafbeelding-2026-04-01-124752.png "VakampCie promo")
-
-Heb jij niks te doen tussen 15 en 17 mei? Dat dacht ik al!😇\
-Schrijf je dan nu in voor ons avontuurlijke en gezellige scouting voorjaarskamp!🏕️\
-[Link om je op te geven](https://docs.google.com/forms/d/e/1FAIpQLSdTX_mFVqsMZeZxGh-pAwlb_BX39rSpxbqWsR4QJPDkCJiZEg/viewform)
-
-Kan je nog geen vuur maken, knopen leggen of pionieren? Hier kan je het leren!🪢\
-Hopelijk zien we je snel een drankje doen bij het kampvuur!
-
-Liefs, de VakampCie
-
-## UFO-Agenda
-
-Van 7 april tot en met 5 mei
-
-| Datum    | Welke stam         | Wat gaan we doen?                   |
-| -------- | ------------------ | ----------------------------------- |
-| 7 apr    | Student            | Recorddag Opkomst                   |
-| 9 apr    | Iedereen           | LinkedIn-foto's maken               |
-| 10 april | Alumni             | Alumni weekendje                    |
-| 14 apr   | Student/Alumni     | Paint and Sip Borrel                |
-| 21 apr   | Student/Alumni     | Verkiezings-AV                      |
-| 23 april | Iedereen           | Wie is de Mol murder mystery cantus |
-| 28 apr   | ~~Student/Alumni~~ | ~~HideoutBorrel~~                   |
-| 5 mei    | Student            | Opkomst                             |
-
-## Verjaardag
-
-<p class="cite">Door Maarten</p>
-
-We hebben het ook deze maand rustig met de jarigen. Het is er weer maar eentje. Femke Hoekema moet ons op 9 april compenseren voor alle rust de afgelopen tijd wanneer we haar 23e verjaardag vieren. 
-
 ## Horoscoop
 
 <p class="cite">Door Kayleigh Hogerheijde </p>
@@ -242,6 +202,46 @@ Je hebt een financiële tegenslag, maar dat is oké. Je omgeving zal je onderste
 **Leven:** Je komt weer in contact met oude bekenden. Blijf even met ze zitten en vraag naar het leven. Jullie groeien maar één keer samen op. 
 
 ![Mensen in een kring om de U.F.O-boom heen]( "Bezoekje aan de U.F.O-boom")
+
+## Voorjaarskamp
+
+![Promo flyer Voorjaarskamp](/uploads/schermafbeelding-2026-04-01-124752.png "VakampCie promo")
+
+Heb jij niks te doen tussen 15 en 17 mei? Dat dacht ik al!😇\
+Schrijf je dan nu in voor ons avontuurlijke en gezellige scouting voorjaarskamp!🏕️\
+[Link om je op te geven](https://docs.google.com/forms/d/e/1FAIpQLSdTX_mFVqsMZeZxGh-pAwlb_BX39rSpxbqWsR4QJPDkCJiZEg/viewform)
+
+Kan je nog geen vuur maken, knopen leggen of pionieren? Hier kan je het leren!🪢\
+Hopelijk zien we je snel een drankje doen bij het kampvuur!
+
+Liefs, de VakampCie
+
+## 🧩 Puzzel
+
+Deze maand weer een leuke uitdaging, ben jij een beetje goed in doolhoven?
+
+{% include "interactive/puzzles/maze.njk" %}
+
+## UFO-Agenda
+
+Van 7 april tot en met 5 mei
+
+| Datum    | Welke stam         | Wat gaan we doen?                   |
+| -------- | ------------------ | ----------------------------------- |
+| 7 apr    | Student            | Recorddag Opkomst                   |
+| 9 apr    | Iedereen           | LinkedIn-foto's maken               |
+| 10 april | Alumni             | Alumni weekendje                    |
+| 14 apr   | Student/Alumni     | Paint and Sip Borrel                |
+| 21 apr   | Student/Alumni     | Verkiezings-AV                      |
+| 23 april | Iedereen           | Wie is de Mol murder mystery cantus |
+| 28 apr   | ~~Student/Alumni~~ | ~~HideoutBorrel~~                   |
+| 5 mei    | Student            | Opkomst                             |
+
+## Verjaardag
+
+<p class="cite">Door Maarten</p>
+
+We hebben het ook deze maand rustig met de jarigen. Het is er weer maar eentje. Femke Hoekema moet ons op 9 april compenseren voor alle rust de afgelopen tijd wanneer we haar 23e verjaardag vieren. 
 
 ## Afsluiting
 

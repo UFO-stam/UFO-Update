@@ -1,208 +1,177 @@
 ---
 title: Nieuwsbrief, Oktober 2025
-description: Deze maand een enge verrassing! Durf jij het aan?
-date: 2025-11-03
+description: De allereerste nieuwsbrief van de RedacCie is hier!
+date: 2025-10-06
 authors:
   - Kayleigh
   - Rosanne
   - Robbe
   - Maarten
+  - Indy
 type: nieuwsbrief
 ---
 ## Inleiding
 
 Door Rosanne Wormgoor
 
-We hopen dat jullie allemaal van de eerste editie van onze nieuwsbrief hebben genoten. De afgelopen maand is voorbij gevlogen, want het is alweer tijd voor de nieuwsbrief van oktober. Uiteraard komen de vaste rubrieken weer terug: een column van de hoofdredacteur, een artikel over een actueel thema, een bestuursupdate, een horoscoop, een puzzel, een spotprent en een terugblik op de opkomsten van de afgelopen maand. In deze editie spreken we met een U.F.O.-lid dat dol is op Halloween.
+Het is zover: de RedacCie lanceert haar allereerste nieuwsbrief als kersverse commissie. Daarmee blazen we de nieuwsbrief nieuw leven in. Vanaf nu kun je elke maand een nieuwe editie verwachten, met vaste rubrieken zoals een column van de hoofdredacteur, een artikel over een actueel thema, een bestuursupdate, een horoscoop, een puzzel, een spotprent en een terugblik op de opkomsten van de afgelopen maand. In deze editie spreken we met een UFO-lid dat net aan een nieuwe studie is begonnen. Ook kun je aan de slag met een leuke woordzoeker.
 
-Afgelopen maand hebben we bij de U.F.O.-Stam verschillende borrels en activiteiten gedaan. In de terugblik pakken we nog net de laatste opkomst van september mee. Tijdens deze opkomst gingen we Jachtseizoen doen. Dit hadden Kirsten en Robin georganiseerd. Iedereen mocht groepjes maken van twee à drie personen en vervolgens moesten we op de vlucht slaan voor de jagers: Robin, Tom V en Robbe, terwijl onze locatie werd uitgezonden via een app. De opkomst van 7 oktober was er gewoon een normale borrel. Er werd gepoold, gedanst en gezellig gekletst onder het genot van een drankje.
+![Avondfoto van het sportveld waar de ufo's staan. Enkele mensen staan en bewegen op het kunstgras, anderen kijken toe langs de zijlijn. Op de voorgrond staan fietsen geparkeerd, en op de achtergrond zijn hoge flatgebouwen te zien met verlichte ramen.](/uploads/pxl_20250923_182259704.night-2-.jpg "Ufo's op een verlicht sportveld naast flats.")
 
-![Foto van onze installatie in ons gebouw 't moederschip](/uploads/img_4091.jpg "De installatie")
+Afgelopen maand stond bij de U.F.O.-Stam in het teken van de open opkomsten, waarbij de eerste drie activiteiten toegankelijk waren voor geïnteresseerde kijkers, ook wel 'druppels' genoemd. We trapten af met Expeditie Robinson, waarbij deelnemers in teams verschillende uitdagende opdrachten uitvoerden, zoals een pubquiz, een waterestafette, een Italiaans spel met een stok en een touw, en een speurtocht met letters. De sfeer zat er goed in: iedereen had zijn gezicht geschminkt in de kleuren van zijn team, wat zorgde voor extra teamspirit. De tweede opkomst vond plaats in het centrum van Utrecht, waar een Vossenjacht voor ons was georganiseerd. Op verschillende locaties in de stad zaten 'vossen' verstopt en bij elke vos moest een opdracht worden uitgevoerd of een vraag worden beantwoord. Wie dat goed deed, kreeg letters waarmee uiteindelijk het woord 'scouting' gevormd moest worden. Na afloop was er nog tijd om gezellig te borrelen in de stad.
 
-Op 14 oktober vond de U.F.O.-Paralympische Spelen plaats, georganiseerd door Floris, Robin en Tom K. In teams werd er gestreden voor goud, zilver en brons. Er waren verschillende activiteiten: van gooien en rollen tot hinkelen. De opkomst van 21 oktober was een bijzondere, want de druppels werden geïnstalleerd. Omdat we op een nieuw gebouw zitten, heeft de InstallaCie hard hun best gedaan om een hele nieuwe route uit te zetten. Onderweg waren er twee posten en de derde post was op het gebouw. Hier moesten de druppels tegen een aantal U.F.O.-leden strijden. Als ze een bepaald aantal vragen goed hadden, mochten ze door naar binnen. Toen allebei de groepjes er waren, werden ze officieel geïnstalleerd. We hebben zeven nieuwe leden mogen verwelkomen: Nick, Eva, Sophie, Roos, Stijn, Tom V en Tobias. Welkom!
+Tijdens de derde opkomst speelden we Levend Cluedo: Wendy was vermoord en het was aan de UFO's om uit te zoeken wie de dader was. Door verdachten te ondervragen en aanwijzingen te verzamelen, werd de moordenaar uiteindelijk ontmaskerd. De vierde en laatste opkomst van september stond in het teken van de Planborrel. We begonnen met een potje flessenvoetbal om de teams te bepalen waarin we vervolgens gingen brainstormen voor opkomstideeën. Uiteindelijk plakte iedereen zijn post-its op het raam en kon iedereen kijken welke opkomst die graag wilde organiseren. Ook werden alle commissies kort voorgesteld en was er gelegenheid om vragen te stellen of je interesse kenbaar te maken. Kortom: een maand vol afwisseling, enthousiasme en nieuwe plannen.
 
-![Nachtfoto van Tom en Kayleigh die bij een kampvuur staan bij ss2](/uploads/img_9280.jpg "Tom en Kayleigh tijdens de SS2")
+Veel plezier met het lezen van deze nieuwsbrief en tot volgende maand!
 
-Het weekend van 24 tot en met 26 oktober stond in het thema van vrijgezelschap. Samen met de andere studentenstammen uit ons koude landje kwamen we samen op het labelterrein Buitenzorg in Baarn. We waren niet met veel UFO’s aanwezig, maar genoeg voor een vrij gezellige SS2!
+![Cartoon van een nieuwslezer achter een bureau met een papiertje in haar handen. Op de achtergrond is een scherm te zien met drie vrolijke mensen in rode trainingspakken waarop “UFO” staat, met de Domtoren van Utrecht erachter. De tekstballon boven de nieuwslezer zegt: “Er zijn UFO’s gespot in hartje Utrecht.”](/uploads/whatsapp-image-2025-09-30-at-14.15.01.jpeg "Nieuwslezer meldt dat er UFO’s zijn gezien in het centrum van Utrecht.")
 
-## Hoe maak je Halloween in Nederland nou echt leuk?
+\-- <cite>Indy</cite>
 
-Door Kayleigh Hogerheijde
+## Aan het roer editie 1 - Het begin
 
-Halloween in Nederland voelt voor mij vaak als een hele opwelling van ideeën die nooit helemaal uitkomen. Je wilt je graag verkleden, bingedrinken of met je vrienden de stad in en gekke dingen doen. Ik wil ook nog wel eens langs huizen gaan voor wat snoep, maar blijkbaar zijn de meeste gezinnen niet gediend van een semi-volwassen vrouw die haar rok naar beneden probeert te trekken omdat ze zich te laat realiseerde dat ze met haar kont on display geen vrienden maakt buiten de club, hoewel het de feestdag voor mij wel compleet maakt.
-De vraag blijft staan, hoe maak je Halloween nou echt leuk? Tijdens mijn middelbare schooltijd gaf ik elk jaar een Halloweenfeestje en deze traditie ging zelfs door tot het eerste jaar lockdown. Het begon altijd hetzelfde. Ik nodigde mijn vriendengroep uit en iedereen die we op dat moment verder leuk, sexy of gezellig vonden. We zorgden dat het feest op een vrijdag of zaterdag gebeurde, want dan waren mijn ouders vaak niet thuis. We decoreerden het hele huis met Action-spinnenwebben en plastic kakkerlakken en smokkelden te veel drank naar onze ‘geheime’ drankkast. Er waren altijd een paar mensen die niet verkleed kwamen en sommigen waren te snel dronken, maar het recept werkte. Wij vierden Halloween, als een van de weinige mensen uit mijn dorp, succesvol. Lag dit nou aan de drank, de goedkope decoraties of de mensen? Ik denk een combinatie van alle drie.
-Halloween in Nederland heeft nog een beetje een cultstatus, die zich langzamerhand aan het verspreiden is onder de bingedrinkers, vertierzoekers en kapitalisten. Toch maken we het zelf het leukst. Heb je nog een laat Halloweenfeest op de planning staan? Verkleed of niet, thuis of in de club, weet dat het samen wel gezellig wordt!
+Column door Robbe van der Lee, Voorzitter bestuur 8
 
-## Halloween door de ogen van U.F.O.-lid Ivan Balkenende
+Hier is 'ie dan, de allereerste nieuwsbrief van ons bestuursjaar. In de eerste maand hebben we een machtig mooi begin kunnen maken, en als we zo doorgaan belooft dat een hoop goeds voor de vereniging. We startten het jaar zoals gewoonlijk met drie geweldige open opkomsten, waar we ook een heel aantal gezellige nieuwe leden aan over hebben gehouden. Maar hier waren jullie allemaal bij natuurlijk en zo niet, dan heb je het allemaal in de terugblik kunnen lezen, dus ik zal overgaan op de interessante zaken zoals wat het bestuur bezig heeft gehouden en waar we naartoe werken. Leden informeren over die twee onderwerpen is namelijk ook het doel van deze column.
 
-Door Rosanne Wormgoor
+Ik begin met wat ons bezig heeft gehouden de afgelopen maand. Deze eerste maand stond vooral in het thema van aftasten, hoe we het beste met elkaar kunnen werken en wat iedereen hiervoor nodig heeft. Ondanks het opstarten hebben we niet stilgezeten, ons prachtige Moederschip vereiste namelijk dat we aan de slag gingen. We zijn in gesprek gegaan met de LocaCie over de lopende zaken rondom het gebouw en de nieuwe vorm van de LocaCie, we hebben een concept incidenteel verhuurcontract opgezet en het contract met Jai Hind (een van onze onderhuurders) ondertekend. Tussen de bedrijven door hebben we ook nog kans gezien om met de PromoCie (shoutout Ivan en Kirsten) prachtige bestuursfoto's te maken en zijn we naar onze allereerste Constitutieborrel geweest.
 
-![Ivan heeft een bordje waar op staat "grim reaper" om zijn nek en houd een zeis vast.](/uploads/dsc_8582.jpg "Ivan als Grim Reaper")
+Maar we moeten natuurlijk eveneens vooruit kijken. In de aankomende maand zullen we ons, samen met de LocaCie, nog verder in de locatie storten. Zorgen dat onze onderhuurders erin kunnen komen en dat we ons langzaam maar zeker meer en meer thuis gaan voelen. Ook hebben we aankomende maand een gesprek gepland met bestuur 7 over de sociale veiligheid binnen de stam. Zoals we in ons beleidsplan al beschreven, willen wij graag in gesprek met oud bestuur, RVA en (oud) vertrouwenspersonen over dit thema zodat we het probleem kunnen definiëren en toe kunnen werken naar een oplossing. Met dit eerste gesprek maken we hier dus een mooi begin aan.
 
-Het is weer die tijd van het jaar: pompoenen, vallende blaadjes en natuurlijk Halloween. De één doet er helemaal niets mee, terwijl de ander er weken van tevoren al naar uitkijkt. Tot die laatste groep behoort U.F.O.-lid Ivan en dat heeft alles te maken met zijn passie voor pretparken.
+Dit was 'm weer voor deze eerste column. Wij staan te popelen om van dit jaar een prachtig jaar te maken samen met jullie allemaal. Dank voor het lezen en tot de volgende!
 
-Om te beginnen: wat achtergrond over ons U.F.O.-lid dat dol is op Halloween. “Ik zit al zo’n veertien jaar bij de scouting”, begint Ivan. “In totaal heb ik bij drie verschillende scoutinggroepen gezeten. Ik begon in Amersfoort bij Scouting Mondriaan als welp. Tijdens mijn scoutperiode vond ik het daar op een gegeven moment minder leuk, dus stapte ik over naar Scouting Impeesa, ook in Amersfoort. Daar ben ik gebleven tot ik in Enschede ging studeren. Doordat ik daar studeerde, werd ik minder actief en ben ik uiteindelijk gestopt. Na een half jaar kwam ik erachter dat die studie toch niets voor mij was. Toen ben ik overgestapt naar een opleiding in Utrecht en lid geworden van de U.F.O.-Stam.” Inmiddels is Ivan alweer tweeënhalf jaar lid.
+## "Het is ook een stap, en die stap moet je maken"
 
-![Ivan staat op de foto met Eddie de clown van Walibi](/uploads/whatsapp-image-2025-11-02-at-15.24.31-1-.jpeg "Ivan samen met Eddie de clown")
+Interview met Thym Kruijt door Kayleigh Hogerheijde
 
-**Walibi**\
-Ivan doet ontzettend veel met Halloween. “Ik heb vroeger in Walibi gewerkt en daar is mijn passie voor Halloween eigenlijk ontstaan”, vertelt hij. “Walibi organiseert elk jaar Halloween Fright Nights. Dat vond ik geweldig. Tijdens de periode dat ik daar werkte, heb ik dat evenement vier keer meegemaakt. Onder werktijd vond ik het al fantastisch, maar ook in mijn vrije tijd ging ik met vrienden naar het park om alle spookhuizen en scarezones te bezoeken.” Als het aan hem ligt, is Halloween geen Halloween zonder spookhuizen en leuke evenementen om te bezoeken.
+![Thym met kussens aan zijn lichaam getaped. Rechtopstaand naast een fiets op het domplein](/uploads/img_3075.jpg "Thym met kussens aan zijn lichaam getaped.")
 
-Op het moment van het interview is Ivan al bij Walibi België geweest, waar hij het Halloweenevenement Ibilaw bezocht. Dat is Walibi achterstevoren. Daar was hij aanwezig als pers namens Theme Park Science. “Dat is een YouTube-kanaal waar ik als vrijwilliger aan verbonden ben. We maken mini-documentaires over de wetenschap achter pretparkattracties. We hebben een groot online bereik en worden daarom uitgenodigd voor persevenementen. Hierdoor was ik in staat om gratis de spookhuizen en andere gebeurtenissen bij Ibilaw te bezoeken. Daarnaast heb ik ook nog een betaalde freelance-opdracht voor Halloween Rosmalen. Daar maak ik de aftermovie van en verschillende TikToks en reels om het event te promoten”, zegt Ivan.
+Onze eigen Thym studeert dit schooljaar niet meer in Utrecht. Hij heeft zijn tas gepakt en is naar Breda verhuisd, voor zijn nieuwe studie Creative Media and Game Technologies. Maar hoe is het nou eigenlijk om aan een nieuwe studie te beginnen, in een hele nieuwe stad?
 
-**Halloween Vlaardingen**\
-Daarnaast is het U.F.O.-lid druk bezig geweest met de voorbereidingen voor Halloween Vlaardingen waar hij in het promotieteam zit. “Dat is het grootste Halloweenevenement in Nederland dat niet bij een pretpark hoort. Tijdens de eerste editie kwam ik erbij via het videoteam van Scouting Nederland. Ik vond het toen zó leuk dat ik achteraf aan de organisatie vroeg of ik me bij het team mocht aansluiten. Dit jaar is de derde editie. Voorafgaand aan het evenement ben ik druk met de socialmediaposts en het bijhouden van de website”, aldus Ivan.
+Thym Kruijt is in 2021 lid geworden van de U.F.O.-Stam. Hij is lid van de InstallaCie en was deel van bestuur 6 in het jaar 2023-2024.
 
-Halloween Vlaardingen wordt georganiseerd door zes scoutinggroepen uit Vlaardingen. Tijdens het evenement zijn er drie spookhuizen, een spookbos, drie scarezones en een gebied met muziek en eettentjes. Ivan: “Er is een dag die meer op families gericht is en een dag die meer voor volwassenen bedoeld is. Het vindt plaats op 31 oktober en 1 november. Op Halloween zelf ben ik in Vlaardingen en op 1 november in Rosmalen. Op 31 oktober begin ik de dag met het verwelkomen van een aantal bekende contentcreators. Daarna verzorg ik een livestream met ons hoofdkarakter Jack de Clown en vervolgens maak ik beelden voor TikToks, reels en de aftermovie van komend jaar.”
+*Hoe voelde het om dit schooljaar aan een nieuwe studie te starten?*
 
-![Ivan poseert samen met scare actors op een foto](/uploads/whatsapp-image-2025-11-02-at-15.24.31.jpeg "Ivan samen met scare actors")
+"Ja, spannend. Het is een Engelse studie en dat ben ik niet gewend. Ik heb ook vier jaar geprobeerd deze studie binnen te komen, dus het is ook wel wetende dat er iets van me verwacht wordt. Dus wel met spanning erin gegaan, maar ook wel ernaar uitkijkend."
 
-**Geen tijd**\
-Dit seizoen blijft het voor Ivan bij deze evenementen. “Misschien ga ik nog naar Slagharen, maar verder heb ik weinig tijd. In eerdere jaren ben ik nog naar Toverland en Walibi Holland geweest, maar dit jaar lukt dat niet.” En wat vindt hij het leukste Halloweenevenement? “Dan moet ik echt Halloween Vlaardingen noemen. Het wordt zó groots aangepakt, en dat door scoutingverenigingen! Ik heb gehoord dat die groepen eerst niet zo goed met elkaar overweg konden, maar door dit evenement samen te organiseren, is er juist verbinding ontstaan. Dat vind ik prachtig. Na het eerste jaar is het zelfs uitgegroeid tot het grootste Halloweenevenement van Nederland, met duizenden bezoekers verspreid over twee avonden.”
+*Maar wel blij met de keuze?*
 
-**Scare-actors**\
-Voor Ivan staat de hele maand oktober in het teken van Halloween. “Dat is de periode waarin de meeste activiteiten plaatsvinden”, legt hij uit. “Sommige evenementen zijn iets eerder of later, maar over het algemeen speelt het allemaal in oktober. Scare Me, een ander Halloweenevenement, valt daar net buiten. Daar was ik vorig jaar bij. Veel scare-actors die in oktober bij grote evenementen werken, hebben daarvoor en erna tijd om met dat soort evenementen aan de slag te gaan. Na oktober is er bijvoorbeeld The Horror Zone. Daar ben ik nog niet geweest, maar dat lijkt me ook een vette activiteit. Het wordt net als Halloween Vlaardingen door vrijwilligers georganiseerd, maar het is wel een stuk duurder.”
+"Ja, natuurlijk. Het is ook iets wat ik al langer wilde doen, een vervolg op mijn vorige studie. Het is nu even taai, want we doen nu iets waar ik niet heel goed in ben, maar ik leer er wel heel veel van."
 
-## Uit het archief: Halloween
+*Iets waar je nog niet heel goed in bent?*
 
-Door Maarten
+"Ja, GameArt heeft meerdere kanten. Als je het heel specifiek wilt opdelen zou je kijken naar 2D en 3D, en ik ben meer van 3D dan van de 2D. We zijn alleen maar bezig met 2D, dus alleen maar aan het tekenen en dat soort dingen. Maar ik leer er veel van, aangezien ik er niet zo goed in ben."
 
-![3 mensen verkleed als enge tubbies](/uploads/img_4169.jpg "Cas, Marloes en Susanne als enge tubbies")
+*Je doet nu een vervolgstudie op je vorige opleiding, maar voelt het niet gek om weer een eerstejaarsstudent te zijn?*
 
-Op onze oproep in de vorige brief hebben we jammer genoeg niets ontvangen. Gelukkig bieden de eerste stenen van het digitale archief een opvulling. We gaan terug in de tijd en kijken naar hoe we Halloween al eens eerder hebben gevierd. Dit jaar helaas niet op de jaarplanning, maar de afgelopen twee jaar hadden we een borrel voor onze spookachtige figuren.
+"Ergens voelt het gek, aangezien er veel jonge mensen in mijn klas zitten, waarvan ik denk 'Jezus, hoe?'. Ik ben nu ineens heel oud, in vergelijking met de rest. Ik ben niet de oudste daarentegen, dus ergens valt het ook wel weer mee. Gelukkig in zulke studies is het heel erg gemengd, dus dat is wel een voordeel. Dat maakt het iets normaler. Het voelt niet heel gek eigenlijk. Vooral omdat ik al hier naartoe ging, ik wist dat het ging gebeuren. We delen allemaal eenzelfde soort passie, dus dat helpt ook."
 
-![Marijn met een gesminkt gezicht wat lijkt op een oranje pompoen met gezichtje, draagt een jasje met nog meer pompoenen met griezelige gezichten](/uploads/dsc_8524.jpg "Marijn verkleed in halloweenpompoenen")
+*Naast een nieuwe studie ben je verhuisd, hoe is dat verlopen?*
 
-Gasmaskers, Fairly OddParents of in het wit met bloedspetters. We waren altijd net zo goed gekleed als bij carnaval onder de rivieren. Het is een van die momenten van het jaar dat we helemaal los kunnen gaan op themakleding en make-up. Wat een talent hebben onze leden toch!
+"Dat is wel een van de grotere stappen. Ik zit nu natuurlijk in een kamer in Breda. Doordeweeks ben ik hier en in het weekend ben ik weer thuis in Utrecht. Utrecht kende ik al, omdat ik daar altijd heb gewoond. Ik ken eigenlijk alles daar, alle hoeken en straten. Al mijn vrienden zitten natuurlijk ook in Utrecht. Dus dat voelt wel heel gek. In Breda ben ik nog niet zo bekend, want ik kom niet veel verder dan mijn woning en studie en dat helpt ook niet. Het is ook een stap, en die stap moet je maken. Ik wilde het wel heel graag, even uit huis. Tijd voor wat nieuws."
 
-![Jens verkleed in een griezelige halloween outfit](/uploads/dsc_8551.jpg "Jens maar dan eng")
+*Doordeweeks zit je dus in Breda, maar de opkomsten zijn natuurlijk op dinsdag. Zien we je daar nog terug?*
 
-Halloween is gelukkig niet het enige moment om ons om te toveren. Volgende maand gaan we nog eens verder terug in de tijd.
+"Ik vind het heel jammer om er niet meer te zijn. Ik zou er graag weer willen zijn en ik zal er ook zijn als ik kan. Ik zit dinsdag thuis te werken, desondanks heb ik niet veel energie om daarna nog naar de opkomst te komen. Verder heb ik nu ook alleen maar een weekend OV. Er zitten nu best veel kosten aan om even twee uur heen en terug te reizen voor de UFO's. Ook moet ik dan weer heel vroeg terug, omdat 's avonds het OV naar Breda niet heel goed is, en de volgende dag moet ik gewoon om negen uur weer op school zijn. Daardoor zie ik het niet helemaal voor me om er elke week bij te zijn. In vakanties kan ik er wel bij zijn, en ook met kamp. Ik ga naar herfstkamp! Het is natuurlijk wel jammer en misschien is het volgend jaar anders, of als mijn rooster verandert."
 
-## Aan het roer editie 2 - CoBo dit, CoBo dat
+*Heb je nog advies voor andere UFO's die aan een nieuwe studie begonnen zijn?*
 
-Door Robbe van der Lee, Voorzitter bestuur 8
+"Geniet van de tijd die je hebt en waar je die hebt. Maak er wat leuks van met vrienden, zonder vrienden. Voor jezelf is dat het belangrijkste om te hebben, plezier, lol en ervan genieten."
 
-Lieve leden, het is mij een eer en een waar genoegen om mij opnieuw op deze schriftelijke wijze aan jullie te wenden. Het is een bewogen maand geweest en we zien onze bestuursagenda dichtslibben als de aderen van een patiënt met Arteriosclerose.
+## Hoe ben je niet brak in de eerste schoolweken?
 
-De afgelopen tijd hebben we namelijk niet stilgezeten. We hebben een gesprek gevoerd met bestuur 7 over de sociale veiligheid binnen de groep, een aantal BV’s gehad en zijn (samen met de leden van de commissie) druk bezig met het opzetten van de LocaCie en haar subcommissies. Ook zijn we naar twee CoBo’s geweest, eentje van studentencafé de HideOut hier in Utrecht (waar we vanzelfsprekend de voorzitter hebben gebrast) en eentje van Catena in Leiden.
+Column door Kayleigh Hogerheijde
 
-Het zijn de CoBo’s waar ik graag wat meer over wil vertellen in deze editie. Het is namelijk iets waar we als bestuur in deze maanden veel mee bezig zijn, maar voor mensen die niet lid zijn van een studentenbestuur vaak vrij vaag. CoBo is een studentenafko die staat voor ConstitutieBorrel. Als een nieuw bestuur zich constitueert (als ze van toekomstig/kandidaatsbestuur naar huidig bestuur gaan) dan organiseren ze een constitutieborrel.
-
-Hierbij worden bevriende en bekende besturen uitgenodigd om het nieuwe bestuur te feliciteren. Gelukkig zijn er een hele hoop kleine regels die zo'n borrel in relatief goede banen leiden. Om te beginnen met het feliciteren. Je kan niet zomaar naar het nieuwe bestuur toe lopen en ze de hand schudden, je moet recipiëren. Om te kunnen recipiëren loop je naar de pedel, een lid van de vereniging met een luide stem en vaak een grote staf, om aan te geven dat je graag het nieuwe bestuur wilt feliciteren. De pedel in kwestie noteert je naam, vereniging en lijfspreuk en roept je op als het jouw tijd is om te feliciteren. In de tussentijd ga je wachten en probeer je zoveel mogelijk uit de tijdelijke open bar te halen.
-
-Als het jouw beurt eindelijk is om te recipiëren, dan ga je in een gezellige cirkel staan met het organiserende bestuur, hou je als voorzitter een slap lulverhaal en luister je naar hoe de andere voorzitter een dubbel zo lang slap lulverhaal terugvertelt. Dit gaat ook gepaard met het overhandigen van een open fles drank die gedurende deze twee slappe lulverhalen door het organiserende bestuur leeggedronken moet worden. Het slappe lulverhaal dat wij vertellen gaat meestal over hoe we hopen op een fijne samenwerking, over het cadeau dat we hebben meegebracht of over wat we die ochtend allemaal wel niet hebben gegeten bij het ontbijt.
-
-Aan het einde presenteer je het organiserende bestuur een CoBo-cadeau, als je hier een sticker van de vereniging op hebt zitten en de handtekeningen/namen van alle bestuursleden dan wordt het organiserende bestuur geacht dit cadeau minimaal vijf jaar te bewaren. Dit cadeau is zelden iets wat je daadwerkelijk zou willen bewaren, omdat het meestal kapot is, van de straat komt, of om een andere reden niet meer gewenst is door degenen die het geven. Een mooi voorbeeld hiervan is de kapotte magnetron die boven op de vitrinekast staat in ons gebouw.
-
-Als je klaar bent met recipiëren dan mag je ook in het gastenboek schrijven, en belangrijker nog, brassen. Helaas heb ik hier geen ruimte meer om uit te leggen hoe brassen werkt, want dan wordt dit stuk dubbel zo lang, dus dat bewaar ik voor een toekomstige editie van Aan het roer.
-
-Hiermee heb ik je hopelijk een inkijk kunnen geven in een deel van ons drukke bestaan. Ik ben benieuwd hoeveel leden deze column helemaal uitlezen, dus mocht je tot hier gelezen hebben, stuur dan je favoriete leesteken naar mij toe. Ik wens jullie allen een recht pad en een zonnig spoor toe! Tot de volgende.
-
-{% include "interactive/jumpscare.njk" %}
+Dit is een vraag die ik mezelf vaak stel terwijl we de eerste maand van het schooljaar afronden. Daar ging ik met mijn goede gedrag op maandag 1 september naar school, zat ik de volgende ochtend met een nieuw pakje paracetamol en mijn zonnebril om half zeven alweer een uur te laat in de tram. Had ik een feestje? Ja. Was dit handig? Nou ja, wel gezellig. En zo gaat de week weer door. Je hebt een lange dag school gehad, dus je verdient dat ene biertje echt wel. Of je hebt een borrelavond met je vereniging, ja dan is nuchter blijven ook zo zonde. Het bier is daar natuurlijk zo goedkoop, het is bijna financieel verantwoordelijk om juist daar te gaan zuipen. Niet iedere student drinkt natuurlijk. De nuchtere studenten hebben hun eigen valkuilen, van tot laat opblijven tot een *crippling* Monster Energy-verslaving. Het komt er vooral op neer dat we erg moe zijn met zijn allen in die eerste maand van school. In de zomer konden we de roes van de vorige avond lekker uitslapen, maar nu wordt verwacht dat we met een helder hoofd in de schoolbanken zitten. Het valt allemaal niet mee en het komt er vooral op neer dat we ons maar wat meer moeten gedragen. We zijn immers bijna volwassen, of niet? Ik zie mezelf volgende maand wat eerder wakker worden, meer sporten en minder vaak in de kroeg. Dat is totdat mijn vrienden bellen, die leuke jongen langskomt of ik gewoon zin heb in een drankje. Als je tap toch loopt, kan ik er net zo goed bij gaan staan, nietwaar?
 
 ## Horoscoop
 
-Door Kayleigh Hogerheijde met behulp van ChatGPT
+Door Kayleigh Hogerheijde
 
-![Foto van Ivar die uit een horoscoop van een magazine leest, om hem heen zit een aantal andere leden mee te lezen.](/uploads/img_4074.jpg "Iedereen zit rond het magazine waar een horoscoop wordt voorgelezen door Ivar")
+### **Ram** | 21 maart - 19 april
 
-### ♈ Ram (21 mrt – 19 apr)
+**Liefdesdingen:** Je krijgt binnenkort weer vlinders! Je huidige partner of iemand nieuw wakkert binnenkort de vlam weer goed aan.\
+**De businesssectie:** Je hebt wat pech op werk, maar niet getreurd, er komen binnenkort nieuwe opties op je pad!
 
-**💘 Liefde:** De vurige energie van Halloween wekt je passie. Een onverwachte ontmoeting (misschien tijdens een feestje in kostuum) kan vonken doen overslaan. Let op: te veel initiatief kan iemand afschrikken — laat ook ruimte voor mysterie.\
-**💰 Geld:** Je hebt de neiging om te veel uit te geven aan versieringen of feesten. Een beetje discipline voorkomt dat je portemonnee spookachtig leeg wordt.
+### **Stier** | 20 april - 20 mei
 
-### ♉ Stier (20 apr – 20 mei)
+**Liefdesdingen:** Het is tijd om even naar jezelf te kijken. Zit jij wel goed in je vel, en hoe gedraag je je naar je partner?\
+**De businesssectie:** Je gaat volop in de 'work-mode'. Je maakt je doelen duidelijk en gaat ervoor. Lekker bezig carrièretijger!
 
-**💘 Liefde:** Romantiek hangt in de lucht, vooral met iemand die jouw gevoel voor comfort en gezelligheid deelt. Een knusse avond met kaarslicht en pompoensoep doet wonderen.\
-**💰 Geld:** Je financiële intuïtie is sterk nu. Investeer in iets tastbaars — of trakteer jezelf op iets moois zonder schuldgevoel.
+### **Tweelingen** | 21 mei - 20 juni
 
-### ♊ Tweelingen (21 mei – 20 jun)
+**Liefdesdingen:** Je komt binnenkort iemand tegen die precies is wat je zoekt. Wat je er verder mee doet, kun je helemaal zelf bepalen.\
+**De businesssectie:** Je weet wat je wilt op werk, nu moet je ervoor gaan. Vraag om wat je wilt en creëer de zelfverzekerdheid om het waar te maken.
 
-**💘 Liefde:** Flirten zit in je bloed, zeker in een mysterieuze sfeer. Toch kan er een onverwachte ex of oude vlam opduiken — wees duidelijk in wat je wilt.\
-**💰 Geld:** Kleine kansen op extra inkomsten via iets creatiefs of online. Let wel op: te veel multitasken kan leiden tot chaos.
+### **Kreeft** | 21 juni - 22 juli
 
-### ♋ Kreeft (21 jun – 22 jul)
+**Liefdesdingen:** Je voelt je goed over jezelf en dat is deze maand even genoeg. Wees lief voor jezelf en wordt weer even verliefd op jezelf.\
+**De businesssectie:** Je voelt je niet helemaal thuis op werk, maar dat is oké. Bedenk wat je wilt, maar weet dat je de goede keuze voor jezelf maakt.
 
-**💘 Liefde:** Je voelt diepe emoties deze Halloween. Een liefdesband kan intenser worden, maar ook oude gevoelens kunnen opduiken als spoken uit het verleden.\
-**💰 Geld:** Houd je budget in de gaten — vooral als je je emoties met shoppen probeert te troosten.
+### **Leeuw** | 23 juli - 22 augustus
 
-### ♌ Leeuw (23 jul – 22 aug)
+**Liefdesdingen:** Je partner en jij groeien deze maand meer naar elkaar toe, ontdek samen nieuwe hobby's en elkaar.\
+**De businesssectie:** Je zit lekker in je vel, maar je werk is niet meer precies wat je zoekt. Probeer nieuwe dingen uit en ontdek waar je blij van wordt.
 
-**💘 Liefde:** Je straalt als nooit tevoren, vooral in kostuum. Je charisma trekt mensen aan als motten naar een kaars. Pas op voor jaloezie van een huidige of potentiële partner.\
-**💰 Geld:** Een goede periode om iets nieuws te beginnen of jezelf te promoten. Geld komt met zelfvertrouwen.
+### **Maagd** | 23 augustus - 22 september
 
-### ♍ Maagd (23 aug – 22 sep)
+**Liefdesdingen:** Je bent weer single en ready to mingle. Geniet van nieuwe mensen ontmoeten!\
+**De businesssectie:** Je bent van alles aan het doen op werk en raakt langzaam het overzicht kwijt. Zet een stapje terug en kijk hoe het anders kan.
 
-**💘 Liefde:** Je observeert veel, maar durf ook te voelen. Halloween kan verrassend romantisch worden als je loslaat en geniet.\
-**💰 Geld:** Kleine financiële meevaller of een kans om te besparen. Je praktische kant wint deze week van impulsen.
+### **Weegschaal** | 23 september - 22 oktober
 
-### ♎ Weegschaal (23 sep – 22 okt)
+**Liefdesdingen:** Je vindt je innerlijke avonturier terug! Je gaat nieuwe dingen ontdekken en komt misschien wel iets tegen wat je eerder niet had willen proberen.\
+**De businesssectie:** Je ligt heel goed met je collega's en ze maken je dag compleet, maar vergeet niet dat je baas ook meekijkt als je weer staat te praten naast het koffiezetapparaat.
 
-**💘 Liefde:** De maan verlicht je liefdesleven. Iemand kan je betoveren met charme, maar check of het echt is en geen illusie.\
-**💰 Geld:** Samenwerken loont. Vermijd te veel geven of lenen — balans blijft het sleutelwoord.
+### **Schorpioen** | 23 oktober - 21 november
 
-### ♏ Schorpioen (23 okt – 21 nov)
+**Liefdesdingen:** Je wordt weer blij van iemand! Kijk waar het naartoe gaat en geniet van deze tijd.\
+**De businesssectie:** Je werk brengt je het hele land door, maar je raakt dit een beetje beu. Kijk naar nieuwe mogelijkheden die aansluiten bij je wensen!
 
-**💘 Liefde:** Jouw seizoen! Je magnetische energie is onweerstaanbaar. Intense gevoelens, diepe connecties en misschien een geheime romance.\
-**💰 Geld:** Financieel inzicht neemt toe — je doorziet valkuilen en kunt winst maken door strategie.
+### **Boogschutter** | 22 november - 21 december
 
-### ♐ Boogschutter (22 nov – 21 dec)
+**Liefdesdingen:** Je gaat deze maand eindelijk over de boeg. Ananas in hand, probeer je het gewoon. Wie weet is het leuker dan verwacht.\
+**De businesssectie:** Geld verdienen lukt jou zo, en nu kan dit eindelijk op de manier waarop je dat het liefst doet, lekker bezig!
 
-**💘 Liefde:** Avontuurlijke dates trekken je aan. Misschien ontmoet je iemand tijdens een onverwacht uitje of feestje.\
-**💰 Geld:** Onverwachte uitgaven kunnen opduiken, maar je optimisme helpt om snel weer balans te vinden.
+### **Steenbok** | 22 december - 19 januari
 
-### ♑ Steenbok (22 dec – 19 jan)
+**Liefdesdingen:** Je weet niet meer wat je wilt. Maak snel een keuze, want niemand wacht voor altijd!\
+**De businesssectie:** Werk is chaos. Alles gebeurt tegelijkertijd en je verliest het overzicht. Probeer de focus terug te krijgen, door stap voor stap je focus te herpakken.
 
-**💘 Liefde:** Je toont je zachte kant achter je stoere masker. Een oprechte connectie kan groeien als je openstaat voor emotie.\
-**💰 Geld:** Stabiliteit is in zicht. Halloween-uitgaven blijven binnen de perken dankzij je discipline.
+### **Waterman** | 20 januari - 18 februari
 
-### ♒ Waterman (20 jan – 18 feb)
+**Liefdesdingen:** Je bent net gekwetst of hebt een moeilijke tijd gehad, maar wees niet getreurd, alles slaat weer om.\
+**De businesssectie:** Je wilt dit, dat en ook nog zo. Doe rustig aan, je hebt nog genoeg tijd om alles te doen wat je wilt. Niet alles hoeft nu.
 
-**💘 Liefde:** Iemand uit je vriendengroep kan plots meer voelen dan vriendschap. Sta open voor verrassingen.\
-**💰 Geld:** Creatieve projecten of technologie kunnen financieel voordeel opleveren. Denk vernieuwend.
+### **Vissen** | 19 februari - 20 maart
 
-### ♓ Vissen (19 feb – 20 mrt)
-
-**💘 Liefde:** Je romantische ziel bloeit onder het maanlicht. Een droomachtige connectie is mogelijk — maar blijf met beide benen op de grond.\
-**💰 Geld:** Volg je intuïtie bij geldbeslissingen; die is nu scherper dan ooit.
+**Liefdesdingen:** Je hebt een aanbidder! Geniet van de aandacht, maar wees eerlijk over je gevoelens.\
+**De businesssectie:** Het geld stroomt binnen en je baas is helemaal blij met jou. Houd dit ritme vast!
 
 ## 🧩 Puzzel
 
-Een uitdagende wordle in het Nederlands. Raad het woord in 5 pogingen!
+Vandaag maken we een woordzoeker!
 
-{% include "interactive/puzzles/puzzel2.njk" %}
+{% include "interactive/puzzles/puzzel1.njk" %}
 
-## Agenda
+## UFO-agenda
 
-Van 4 november tot 2 december
+Van 7 oktober tot en met 4 november
 
-| Datum  | Welke stam     | Wat gaan we doen?         |
-| ------ | -------------- | ------------------------- |
-| 4 nov  | Student/Alumni | Just Dance borrel         |
-| 6 nov  | Alumni         | Alumni gala               |
-| 11 nov | Student        | Spot opkomst              |
-| 15 nov | SSN            | SSN gala!                 |
-| 18 nov | Student/Alumni | Kakker borrel             |
-| 19 nov | Bestuur        | CoBo bestuur 8            |
-| 20 nov | Alumni         | Alumni installatie        |
-| 25 nov | Student        | Wie Is De Mol opkomst     |
-| 2 dec  | Student/Alumni | Sociale Veiligheid borrel |
-
-## Verjaardagen
-
-Door Maarten
-
-Komende maand zijn er weer een aantal mensen jarig. Vergeet ze niet te feliciteren!\
-🎉 **Robin Kauffman** wordt op **3 november** een heeele grote jongen van 22 jaar oud! Wauw!\
-🎉 **Tom Kockelkoren** blaast op **5 november** maar liefst 26 kaarsjes uit!\
-🎉 **Rimon Jongejan** is op **8 november** alweer 25 jaar jong.\
-🎉 **Sophie Haan** is op **26 november** jarig. Wat een feestje! Taart! Ballonnen! Slingers!
-
-Hopelijk krijgen ze allemaal heel veel cadeautjes!
+| Datum           | Welke stam     | Wat gaan we doen?    |
+| --------------- | -------------- | -------------------- |
+| 7 okt           | Student/Alumni | Borrel               |
+| 9 okt           | Alumni         | Open opkomst         |
+| 14 okt          | Student        | Paralympische spelen |
+| 21 okt          | Student/Alumni | Installatie Borrel   |
+| 23 okt          | Alumni         | Bootcamp             |
+| 24 okt - 26 okt | Alle Stammen   | SS2 Weekendkamp      |
+| 28 okt          | Student        | Opkomst              |
+| 31 okt - 2 nov  | Student        | Herfstkamp           |
+| 4 nov           | Student/Alumni | Just Dance Borrel    |
 
 ## Afsluiting
 
-Door Robbe van der Lee  
+Door Robbe van der Lee
 
-Dag vriendjes, dag vriendinnetjes, dat was ‘m dan alweer! Bedankt voor het lezen van deze prachtige tweede editie van onze nieuwsbrief. We hebben jullie hopelijk inzicht kunnen geven in de CoBo-cultuur, jullie bijgepraat over de afgelopen opkomsten, meegenomen in ons archief met Halloweenfoto’s en Halloween laten zien door de ogen van een van onze eigen leden! In de volgende editie kijken we naar all things Sinterklaas. Dit was voor nu de RedacCie, laterrrrrrrrrrr.
+Beste UFO's, jullie zijn aangekomen bij het einde van onze prachtige eerste nieuwsbrief. Hopelijk hebben jullie genoten. De volgende editie wordt een bijzondere, namelijk een Halloween-editie! We zouden graag foto's ontvangen van jullie mooiste Halloween-kostuum, zodat we deze tentoon kunnen stellen in de volgende nieuwsbrief. Heb jij dus echt machtige plannen voor een geweldig kostuum dit jaar? Of afgelopen jaar een kostuum gedragen wat niemand kan toppen? Stuur je inzending dan voor 28 oktober naar [redactie@ufostam.nl](mailto:redactie@ufostam.nl). Hopelijk zien we veel van jullie prachtige kostuums in onze inbox!

@@ -5,15 +5,28 @@
 	{% include "head.njk" %}
 </head>
 
-<body class="bg-base-100">
-	{% include "navbar.njk" %}
+<body class="bg-base-100 min-h-screen flex flex-col">
+    {% include "navbar.njk" %}
 
-    <!-- Article Content -->
-    <main class="max-w-4xl mx-auto px-4 py-16">
-        {{ content | safe }}
+    <main id="main-content" class="flex-grow w-full max-w-4xl mx-auto px-4 py-16">
+        <article>
+            <header class="mb-8">
+                <h1 class="text-4xl font-bold mb-2">{{ title }}</h1>
+                
+                {% if date %}
+                    <time datetime="{{ date }}">
+                        {{ date | postDate }}
+                    </time>
+                    <span aria-hidden="true">&bull;</span>
+                    {% endif %}
+            </header>
+
+            <div class="prose max-w-none">
+                {{ content | safe }}
+            </div>
+        </article>
     </main>
 
-	{% include "footer.njk" %}
-
+    {% include "footer.njk" %}
 </body>
 </html>

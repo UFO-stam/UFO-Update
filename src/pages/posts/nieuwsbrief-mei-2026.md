@@ -3,10 +3,10 @@ title: Nieuwsbrief, Mei 2026
 description: "Deze editie is een record-brekende mix van WC-UFO's, pandastische kunst en een bestuur dat zo statutair in de knoop ligt dat Stijn van pure meme-chaos de bus naar de steengoede RSW mist!"
 date: 2026-05-10
 authors:
-  - Maarten
-  - Stijn
-  - Robbe
-  - Rosanne
+  - maarten
+  - stijn
+  - robbe
+  - rosanne
 type: nieuwsbrief
 ---
 

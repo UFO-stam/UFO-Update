@@ -3,9 +3,9 @@ title: Nieuwsbrief, Januari 2026
 description: Eigenlijk best verwarrend dat we de afgelopen maand in 2025 noemen, terwijl we die in 2026 uitbrengen. Ach ja, tijd voor de laatste berichtjes uit 2025.
 date: 2026-01-05
 authors:
-  - Kayleigh
-  - Rosanne
-  - Maarten
+  - kayleigh
+  - rosanne
+  - maarten
 type: nieuwsbrief
 ---
 

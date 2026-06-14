@@ -3,9 +3,9 @@ title: Nieuwsbrief, December 2025
 description: Hoho-hoge nood voor de sint in alweer de derde nieuwsbrief van dit seizoen.
 date: 2025-12-01
 authors:
-  - Kayleigh
-  - Rosanne
-  - Maarten
+  - kayleigh
+  - rosanne
+  - maarten
 type: nieuwsbrief
 ---
 ## Inleiding

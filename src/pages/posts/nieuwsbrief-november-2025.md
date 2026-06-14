@@ -3,10 +3,10 @@ title: Nieuwsbrief, November 2025
 description: Deze maand een enge verrassing! Durf jij het aan?
 date: 2025-11-03
 authors:
-  - Kayleigh
-  - Rosanne
-  - Robbe
-  - Maarten
+  - kayleigh
+  - rosanne
+  - robbe
+  - maarten
 type: nieuwsbrief
 ---
 ## Inleiding

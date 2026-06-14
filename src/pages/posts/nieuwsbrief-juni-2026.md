@@ -3,12 +3,12 @@ title: Nieuwsbrief, Juni 2026
 description: In deze editie schieten we met onze ufo de hele nieuwsbrief aan gort.
 date: 2026-06-01
 authors:
-  - Kayleigh
-  - Maarten
-  - Rosanne
-  - Robbe
-  - Stijn
-  - Floris
+  - kayleigh
+  - maarten
+  - rosanne
+  - robbe
+  - stijn
+  - floris
 type: nieuwsbrief
 ---
 ## Inleiding

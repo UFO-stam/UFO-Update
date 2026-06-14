@@ -3,9 +3,9 @@ title: Nieuwsbrief, Februari 2026
 description: Deze nieuwsbrief zit weer bomvol leesvoer over ijsberen, Eliboe-taferelen, wijze woorden van de hoofdredacteur, terugblikken, sneeuwpret, een puzzel en natuurlijk verjaardagen en agenda.
 date: 2026-02-06
 authors:
-  - Kayleigh
-  - Rosanne
-  - Maarten
+  - kayleigh
+  - rosanne
+  - maarten
 type: nieuwsbrief
 ---
 

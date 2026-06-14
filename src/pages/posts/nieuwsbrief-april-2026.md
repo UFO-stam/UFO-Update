@@ -6,12 +6,12 @@ description: "De lente is in volle gang en dat betekent: tijd voor de
 date: 2026-04-06
 last_updated: 2026-04-06
 authors:
-  - Maarten
-  - Stijn
-  - Kayleigh
-  - Robbe
-  - Rosanne
-  - Kirsten
+  - maarten
+  - stijn
+  - kayleigh
+  - robbe
+  - rosanne
+  - kirsten
 type: nieuwsbrief
 ---
 ## Inleiding

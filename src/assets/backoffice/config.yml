@@ -38,7 +38,7 @@ collections:
       - { label: "Beschrijving", name: "description", widget: "string" }
       - { label: "Datum", name: "date", widget: "datetime", format: "YYYY-MM-DD", default: "now" }
       - { label: "Laatst Geüpdate", name: "last_updated", widget: "datetime", format: "YYYY-MM-DD", default: null, required: false }
-      - { label: "Auteurs", name: "authors", widget: "relation", collection: "authors", multiple: true, search_fields: ["name"], value_field: "name", display_fields: ["name", "avatar"] }
+      - { label: "Auteurs", name: "authors", widget: "relation", collection: "authors", multiple: true, search_fields: ["name"], value_field: "{{slug}}", display_fields: ["name", "avatar"] }
       - { label: "Type", name: "type", widget: "select", options: ["nieuwsbrief", "post"], default: "post" }
       - { label: "Body", name: "body", widget: "markdown" }
 

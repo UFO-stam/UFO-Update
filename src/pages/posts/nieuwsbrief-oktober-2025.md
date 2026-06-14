@@ -3,11 +3,11 @@ title: Nieuwsbrief, Oktober 2025
 description: De allereerste nieuwsbrief van de RedacCie is hier!
 date: 2025-10-06
 authors:
-  - Kayleigh
-  - Rosanne
-  - Robbe
-  - Maarten
-  - Indy
+  - kayleigh
+  - rosanne
+  - robbe
+  - maarten
+  - indy
 type: nieuwsbrief
 ---
 ## Inleiding

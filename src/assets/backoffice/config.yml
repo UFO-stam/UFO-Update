@@ -54,3 +54,23 @@ collections:
       - { label: "Email", name: "email", widget: "string", required: false }
       - { label: "Avatar", name: "avatar", widget: "image", required: false}
       - { label: "Biografie", name: "body", widget: "markdown", required: false}
+  - label: "Pagina's"
+    name: "pages"
+    files:
+      - label: "Privacyverklaring"
+        name: "privacy"
+        file: "src/pages/privacy.md" 
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Beschrijving", name: "description", widget: "string" }
+          - { label: "Datum", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Stijlgids"
+        name: "styleguide"
+        file: "src/pages/stijlgids.md"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Beschrijving", name: "description", widget: "string", required: false }
+          - { label: "Datum", name: "date", widget: "datetime", format: "YYYY-MM-DD", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }

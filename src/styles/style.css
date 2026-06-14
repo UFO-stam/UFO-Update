@@ -229,13 +229,13 @@ body {
 			transparent 100%);
 }
 
-.prose img {
+.prose :not(:where(.not-prose, .not-prose *)) > img {
 	@apply w-full h-96 object-cover rounded-2xl;
 	filter: contrast(1.1) saturate(1.1);
 	transition: all 0.3s ease;
 }
 
-.prose img:hover {
+.prose :not(:where(.not-prose, .not-prose *)) > img:hover {
 	filter: contrast(1.2) saturate(1.2);
 	transform: scale(1.02);
 	cursor: pointer;

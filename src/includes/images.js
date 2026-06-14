@@ -230,7 +230,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		init() {
 			if (!this.isDesktop()) return;
 
-			this.images = Array.from(document.querySelectorAll(".prose img"));
+			this.images = Array.from(document.querySelectorAll(".prose img")).filter(
+                img => !img.closest('.not-prose')
+            );
 			this.initializeAllImages();
 		}
 

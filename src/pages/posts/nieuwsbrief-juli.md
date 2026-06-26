@@ -10,19 +10,9 @@ type: nieuwsbrief
 
 <p class="cite">Door Rosanne Wormgoor</p>
 
-
-
-
-
-
-
-
-
 ## Zeilen met de U.F.O.'s
 
-<p class="cite">Door Luuk </p>
-
-
+<p class="cite">Door Luuk van Grootel </p>
 
 **Dinsdag 19 mei**
 
@@ -47,8 +37,6 @@ Wat wel altijd een leuke klassieker is, is het spelen van tikkertje op het water
 **Opruimen**
 
 Na het zeilen, was het tijd om de mast weer te laten zakken, zodat we onder het bruggetje bij de haven van de barra door konden. Dit vond ik erg jammer want ik vind zeilen leuk en ik hou van masten. Eenmaal aangekomen in de haven, had ik besloten dat het te koud en nat was om doorweekt te blijven. Gelukkig had ik een handdoek en schone kleding mee. Ik ben heerlijk gaan douchen op de barra, waarna ik geholpen heb de boten af te takelen. 
-
-
 
 **De after**
 

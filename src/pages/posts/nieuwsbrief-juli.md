@@ -1,5 +1,5 @@
 ---
-title: Nieuwsbrief Juli
+title: Nieuwsbrief, Juli 2026
 description: "-"
 date: 2026-06-26
 authors:

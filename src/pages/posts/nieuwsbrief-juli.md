@@ -12,6 +12,14 @@ type: nieuwsbrief
 
 <p class="cite">Door Rosanne Wormgoor</p>
 
+De zomervakantie breekt bijna aan en dat betekent dat het tijd is voor de laatste nieuwsbrief van dit seizoen. Na de zomer zijn we natuurlijk gewoon weer terug met een hoop leuks! Om het scoutingseizoen goed afte sluiten, vind je in deze nieuwsbrief een interview met Timpe (de voorzitter van de BeunhaacCie), een verslag van het zeilen, geschreven door Luuk, een stuk van ons nieuwe RedacCie-lid Floris en een bijdrage van Kayleigh. Verder voorzien we jullie natuurlijk weer van de verjaardagen, de agenda, een puzzelen een afsluiting.
+
+Voor de terugblik begin ik bij de opkomst van 26 mei. Er stond een borrel op de planning, maar omdat het heerlijk warm was, hebben een paar U.F.O.'s een voetenbadje opgezet en is een groepje gaan zwemmen bij de Maarsseveense Plassen. Omdat niemand een bikini of zwembroek bij zich had, werd er maar in ondergoed gezwommen. Het was heerlijk verkoelend, al zeg ik het zelf. Ook hebben we het U.F.O.-kaartspel gespeeld, waar Kirsten ontzettend hard aan heeft gewerkt. De week daarop was het tijd voor een ontzettend leuke opkomst, georganiseerd door Stijn. We begonnen met een memebingo en speelden daarna een muziekbingo. Alles duurde iets langer dan gepland, maar er is volop gelachen en iedereen heeft genoten.
+
+Op 9 juni stond de legendarische genderswapborrel op de planning en deze keer werd er echt uitgepakt. Vrijwel alle mannen verschenen ineen jurkje en veel vrouwen hadden mannenkleding aangetrokken, compleet met plaksnor. Natuurlijk werd ook het gedrag aangepast aan het 'nieuwe' geslacht. Helaas belandde ik aan het einde van de avond op de spoedeisende hulp, voor de tweede keer dit jaar na een U.F.O.-opkomst, maar ondanks dat was het een ontzettend geslaagde avond. Een week later was het tijd voor een echte scoutingopkomst, georganiseerd door Robbe en Luuk: Levend Stratego. We werden verdeeld in Team SSN en Team U.F.O. De vlag was soms zó goed verstopt dat een team hem na afloop zelf nauwelijks meer terug kon vinden.
+
+Tot slot was er de eind-BBQ. Het bestuur had ontzettend zijn best gedaan om er een geweldige afsluiting van te maken. Er was zelfs een springkussen geregeld! Daarnaast werden we verwend met allerlei lekker eten en maakten we weer de jaarlijkse commissie- en groepsfoto's. Voordat de zomeropkomsten beginnen, staat er nog een laatste AV én een beachpartyborrel op de planning. Daar lees je na de zomer alles over. Tot dan!
+
 ## "Een mening over klussen? Dan kun je net zo goed zelf gaan beunen"
 
 <p class="cite">Door Rosanne Wormgoor</p>
@@ -92,7 +100,7 @@ Het woord ‘eenheid’ kan, als je de context weglaat, oneindig veel betekeniss
 
 **Diepgewortelde gevoelens**
 
-We gaan eerst even de geschiedenisboeken in, het woord eenheid brengt namelijk diepgewortelde gevoelens bij mij naar boven. Zo stak lieve kleine Floris tijdens zijn les natuurkunde zijn hand op om antwoord te geven op een vraag en zei ik “250”. In plaats dat ik te horen kreeg of ik het juiste antwoord had gegeven kreeg ik luidkeels terug *“TWEEHONDERVIJFTIG WAT?! KOEIEN?!”***.** Achteraf weet ik niet waarom het **altijd** over koeien ging volgens mijn docent, maar dat terzijde; Ik wou gewoon weten of ik het juiste antwoord had gegeven in plaats van publiekelijk vernederd te worden voor de klas. Het juiste antwoord wat mijn docent in ieder geval wou horen was dat het kilogram was. Ik weet niet eens meer wat origineel de vraag was.
+We gaan eerst even de geschiedenisboeken in, het woord eenheid brengt namelijk diepgewortelde gevoelens bij mij naar boven. Zo stak lieve kleine Floris tijdens zijn les natuurkunde zijn hand op om antwoord te geven op een vraag en zei ik “250”. In plaats dat ik te horen kreeg of ik het juiste antwoord had gegeven kreeg ik luidkeels terug *“TWEEHONDERVIJFTIG WAT?! KOEIEN?!”**\*.** Achteraf weet ik niet waarom het **altijd** over koeien ging volgens mijn docent, maar dat terzijde; Ik wou gewoon weten of ik het juiste antwoord had gegeven in plaats van publiekelijk vernederd te worden voor de klas. Het juiste antwoord wat mijn docent in ieder geval wou horen was dat het kilogram was. Ik weet niet eens meer wat origineel de vraag was.
 
 **De staaf in de maatstaaf**
 

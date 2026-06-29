@@ -16,9 +16,15 @@ De zomervakantie breekt bijna aan en dat betekent dat het tijd is voor de laatst
 
 Voor de terugblik begin ik bij de opkomst van 26 mei. Er stond een borrel op de planning, maar omdat het heerlijk warm was, hebben een paar U.F.O.'s een voetenbadje opgezet en is een groepje gaan zwemmen bij de Maarsseveense Plassen. Omdat niemand een bikini of zwembroek bij zich had, werd er maar in ondergoed gezwommen. Het was heerlijk verkoelend, al zeg ik het zelf. Ook hebben we het U.F.O.-kaartspel gespeeld, waar Kirsten ontzettend hard aan heeft gewerkt. De week daarop was het tijd voor een ontzettend leuke opkomst, georganiseerd door Stijn. We begonnen met een memebingo en speelden daarna een muziekbingo. Alles duurde iets langer dan gepland, maar er is volop gelachen en iedereen heeft genoten.
 
+
+
+![Floris, Rimon en Tom V.](/uploads/img-20260629-wa0011.jpg "Genderswapborrel")
+
 Op 9 juni stond de legendarische genderswapborrel op de planning en deze keer werd er echt uitgepakt. Vrijwel alle mannen verschenen ineen jurkje en veel vrouwen hadden mannenkleding aangetrokken, compleet met plaksnor. Natuurlijk werd ook het gedrag aangepast aan het 'nieuwe' geslacht. Helaas belandde ik aan het einde van de avond op de spoedeisende hulp, voor de tweede keer dit jaar na een U.F.O.-opkomst, maar ondanks dat was het een ontzettend geslaagde avond. Een week later was het tijd voor een echte scoutingopkomst, georganiseerd door Robbe en Luuk: Levend Stratego. We werden verdeeld in Team SSN en Team U.F.O. De vlag was soms zó goed verstopt dat een team hem na afloop zelf nauwelijks meer terug kon vinden.
 
 Tot slot was er de eind-BBQ. Het bestuur had ontzettend zijn best gedaan om er een geweldige afsluiting van te maken. Er was zelfs een springkussen geregeld! Daarnaast werden we verwend met allerlei lekker eten en maakten we weer de jaarlijkse commissie- en groepsfoto's. Voordat de zomeropkomsten beginnen, staat er nog een laatste AV én een beachpartyborrel op de planning. Daar lees je na de zomer alles over. Tot dan!
+
+![Josse met zijn eten.](/uploads/img-20260629-wa0010.jpg "De eind-BBQ.")
 
 ## "Een mening over klussen? Dan kun je net zo goed zelf gaan beunen"
 

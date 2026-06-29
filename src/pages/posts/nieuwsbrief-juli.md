@@ -4,6 +4,8 @@ description: "-"
 date: 2026-06-26
 authors:
   - stijn
+  - floris
+  - rosanne
 type: nieuwsbrief
 ---
 ## Inleiding

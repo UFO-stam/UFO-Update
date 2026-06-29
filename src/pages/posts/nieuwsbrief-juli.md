@@ -10,6 +10,35 @@ type: nieuwsbrief
 
 <p class="cite">Door Rosanne Wormgoor</p>
 
+## "Een mening over klussen? Dan kun je net zo goed zelf gaan beunen"
+
+<p class="cite">Door Rosanne Wormgoor</p>
+
+**Onze commissies zijn natuurlijk een heel belangrijk onderdeel van onze vereniging. Een van die commissies is de BeunhaacCie. De BeunhaacCie zorgt ervoor dat ons gebouw tiptop in orde is. In dit artikel lees je een interview met de voorzitter van deze commissie: Timpe.**
+
+Voor hem is het antwoord op de vraag waarom hij voorzitter is geworden van de BeunhaacCie dan ook heel simpel: “Ik kan wel beunen en ik kan wel hazen”, lacht hij. “Ik was sowieso al wel veel bezig met het gebouw en ik klus eigenlijk mijn hele leven al. Als andere mensen aan het klussen zijn, heb ik daar vaak een mening over, dus dan kan je het beter zelf doen, toch?” Zo is de BeunhaacCie eigenlijk ontstaan, samen met andere mensen die er ook een mening over hadden. De commissie is een paar maanden na de start van dit scoutingseizoen opgericht.
+
+**Per ongeluk lid geworden**
+Timpe is zelf al zo’n vijf jaar lid van de U.F.O.-Stam. “Ik ben ooit een keer per ongeluk hier terechtgekomen. De locatie was toentertijd nog de Baracuda en ik zit zelf bij de Baracuda. Ik had een sleutel en wist hoe het gebouw werkte, dus ik ben driekwart jaar lid geweest zonder me in te schrijven. Ik kwam gewoon naar de opkomsten en het was gezellig. Uiteindelijk hebben ik en Marijn ons allebei maar eens ingeschreven tijdens een open opkomst.”
+
+In zijn vrije tijd is hij dus ook veel bezig met klussen. Hij woont op een boot die nog niet af is, dus dat betekent vanzelfsprekend: altijd klussen. “Naast klussen is mijn persoonlijkheid zo ongeveer boot. Tot nu toe heb ik in de zomers met de boot rondgezworven en in de winters in de havengelegen. In principe is de boot zelfvoorzienend, maar in de winter komt er via de zonnepanelen weinig stroom binnen. Ik heb de boot nu drie jaar en ik ben langzaam dingen aan het afmaken”, aldus de voorzitter.
+
+**Ongezien**
+Wat zijn een paar van de grootste en belangrijkste dingen die BeunhaacCie in het afgelopen jaar heeft gedaan? “We proberen het gebouw in zijn algemeenheid gaande te houden. Ik denk dat veel dingen ook wel ongezien gaan. Zo hebben we laatst de gebroken wc-knop vervangen. Veel van de mensen die nu in de BeunhaacCie zitten hebben meegeholpen aan het plaatsen van de keuken. We hebbende kast in de keuken ook gemaakt en we zijn bezig geweest om de koelkasten stiller te krijgen. Het zijn kleine en grote dingen die we doen. Maar helaas hebben we weinig geld om dingen te doen. Bouwmaterialen zijn ontzettend duur op dit moment.” De vorige klusdag heeft de commissie 540,69 euro uitgegeven aan vier platen hout, wat elektraspullen en overige dingen. “Dat is veel minder dan je denkt te kunnen kopen van dat geld”, zegt Timpe.
+
+Volgens hem betekent de BeunhaacCie voor de vereniging hoofdzakelijk een functionerend gebouw. “In principe zijn wij het reilen en zeilen van het gebouw. Dat betekent dat we soms ook wel eens erop aangekeken worden als iets niet werkt. Dat snap ik ook. Het duurt soms ook allemaal langer dan wij zouden willen. We zijn allemaal druk. Klussers zijn vaak de drukste mensen”, grapt Timpe. Maar hij snapt heel goed de frustratie van mensen.
+
+**QR-codes**
+Sinds een tijdje hangen er QR-codes van de BeunhaacCie verspreid door het gebouw. Via deze QR-codes kunnen leden het doorgeven als iets stuk is of niet werkt. Volgens Timpe zijn er nog niet veel dingen via dit formulier binnengekomen. “Alles komt terecht in een mooie Excel-sheet en dat bespreken we elke vergadering. Als iets meer cruciaal is, wordt er natuurlijk eerder actie ondernomen. Maar dit is een makkelijke manier om alles een beetje netjes bij te houden.”
+
+**Schakelaars voor de verlichting?**
+Momenteel is de commissie bezig met schakelaars voor de verlichting in ons gebouw. Maar dit wordt eventueel een complexe zaak vanwege de bedrading en de grote kosten die er aan vast hangen. “We zijn verder aan het kijken of we de randen onder het gasfornuis kunnen afdichten, zodat het makkelijker schoon te maken is. Hetzelfde geldt voor onder de koelkasten en onder de bar. Daaronder is het nu erg lastig om schoon te maken”, meent Timpe.
+
+Hoewel de BeunhaacCie genoeg leden heeft, zouden een paar extra leden geen kwaad kunnen als het aan Timpe ligt. “We kunnen het draaiende houden, maar iets extra zou fijn zijn”, legt hij uit. “Bijvoorbeeld in het geval dat er mensen stoppen of iedereen heel druk is. Het is heel leuk, want als je denkt: ik kan er met een hamer opslaan, dan ga je er gewoon lekker meteen hamer opslaan. Het is vaker dan je denkt dat je gewoon ergens met een hamer op kan slaan en dat het vervolgens weer werkt. En als het niet werkt, weet je wat het probleem is; iemand heeft er met een grote hamer opgeslagen”, grapt hij. “Nee, maar kom vooral lekker voor de gezelligheid en om een verschil te maken voor het gebouw. We houden alles draaiende en als er geen mensen zijn die het gebouw onderhouden, heb je uiteindelijk geen gebouw meer. En een bonus: we vergaderen niet vaak en nooit langer dan anderhalf uur.”
+
+**Invliegende U.F.O.’s**
+Tegenwoordig heeft de commissie ook een groepje waarbij je niet gelijk lid wordt van de BeunhaacCie, maar wel af en toe kan helpen. “We zijn de invliegende U.F.O.’s begonnen. Dit is voor mensen die het leuk vinden om een keer een schroevendraaier vast te houden of een keer ergens moeilijk naar staan te kijken en denken: hier moet iets mee gebeuren. Maar mensen die tegelijkertijd niet lid willen worden van een commissie om wat voor reden dan ook, maar toch graag wat voor het gebouw willen doen of even wat handjes uit de mouwen willen steken. Je hoeft er helemaal niets voor te kunnen, als je een hand hebt kun je helpen. Dat is een beetje het concept.”
+
 ## Zeilen met de U.F.O.'s
 
 <p class="cite">Door Luuk van Grootel </p>

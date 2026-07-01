@@ -1,0 +1,111 @@
+<div class="space-y-4 max-w-lg mx-auto">
+
+	<div class="text-center">
+		<h3 class="font-bold text-xl sm:text-2xl mb-1">Kettingreactie</h3>
+		<p class="text-sm text-gray-500 mb-2">Maak alle tegels groen (Grijs ➔ Blauw ➔ Groen).</p>
+		<div class="text-sm font-medium">Stappen: <span id="cr-steps" class="text-blue-500 font-bold">0</span></div>
+	</div>
+
+	<div class="flex justify-center min-h-[260px]">
+		<div id="cr-grid" class="inline-grid grid-cols-3 gap-2 bg-gray-900 p-3 rounded-xl h-fit"></div>
+	</div>
+
+	<div class="flex justify-center">
+		<button onclick="resetChainReaction()" 
+			class="px-6 py-2.5 bg-gray-600 hover:bg-gray-500 text-white rounded-full text-sm sm:text-base font-medium transition-all active:scale-95">
+			Nieuwe poging
+		</button>
+	</div>
+
+	<div id="cr-status" class="text-center text-sm sm:text-base font-medium min-h-[40px]"></div>
+
+</div>
+
+<script>
+let crGrid = [];
+let initialGrid = [];
+let moves = 0;
+let gameWon = false;
+const crSize = 3; 
+const crColors = ['bg-gray-600', 'bg-blue-500', 'bg-emerald-500'];
+
+function initChainReaction() {
+	crGrid = [
+		2, 0, 2,
+		1, 0, 1,
+		2, 1, 2
+	];
+	initialGrid = [...crGrid];
+	moves = 0;
+	gameWon = false;
+	updateUI();
+}
+
+function resetChainReaction() {
+	if (initialGrid.length === 0) return;
+	crGrid = [...initialGrid];
+	moves = 0;
+	gameWon = false;
+	
+	const status = document.getElementById('cr-status');
+	status.className = 'text-center text-sm sm:text-base font-medium min-h-[40px] transition-all';
+	status.textContent = '';
+	
+	updateUI();
+}
+
+function applyClick(index, isUserInteraction = true) {
+	if (gameWon && isUserInteraction) return;
+
+	const r = Math.floor(index / crSize);
+	const c = index % crSize;
+	
+	const cellsToToggle = [
+		[r, c], [r-1, c], [r+1, c], [r, c-1], [r, c+1]
+	];
+
+	cellsToToggle.forEach(([nr, nc]) => {
+		if(nr >= 0 && nr < crSize && nc >= 0 && nc < crSize) {
+			const idx = nr * crSize + nc;
+			crGrid[idx] = (crGrid[idx] + 1) % 3; 
+		}
+	});
+
+	if (isUserInteraction) {
+		moves++;
+		updateUI();
+		checkCrWin();
+	}
+}
+
+function updateUI() {
+	const gridEl = document.getElementById('cr-grid');
+	gridEl.innerHTML = '';
+
+	document.getElementById('cr-steps').textContent = moves;
+
+	crGrid.forEach((state, i) => {
+		const btn = document.createElement('button');
+		btn.className = `w-16 h-16 sm:w-20 sm:h-20 rounded-lg shadow-inner transition-colors duration-300 transform active:scale-95 ${crColors[state]}`;
+		btn.onclick = () => applyClick(i);
+		gridEl.appendChild(btn);
+	});
+}
+
+function checkCrWin() {
+	const isWon = crGrid.every(state => state === 2);
+	if (isWon) {
+		gameWon = true;
+		const status = document.getElementById('cr-status');
+		
+		status.className = 'text-center text-sm sm:text-base font-medium text-green-200 bg-green-900 rounded-lg p-3 transition-all';
+		status.textContent = `🎉 Correct! Goed gedaan! Opgelost in ${moves} stappen.`;
+		
+		if (typeof umami !== 'undefined') {
+			umami.track('Kettingreactie Gewonnen', { status: 'success', stappen: moves });
+		}
+	}
+}
+
+initChainReaction();
+</script>

@@ -6,6 +6,7 @@ authors:
   - stijn
   - floris
   - rosanne
+  - maarten
 type: nieuwsbrief
 ---
 ## Inleiding
@@ -132,11 +133,7 @@ Een eenheid kan ook een samenkomst van een aantal en een maatstaaf zijn. Zo hebb
 
 Zonder context geeft iedereen waarde aan een eenheid, in welke vorm of mate het ook is. Soms kan je het onderbouwen met een onderbuikgevoel, maar het is nooit iets concreets. Iedereen heeft wel iets meegemaakt waardoor de definitie van een eenheid wordt gevormd. En met deze afsluitende woorden nodig ik jullie allemaal uit om een eenheid alcohol met mij te gaan nuttigen.
 
-
-
 Afbeelding Kayleigh
-
-
 
 ## **How to omgaan met de hitte door Kayleigh Hogerheijde**
 
@@ -171,3 +168,48 @@ Tip 7: Smeren kan je leren
 Moet je ff naar de winkel? Smeer jezelf in. Wil je even in de tuin afkoelen? Smeer jezelf in. Denk je mijn pigment kan dit aan? Smeer jezelf in. Met deze hitte is de UV-straling ook erg hoog. Deze zorgt niet alleen voor rode nekkies, maar kan ook op andere manieren gevaarlijk zijn voor je gezondheid. Wees dus mindful over de zonnebrand die je gebruikt en hoe vaak. Wil je zwemmen voor verkoeling? Houd er rekening mee dat het water veel zonlicht reflecteert en je hier ook snel door kan verbranden. Water resistente zonnebrand is dan echt een must!
 
 \*Disclaimer: Deze tips komen van verschillende nieuwsplatforms en uit eigen ervaringen! Ervaar je moeite met een van deze opties of voel je je toch niet goed, contact dan je dokter of raadpleeg een wetenschappelijk ondersteunde bron! Zorg voor jezelf <3
+
+## 🧩 Puzzel
+
+Weer een uitdagende puzzel, een variant op het zo gehete "Lights Out" spel. Vergeet niet je beste score te delen met de rest!
+
+{% include "interactive/puzzles/lightsout.njk" %}
+
+## UFO-Agenda
+
+Van 7 juli tot en met 27 augustus
+
+| Datum  | Welke stam     | Wat gaan we doen?      |
+| ------ | -------------- | ---------------------- |
+| 7 jul  | Student/Alumni | Beachparty borrel      |
+| 14 jul | Student        | Opkomst                |
+| 16 jul | Alumni         | Iets leuks in het park |
+| 21 jul | Student        | Zomeropkomst           |
+| 28 jul | Student        | Zomeropkomst           |
+| 30 jul | Alumni         | Legeropkomst           |
+| 4 aug  | Student        | Zomeropkomst           |
+| 11 aug | Student        | Zomeropkomst           |
+| 13 aug | Alumni         | Zeilen                 |
+| 18 aug | Student        | Zomeropkomst           |
+| 25 aug | Student        | Zomeropkomst           |
+| 27 aug | Alumni         | Opkomst                |
+
+Een nieuwe jaarplanning ontbreekt nog voor september.
+
+## Verjaardagen
+
+<p class="cite"> Door Maarten </p>
+
+**Yana** is jarig op 15 juli en **Djez** is op 10 augustus jarig. Beide worden ze 22 jaartjes oud. Een rustige zomer periode.
+
+## Afsluiting
+
+<p class="cite"> Door Maarten </p>
+
+Dit was dan alweer de laatste nieuwsbrief van dit seizoen. Ook de RedacCie heeft een zomerstop en de volgende nieuwsbrief verschijnt daarom in september weer!
+
+Voor een spetterende start zijn we benieuwd naar jullie zomeravonturen. Laat via het formulier weten waar je deze zomer bent en stuur een leuke foto van jezelf in actie mee!
+
+**[Stuur ze hier in!](https://forms.gle/exWWZX4jm64RbJ9S6)**
+
+Fijne zomer!

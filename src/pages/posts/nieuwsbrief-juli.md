@@ -133,8 +133,6 @@ Een eenheid kan ook een samenkomst van een aantal en een maatstaaf zijn. Zo hebb
 
 Zonder context geeft iedereen waarde aan een eenheid, in welke vorm of mate dan ook. Soms kun je het onderbouwen met een onderbuikgevoel, maar het is nooit iets concreets. Iedereen heeft wel iets meegemaakt waardoor de definitie van een eenheid wordt gevormd. En met deze afsluitende woorden nodig ik jullie allemaal uit om een eenheid alcohol met mij te gaan nuttigen.
 
-Afbeelding Kayleigh
-
 ## **How to omgaan met de hitte**
 
 <p class="cite">Door Kayleigh Hogerheijde </p>

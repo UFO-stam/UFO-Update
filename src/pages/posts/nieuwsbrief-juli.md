@@ -1,6 +1,7 @@
 ---
 title: Nieuwsbrief, Juli 2026
-description: "-"
+description: Allemaal een hele fijne zomervakantie gewenst! Geniet van de
+  laatste nieuwsbrief van dit seizoen.
 date: 2026-06-26
 authors:
   - stijn
@@ -171,7 +172,7 @@ Moet je even naar de winkel? Smeer jezelf in. Wil je even in de tuin afkoelen? S
 
 ## 🧩 Puzzel
 
-Weer een uitdagende puzzel, een variant op het zo gehete "Lights Out" spel. Vergeet niet je beste score te delen met de rest!
+Weer een uitdagende puzzel, een variant op het zo gehete 'Lights Out'-spel. Vergeet niet je beste score te delen met de rest!
 
 {% include "interactive/puzzles/lightsout.njk" %}
 
@@ -181,8 +182,8 @@ Van 7 juli tot en met 27 augustus
 
 | Datum  | Welke stam     | Wat gaan we doen?      |
 | ------ | -------------- | ---------------------- |
-| 7 jul  | Student/Alumni | Beachparty borrel      |
-| 14 jul | Student        | Opkomst                |
+| 7 jul  | Student/Alumni | Beachpartyborrel       |
+| 14 jul | Student        | Schoonmaakopkomst      |
 | 16 jul | Alumni         | Iets leuks in het park |
 | 21 jul | Student        | Zomeropkomst           |
 | 28 jul | Student        | Zomeropkomst           |
@@ -200,7 +201,7 @@ Een nieuwe jaarplanning ontbreekt nog voor september.
 
 <p class="cite"> Door Maarten </p>
 
-**Yana** is jarig op 15 juli en **Djez** is op 10 augustus jarig. Beide worden ze 22 jaartjes oud. Een rustige zomer periode.
+**Yana** is jarig op 15 juli en **Djez** is op 10 augustus jarig. Beide worden ze 22 jaartjes oud. Een rustige zomerperiode.
 
 ## Afsluiting
 

@@ -133,39 +133,41 @@ Zonder context geeft iedereen waarde aan een eenheid, in welke vorm of mate dan 
 
 Afbeelding Kayleigh
 
-## **How to omgaan met de hitte door Kayleigh Hogerheijde**
+## **How to omgaan met de hitte**
+
+<p class="cite">Door Kayleigh Hogerheijde </p>
 
 Waar de laatste tropische bui nu eindelijk een beetje gaat liggen, wordt in juli de volgende alweer voorspeld. Hoe gaan we om met dit warme weer als studenten op die kleine kamers midden in de stad?
 
 Tip 1: Leef in het donker
 
-Niet perse into Emo zijn? Geen probleem, dat is niet wat ik bedoel! Door je binnen gordijnen en ramen dicht te houden houd je de warmte van buiten waar het hoort; buiten. Een laken aan de buitenkant van je raam hangen kan ook werken, want hoe minder zon op de ruiten, hoe minder warmte binnen. Voor de echte groen gevingerde onder ons is een klimop ook nog een leuk idee. Niet alleen zorgt het voor wat kleur op die saaie bakstenen, maar de plant helpt ook tegen het verwarmen van de bakstenen, wat ook weer voor minder warmte thuis zorgt!
+Niet per se into emo zijn? Geen probleem, dat is niet wat ik bedoel! Door je gordijnen en ramen dicht te houden, houd je de warmte van buiten waar het hoort: buiten. Een laken aan de buitenkant van je raam hangen kan ook werken, want hoe minder zon op de ruiten, hoe minder warmte binnen. Voor de echte groengevingerden onder ons is een klimop ook nog een leuk idee. Niet alleen zorgt het voor wat kleur op die saaie bakstenen, maar de plant helpt ook tegen het verwarmen van de bakstenen, wat ook weer voor minder warmte thuis zorgt!
 
 Tip 2: Waai lekker weg
 
-De airco unit bij de action gebruikt net te veel stroom? Geen probleem, er zijn nog andere manieren om je te verkoelen thuis. Een kleine ventilator, maar wel strategisch geplaatst werkt ook wonderen. Zet er ook een koud flesje water voor of wat ijs voor meer koude lucht! een nat doekje of washandje werkt ook goed in combinatie. En wordt het uiteindelijk donker en koelt het buiten af? Gooi dan juist de ramen open, en laat het binnen weer afkoelen. Vergeet niet de ramen dicht te doen voordat je gaat slapen, anders komt de warme lucht van de dag erna toch weer binnen!
+De airco-unit bij de Action gebruikt net te veel stroom? Geen probleem, er zijn nog andere manieren om je te verkoelen thuis. Een kleine ventilator, maar wel strategisch geplaatst, werkt ook wonderen. Zet er ook een koud flesje water voor of wat ijs voor meer koude lucht! Een nat doekje of washandje werkt ook goed in combinatie. En wordt het uiteindelijk donker en koelt het buiten af? Gooi dan juist de ramen open en laat het binnen weer afkoelen. Vergeet niet de ramen dicht te doen voordat je gaat slapen, anders komt de warme lucht van de dag erna toch weer binnen!
 
 Tip 3: Een bezig mens is…
 
-Je moet niet uitbundig gaan bewegen en er wordt geadviseerd binnen te blijven, wat ga je dan doen? Je kan een filmdagje houden met je huisgenoten (ik zou niet te veel mensen uitnodigen, want mensen brengen ook warmte mee!), of een spelletjes middag met een partner of beste vriend. Lees dat boek wat je je moeder zou beloven te lezen op haar aanraden of pak die ene hobby uit de kast die al te lang zonder liefde zit. Thuis is meer te doen dan je denkt, denk niet alleen aan alle vreugde die je mist.
+Je moet niet uitbundig gaan bewegen en er wordt geadviseerd binnen te blijven, wat ga je dan doen? Je kunt een filmdagje houden met je huisgenoten (ik zou niet te veel mensen uitnodigen, want mensen brengen ook warmte mee), of een spelletjesmiddag met een partner of beste vriend. Lees dat boek dat je je moeder beloofd hebt te lezen op haar aanraden of pak die ene hobby uit de kast die al te lang zonder liefde zit. Thuis is meer te doen dan je denkt, denk niet alleen aan alle vreugde die je mist.
 
 Tip 4: Doe mij maar een mocktail!
 
-Helaas helaas. Alcohol en deze hitte mengen toch minder goed dan de advertenties van alle vakantiebestemmingen doen geloven. Door de alcohol droog je sneller uit, en neem je helaas niet per se meer vocht op. Aangezien je momenteel toch wegbrandt op het terras kan ik je aanraden om nieuwe alcoholvrije drankjes te proberen. Denk aan een youtube mocktail cursus, of fleur je water op met wat komkommer en munt! 
+Helaas helaas. Alcohol en deze hitte mengen toch minder goed dan de advertenties van alle vakantiebestemmingen doen geloven. Door alcohol droog je sneller uit en neem je helaas niet per se meer vocht op. Aangezien je momenteel toch wegbrandt op het terras kan ik je aanraden om nieuwe alcoholvrije drankjes te proberen. Denk aan een YouTube-mocktailcursus, of fleur je water op met wat komkommer en munt! 
 
 Tip 5: Wees een hottie
 
-Niemand houdt van slapen met een kruik zonder krampen, en met deze temperaturen lijkt het net alsof je ex je slaapkamer in de fik heeft gezet ‘s nachts. Toch is het niet verstandig om de ventilator boven je bed te hangen met een spannende duct tape constructie. Om de warmte te overleven moet je hem ook deels accepteren. Door jezelf wel een beetje bloot te stellen aan de warmte zorg je dat je lichaam zich hier ook beter op kan aanpassen. Maakt dat het slapen makkelijker? Nee, zeker niet. Zorg er daarom voor dat je genoeg water naast je bed hebt staan, en zet de ventilator eventueel wel in de kamer. Oververhitten is ook niet te plan. 
+Niemand houdt van slapen met een kruik zonder krampen en met deze temperaturen lijkt het net alsof je ex je slaapkamer in de fik heeft gezet ‘s nachts. Toch is het niet verstandig om de ventilator boven je bed te hangen met een spannende ducttape-constructie. Om de warmte te overleven moet je hem ook deels accepteren. Door jezelf wel een beetje bloot te stellen aan de warmte zorg je dat je lichaam zich hier ook beter op kan aanpassen. Maakt dat het slapen makkelijker? Nee, zeker niet. Zorg er daarom voor dat je genoeg water naast je bed hebt staan en zet de ventilator eventueel wel in de kamer. Oververhitten is ook niet het plan. 
 
 Tip 6: Emigreren zonder schaamte
 
-Of je nu een op een zolder woont zoals ik, of in een SSH flat aan de zonkant wegbrand, kijk wat de opties om je heen zijn. Sommige plekken zijn helaas niet bestemd tegen de warmte, en een uitweg zoeken is dan ook geen gek idee. Sommige gaan naar hun ouders, andere blijven bij vrienden slapen en een enkeling gebruikt hun vakantiegeld voor een hotelkamer. Heb je een grote geventileerde kamer vrij? Let your hot friends know, een slaapfeestje met airco is misschien net wat ze nodig hebben. 
+Of je nu op een zolder woont zoals ik, of in een SSH-flat aan de zonkant wegbrandt, kijk wat de opties om je heen zijn. Sommige plekken zijn helaas niet bestemd tegen de warmte en een uitweg zoeken is dan ook geen gek idee. Sommigen gaan naar hun ouders, anderen blijven bij vrienden slapen en een enkeling gebruikt diens vakantiegeld voor een hotelkamer. Heb je een grote geventileerde kamer vrij? Let your hot friends know, een slaapfeestje met airco is misschien net wat ze nodig hebben. 
 
-Tip 7: Smeren kan je leren
+Tip 7: Smeren kun je leren
 
-Moet je ff naar de winkel? Smeer jezelf in. Wil je even in de tuin afkoelen? Smeer jezelf in. Denk je mijn pigment kan dit aan? Smeer jezelf in. Met deze hitte is de UV-straling ook erg hoog. Deze zorgt niet alleen voor rode nekkies, maar kan ook op andere manieren gevaarlijk zijn voor je gezondheid. Wees dus mindful over de zonnebrand die je gebruikt en hoe vaak. Wil je zwemmen voor verkoeling? Houd er rekening mee dat het water veel zonlicht reflecteert en je hier ook snel door kan verbranden. Water resistente zonnebrand is dan echt een must!
+Moet je even naar de winkel? Smeer jezelf in. Wil je even in de tuin afkoelen? Smeer jezelf in. Denk je: mijn pigment kan dit aan? Smeer jezelf in. Met deze hitte is de UV-straling erg hoog. Deze zorgt niet alleen voor rode nekkies, maar kan ook op andere manieren gevaarlijk zijn voor je gezondheid. Wees dus mindful over de zonnebrand die je gebruikt en hoe vaak. Wil je zwemmen voor verkoeling? Houd er rekening mee dat het water veel zonlicht reflecteert en je hier ook snel door kunt verbranden. Waterresistente zonnebrand is dan echt een must!
 
-\*Disclaimer: Deze tips komen van verschillende nieuwsplatforms en uit eigen ervaringen! Ervaar je moeite met een van deze opties of voel je je toch niet goed, contact dan je dokter of raadpleeg een wetenschappelijk ondersteunde bron! Zorg voor jezelf <3
+\*Disclaimer: Deze tips komen van verschillende nieuwsplatforms en uit eigen ervaringen! Ervaar je moeite met een van deze opties of voel je je toch niet goed, neem dan contact op met je dokter of raadpleeg een wetenschappelijk onderbouwde bron! Zorg voor jezelf <3
 
 ## 🧩 Puzzel
 

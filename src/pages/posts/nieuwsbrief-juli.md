@@ -8,6 +8,7 @@ authors:
   - floris
   - rosanne
   - maarten
+  - kayleigh
 type: nieuwsbrief
 ---
 ## Inleiding

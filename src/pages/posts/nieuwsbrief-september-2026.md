@@ -24,18 +24,10 @@ Op 4 augustus was het tijd om te dobberen van het Theehuis naar het Tolhuis. Daa
 
 Op 18 augustus konden mensen hun bagage alvast droppen in het gebouw en hun U.F.O.-merch ophalen, als ze die natuurlijk besteld hadden. Want de volgende dag was het tijd voor het legendarische zomerkamp. Op 25 augustus bleef het stil: er was geen opkomst.
 
-
-
-
-
 ## Zomerkampen
 
 <p class="cite">Door Stijn de Wit </p>
 
-
-
 Vrijwel iedereen is op een zomerkamp mee geweest afgelopen zomer, daarom blikken wij doormiddel van de volgende slideshow even terug op alle ingezonden foto's van de zomerkampen
 
-https://youtu.be/iGZpfbe9zew
-
-https://www.youtu.be/F93hyg54es8
+https://youtu.be/F93hyg54es8

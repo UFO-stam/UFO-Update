@@ -24,15 +24,29 @@ Op 4 augustus was het tijd om te dobberen van het Theehuis naar het Tolhuis. Daa
 
 Op 18 augustus konden mensen hun bagage alvast droppen in het gebouw en hun U.F.O.-merch ophalen, als ze die natuurlijk besteld hadden. Want de volgende dag was het tijd voor het legendarische zomerkamp. Op 25 augustus bleef het stil: er was geen opkomst.
 
-## Zomerkampen
+## Het legendarische U.F.O.-zomerkamp
+
+<p class="cite">Door Rosanne Wormgoor </p>
+
+Dit jaar was mijn eerste U.F.O.-zomerkamp, dus vergelijkingsmateriaal heb ik niet echt. Maar ik zou zeggen dat het een geslaagd kamp was. Woensdag verzamelden we met z’n allen op het gebouw. Hier werden de laatste spullen ingeladen en kregen we te horen dat er voor het eerst een nachtthema was. Over dit nachtthema zou later alleen niet meer gesproken worden. De VakampCie zou het bestaan ervan ontkennen. Het dagthema was piraten; daar mocht gelukkig wel gewoon over gepraat worden. Vervolgens was het tijd voor de eeuwenlange tocht naar Delfzijl. Gelukkig konden we onderweg autobingo spelen om de tijd wat sneller te laten gaan. Eenmaal aangekomen op het kampterrein was het tijd om onze tenten op te zetten en onze spullen uit te pakken. Verder was het een redelijk rustige dag.
+
+Op donderdag gingen we piratentraining doen. Inmiddels hadden we per schip een schatkaart gekregen, waarvoor we stickers moesten verdienen om deze compleet te maken. Eerst moesten we natuurlijk als groepje een vlag maken en deze presenteren. Daarna deden we verschillende challenges tegen andere schepen. ’s Avonds gingen we geheel in het thema *Pirates of the Caribbean* kijken. Na de film zijn we met een groepje gaan urbexen in een leegstaande fabriek in de buurt. Dit was vet, maar tegelijkertijd best eng. Vooral toen opeens nog een deel van de groep aankwam zonder dit te communiceren en we daardoor allerlei geluiden hoorden.
+
+Vrijdag stond er een echte scoutingactiviteit op de planning, namelijk een hike. Als echte scout moet je natuurlijk wel een hike lopen en als piraat moesten we onze landbenen testen. Bij elke post kregen we daarnaast ingrediënten om ’s avonds een cocktail van te maken. Over de combinatie had je geen zeggenschap. Zo hadden wij passievrucht, cola, citroensap en Licor 43. De VakampCie ging vervolgens uittesten welke cocktail het beste was.
+
+Op zaterdag moesten we de hele dag van het terrein af zijn en daarom stond er een dagje Groningen op de planning. Iedereen mocht hier zijn eigen gang gaan, dus er werden verschillende activiteiten ondernomen. Zo begonnen een paar mensen door naar de film te gaan en ging ik met een groepje naar het dak van de bibliotheek. Er was op dat moment ook een kermis aanwezig en natuurlijk hebben we lekker geterasst. Het hoogtepunt was wel het meidenuitje naar de Satisfyer-discountwinkel. Daar is goed gescoord. Voor het avondeten waren er ook weer verschillende plannen, zoals eten bij de Ikea, McDonald’s of zelfgemaakte pasta carbonara eten. ’s Avonds werd er een dropping gelopen. Ik deed zelf niet mee, maar ik weet wel dat de droppinglocatie lastig te vinden was, aangezien ik reed. De deelnemers werden op een soort begraafplaats gedropt met een creepy beertje. Waarschijnlijk zeg ik nu voor degenen die niet mee waren op kamp iets heel raars, maar het creepy beertje stond centraal in het nachtthema. Dit thema was gelinkt aan een kind dat verdronken zou zijn in het water bij scouting Delfzijl.
+
+Op zondag was de wissel- en bezoekersdag. Dit was een redelijk vrijblijvende dag. Wel hebben we met z’n allen bieryoga gedaan, maar in de middag kon iedereen er zelf op uit. ’s Avonds verzamelden we weer met z’n allen om te eten. Daarna was het voor mij tijd om naar huis te gaan. Maar ik kan jullie wel vertellen over wat ik nog meer gehoord heb over de rest van de week. Zondagavond was het tijd voor de  epische biercantus. 
+
+Op maandag zijn de U.F.O.’s als uitje naar Dinopark & Landgoed Tenaxx gegaan. Hier was van alles te zien en waren er ook verschillende workshops te volgen. ’s Avonds was het tijd voor de bekende spooktocht, die elk jaar plaatsvindt. Op dinsdag stonden er verschillende wateractiviteiten op de planning. Zo heb ik uit betrouwbare bron vernomen dat er ten minste één iemand uit een kano is gevallen en dat de spanningen hoog opliepen. De rest van de dag was er vooral ruimte voor vrije tijd. En woensdag was het alweer tijd om op te ruimen en naar huis te gaan. Ik vergeet vast nog van alles, maar er gebeurt veel in zo’n week en ik was er helaas de laatste dagen niet meer bij.
+
+## Zomerkampen in beeld
 
 <p class="cite">Door Stijn de Wit </p>
 
 Vrijwel iedereen is op een zomerkamp mee geweest afgelopen zomer, daarom blikken wij doormiddel van de volgende slideshow even terug op alle ingezonden foto's van de zomerkampen
 
 https://youtu.be/F93hyg54es8
-
-
 
 ## N=1, De automatische piloot
 

@@ -54,7 +54,9 @@ Op maandag zijn de U.F.O.’s als uitje naar Dinopark & Landgoed Tenaxx gegaan. 
 
 Vrijwel iedereen is op een zomerkamp geweest afgelopen zomer, daarom blikken wij door middel van de volgende slideshow even terug op alle ingezonden foto's van de zomerkampen.
 
-<https://youtu.be/F93hyg54es8>.
+https://www.youtube.com/watch?v=F93hyg54es8
+
+
 
 ## N=1, De automatische piloot
 

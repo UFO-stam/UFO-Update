@@ -14,7 +14,7 @@ type: nieuwsbrief
 
 <p class="cite">Door Rosanne Wormgoor</p>
 
-De zomerstop is voorbij en dus is het weer tijd voor de meest geweldige en leuke U.F.O.-nieuwsbrief! In deze nieuwsbrief vind je onder andere een recap van het U.F.O.-zomerkamp van Rosanne, een nieuwe How To van Kayleigh, een N=1 van Floris, een zomervideo van Stijn en natuurlijk de verjaardagen, de agenda, een puzzel en een afsluiting van Maarten. En niet te missen: een terugblik van mij op de afgelopen opkomsten.
+De zomerstop is voorbij en dus is het weer tijd voor de meest geweldige en leuke U.F.O.-nieuwsbrief! In deze nieuwsbrief vind je onder andere een recap van het U.F.O.-zomerkamp van Rosanne, een nieuwe How To van Kayleigh, een N=1 van Floris, een zomervideo van Stijn en natuurlijk de verjaardagen, de agenda en een afsluiting van Maarten. En niet te missen: een terugblik van mij op de afgelopen opkomsten.
 
 Voordat de zomerstop écht begon, stond er nog een Barbie Beachparty Borrel op de planning. Het hele gebouw was omgetoverd tot een tropisch strandparadijs, buiten stonden zwembadjes en er waren verschillende deejays geregeld. Het enige wat niet helemaal meezat, was het weer. Maar ondanks het mindere weer hebben we er met z’n allen een geslaagde avond van gemaakt. De week erna was het tijd voor de grote schoonmaak. Met een groepje mensen hebben we ervoor gezorgd dat het hele gebouw weer tiptop in orde was. De vensterbanken zijn afgenomen, het terras is geveegd en ga zo maar door. Alles is weer helemaal klaar voor een nieuw seizoen vol U.F.O.-avonden!
 
@@ -79,3 +79,23 @@ Het meest confronterende moment van je interne automatische piloot is het lopen 
 * **Loop achteruit:** Ga terug naar de oorspronkelijke ruimte, dit helpt je hersenen om de vorige mentale context weer te laden.
 
 Zonder die automatische piloot zouden we waarschijnlijk helemaal doordraaien, dus moeten we onszelf niet te hard veroordelen voor sommige mentale uitvalbeurten. En met deze afsluitende woorden deel ik met jullie mede dat ik nu volledig op automatische piloot, waarbij mijn kleine hersenen mij in evenwicht houden, door de deuropening naar de koelkast loop om een eenheid alcohol te nuttigen die wordt verwerkt door de spijsvertering die geleid wordt door de hersenstam.
+
+## Verjaardagen
+
+In september vieren we Rianne (15 september, 23 jaar), Susanne (18 september, 28 jaar), en op 30 september zowel Jochem van Iterson (28 jaar) als Tom Veldkamp (22 jaar).
+
+## Agenda
+
+<p class="cite">Door Maarten</p>
+
+Er zijn helaas nog geen planningen voor dit jaar. De komende weken zijn er op de dinsdag nog open opkomsten. Aankondigingen voor de grote planopkomst moeten er nog komen. Aanstaande donderdag 10 september gaat de Alumnistam weer een raad houden, en daar komen vaak wel wat geplande opkomsten uit.
+
+## Afsluiting
+
+<p class="cite">Door Maarten</p>
+
+Dit was alweer de nieuwsbrief. Zoals te merken miste er een onderdeel. We wilde graag wat foto's van de zomer avonturen gebruiken voor een leuke puzzel, namelijk een geoguesser maar dan van onze vakantie bestemmingen. Helaas hebben we net niet genoeg inzendingen voor ontvangen 
+
+> ahhhww :'(
+
+Gelukkig is er volgende maand een nieuwe nieuwsbrief met nieuwe kansen. Vergeet daarom niet je favoriete sticker in de UFO-chat te gooien. En dan zeggen wij, de RedacCie, zoals onze Freek Vonk altijd zegt: "Laterrrrrr!"

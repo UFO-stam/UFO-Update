@@ -15,31 +15,21 @@ type: nieuwsbrief
 
 <p class="cite">Door Rosanne Wormgoor</p>
 
-
-
 ## Interview met SSN
 
 <p class="cite">Door Kayleigh Hogerheijde</p>
 
-
-
-## N=1, 
+## N=1,
 
 <p class="cite">Door Floris Meester </p>
-
-
 
 ## Collage open opkomsten
 
 <p class="cite">Door Rosanne Wormgoor </p>
 
-
-
 ## Wist je dat...
 
-<p class="cite">Door Rose </p>
-
-
+<p class="cite">Door Rose Jansen</p>
 
 ## Video: open opkomsten
 
@@ -49,17 +39,11 @@ De open opkomsten zijn inmiddels weer achter de rug. Doormiddel van deze video k
 
 https://youtu.be/po6IZA4brZY
 
-
-
 ## Verjaardagen
-
-
 
 ## Agenda
 
 <p class="cite">Door Maarten</p>
-
-
 
 ## Afsluiting
 

@@ -15,7 +15,7 @@ type: nieuwsbrief
 
 <p class="cite">Door Rosanne Wormgoor</p>
 
-De afgelopen maand stond volledig in het teken van de open opkomsten en de verkiezings-AV. Genoeg gebeurd dus! In deze terugblik nemen we jullie mee langs de hoogtepunten van de afgelopen weken. En ook in de rest van deze nieuwsbrief valt weer genoeg te lezen: zo vind je een interview met de SSN van Kayleigh, een nieuwe N=1 van Floris, een video van de open opkomsten én een gloednieuw item: de ‘Wist je dat’ van Rose. Natuurlijk mogen ook de verjaardagen, agenda en afsluiting niet ontbreken. Maar eerst: een terugblik!
+De afgelopen maand stond volledig in het teken van de open opkomsten en de verkiezings-AV. In deze terugblik nemen we jullie mee langs de hoogtepunten van de afgelopen weken. En ook in de rest van deze nieuwsbrief valt weer genoeg te lezen: zo vind je een interview met de SSN van Kayleigh, een nieuwe N=1 van Floris, een video van de open opkomsten én een gloednieuw item: de ‘Wist je dat’ van Rose. Natuurlijk mogen ook de verjaardagen, agenda en afsluiting niet ontbreken. Maar eerst: een terugblik!
 
 De eerste opkomst van het nieuwe scoutingseizoen vond plaats op ’t Moederschip. En omdat het een open opkomst was, hadden we natuurlijk iets leuks in petto. Er stond een heus postenspel klaar, met voor ieder wat wils. Zo kon je op de ene post een potje flunkyball spelen, terwijl je op een andere post je geluk kon beproeven met kingsen. Ook was er een jaarbingo en kon je je knoopkunsten testen door een apenvuist te maken. Genoeg variatie dus! En alsof dat nog niet gezellig genoeg was, waren er ook nog eens enorm veel raketjes aanwezig. Kortom: de toon voor het nieuwe seizoen was meteen gezet.
 

@@ -25,11 +25,11 @@ De eerste opkomst van het nieuwe scoutingseizoen vond plaats op ’t Moederschip
 
 Voor de tweede open opkomst trokken we de stad in voor een groot potje Hide & Seek. De groep werd verdeeld in twee teams, waarbij het ene team mocht beginnen met verstoppen en het andere team de taak kreeg om ze op te sporen. De zoekers moesten eerst twintig minuten wachten, terwijl de verstoppers de tijd kregen om een goede plek te vinden. Zij mochten daarbij zelfs de bus pakken en ergens binnen het speelgebied naartoe reizen. Door middel van vragen probeerden de zoekers vervolgens te achterhalen waar het andere team zich bevond. Maar de verstoppers stonden er niet alleen voor: met behulp van een kaartendeck konden zij af en toe acties van de zoekers blokkeren of juist zelf een opdracht uitdelen. Halverwege werd de boel omgedraaid en wisselden de teams van rol. Daarna was het tijd voor de derde helft. We gingen nog wat drinken bij Lebowski en sloten de avond uiteindelijk af met een bezoekje aan Chupitos.
 
-![](/uploads/img_1189.jpg)
+![Er wordt paardenrace gespeeld.](/uploads/img_1189.jpg "Er wordt paardenrace gespeeld.")
 
 De laatste open opkomst stond volledig in het teken van: Casino Royal Night! Iedereen werd gevraagd om netjes gekleed te komen en zich voor één avond onder te dompelen in de wereld van het casino. Er kon gespeeld worden op vier verschillende tafels: paardenrace, hoger/lager, blackjack en roulette. Iedere U.F.O. en ieder raketje begon met een bepaald bedrag aan nepgeld en had vervolgens maar één doel: zorgen dat je met zoveel mogelijk geld de avond uitging. En natuurlijk kon er iets gewonnen worden. De drie personen die aan het einde van de avond het meeste geld hadden verzameld, mochten een cadeau uitzoeken. Daarmee kwam er een einde aan de laatste open opkomst van deze reeks. We hebben er verschillende nieuwe leden, Nova’s, bij gekregen. Welkom allemaal!
 
-![](/uploads/img_1190.jpg)
+![Hier kon je hoger/lager spelen.](/uploads/img_1190.jpg "Hier kon je hoger/lager spelen.")
 
 Op 22 september was het tijd voor de verkiezings-AV. Zelf was ik hier helaas niet bij, maar gelukkig valt er wel iets te melden: er is een nieuw bestuur ingestemd! Bestuur 9 bestaat uit Indy, Kirsten, Tom V en Sanne. Van harte gefeliciteerd en heel veel succes met jullie bestuursjaar! 
 

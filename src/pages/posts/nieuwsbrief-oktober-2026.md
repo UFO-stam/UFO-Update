@@ -8,7 +8,6 @@ authors:
   - maarten
   - stijn
   - rosanne
-  - rose
 type: nieuwsbrief
 ---
 ## Inleiding

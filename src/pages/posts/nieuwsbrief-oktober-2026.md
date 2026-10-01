@@ -37,9 +37,30 @@ Op 22 september was het tijd voor de verkiezings-AV. Zelf was ik hier helaas nie
 
 <p class="cite">Door Kayleigh Hogerheijde</p>
 
-## N=1
+## N=1, Spreekwoordelijke gezegdes
 
 <p class="cite">Door Floris Meester </p>
+
+*‘N=1’ is een opiniestuk waarin Floris Meester zijn ongefilterde mening geeft over een onderwerp dat hem nauw aan het hart ligt. De term ‘N=1' is de onderzoeksterm voor de steekproefgrootte en geeft binnen deze rubriek aan dat de uitslag gebaseerd is op de hersenspinsels van Floris. Er kunnen geen rechten aan de uitspraken worden ontleend, hij doet ook maar wat.*
+
+Om maar meteen met de deur in huis te vallen: het loopt de spuigaten uit met de Nederlandse taal. Ik zat onlangs met de handen in het haar te bedenken waar ik deze maand de spijker op de kop mee kon slaan, want je wilt met zo'n rubriek toch niet achter het net vissen. Soms zie ik door de bomen het bos niet meer, maar na lang peinzen viel eindelijk het kwartje. Als we hier allemaal een vinger in de pap willen hebben, moeten we niet de kat uit de boom kijken, maar simpelweg de knoop doorhakken. Het staat namelijk als een paal boven water dat onze dagelijkse gezegdes eigenlijk slaan als een tang op een varken. Voordat de aap straks uit de mouw komt en jullie denken dat ik puur spijkers op laag water loop te zoeken: ik wil gewoon even een appeltje schillen met onze woordenschat. Laten we wel wezen, wie de schoen past, trekt hem aan, maar als je ons taalgebruik letterlijk gaat nemen, verkoop je al snel knollen voor citroenen en gooi je uiteindelijk het kind met het badwater weg.
+
+We gebruiken op dagelijkse basis spreekwoordelijke gezegdes, vaak ook zonder dat je het door hebt. Zodra we in een gesprek even niet direct weten hoe we iets moeten omschrijven, gooien we als oplossing gewoon een of andere tegeltjeswijsheid er tegenaan. Maar waarom doen we dat eigenlijk? Hoe komt het dat wij hedendaags nog steeds taal over loslopend vee of zinkende VOC-schepen gebruiken om een situatie aan te duiden of om verduidelijking ergens in te brengen. 
+
+Laten we als voorbeeld de verwerking van dieren in onze taal erbij pakken. Als je tijdens een gesprek te horen krijgt dat je “geen oude koeien uit de sloot moet halen”, welk persoon heeft dan ooit bedacht om een halfvergane karkas Bertha 38 van ruim 600 kilo uit die modderige greppel te takelen, puur en alleen om een punt te maken? En hoe is het gekomen dat vierhonderd jaar later dit alsnog accepteren als een volkomen logisch argument? Hetzelfde geldt voor de term dat “de aap uit de mouw komt”. In wat voor een situatie moet je beland zijn waarbij er een maki je mouw uit komt kruipen en dat je dan een verhelderde visie van een gebeurtenis krijgt.
+
+Naast het grote gebruik van dieren in onze taal hebben wij als Nederlanders ook een hele hoop scheepsvaartgeschiedenis die in onze taal is gekropen. Neem hierbij de uitdrukking “Voor pampus liggen”. Historisch gezien klinkt het heel logisch: Zwaarbeladen schepen moesten vroeger voor de kust van het eiland Pampus wachten op de juiste stroming om de haven van Amsterdam binnen te kunnen varen zodat ze niet vast kwamen te zitten in het ondiepe water. Terwijl de boten hier vast kwamen te liggen verveelde de bemanning zich en gingen zij zuipen, waardoor zij letterlijk ‘voor pampus’ lagen te wachten. Een leuk stukje geschiedenis, maar wij gebruiken het tegenwoordig vooral als we na het naar binnen inhaleren van een kapsalon op de bank ploffen, Netflix aanzetten en hierna niet meer van de bank af te kunnen rollen. Vaak kom je dan op een realisatiepunt of ik mijn leven niet over een andere boeg moet gooien.
+
+Hiermee kan je zien dat gezegdes een blauwdruk zijn van de geschiedenis van een land. Dit geldt niet alleen voor Nederland trouwens, over de grens komt dit ook voor. Hierbij een leuk rijtje:
+
+* **Engeland:** Kenmerken van spreekwoorden gebaseerdop sport (cricket), het weer en historische literatuur (Shakespeare). 
+* **Spanje:** Veel religieuze invloeden op despreekwoorden maar ook metaforen rondom stierenvechten of landbouw.
+* **Frankrijk:** Sterke focus op eten, wijn ende Franse keuken, maar ook veel subtiele, intellectuele en filosofische metaforen
+* **Italië:** Verwijzingen naar familie,religie en eten (vooral brood en pasta). Erg expressief en regionaal bepaald
+* **Rusland:** Donkere humor, hardelevenslessen en de natuur (met name de winter, beren en het boerenleven)
+* **Japan:** Harmonie, natuur, Boeddhisme en hetvermijden van direct conflict
+
+Het laat maar weer zien dat we wereldwijd eigenlijk allemaal pure geschiedenis praten zonder dat we het door hebben. We hangen onze dagelijkse emoties en ongemakken gewoon op aan de dingen die toevallig in de buurt waren ten tijde van onze voorouders. Ik hoop dat dit jullie ogen geopend heeft naar bepaalde opvattingen van gezegdes of je hierin te verdiepen. Ik heb er in ieder geval van genoten.
 
 ## Video: open opkomsten
 

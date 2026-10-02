@@ -8,6 +8,7 @@ authors:
   - maarten
   - stijn
   - rosanne
+  - rose
 type: nieuwsbrief
 ---
 ## Inleiding
@@ -32,9 +33,51 @@ De laatste open opkomst stond volledig in het teken van: Casino Royal Night! Ied
 
 Op 22 september was het tijd voor de verkiezings-AV. Zelf was ik hier helaas niet bij, maar gelukkig valt er wel iets te melden: er is een nieuw bestuur ingestemd! Bestuur 9 bestaat uit Indy, Kirsten, Tom V en Sanne. Van harte gefeliciteerd en heel veel succes met jullie bestuursjaar! 
 
+
+
+## Wist je dat…
+
+<p class="cite">Door Rose Jansen</p>
+
+###### het nieuwe seizoen eindelijk begonnen is?
+
+###### het podium is weg gebeuned?
+
+###### er bij de Alumni een open opkomst is op 8 oktober?
+
+###### je nog steeds kan aanmelden voor het jaarboek?
+
+###### het lettertype van de U.F.O-Stam goodtimes is?
+
+
+
+
 ## Interview met SSN
 
 <p class="cite">Door Kayleigh Hogerheijde</p>
+
+
+
+
+
+
+
+## Wist je dat…
+
+<p class="cite">Door Rose Jansen</p>
+
+###### stroomkabels niet waterdicht zijn?
+
+###### je genoeg frituurvet moet hebben om te kunnen frituren?
+
+###### een frituurpan echt focking warm wordt?
+
+###### de Uithof eigenlijk SciencePark heet?
+
+###### Nova’s het liefst op de bank zitten?
+
+
+
 
 ## N=1, Spreekwoordelijke gezegdes
 
@@ -61,6 +104,26 @@ Hiermee kan je zien dat gezegdes een blauwdruk zijn van de geschiedenis van een 
 
 Het laat maar weer zien dat we wereldwijd eigenlijk allemaal pure geschiedenis praten zonder dat we het door hebben. We hangen onze dagelijkse emoties en ongemakken gewoon op aan de dingen die toevallig in de buurt waren ten tijde van onze voorouders. Ik hoop dat dit jullie ogen geopend heeft naar bepaalde opvattingen van gezegdes of je hierin te verdiepen. Ik heb er in ieder geval van genoten.
 
+
+
+
+## Wist je dat…
+
+<p class="cite">Door Rose Jansen</p>
+
+###### Spoed AV’s toch veel leuker zijn?
+
+###### oud papier nog steeds een boom is?
+
+###### op een goede dag je wel 7x kan poepen?
+
+###### onze das niet zwart/wit is?
+
+
+
+
+
+
 ## Video: open opkomsten
 
 <p class="cite">Door Stijn de Wit </p>
@@ -69,15 +132,65 @@ De open opkomsten zijn inmiddels weer achter de rug. Doormiddel van deze video k
 
 https://youtu.be/po6IZA4brZY
 
+
+
+## Wist je dat…
+
+<p class="cite">Door Rose Jansen</p>
+
+###### U.F.O.'s Jack Rabbit een goede verstopplek vinden?
+
+###### heel Utrecht een speelveld kan zijn?
+
+###### zoekers soms ook moeilijk te vinden zijn?
+
+###### sommige U.F.O’s van suiker zijn gemaakt?
+
+###### Shotjes het beste smaken in Chupi’s
+
+
+
+
+
+
 ## Wist je dat...
 
 <p class="cite">Door Rose Jansen</p>
+
+De U.F.O.-nieuwsbrief heeft er een nieuwe rubriek bij: de **Wist je dat’jes**!
+
+Elke maand vind je hier een korte terugblik op de afgelopen opkomsten én eventuele aankondigingen voor de komende maand. Denk aan opvallende gebeurtenissen, bijzondere observaties, uitspraken, maar ook dingen die nét even het benoemen waard zijn. Geen grote verhalen of lange teksten. Zo krijg je een impressie van wat er binnen de U.F.O.-Stam speelt… ook als je er zelf niet bij kon zijn! Want laten we eerlijk zijn: een beetje **FOMO** hoort erbij. 👀 
+
+Dus heb jij iets meegemaakt, gezien of gehoord waarvan je denkt: *dit past hier helemaal bij*? Stuur het vooral door!
+
+
+
+
 
 ## Verjaardagen
 
 ## Agenda
 
 <p class="cite">Door Maarten</p>
+
+
+
+## Wist je dat…
+
+<p class="cite">Door Rose Jansen</p>
+
+###### U.F.O.-merch gewoon galawaardig is?
+
+###### Paardenrace heel luid is?
+
+###### al je geld op rood zetten een goede keuze is?
+
+###### er een stripclub was op de toiletten?
+
+###### de penningmeester niet de winnaar van de avond was?
+
+
+
 
 ## Afsluiting
 

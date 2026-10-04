@@ -107,7 +107,7 @@
 
 	<div class="abb-controls">
 		<button data-fire type="button" class="abb-button abb-fire">
-			🚀 Schiet
+			Schiet
 		</button>
 		<button data-speed type="button" class="abb-button" aria-pressed="false"
 			aria-label="Driemaal sneller afspelen">
@@ -158,7 +158,7 @@
 	const MAX_BALLS = 40;
 	const TURN_LIMIT = 24;
 	const EPS = 1e-7;
-	const STORAGE_KEY = 'njk-cosmic-breaker-best-v1';
+	const STORAGE_KEY = 'cosmic-breaker-best-v1';
 
 	const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 	const numberFormat = new Intl.NumberFormat('nl-NL', {
@@ -303,7 +303,7 @@
 		spawnRow();
 		setAngle(0);
 		updateUI();
-		status.textContent = 'Richt je UFO en schiet. Neem gerust de tijd.';
+		status.textContent = 'Richt je kanon en schiet.';
 		draw();
 	}
 
@@ -378,7 +378,7 @@
 				`Wave ${wave}. ` +
 				(gained ? `+${gained} ${gained === 1 ? 'bal' : 'ballen'}! ` : '') +
 				(recalled ? 'De laatste ballen zijn teruggeroepen. ' : '') +
-				'Kies je volgende stuit.';
+				'Kies je volgende doelwit.';
 		}
 
 		updateUI();

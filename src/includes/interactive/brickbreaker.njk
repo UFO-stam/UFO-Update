@@ -1,0 +1,879 @@
+<style>
+	.abb-game {
+		--abb-focus: #38bdf8;
+	}
+
+	.abb-game .abb-hud {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: .5rem;
+		text-align: center;
+	}
+
+	.abb-game .abb-stat {
+		padding: .6rem;
+		border: 1px solid #374151;
+		border-radius: .75rem;
+		background: #111827;
+		color: #d1d5db;
+		font-size: .8rem;
+	}
+
+	.abb-game .abb-stat strong {
+		display: block;
+		color: #fff;
+		font-size: 1.3rem;
+	}
+
+	.abb-game canvas {
+		display: block;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 3 / 4;
+		background: #0b1020;
+		border: 1px solid #374151;
+		border-radius: 1rem;
+		touch-action: none;
+		user-select: none;
+	}
+
+	.abb-game .abb-controls {
+		display: flex;
+		flex-wrap: wrap;
+		gap: .5rem;
+	}
+
+	.abb-game .abb-button {
+		min-height: 44px;
+		padding: .65rem 1rem;
+		border: 0;
+		border-radius: 999px;
+		background: #374151;
+		color: #fff;
+		font: inherit;
+		font-size: .875rem;
+		font-weight: 700;
+		cursor: pointer;
+	}
+
+	.abb-game .abb-fire {
+		flex: 1;
+		background: #2563eb;
+	}
+
+	.abb-game .abb-button[aria-pressed="true"] {
+		background: #065f46;
+	}
+
+	.abb-game .abb-button[aria-disabled="true"] {
+		opacity: .55;
+		cursor: not-allowed;
+	}
+
+	.abb-game :is(button, canvas):focus-visible {
+		outline: 3px solid var(--abb-focus);
+		outline-offset: 3px;
+	}
+
+	.abb-game .abb-status {
+		min-height: 3rem;
+		text-align: center;
+		font-size: .875rem;
+	}
+</style>
+
+<section class="abb-game space-y-4 max-w-lg mx-auto" aria-label="Kosmische Kaatsers">
+
+	<div class="text-center">
+		<h3 class="font-bold text-xl sm:text-2xl mb-2">
+			Kosmische Kaatsers 🛸
+		</h3>
+		<p class="text-sm text-gray-600 dark:text-gray-300">
+			Houd de aliens boven de grens.
+		</p>
+	</div>
+
+	<div class="abb-hud" aria-label="Spelstand">
+		<div class="abb-stat">Wave <strong data-wave>1</strong></div>
+		<div class="abb-stat">Ballen <strong data-balls>5</strong></div>
+		<div class="abb-stat">Record <strong data-best>0</strong></div>
+	</div>
+
+	<canvas data-canvas width="420" height="560" tabindex="0"
+		role="img"
+		aria-label="Speelveld. Richt met de pijltjes links en rechts. Schiet met Enter of spatie.">
+		Je browser ondersteunt dit speelveld niet.
+	</canvas>
+
+	<div class="abb-controls">
+		<button data-fire type="button" class="abb-button abb-fire">
+			🚀 Schiet
+		</button>
+		<button data-speed type="button" class="abb-button" aria-pressed="false"
+			aria-label="Driemaal sneller afspelen">
+			Tempo ×3
+		</button>
+		<button data-reset type="button" class="abb-button">
+			Opnieuw
+		</button>
+	</div>
+
+	<p data-status class="abb-status" role="status" aria-live="polite" aria-atomic="true"></p>
+
+</section>
+
+<script>
+(() => {
+	'use strict';
+
+	const root = document.currentScript.previousElementSibling;
+	const $ = selector => root.querySelector(selector);
+	const canvas = $('[data-canvas]');
+	const ctx = canvas.getContext('2d');
+	const status = $('[data-status]');
+	const fireButton = $('[data-fire]');
+	const speedButton = $('[data-speed]');
+
+	if (!ctx) {
+		status.textContent = 'Dit spel heeft een browser met Canvas-ondersteuning nodig.';
+		fireButton.disabled = true;
+		return;
+	}
+
+	const W = 420;
+	const H = 560;
+	const COLS = 7;
+	const PAD = 14;
+	const GAP = 6;
+	const BRICK_W = (W - PAD * 2 - GAP * (COLS - 1)) / COLS;
+	const BRICK_H = 34;
+	const ROW_STEP = 48;
+	const TOP = 44;
+	const DANGER_Y = 506;
+	const LAUNCH_Y = 536;
+	const RADIUS = 4;
+	const WALL = 8;
+	const SPEED = 680;
+	const LAUNCH_GAP = .065;
+	const MAX_BALLS = 40;
+	const TURN_LIMIT = 24;
+	const EPS = 1e-7;
+	const STORAGE_KEY = 'njk-cosmic-breaker-best-v1';
+
+	const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+	const numberFormat = new Intl.NumberFormat('nl-NL', {
+		notation: 'compact',
+		maximumFractionDigits: 1
+	});
+
+	const stars = Array.from({ length: 45 }, () => ({
+		x: Math.random() * W,
+		y: Math.random() * H,
+		r: Math.random() * 1.1 + .4
+	}));
+
+	let board = [];
+	let balls = [];
+	let particles = [];
+	let phase = 'aim';
+	let wave = 1;
+	let ballCount = 5;
+	let launcherX = W / 2;
+	let angle = 0;
+	let fast = false;
+	let shot = null;
+	let run = null;
+	let best = 0;
+	let raf = 0;
+	let lastFrame = 0;
+
+	try {
+		best = Math.max(0, parseInt(localStorage.getItem(STORAGE_KEY), 10) || 0);
+	} catch {}
+
+	const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+	const brickX = item => PAD + item.c * (BRICK_W + GAP);
+	const brickY = item => TOP + item.r * ROW_STEP;
+
+	function track(name, extra = {}) {
+		try {
+			const result = window.umami?.track?.(name, {
+				run_id: run.id,
+				wave,
+				voltooide_waves: wave - 1,
+				salvos: run.shots,
+				stenen_vernietigd: run.destroyed,
+				ballen: ballCount,
+				...extra
+			});
+			result?.catch?.(() => {});
+		} catch {}
+	}
+
+	function finishAnalytics(reason) {
+		if (!run?.started || run.logged) return;
+
+		run.logged = true;
+		track('Kosmische Kaatsers Einde', {
+			reden: reason,
+			duur_seconden: Math.round((performance.now() - run.started) / 1000)
+		});
+	}
+
+	function saveBest() {
+		best = Math.max(best, wave);
+		try {
+			localStorage.setItem(STORAGE_KEY, String(best));
+		} catch {}
+	}
+
+	function shuffledColumns() {
+		const columns = Array.from({ length: COLS }, (_, i) => i);
+		for (let i = columns.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[columns[i], columns[j]] = [columns[j], columns[i]];
+		}
+		return columns;
+	}
+
+	function spawnRow() {
+		const columns = shuffledColumns();
+		const count = Math.min(6, 3 + Math.floor((wave - 1) / 4));
+		const baseHP = Math.min(999999, Math.ceil(2 * 1.18 ** (wave - 1)));
+		const bombIndex = wave % 3 === 0 ? Math.floor(Math.random() * count) : -1;
+
+		for (let i = 0; i < count; i++) {
+			const hp = Math.ceil(baseHP * (.85 + Math.random() * .35));
+			board.push({
+				r: 0,
+				c: columns[i],
+				kind: i === bombIndex ? 'bomb' : 'brick',
+				hp,
+				maxHP: hp,
+				alive: true,
+				hitAt: -Infinity
+			});
+		}
+
+		if (ballCount < MAX_BALLS) {
+			board.push({
+				r: 0,
+				c: columns[count],
+				kind: 'orb',
+				hp: 0,
+				alive: true
+			});
+		}
+	}
+
+	function updateUI() {
+		$('[data-wave]').textContent = wave;
+		$('[data-balls]').textContent = ballCount;
+		$('[data-best]').textContent = best;
+
+		fireButton.setAttribute('aria-disabled', String(phase !== 'aim'));
+		fireButton.textContent = phase === 'firing'
+			? 'Salvo onderweg…'
+			: phase === 'over' ? 'Missie afgelopen' : '🚀 Schiet';
+	}
+
+	function reset() {
+		finishAnalytics('opnieuw');
+		cancelAnimationFrame(raf);
+		raf = 0;
+		lastFrame = 0;
+
+		board = [];
+		balls = [];
+		particles = [];
+		wave = 1;
+		ballCount = 5;
+		launcherX = W / 2;
+		phase = 'aim';
+		shot = null;
+
+		run = {
+			id: window.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`,
+			started: 0,
+			shots: 0,
+			destroyed: 0,
+			logged: false
+		};
+
+		spawnRow();
+		setAngle(0);
+		updateUI();
+		status.textContent = 'Richt je UFO en schiet. Neem gerust de tijd.';
+		draw();
+	}
+
+	function setAngle(value) {
+		angle = clamp(Math.round(value), -75, 75);
+	}
+
+	function fire() {
+		if (phase !== 'aim') return;
+
+		if (!run.started) {
+			run.started = performance.now();
+			track('Kosmische Kaatsers Gestart');
+		}
+
+		run.shots++;
+		saveBest();
+		phase = 'firing';
+		balls = [];
+		particles = [];
+
+		const radians = angle * Math.PI / 180;
+
+		shot = {
+			elapsed: 0,
+			sent: 0,
+			total: ballCount,
+			extra: 0,
+			landingX: null,
+			x: launcherX,
+			vx: Math.sin(radians) * SPEED,
+			vy: -Math.cos(radians) * SPEED
+		};
+
+		lastFrame = 0;
+		updateUI();
+		status.textContent = 'Salvo onderweg. Je hoeft niets te vangen.';
+		schedule();
+	}
+
+	function finishTurn(recalled) {
+		const previousCount = ballCount;
+		ballCount = Math.min(MAX_BALLS, ballCount + shot.extra);
+		launcherX = clamp(shot.landingX ?? launcherX, WALL + RADIUS, W - WALL - RADIUS);
+
+		balls = [];
+		particles = [];
+		board = board.filter(item => item.alive);
+
+		for (const item of board) item.r++;
+
+		board = board.filter(item =>
+			item.kind !== 'orb' || brickY(item) + BRICK_H < DANGER_Y
+		);
+
+		const lost = board.some(item =>
+			item.kind !== 'orb' && brickY(item) + BRICK_H >= DANGER_Y
+		);
+
+		if (lost) {
+			phase = 'over';
+			status.textContent = `🛸 De aliens hebben de grens bereikt. Je kwam tot wave ${wave}!`;
+			finishAnalytics('onderkant');
+		} else {
+			wave++;
+			phase = 'aim';
+			spawnRow();
+			saveBest();
+
+			const gained = ballCount - previousCount;
+			status.textContent =
+				`Wave ${wave}. ` +
+				(gained ? `+${gained} ${gained === 1 ? 'bal' : 'ballen'}! ` : '') +
+				(recalled ? 'De laatste ballen zijn teruggeroepen. ' : '') +
+				'Kies je volgende stuit.';
+		}
+
+		updateUI();
+	}
+
+	function circleHit(ball, cx, cy, radius, limit) {
+		const ox = ball.x - cx;
+		const oy = ball.y - cy;
+		const a = ball.vx ** 2 + ball.vy ** 2;
+		const b = ox * ball.vx + oy * ball.vy;
+		const c = ox ** 2 + oy ** 2 - radius ** 2;
+		const discriminant = b * b - a * c;
+
+		if (a < EPS || discriminant < 0) return null;
+
+		const time = (-b - Math.sqrt(discriminant)) / a;
+		if (time < -EPS || time > limit) return null;
+
+		const t = Math.max(0, time);
+		const nx = (ox + ball.vx * t) / radius;
+		const ny = (oy + ball.vy * t) / radius;
+
+		if (ball.vx * nx + ball.vy * ny >= -EPS) return null;
+		return { t, nx, ny };
+	}
+
+	function rectangleHit(ball, item, limit) {
+		const x = brickX(item);
+		const y = brickY(item);
+		const endX = ball.x + ball.vx * limit;
+		const endY = ball.y + ball.vy * limit;
+
+		if (
+			Math.max(ball.x, endX) < x - RADIUS ||
+			Math.min(ball.x, endX) > x + BRICK_W + RADIUS ||
+			Math.max(ball.y, endY) < y - RADIUS ||
+			Math.min(ball.y, endY) > y + BRICK_H + RADIUS
+		) return null;
+
+		let bestHit = null;
+
+		function offer(t, nx, ny) {
+			if (
+				t < -EPS || t > limit ||
+				(bestHit && t >= bestHit.t) ||
+				ball.vx * nx + ball.vy * ny >= -EPS
+			) return;
+
+			bestHit = { t: Math.max(0, t), nx, ny };
+		}
+
+		if (Math.abs(ball.vx) > EPS) {
+			const nx = ball.vx > 0 ? -1 : 1;
+			const faceX = ball.vx > 0 ? x - RADIUS : x + BRICK_W + RADIUS;
+			const t = (faceX - ball.x) / ball.vx;
+			const contactY = ball.y + ball.vy * t;
+			if (contactY >= y && contactY <= y + BRICK_H) offer(t, nx, 0);
+		}
+
+		if (Math.abs(ball.vy) > EPS) {
+			const ny = ball.vy > 0 ? -1 : 1;
+			const faceY = ball.vy > 0 ? y - RADIUS : y + BRICK_H + RADIUS;
+			const t = (faceY - ball.y) / ball.vy;
+			const contactX = ball.x + ball.vx * t;
+			if (contactX >= x && contactX <= x + BRICK_W) offer(t, 0, ny);
+		}
+
+		for (const sx of [-1, 1]) {
+			for (const sy of [-1, 1]) {
+				const cx = sx < 0 ? x : x + BRICK_W;
+				const cy = sy < 0 ? y : y + BRICK_H;
+				const hit = circleHit(ball, cx, cy, RADIUS, limit);
+
+				if (!hit) continue;
+
+				const px = ball.x + ball.vx * hit.t;
+				const py = ball.y + ball.vy * hit.t;
+
+				if ((px - cx) * sx >= -EPS && (py - cy) * sy >= -EPS) {
+					offer(hit.t, hit.nx, hit.ny);
+				}
+			}
+		}
+
+		return bestHit;
+	}
+
+	function nextHit(ball, limit, includeOrbs = true) {
+		let nearest = null;
+
+		function offer(hit, kind, item = null) {
+			if (!hit || hit.t < -EPS || hit.t > limit) return;
+			if (nearest && hit.t >= nearest.t) return;
+			nearest = { ...hit, t: Math.max(0, hit.t), kind, item };
+		}
+
+		if (ball.vx < -EPS) offer({ t: (WALL + RADIUS - ball.x) / ball.vx, nx: 1, ny: 0 }, 'wall');
+		if (ball.vx > EPS) offer({ t: (W - WALL - RADIUS - ball.x) / ball.vx, nx: -1, ny: 0 }, 'wall');
+		if (ball.vy < -EPS) offer({ t: (WALL + RADIUS - ball.y) / ball.vy, nx: 0, ny: 1 }, 'wall');
+		if (ball.vy > EPS) offer({ t: (LAUNCH_Y - ball.y) / ball.vy, nx: 0, ny: -1 }, 'floor');
+
+		for (const item of board) {
+			if (!item.alive) continue;
+			const remaining = nearest ? Math.min(limit, nearest.t) : limit;
+
+			if (item.kind === 'orb') {
+				if (!includeOrbs) continue;
+				offer(circleHit(
+					ball,
+					brickX(item) + BRICK_W / 2,
+					brickY(item) + BRICK_H / 2,
+					11 + RADIUS,
+					remaining
+				), 'orb', item);
+			} else {
+				offer(rectangleHit(ball, item, remaining), 'brick', item);
+			}
+		}
+		return nearest;
+	}
+
+	function reflect(ball, hit) {
+		const dot = ball.vx * hit.nx + ball.vy * hit.ny;
+		ball.vx -= 2 * dot * hit.nx;
+		ball.vy -= 2 * dot * hit.ny;
+
+		ball.x += hit.nx * .02;
+		ball.y += hit.ny * .02;
+	}
+
+	function puff(item, color, count = 7) {
+		if (reducedMotion.matches) return;
+
+		for (let i = 0; i < count; i++) {
+			particles.push({
+				x: brickX(item) + BRICK_W / 2,
+				y: brickY(item) + BRICK_H / 2,
+				vx: (Math.random() - .5) * 160,
+				vy: (Math.random() - .5) * 160,
+				life: .4,
+				color
+			});
+		}
+
+		if (particles.length > 120) {
+			particles.splice(0, particles.length - 120);
+		}
+	}
+
+	function damage(target, amount) {
+		const queue = [[target, amount]];
+
+		for (let index = 0; index < queue.length; index++) {
+			const [item, hitPoints] = queue[index];
+			if (!item.alive || item.kind === 'orb') continue;
+
+			item.hp = Math.max(0, item.hp - hitPoints);
+			item.hitAt = performance.now();
+
+			if (item.hp > 0) continue;
+
+			item.alive = false;
+			run.destroyed++;
+			puff(item, item.kind === 'bomb' ? '#fb923c' : '#c4b5fd', item.kind === 'bomb' ? 18 : 7);
+
+			if (item.kind !== 'bomb') continue;
+
+			for (const neighbor of board) {
+				if (
+					neighbor.alive &&
+					neighbor.kind !== 'orb' &&
+					Math.abs(neighbor.r - item.r) <= 1 &&
+					Math.abs(neighbor.c - item.c) <= 1
+				) {
+					queue.push([neighbor, item.maxHP * 2]);
+				}
+			}
+		}
+	}
+
+	function moveBall(ball, dt) {
+		let remaining = dt;
+
+		for (let contacts = 0; contacts < 12 && remaining > EPS; contacts++) {
+			const hit = nextHit(ball, remaining);
+			const travel = hit ? hit.t : remaining;
+
+			ball.x += ball.vx * travel;
+			ball.y += ball.vy * travel;
+			remaining -= travel;
+
+			if (!hit) return;
+
+			if (hit.kind === 'floor') {
+				ball.active = false;
+				if (shot.landingX === null) shot.landingX = ball.x;
+				return;
+			}
+
+			if (hit.kind === 'orb') {
+				hit.item.alive = false;
+				shot.extra++;
+				puff(hit.item, '#5eead4');
+				continue;
+			}
+
+			if (hit.kind === 'brick') damage(hit.item, 1);
+			reflect(ball, hit);
+		}
+	}
+
+	function step(dt) {
+		shot.elapsed += dt;
+
+		while (shot.sent < shot.total && shot.sent * LAUNCH_GAP <= shot.elapsed) {
+			balls.push({
+				x: shot.x,
+				y: LAUNCH_Y,
+				vx: shot.vx,
+				vy: shot.vy,
+				born: shot.sent * LAUNCH_GAP,
+				active: true
+			});
+			shot.sent++;
+		}
+
+		for (const ball of balls) {
+			if (ball.active) {
+				moveBall(ball, Math.min(dt, shot.elapsed - ball.born));
+			}
+		}
+
+		balls = balls.filter(ball => ball.active);
+
+		const recalled = shot.elapsed >= TURN_LIMIT;
+		if (recalled || (shot.sent === shot.total && balls.length === 0)) {
+			finishTurn(recalled);
+		}
+	}
+
+	function schedule() {
+		if (!raf && phase === 'firing' && !document.hidden) {
+			raf = requestAnimationFrame(frame);
+		}
+	}
+
+	function frame(now) {
+		raf = 0;
+		if (phase !== 'firing' || document.hidden) return;
+
+		const dt = lastFrame ? Math.min((now - lastFrame) / 1000, .04) : 0;
+		lastFrame = now;
+
+		step(dt * (fast ? 3 : 1));
+
+		for (const particle of particles) {
+			particle.x += particle.vx * dt;
+			particle.y += particle.vy * dt;
+			particle.life -= dt;
+		}
+		particles = particles.filter(particle => particle.life > 0);
+
+		draw();
+		schedule();
+	}
+
+	function roundedRect(x, y, width, height, radius, fill, stroke) {
+		ctx.beginPath();
+		if (ctx.roundRect) ctx.roundRect(x, y, width, height, radius);
+		else ctx.rect(x, y, width, height);
+
+		ctx.fillStyle = fill;
+		ctx.fill();
+
+		if (stroke) {
+			ctx.strokeStyle = stroke;
+			ctx.lineWidth = 1.5;
+			ctx.stroke();
+		}
+	}
+
+	function dot(x, y, radius, color) {
+		ctx.beginPath();
+		ctx.arc(x, y, radius, 0, Math.PI * 2);
+		ctx.fillStyle = color;
+		ctx.fill();
+	}
+
+	function drawAim() {
+		const radians = angle * Math.PI / 180;
+		const preview = {
+			x: launcherX,
+			y: LAUNCH_Y,
+			vx: Math.sin(radians),
+			vy: -Math.cos(radians)
+		};
+
+		ctx.strokeStyle = '#a5f3fc';
+		ctx.lineWidth = 2;
+		ctx.setLineDash([3, 7]);
+
+		for (let bounce = 0; bounce < 4; bounce++) {
+			const hit = nextHit(preview, 900, false);
+			const distance = hit ? hit.t : 900;
+
+			ctx.beginPath();
+			ctx.moveTo(preview.x, preview.y);
+			preview.x += preview.vx * distance;
+			preview.y += preview.vy * distance;
+			ctx.lineTo(preview.x, preview.y);
+			ctx.stroke();
+
+			if (!hit || hit.kind !== 'wall') {
+				if (hit) dot(preview.x, preview.y, 4, '#a5f3fc');
+				break;
+			}
+
+			reflect(preview, hit);
+		}
+
+		ctx.setLineDash([]);
+	}
+
+	function draw() {
+		ctx.setTransform(canvas.width / W, 0, 0, canvas.height / H, 0, 0);
+		ctx.clearRect(0, 0, W, H);
+		ctx.fillStyle = '#0b1020';
+		ctx.fillRect(0, 0, W, H);
+
+		for (const star of stars) dot(star.x, star.y, star.r, '#334155');
+
+		ctx.strokeStyle = '#25324b';
+		ctx.lineWidth = 2;
+		ctx.strokeRect(WALL, WALL, W - WALL * 2, LAUNCH_Y - WALL);
+
+		ctx.strokeStyle = '#fb7185';
+		ctx.setLineDash([7, 6]);
+		ctx.beginPath();
+		ctx.moveTo(WALL, DANGER_Y);
+		ctx.lineTo(W - WALL, DANGER_Y);
+		ctx.stroke();
+		ctx.setLineDash([]);
+
+		ctx.font = '10px system-ui';
+		ctx.textAlign = 'right';
+		ctx.fillStyle = '#fda4af';
+		ctx.fillText('ALIENGRENS', W - 16, DANGER_Y + 15);
+
+		if (phase === 'aim') drawAim();
+
+		const now = performance.now();
+		ctx.textAlign = 'center';
+		ctx.textBaseline = 'middle';
+
+		for (const item of board) {
+			if (!item.alive) continue;
+
+			const x = brickX(item);
+			const y = brickY(item);
+			const cx = x + BRICK_W / 2;
+
+			if (item.kind === 'orb') {
+				dot(cx, y + BRICK_H / 2, 14, '#134e4a');
+				dot(cx, y + BRICK_H / 2, 11, '#5eead4');
+				ctx.fillStyle = '#042f2e';
+				ctx.font = 'bold 12px system-ui';
+				ctx.fillText('+1', cx, y + BRICK_H / 2);
+				continue;
+			}
+
+			const bomb = item.kind === 'bomb';
+			const hit = !reducedMotion.matches && now - item.hitAt < 90;
+
+			roundedRect(
+				x, y, BRICK_W, BRICK_H, 6,
+				bomb ? '#9a3412' : '#4c1d95',
+				hit ? '#fff' : bomb ? '#fdba74' : '#a78bfa'
+			);
+
+			for (const eyeX of [x + 11, x + 20]) {
+				dot(eyeX, y + 8, 3.3, '#fff');
+				dot(eyeX + clamp((launcherX - cx) / 200, -1, 1), y + 8, 1.5, '#111827');
+			}
+
+			if (bomb) {
+				ctx.font = 'bold 13px system-ui';
+				ctx.fillStyle = '#ffedd5';
+				ctx.fillText('✹', x + BRICK_W - 10, y + 9);
+			}
+
+			ctx.font = `bold ${item.hp > 999 ? 13 : 17}px system-ui`;
+			ctx.fillStyle = '#fff';
+			ctx.fillText(
+				item.hp > 999 ? numberFormat.format(item.hp) : item.hp,
+				cx, y + 24
+			);
+		}
+
+		for (const ball of balls) dot(ball.x, ball.y, RADIUS, '#f8fafc');
+
+		for (const particle of particles) {
+			ctx.globalAlpha = clamp(particle.life / .4, 0, 1);
+			dot(particle.x, particle.y, 3, particle.color);
+		}
+		ctx.globalAlpha = 1;
+
+		if (phase === 'aim') {
+			const radians = angle * Math.PI / 180;
+			ctx.strokeStyle = '#67e8f9';
+			ctx.lineWidth = 5;
+			ctx.lineCap = 'round';
+			ctx.beginPath();
+			ctx.moveTo(launcherX, LAUNCH_Y);
+			ctx.lineTo(
+				launcherX + Math.sin(radians) * 17,
+				LAUNCH_Y - Math.cos(radians) * 17
+			);
+			ctx.stroke();
+			ctx.lineCap = 'butt';
+		}
+
+		dot(launcherX, LAUNCH_Y + 5, 9, '#86efac');
+		roundedRect(launcherX - 18, LAUNCH_Y + 6, 36, 9, 5, '#94a3b8', '#e2e8f0');
+		dot(launcherX - 3, LAUNCH_Y + 2, 1.5, '#052e16');
+		dot(launcherX + 3, LAUNCH_Y + 2, 1.5, '#052e16');
+
+		ctx.textBaseline = 'alphabetic';
+	}
+
+	function resize() {
+		const rect = canvas.getBoundingClientRect();
+		if (!rect.width || !rect.height) return;
+
+		const dpr = Math.min(window.devicePixelRatio || 1, 2);
+		canvas.width = Math.round(rect.width * dpr);
+		canvas.height = Math.round(rect.height * dpr);
+		draw();
+	}
+
+	function aimFromPointer(event) {
+		if (phase !== 'aim') return;
+
+		const rect = canvas.getBoundingClientRect();
+		const x = (event.clientX - rect.left) / rect.width * W;
+		const y = (event.clientY - rect.top) / rect.height * H;
+
+		setAngle(Math.atan2(x - launcherX, Math.max(12, LAUNCH_Y - y)) * 180 / Math.PI);
+		draw();
+	}
+
+	canvas.addEventListener('pointerdown', event => {
+		if (phase !== 'aim' || !event.isPrimary || event.button !== 0) return;
+		canvas.setPointerCapture(event.pointerId);
+		canvas.focus({ preventScroll: true });
+		aimFromPointer(event);
+	});
+
+	canvas.addEventListener('pointermove', event => {
+		if (canvas.hasPointerCapture(event.pointerId)) aimFromPointer(event);
+	});
+
+	canvas.addEventListener('keydown', event => {
+		if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+			event.preventDefault();
+			if (phase !== 'aim') return;
+			setAngle(angle + (event.key === 'ArrowLeft' ? -2 : 2));
+			draw();
+		} else if (event.key === 'Enter' || event.key === ' ') {
+			event.preventDefault();
+			if (!event.repeat) fire();
+		}
+	});
+
+	fireButton.addEventListener('click', fire);
+	$('[data-reset]').addEventListener('click', reset);
+
+	speedButton.addEventListener('click', () => {
+		fast = !fast;
+		speedButton.setAttribute('aria-pressed', String(fast));
+	});
+
+	document.addEventListener('visibilitychange', () => {
+		cancelAnimationFrame(raf);
+		raf = 0;
+		lastFrame = 0;
+		schedule();
+	});
+
+	reset();
+
+	if ('ResizeObserver' in window) {
+		new ResizeObserver(resize).observe(canvas);
+	} else {
+		window.addEventListener('resize', resize);
+	}
+	resize();
+})();
+</script>

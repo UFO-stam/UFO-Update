@@ -129,6 +129,10 @@ Elke maand vind je hier een korte terugblik op de afgelopen opkomsten én eventu
 
 Dus heb jij iets meegemaakt, gezien of gehoord waarvan je denkt: *dit past hier helemaal bij*? Stuur het vooral door!
 
+## Puzzel
+
+{% include "interactive/brickbreaker.njk" %}
+
 ## Agenda
 
 Van 6 oktober tot 3 november.

@@ -4,7 +4,6 @@ description: Vol met nieuwe verhalen (en een video)
 date: 2026-10-05
 authors:
   - floris
-  - kayleigh
   - maarten
   - stijn
   - rosanne
@@ -15,7 +14,7 @@ type: nieuwsbrief
 
 <p class="cite">Door Rosanne Wormgoor</p>
 
-De afgelopen maand stond volledig in het teken van de open opkomsten en de verkiezings-AV. In deze terugblik nemen we jullie mee langs de hoogtepunten van de afgelopen weken. En ook in de rest van deze nieuwsbrief valt weer genoeg te lezen: zo vind je een interview met de SSN van Kayleigh, een nieuwe N=1 van Floris, een video van de open opkomsten én een gloednieuw item: de ‘Wist je dat’ van Rose. Natuurlijk mogen ook de verjaardagen, agenda en afsluiting niet ontbreken. Maar eerst: een terugblik!
+De afgelopen maand stond volledig in het teken van de open opkomsten en de verkiezings-AV. In deze terugblik nemen we jullie mee langs de hoogtepunten van de afgelopen weken. En ook in de rest van deze nieuwsbrief valt weer genoeg te lezen: zo vind je een nieuwe N=1 van Floris, een video van de open opkomsten én een gloednieuw item: de ‘Wist je dat’ van Rose. Natuurlijk mogen ook de verjaardagen, agenda en afsluiting niet ontbreken. Maar eerst: een terugblik!
 
 ![Lachen tijdens de pubquiz.](/uploads/img_0559.jpg "Lachen tijdens de pubquiz.")
 
@@ -48,17 +47,6 @@ Op 22 september was het tijd voor de verkiezings-AV. Zelf was ik hier helaas nie
 ###### je nog steeds kan aanmelden voor het jaarboek?
 
 ###### het lettertype van de U.F.O-Stam goodtimes is?
-
-
-
-
-## Interview met SSN
-
-<p class="cite">Door Kayleigh Hogerheijde</p>
-
-
-
-
 
 
 
@@ -130,7 +118,7 @@ Het laat maar weer zien dat we wereldwijd eigenlijk allemaal pure geschiedenis p
 
 De open opkomsten zijn inmiddels weer achter de rug. Doormiddel van deze video kunnen we nog even na genieten van de geweldige open opkomsten.
 
-https://youtu.be/po6IZA4brZY
+https://www.youtube.com/watch?v=po6IZA4brZY
 
 
 
@@ -167,13 +155,21 @@ Dus heb jij iets meegemaakt, gezien of gehoord waarvan je denkt: *dit past hier 
 
 
 
-## Verjaardagen
 
 ## Agenda
 
-<p class="cite">Door Maarten</p>
+Van 6 oktober tot 3 november.
 
-
+| Datum  | Welke stam     | Wat gaan we doen?         |
+| ------ | -------------- | ------------------------- |
+| 6 okt  | Student | Lasergamen        |
+| 8 okt  | Alumni         | Open opkomst               |
+| 13 okt | Student/Alumni        | EHBO borrel           |
+| 20 okt | Student           | Spooktocht                |
+| 22 okt | Alumni | Try not to laugh          |
+| 23-25 okt | Student/Alumni        | SS2            |
+| 27 okt | Student        | Commissiemarkt        |
+| 3 nov | Student        | DND opkomst     |
 
 ## Wist je dat…
 
@@ -195,3 +191,4 @@ Dus heb jij iets meegemaakt, gezien of gehoord waarvan je denkt: *dit past hier 
 ## Afsluiting
 
 <p class="cite">Door Maarten</p>
+

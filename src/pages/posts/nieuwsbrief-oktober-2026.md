@@ -1,7 +1,7 @@
 ---
 title: Nieuwsbrief, Oktober 2026
 description: Vol met nieuwe verhalen (en een video)
-date: 2026-10-05
+date: 2026-10-06
 authors:
   - floris
   - maarten

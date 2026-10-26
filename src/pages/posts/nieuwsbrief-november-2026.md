@@ -20,6 +20,12 @@ Op 13 oktober stond de Kahootborrel op het programma, georganiseerd door Robin, 
 
 De week daarna stond oorspronkelijk een spooktocht op de planning. Uiteindelijk werd het een soort escape room, waarbij we eerst verschillende tapes moesten vinden en vervolgens buiten op zoek gingen naar glowsticks. Maar daar zat wel een spannend randje aan: we mochten buiten maar een beperkte tijd rondlopen en moesten muisstil zijn. Want als de zombies ons hoorden, werden we opgegeten en veranderden we zelf in een zombie. En dat wilden we natuurlijk koste wat kost voorkomen!
 
+## Collage
+
+<p class="cite">Door Rosanne Wormgoor</p>
+
+![Collage van zombie- en lasergameopkomst.](/uploads/ontwerp-zonder-titel.jpg "Collage van zombie- en lasergameopkomst.")
+
 ## Wist je dat…
 
 <p class="cite">Door Rose Jansen</p>

@@ -24,6 +24,20 @@ Op 13 oktober stond de Kahootborrel op het programma, georganiseerd door Robin, 
 
 De week daarna stond oorspronkelijk een spooktocht op de planning. Uiteindelijk werd het een soort escape room, waarbij we eerst verschillende tapes moesten vinden en vervolgens buiten op zoek gingen naar glowsticks. Maar daar zat wel een spannend randje aan: we mochten buiten maar een beperkte tijd rondlopen en moesten muisstil zijn. Want als de zombies ons hoorden, werden we opgegeten en veranderden we zelf in een zombie. En dat wilden we natuurlijk koste wat kost voorkomen!
 
+
+
+## Wist je dat…
+
+<p class="cite">Door Rose Jansen</p>
+
+###### Het plannen van de leukste opkomsten begint met Post-its?
+
+###### Sommige handschriften écht niet te lezen zijn?
+
+###### Er een goedgevulde agenda te bekijken is in de U.F.O.-Drive?
+
+
+
 ## Collage
 
 <p class="cite">Door Rosanne Wormgoor</p>
@@ -33,3 +47,57 @@ De week daarna stond oorspronkelijk een spooktocht op de planning. Uiteindelijk 
 ## Wist je dat…
 
 <p class="cite">Door Rose Jansen</p>
+
+###### Het Kahoot-HR-podium werd betreden door een ex-bestuurslid?
+
+###### Een nog niet-geïnstalleerd lid op nummer 4 is geëindigd?
+
+
+
+\-- insert other RedacCie item --
+
+
+
+
+
+## Wist je dat…
+
+<p class="cite">Door Rose Jansen</p>
+
+###### De agenda niet altijd klopt?
+
+###### Spooktochten zomaar kunnen veranderen in escape rooms?
+
+###### Je schmink op je hoofd moet als je besmet raakt?
+
+###### U.F.O.'s het heel moeilijk vinden om stil te zijn?
+
+###### Je daardoor sneller doodgaat?
+
+
+
+\-- insert other RedacCie item --
+
+
+
+
+
+## Wist je dat…
+
+<p class="cite">Door Rose Jansen</p>
+
+###### Aluminiumfolie gewoon te koop is in de supermarkt?
+
+###### De kipwraps héél erg lekker waren?
+
+###### Er veel interesse is in de nieuwe merch?
+
+###### Toetjes een goed lokmiddel zijn?
+
+###### Je je kunt aanmelden voor winterkamp?
+
+
+
+
+
+\-- insert other RedacCie item --

@@ -10,7 +10,7 @@ type: nieuwsbrief
 
 <p class="cite">Door Rosanne Wormgoor</p>
 
-Met de open opkomsten achter de rug was het weer tijd voor opkomsten georganiseerd door U.F.O.'s.  Vond jullie het lasergamen ook zo leuk? Naast mijn terugblik op de opkomsten van afgelopen maand lees je een 'How To' van Kayleigh, 'Wist je datjes' van Rose, een N=1 van Floris en natuurlijk een puzzel, de agenda, de verjaardagen en een afsluiting.
+Met de open opkomsten achter de rug, was het weer tijd voor opkomsten georganiseerd door U.F.O.’s! Vonden jullie het lasergamen ook zo leuk? Naast mijn terugblik op de opkomsten van afgelopen maand, lees je deze editie een ‘How To’ van Kayleigh, ‘Wist je datjes’ van Rose en een 'N=1' van Floris. Natuurlijk ontbreken ook de puzzel, de agenda, de verjaardagen en een afsluiting niet. Veel leesplezier!
 
 Op 29 september was het tijd voor de Planborrel. Want de planning voor het seizoen 2026-2027 vult zichzelf natuurlijk niet! Met behulp van een spelletje met dieren werden we in verschillende groepen verdeeld om te brainstormen. Het bestuur droeg verschillende kaders aan om ons wat richting te geven en uiteindelijk was de planning binnen no-time gevuld.
 

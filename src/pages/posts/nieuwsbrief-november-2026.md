@@ -25,6 +25,10 @@ Op 13 oktober stond de Kahootborrel op het programma, georganiseerd door Robin, 
 
 De week daarna stond oorspronkelijk een spooktocht op de planning. Uiteindelijk werd het een soort escape room, waarbij we eerst verschillende tapes moesten vinden en vervolgens buiten op zoek gingen naar glowsticks. Maar daar zat wel een spannend randje aan: we mochten buiten maar een beperkte tijd rondlopen en moesten muisstil zijn. Want als de zombies ons hoorden, werden we opgegeten en veranderden we zelf in een zombie. En dat wilden we natuurlijk koste wat kost voorkomen!
 
+## N=1, De Duitse kantoornorm
+
+<p class="cite">Door Floris Meester</p>
+
 ## Collage
 
 <p class="cite">Door Rosanne Wormgoor</p>
@@ -36,19 +40,20 @@ De week daarna stond oorspronkelijk een spooktocht op de planning. Uiteindelijk 
 <p class="cite">Door Rose Jansen</p>
 
 ## Agenda
+
 Van 3 november tot 1 december.
 
 | **Datum** | **Welke stam** | **Wat gaan we doen?** |
-| --- | --- | --- |
-| 3 nov | Student | DND opkomst |
-| 5 nov | Alumni | Opkomst |
-| 10 nov | Student/Alumni | Installatie borrel |
-| 17 nov | Student | Kookopkomst |
-| 19 nov | Alumni | Opkomst |
-| 20-22 nov | Student/Alumni | Winterkamp |
-| 24 nov | Student/Alumni | Nova borrel |
-| 26 nov | Alle Stammen | CoBo bestuur 9 |
-| 1 dec | Student | RPG opkomst |
+| --------- | -------------- | --------------------- |
+| 3 nov     | Student        | DND opkomst           |
+| 5 nov     | Alumni         | Opkomst               |
+| 10 nov    | Student/Alumni | Installatie borrel    |
+| 17 nov    | Student        | Kookopkomst           |
+| 19 nov    | Alumni         | Opkomst               |
+| 20-22 nov | Student/Alumni | Winterkamp            |
+| 24 nov    | Student/Alumni | Nova borrel           |
+| 26 nov    | Alle Stammen   | CoBo bestuur 9        |
+| 1 dec     | Student        | RPG opkomst           |
 
 ## Afsluiting
 

@@ -26,7 +26,7 @@ Op 13 oktober stond de Kahootborrel op het programma, georganiseerd door Robin, 
 
 De week daarna stond oorspronkelijk een spooktocht op de planning. Uiteindelijk werd het een soort escape room, waarbij we eerst verschillende tapes moesten vinden en vervolgens buiten op zoek gingen naar glowsticks. Maar daar zat wel een spannend randje aan: we mochten buiten maar een beperkte tijd rondlopen en moesten muisstil zijn. Want als de zombies ons hoorden, werden we opgegeten en veranderden we zelf in een zombie. En dat wilden we natuurlijk koste wat kost voorkomen!
 
-## N=1, De Duitse kantoornorm
+## N=1, De papierdictatuur
 
 <p class="cite">Door Floris Meester</p>
 
@@ -36,7 +36,11 @@ Mijn hele studentenleven lang heb ik braaf alles wat ik maakte op een A4'tje gep
 
 Zelf had ik hier nog helemaal nooit bij stilgestaan. We leven in een hedendaagse wereld waarin uitprinten ongeveer als een milieudelict wordt gezien en 'paperless werken' de heilige graal en de nieuwe standaard is. Maar hoe is dat standaard formaat er dan in geslopen?
 
-Als je de geschiedenis in duikt dan was 
+Voordat het A4-formaat werd geïntroduceerd was het papierlandschap één groot Wilde Westen. Elke papierfabriek, drukkerij of *kantoorklerk* hanteerde zijn eigen willekeurige afmeting. Ze hingen hier wel toffe namen aan vast: *Foolscap, Elephant, Imperial* of *Quarto*. Hoe groot die papieren precies waren? Dat lag er in de middeleeuwen maar net aan hoe lang de armen van de papierschepper toevallig waren, of hoe groot de houten mal was die de lokale timmerman in elkaar had getimmerd.
+
+In 1911
+
+Om daar er achter te komen moeten we de geschiedenis in duiken en komen we uit bij een Duitser die efficiënt probeerde te zijn. In 1922 bedacht de Duitse wiskundige dr. Walter Porstmann de 'DIN 476'-standaard. Hij nam een vel papier met een oppervlakte van exact één vierkante meter en paste daar een formule 
 
 ## Collage
 

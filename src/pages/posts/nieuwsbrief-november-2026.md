@@ -38,9 +38,16 @@ Zelf had ik hier nog helemaal nooit bij stilgestaan. We leven in een hedendaagse
 
 Voordat het A4-formaat werd geïntroduceerd was het papierlandschap één groot Wilde Westen. Elke papierfabriek, drukkerij of *kantoorklerk* hanteerde zijn eigen willekeurige afmeting. Ze hingen hier wel toffe namen aan vast: *Foolscap, Elephant, Imperial* of *Quarto*. Hoe groot die papieren precies waren? Dat lag er in de middeleeuwen maar net aan hoe lang de armen van de papierschepper toevallig waren, of hoe groot de houten mal was die de lokale timmerman in elkaar had getimmerd.
 
-In 1911
+In 1911 de scheikundige Nobelprijswinnaar, Wilhelm Ostwald, de boel te redden. Hij bedacht het zogeheten *Weltformat* (Wereldformaat). Hij kwam als eerste op het idee om de verhouding van √2-verhouding te gebruiken, zodat je het papier kont dubbelvouwen zonder de verhouding te verliezen. Hij had alleen één inschattingsfout gemaakt, namelijk dat hij exact 1 centimeter als het basispunt van zijn berekening nam. Hierdoor had de papierindustrie hier niks aan als zij de verhouding tussen de grootte en het gewicht van het papier wilden berekenen.
 
-Om daar er achter te komen moeten we de geschiedenis in duiken en komen we uit bij een Duitser die efficiënt probeerde te zijn. In 1922 bedacht de Duitse wiskundige dr. Walter Porstmann de 'DIN 476'-standaard. Hij nam een vel papier met een oppervlakte van exact één vierkante meter en paste daar een formule 
+Het was zijn assistent dr. Walter Porstmann (helaas niet Postmann) in 1922 die zag dat papier in de echte wereld niet puur in lengte wordt gemeten, maar in *oppervlakte* en *gewicht*. Hij pakte het idee van zijn baas, poetste het op en besloot dat de basis exact **één vierkante meter** (A0) moest zijn. Daarmee sloeg hij twee vliegen in één klap:
+
+1. Papierfabrieken konden een gigantisch vel papier eindeloos versnijden in A1, A2, A3 en A4, zónder ook maar een snipper restafval te hebben.
+2. Het gewicht was ineens wiskundig perfect gekoppeld aan het formaat (zoals dat feitje van exact 5 gram per A4'tje).
+
+Fijn, dit werkte dan eindelijk. Overal op de wereld werd hierop dan ook op ingespeeld door bijvoorbeeld de multomap, de perforator maar ook op maat gemaakte laatjes en enveloppen. Dat is de Duitse efficiëntie die wij gewend zijn.
+
+Maar hoe komt het dat wij hedendaags nog steeds ons zo vasthouden aan 
 
 ## Collage
 

@@ -47,7 +47,11 @@ Het was zijn assistent dr. Walter Porstmann (helaas niet Postmann) in 1922 die z
 
 Fijn, dit werkte dan eindelijk. Overal op de wereld werd hierop dan ook op ingespeeld door bijvoorbeeld de multomap, de perforator maar ook op maat gemaakte laatjes en enveloppen. Dat is de Duitse efficiëntie die wij gewend zijn.
 
-Maar hoe komt het dat wij hedendaags nog steeds ons zo vasthouden aan 
+Maar hoe komt het dat wij hedendaags nog steeds ons zo vasthouden aan het A4-formaat? Het antwoord is een mix van bureaucratie en het psychologische fenomeen dat *skeuomorphisme* wordt genoemd. Dat is, naast een geweldig galgje-woord, het feit dat wij mensen zo slecht tegen verandering kunnen ,dat we digitale dingen er precies zo uit laten zien als hun oude, fysieke tegenhanger. Dit is dezelfde reden als waarom je vaak nog het uit 1995 gedateerde diskette ziet als 'opslaan'-icoontje. 
+
+Veel systemen zijn ook hierop nog steeds ingespeeld. Het versturen van een officieel document, een contract of een bezwaarschift in een ander formaat dan A4 zou geweigerd kunnen worden omdat hun software het niet automatisch herkent. Terwijl jouw printer (als je die nog hebt) snakt naar dat laatste beetje magenta-inkt en het uitdroogt gebruiken wij dit formaat bijna altijd nog online. Er zijn wel nog uitzonderingen, zoals dat ik laatst nog een pakketje terug moest sturen en het label moest uitprinten. Ik moet fysiek naar de Bruno toe lopen met een 10-cent muntje om het bestand uit te printen aangezien ik geen printer meer in huis heb.
+
+Moeten we gaan rebelleren tegen deze norm of hebben we genoegen met wat we nu hebben, ook al zijn onze schermen waar we meer naar kijken dan het fysieke papier niet hetzelfde formaat? Het is ook maar hoe erg je je ergens druk over kan maken. In ieder geval niet zoveel druk als dat er nodig is om papier samen te persen wat mij betreft.
 
 ## Collage
 

@@ -32,7 +32,11 @@ De week daarna stond oorspronkelijk een spooktocht op de planning. Uiteindelijk 
 
 *‘N=1’ is een opiniestuk waarin Floris zijn ongefilterde mening geeft over een onderwerp dat hem die periode na aan het hart ligt. De term ‘N=’ is de onderzoeksterm voor de steekproefgrootte en geeft binnen deze rubriek aan dat de uitslag gebaseerd is op de hersenspinsels van Floris. Er kunnen geen rechten aan de uitspraken worden ontleend, ik doe ook maar wat.*
 
-hth
+Mijn hele studentenleven lang heb ik braaf alles wat ik maakte op een A4'tje gepropt: verslagen, samenvattingen, ontwerpen. Zodra ik Word of InDesign opende, accepteerde ik dat witte, staande rechthoekje als mijn digitale canvas. Totdat kortgeleden een docent vroeg waarom ik eigenlijk niet alles op beeldschermformaat maak, aangezien zij daarop alles bekijken en beoordelen en dus fijner oogt.
+
+Zelf had ik hier nog helemaal nooit bij stilgestaan. We leven in een hedendaagse wereld waarin uitprinten ongeveer als een milieudelict wordt gezien en 'paperless werken' de heilige graal en de nieuwe standaard is. Maar hoe is dat standaard formaat er dan in geslopen?
+
+Als je de geschiedenis in duikt dan was 
 
 ## Collage
 

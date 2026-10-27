@@ -34,7 +34,7 @@ De week daarna stond oorspronkelijk een spooktocht op de planning. Uiteindelijk 
 
 Mijn hele studentenleven lang heb ik braaf alles wat ik maakte op een A4'tje gepropt: verslagen, samenvattingen, ontwerpen. Zodra ik Word of InDesign opende, accepteerde ik dat witte, staande rechthoekje als mijn digitale canvas. Totdat kortgeleden een docent vroeg waarom ik eigenlijk niet alles op beeldschermformaat maak, aangezien zij daarop alles bekijken en beoordelen en dus fijner oogt.
 
-Zelf had ik hier nog helemaal nooit bij stilgestaan. We leven in een hedendaagse wereld waarin uitprinten ongeveer als een milieudelict wordt gezien en 'paperless werken' de heilige graal en de nieuwe standaard is. Maar hoe is dat standaard formaat er dan in geslopen?
+Zelf had ik hier nog helemaal nooit bij stilgestaan. We leven in een hedendaagse wereld waarin uitprinten ongeveer als een milieudelict wordt gezien en 'paperless werken' de heilige graal en de nieuwe standaard is. Maar hoe is dat standaardformaat er dan in geslopen?
 
 Voordat het A4-formaat werd geïntroduceerd was het papierlandschap één groot Wilde Westen. Elke papierfabriek, drukkerij of *kantoorklerk* hanteerde zijn eigen willekeurige afmeting. Ze hingen hier wel toffe namen aan vast: *Foolscap, Elephant, Imperial* of *Quarto*. Hoe groot die papieren precies waren? Dat lag er in de middeleeuwen maar net aan hoe lang de armen van de papierschepper toevallig waren, of hoe groot de houten mal was die de lokale timmerman in elkaar had getimmerd.
 
@@ -47,7 +47,7 @@ Het was zijn assistent dr. Walter Porstmann (helaas niet Postmann) in 1922 die z
 
 Fijn, dit werkte dan eindelijk. Overal op de wereld werd hierop dan ook op ingespeeld door bijvoorbeeld de multomap, de perforator maar ook op maat gemaakte laatjes en enveloppen. Dat is de Duitse efficiëntie die wij gewend zijn.
 
-Maar hoe komt het dat wij hedendaags nog steeds ons zo vasthouden aan het A4-formaat? Het antwoord is een mix van bureaucratie en het psychologische fenomeen dat *skeuomorphisme* wordt genoemd. Dat is, naast een geweldig galgje-woord, het feit dat wij mensen zo slecht tegen verandering kunnen ,dat we digitale dingen er precies zo uit laten zien als hun oude, fysieke tegenhanger. Dit is dezelfde reden als waarom je vaak nog het uit 1995 gedateerde diskette ziet als 'opslaan'-icoontje. 
+Maar hoe komt het dat wij hedendaags nog steeds ons zo vasthouden aan het A4-formaat? Het antwoord is een mix van bureaucratie en het psychologische fenomeen dat *skeuomorphisme* wordt genoemd. Dat is, naast een geweldig galgje-woord, het feit dat wij mensen zo slecht tegen verandering kunnen, dat we digitale dingen er precies zo uit laten zien als hun oude, fysieke tegenhanger. Dit is dezelfde reden als waarom je vaak nog het uit 1995 gedateerde diskette ziet als 'opslaan'-icoontje. 
 
 Veel systemen zijn ook hierop nog steeds ingespeeld. Het versturen van een officieel document, een contract of een bezwaarschift in een ander formaat dan A4 zou geweigerd kunnen worden omdat hun software het niet automatisch herkent. Terwijl jouw printer (als je die nog hebt) snakt naar dat laatste beetje magenta-inkt en het uitdroogt gebruiken wij dit formaat bijna altijd nog online. Er zijn wel nog uitzonderingen, zoals dat ik laatst nog een pakketje terug moest sturen en het label moest uitprinten. Ik moet fysiek naar de Bruno toe lopen met een 10-cent muntje om het bestand uit te printen aangezien ik geen printer meer in huis heb.
 

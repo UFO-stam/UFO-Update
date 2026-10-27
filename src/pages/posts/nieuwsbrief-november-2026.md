@@ -5,6 +5,7 @@ date: 2026-11-02
 authors:
   - rosanne
   - maarten
+  - floris
 type: nieuwsbrief
 ---
 ## Inleiding
@@ -28,6 +29,10 @@ De week daarna stond oorspronkelijk een spooktocht op de planning. Uiteindelijk 
 ## N=1, De Duitse kantoornorm
 
 <p class="cite">Door Floris Meester</p>
+
+*‘N=1’ is een opiniestuk waarin Floris zijn ongefilterde mening geeft over een onderwerp dat hem die periode na aan het hart ligt. De term ‘N=’ is de onderzoeksterm voor de steekproefgrootte en geeft binnen deze rubriek aan dat de uitslag gebaseerd is op de hersenspinsels van Floris. Er kunnen geen rechten aan de uitspraken worden ontleend, ik doe ook maar wat.*
+
+hth
 
 ## Collage
 

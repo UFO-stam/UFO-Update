@@ -65,7 +65,7 @@ Moeten we gaan rebelleren tegen deze norm of hebben we genoegen met wat we nu he
 
 ## Agenda
 
-Van 3 november tot 1 december.
+Van 3 november tot en met 1 december.
 
 | **Datum** | **Welke stam** | **Wat gaan we doen?** |
 | --------- | -------------- | --------------------- |

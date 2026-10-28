@@ -69,18 +69,18 @@ Van 3 november tot 1 december.
 
 | **Datum** | **Welke stam** | **Wat gaan we doen?** |
 | --------- | -------------- | --------------------- |
-| 3 nov     | Student        | DND opkomst           |
+| 3 nov     | Student        | DnD-opkomst           |
 | 5 nov     | Alumni         | Opkomst               |
-| 10 nov    | Student/Alumni | Installatie borrel    |
+| 10 nov    | Student/Alumni | Installatieborrel     |
 | 17 nov    | Student        | Kookopkomst           |
 | 19 nov    | Alumni         | Opkomst               |
 | 20-22 nov | Student/Alumni | Winterkamp            |
-| 24 nov    | Student/Alumni | Nova borrel           |
+| 24 nov    | Student/Alumni | Novaborrel            |
 | 26 nov    | Alle Stammen   | CoBo bestuur 9        |
-| 1 dec     | Student        | RPG opkomst           |
+| 1 dec     | Student        | RPG-opkomst           |
 
 ## Afsluiting
 
 <p class="cite">Door Maarten</p>
 
-Wat een geweldige nieuwsbrief was dit weer. Had je zelf ook door wat voor mooi thema deze nieuwsbrief had? Als je zelf nog een leuk thema idee hebt, stuur dan gerust een berichtje naar de RedacCie en wellicht zie je dit thema komende maand terug! Als we geen thema ideeën ontvangen dan wordt het thema van komende maand sowieso "Vakantie Singapore", want daar heb ik persoonlijk zelf wel behoefte aan.
+Wat een geweldige nieuwsbrief was dit weer. Had je zelf ook door wat voor mooi thema deze nieuwsbrief had? Als je zelf nog een leuk thema-idee hebt, stuur dan gerust een berichtje naar de RedacCie en wellicht zie je dit thema komende maand terug! Als we geen thema-ideeën ontvangen, dan wordt het thema van komende maand sowieso 'Vakantie Singapore', want daar heb ik persoonlijk wel behoefte aan.

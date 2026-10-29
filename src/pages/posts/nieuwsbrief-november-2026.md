@@ -25,7 +25,7 @@ Op 13 oktober stond de Kahootborrel op het programma, georganiseerd door Robin, 
 
 ![Op de Kahootborrel.](/uploads/img_20261013_214606156.jpg "Op de Kahootborrel.")
 
-De week daarna stond oorspronkelijk een spooktocht op de planning. Uiteindelijk werd het een soort escape room, waarbij we eerst verschillende tapes moesten vinden en vervolgens buiten op zoek gingen naar glowsticks. Maar daar zat wel een spannend randje aan: we mochten buiten maar een beperkte tijd rondlopen en moesten muisstil zijn. Want als de zombies ons hoorden, werden we opgegeten en veranderden we zelf in een zombie. En dat wilden we natuurlijk koste wat kost voorkomen!
+De week daarna stond oorspronkelijk een spooktocht op de planning. Uiteindelijk werd het een soort escaperoom, waarbij we eerst verschillende tapes moesten vinden en vervolgens buiten op zoek gingen naar glowsticks. Maar daar zat wel een spannend randje aan: we mochten buiten maar een beperkte tijd rondlopen en moesten muisstil zijn. Want als de zombies ons hoorden, werden we opgegeten en veranderden we zelf in een zombie. En dat wilden we natuurlijk koste wat kost voorkomen!
 
 
 
@@ -33,11 +33,11 @@ De week daarna stond oorspronkelijk een spooktocht op de planning. Uiteindelijk 
 
 <p class="cite">Door Rose Jansen</p>
 
-###### Het plannen van de leukste opkomsten begint met Post-its?
+###### Het plannen van de leukste opkomsten begint met post-its?
 
 ###### Sommige handschriften écht niet te lezen zijn
 
-###### Er een goedgevulde agenda te bekijken is in de U.F.O.-Drive?
+###### Er een goedgevulde agenda te bekijken is in de U.F.O.-drive?
 
 															
 
@@ -137,7 +137,7 @@ Van 3 november tot en met 1 december.
 
 ###### Het Kahoot-HR-podium werd betreden door een exbestuurslid?
 
-###### Een nog niet-geïnstalleerd lid op nummer 4 is geëindigd?
+###### Een nog niet-geïnstalleerd lid op nummer vier is geëindigd?
 
 
 ## Afsluiting

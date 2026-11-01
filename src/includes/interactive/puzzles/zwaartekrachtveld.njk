@@ -1,0 +1,125 @@
+<section class="space-y-4 max-w-lg mx-auto" aria-label="Zwaartekracht Compressie">
+
+	<div class="text-center">
+		<h3 class="font-bold text-xl sm:text-2xl mb-1 text-blue-500">Zwaartekracht-Compressie</h3>
+		<p class="text-sm text-gray-400 mb-3 leading-relaxed">
+			<strong>Doel:</strong> Vul het hele rooster met materie om een stabiele kern te vormen.<br>
+			<strong>Regels:</strong> Een klik veroorzaakt een inversie (<strong>+</strong> patroon) waarbij vacuüm materie wordt en vice versa. Daarna trekt zwaartekracht alles naar beneden.
+		</p>
+		<div class="text-sm font-medium">
+			Inversies: <span data-steps class="text-blue-400 font-bold">0</span>
+			<span class="text-gray-600 mx-1">|</span>
+			Doel: <span class="font-bold">4</span>
+		</div>
+	</div>
+
+	<div class="flex justify-center">
+		<div data-grid role="grid" class="inline-grid grid-cols-4 gap-2 bg-slate-900 p-3 rounded-xl border border-slate-700 shadow-2xl"></div>
+	</div>
+
+	<div class="flex justify-center mt-2">
+		<button data-reset type="button"
+			class="px-6 py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-full text-sm font-medium transition-all active:scale-95 border border-slate-600">
+			Systeem Herstarten
+		</button>
+	</div>
+
+	<p data-status class="text-center text-sm sm:text-base font-medium min-h-[40px]" role="status" aria-live="polite"></p>
+
+</section>
+
+<script>
+(() => {
+	'use strict';
+
+	const root = document.currentScript.previousElementSibling;
+	const gridEl = root.querySelector('[data-grid]');
+	const stepsEl = root.querySelector('[data-steps]');
+	const statusEl = root.querySelector('[data-status]');
+
+	// 0 = Vacuüm, 1 = Materie
+	let sectors = [];
+	let invertedSectors = new Set();
+	let inversions = 0;
+	let coreStable = false;
+	let gravityTimer = 0;
+
+	function initSystem() {
+		clearTimeout(gravityTimer);
+		gravityTimer = 0;
+		// Start met de onderste 2 rijen gevuld (index 8 t/m 15)
+		sectors = Array.from({ length: 16 }, (_, i) => (i >= 8 ? 1 : 0));
+		invertedSectors.clear();
+		inversions = 0;
+		coreStable = false;
+		statusEl.className = 'text-center text-sm sm:text-base font-medium min-h-[40px]';
+		statusEl.textContent = '';
+		renderGrid();
+	}
+
+	function triggerInversion(index) {
+		if (coreStable || gravityTimer) return;
+
+		const r = index >> 2;
+		const c = index & 3;
+		invertedSectors.clear();
+
+		// Oorzaak: Inverteer het + patroon (huidige cel + directe buren)
+		for (let i = 0; i < 16; i++) {
+			if (Math.abs((i >> 2) - r) + Math.abs((i & 3) - c) <= 1) {
+				sectors[i] ^= 1; 
+				invertedSectors.add(i);
+			}
+		}
+
+		inversions++;
+		renderGrid();
+
+		// Gevolg: Zwaartekracht trekt materie naar beneden
+		gravityTimer = setTimeout(() => {
+			gravityTimer = 0;
+			invertedSectors.clear();
+
+			for (let col = 0; col < 4; col++) {
+				let matterCount = 0;
+				for (let row = 0; row < 4; row++) matterCount += sectors[row * 4 + col];
+				for (let row = 0; row < 4; row++) sectors[row * 4 + col] = row >= 4 - matterCount ? 1 : 0;
+			}
+
+			coreStable = sectors.every(Boolean);
+			renderGrid();
+
+			if (coreStable) {
+				statusEl.className = 'text-center text-sm sm:text-base font-medium text-blue-200 bg-blue-950 border border-blue-800 rounded-lg p-3 transition-all';
+				statusEl.textContent = inversions === 4
+					? 'Kern succesvol gecomprimeerd in 4 stappen!'
+					: `Kern gestabiliseerd in ${inversions} stappen. Perfectie is 4.`;
+			}
+		}, 250);
+	}
+
+	function renderGrid() {
+		stepsEl.textContent = inversions;
+		gridEl.innerHTML = '';
+
+		sectors.forEach((isMatter, i) => {
+			const btn = document.createElement('button');
+			btn.type = 'button';
+			btn.className = [
+				'w-14 h-14 sm:w-16 sm:h-16 rounded-lg font-mono text-[10px] sm:text-xs transition-all duration-150 active:scale-95 flex items-center justify-center tracking-wider',
+				isMatter
+					? 'bg-blue-500 text-blue-950 font-bold border border-blue-400'
+					: 'bg-slate-950 text-slate-700 border border-slate-800 hover:border-slate-600',
+				invertedSectors.has(i) ? 'ring-2 ring-white scale-90 opacity-80' : ''
+			].join(' ');
+			btn.textContent = isMatter ? 'MATERIE' : 'VACUÜM';
+			btn.setAttribute('aria-label', `Rij ${(i >> 2) + 1} kolom ${(i & 3) + 1}, ${isMatter ? 'materie' : 'vacuüm'}`);
+			btn.addEventListener('click', () => triggerInversion(i));
+			gridEl.appendChild(btn);
+		});
+	}
+
+	root.querySelector('[data-reset]').addEventListener('click', initSystem);
+	initSystem();
+})();
+</script>

@@ -66,7 +66,7 @@ Moeten we gaan rebelleren tegen deze norm of hebben we genoegen met wat we nu he
 
 ## Wist je dat…
 
-<p class="cite">Door Rose Jansen</p>																
+<p class="cite">Door Rose Jansen</p>
 
 ###### De agenda niet altijd klopt?
 
@@ -80,10 +80,10 @@ Moeten we gaan rebelleren tegen deze norm of hebben we genoegen met wat we nu he
 
 ## Kaal voor een Doel
 
-<p class="cite">Door Maarten</p>	
+<p class="cite">Door Maarten</p>
 Een van onze leden is kaal gegaan voor een goede reden. Met een groep andere jongens zamelt hij geld in voor 3 fantastische doelen. Namelijk: FNS Nederland, KiKa (Kinderen Kankervrij), en MIND.
 
-Wil je weten welk lid dit was? zie zijn hoofd[ hier.](https://kaalvooreendoel.nl/deelnemers/maarten-26)									
+Wil je weten welk lid dit was? Zie zijn hoofd[ hier.](https://kaalvooreendoel.nl/deelnemers/maarten-26)
 
 ## Collage
 
@@ -104,6 +104,12 @@ Wil je weten welk lid dit was? zie zijn hoofd[ hier.](https://kaalvooreendoel.nl
 ###### Toetjes een goed lokmiddel zijn?
 
 ###### Je je kunt aanmelden voor winterkamp?
+
+## 🧩 Puzzel
+
+Weer een uitdagende puzzel, kom jij er uit?
+
+{% include "interactive/puzzles/zwaartekrachtveld.njk" %}
 
 ## Agenda
 

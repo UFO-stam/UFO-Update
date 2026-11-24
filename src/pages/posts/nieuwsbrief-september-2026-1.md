@@ -1,5 +1,5 @@
 ---
-title: Nieuwsbrief, September 2026
+title: Nieuwsbrief, December 2026
 description: Brrr, wat koud
 date: 2026-11-24
 authors:

@@ -21,3 +21,14 @@ Het mooiste van dit alles is dat we in het dagelijks leven continu algoritmes ge
 Het is eigenlijk best bijzonder hoe een woord in ruim duizend jaar tijd kan veranderen. Van de naam van een slimme Perzische wiskundige, naar een simpel stappenplan voor een pannetje macaroni, tot de grote digitale vijand waar we allemaal een beetje huiverig voor zijn. Natuurlijk zijn de berekeningen achter social media tegenwoordig een tikkeltje complexer dan het koken van een eitje, maar het basisprincipe blijft exact hetzelfde.
 
 Wat wel nog een eervolle vermelding waard is, is dat een algoritme niet overeenkomt met AI. Een algoritme is in de basis nog steeds gewoon een dom, vastgelegd stappenplan dat blind uitvoert wat er op het lijstje staat. Pas op het moment dat de computer zelf zijn eigen recepten begint te verzinnen door nieuwe ingrediënten te hallucineren, begeven we ons op een heel ander terrein. Maar zolang mijn eigen kookalgoritme niet verder komt dan een simpel pannetje pasta, maak ik me daar nog niet zo druk om.
+
+
+
+## Winterkamp
+
+<p class="cite">Door Stijn de Wit en Rosanne Wormgoor</p>
+
+Afgelopen maand vond winterkamp plaats. Het was een eindje rijden naar het hoge Noorden, want ze moesten helemaal in Groningen zijn voor het Martini stamfeest. Hieronder vind je een mooie compilatie van het kamp. Bedankt aan Rosanne voor het fotograferen en Stijn aan het maken van de video. 
+
+\
+https://www.youtube.com/watch?v=rAQVyZXCoyk
